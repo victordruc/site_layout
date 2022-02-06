@@ -1,0 +1,327 @@
+.reservation_header {
+  padding-top: 40px;
+  background: linear-gradient(
+    $primary-color 5%,
+    lighten($primary-color, 18%) 40%,
+    $primary-color 95%
+  );
+}
+
+.main-reservation {
+  background-color: $primary-color;
+
+  h1 {
+    font-weight: 700;
+    font-size: 1.75rem;
+  }
+  .primary-container {
+    padding-bottom: 56px;
+  }
+  .reservation-info {
+    background-color: $primary-color-text;
+    border-radius: 10px;
+    color: $color_5;
+    padding: 50px 30px;
+    margin-top: 10px;
+    .require {
+      color: #bf3900 !important;
+      font-weight: 300 !important;
+      font-size: 1.125rem !important;
+    }
+    .reservation-input {
+      display: flex;
+      flex-direction: column;
+      padding-top: 24px;
+      label {
+        font-weight: 400;
+        font-size: 1.125rem;
+      }
+      input,
+      select {
+        background: $color_7;
+        border: 1px solid $color_6;
+        border-radius: 6px;
+        padding: 10px;
+        &:focus-visible {
+          outline: 1px solid $color_2;
+        }
+      }
+    }
+    .reservation-info-contact {
+      h3 {
+        font-weight: 500;
+        font-size: 1.625rem;
+      }
+      .reservation-email-number {
+        display: flex;
+        .reservation-number {
+          .reservation-number-wrapper {
+            background: $color_7;
+            border: 1px solid $color_6;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            // overflow: hidden;
+
+            &:focus-within {
+              border: 1px solid $color_2;
+            }
+            input {
+              flex-grow: 1;
+              border: none;
+              border-radius: 0;
+              border-top-right-radius: 6px;
+              border-bottom-right-radius: 6px;
+              padding-left: 0;
+              width: 100%;
+              &:focus-visible {
+                outline: none;
+              }
+            }
+            select {
+              margin: 0 8px 0 4px;
+              width: 64px;
+              border: none;
+              background-color: transparent;
+              background-image: url(/images/icon/arrow-select-down.png);
+              background-repeat: no-repeat;
+              background-position: right center;
+              appearance: none;
+              cursor: pointer;
+              &:focus-visible {
+                outline: none;
+              }
+            }
+
+            .nice-select {
+              border: none;
+              background: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    .reservation-passenger-info {
+      padding-top: 40px;
+      h3 {
+        font-weight: 500;
+        font-size: 1.625rem;
+      }
+      .passenger-info-title-small {
+        font-weight: 300;
+        font-size: 1rem;
+        opacity: 0.6;
+      }
+      .passenger-info-type {
+        padding-top: 24px;
+        .passenger-info-type-checkbox-group {
+          display: flex;
+          .info-type-checkbox {
+            padding: 10px;
+            position: relative;
+            border-radius: 6px;
+            width: 50%;
+            text-align: center;
+            overflow: hidden;
+            input {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              appearance: none;
+              cursor: pointer;
+              &:checked {
+                  background-color: $primary-color;
+                &+span{
+                  color: $primary-color-text;
+                  position: relative;
+                  z-index: 2;
+                  svg path {
+                    fill: $primary-color-text;
+                  }
+                }
+              }
+            }
+            &:first-child {
+              border: 1px solid $color_6;
+              border-radius: 6px 0px 0px 6px;
+            }
+            &:last-child {
+              border: 1px solid $color_6;
+              border-radius: 0px 6px 6px 0px;
+              border-left: none;
+            }
+          }
+        }
+      }
+      .passenger-info-other {
+        .nationality {
+          select {
+            background-image: url(/images/icon/arrow-select-down.png);
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            appearance: none;
+            cursor: pointer;
+          }
+          .nice-select {
+            background: $color_7;
+            border: 1px solid $color_6;
+            border-radius: 6px;
+            // padding: 10px;
+            height: 46px;
+            .list {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .passenger-info-type-baggage {
+        padding-top: 40px;
+        .baggage-personal {
+          padding-top: 20px;
+          label {
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            cursor: pointer;
+            .baggagge-title-bolt {
+              font-weight: 500;
+              font-size: 1.25rem;
+            }
+            .baggagge-title-small {
+              font-weight: 300;
+              font-size: 1rem;
+            }
+            input {
+              cursor: pointer;
+              align-self: flex-start;
+              margin-top: calc(1.25rem / 4);
+              margin-right: 12px;
+              width: 20px;
+              height: 20px;
+              background-color: $color_7;
+              border: 1px solid $color_6;
+              border-radius: 4px;
+              appearance: none;
+              &:checked[type="checkbox"] {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+                background-color: $color_2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .reservation-buy {
+    background-color: $primary-color-text;
+    color: $color_5;
+    padding: 50px 20px;
+    .reservation-text {
+      font-weight: 400;
+      font-size: 0.875rem;
+    }
+    &.top {
+      border-radius: 10px 10px 0 0;
+      border-bottom: 1px dashed $primary-color;
+      padding-bottom: 30px;
+      margin-top: 10px;
+      h3 {
+        font-weight: 500;
+        font-size: 1.125rem;
+      }
+      .reservation-buy-company {
+        display: flex;
+        margin-bottom: 10px;
+        .reservation-img-container {
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+          }
+        }
+        .reservation-company-name {
+          h6 {
+            margin-bottom: 4px;
+            font-weight: 500;
+          }
+          padding-left: 8px;
+        }
+      }
+      .reservation-buy-escale-list {
+        display: flex;
+        .reservation-buy-points {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 30px;
+        }
+        .reservation-text {
+          padding-left: 8px;
+          width: calc(100% - 30px);
+        }
+      }
+      .reservation-buy-escale-qty {
+        display: flex;
+        align-items: center;
+        .reservation-buy-escale-qty-icon {
+          width: 30px;
+          text-align: center;
+          align-self: flex-end;
+        }
+        .reservation-buy-escale-qty-info {
+          width: calc(100% - 30px);
+          padding-left: 8px;
+          .reservation-text {
+            padding: 10px 0;
+            &:last-child {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+    &.bottom {
+      border-radius: 0 0 10px 10px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      .reservation-buy-price {
+        padding-bottom: 26px;
+        border-bottom: 1px solid $color_6;
+        .reservation-buy-price-list {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-weight: 500;
+          font-size: 1.125rem;
+          padding: 4px 0;
+        }
+      }
+      .reservation-buy-total-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1.125rem;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        .reservation-buy-total-price-number {
+          font-size: 1.34rem;
+        }
+      }
+
+      .reservation-buy-button {
+        .button {
+          width: 100%;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}

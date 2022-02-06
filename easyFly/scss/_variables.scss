@@ -1,0 +1,29 @@
+$font_family: 'Jost', sans-serif;
+$primary-color-text: #fff;
+$secondary-color-text: #FF6F32;
+$primary-color: #152C6E;
+$secondary-color: rgba(21, 44, 110, 0.8);
+$color_1: #616161;
+$color_2: #0D49E2;
+$color_3: #0B1733;
+$color_4: #112355;
+$color_5: #060606;
+$color_6: #E4E4E4;
+$color_7: #F8F8F8;
+$color_8: #12265C;
+
+$width_find: 250px;
+
+// Chart variabls---------->
+:root {
+    --font-family: 'Jost', sans-serif;
+    --background-primary: #152C6E;
+    --fill-chart-primary: #0F37BB;
+    --fill-chart-secondary: #2a59f3;
+    --fill-chart-zoom-bottom: #2a59f3;
+    --fill-chart-zoom-top: #678afa;
+    --fill-selected-bar: #f57318;
+    --fill-hover-bar: #ff974d;
+    --fill-button: #FF6F32;
+    --fill-button-hover: #e48258;
+  }

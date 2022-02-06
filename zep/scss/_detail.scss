@@ -1,0 +1,230 @@
+.detail-main {
+    background-color: $color-bg;
+    padding-bottom: 120px;
+    .detail-main-principal {
+        background-color: $color-primary-1;
+        .detail-main-principal-content {
+            padding: 50px 0;
+        }
+        .detail-main-wrapper {
+            width: 100%;
+            .detail-mail-carousel {
+                margin-bottom: 20px;
+                .top-images-carousel-detail {
+                    padding: 0;
+                    .image-item-carousel-detail {
+                        border: 1px solid $color-3;
+                        padding: 20px;
+                        position: relative;
+                        img {
+                            margin: auto;
+                            height: 360px;
+                            width: 300px;
+                        }
+                        .lightbox-area {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            display: inline-block;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                }
+                .wrapper-bottom-carousel-detail {
+                    position: relative;
+                    .images-list-carousel-detail {
+                        padding: 0;
+                        margin: 0 22px;
+                        .image-item-carousel-detail {
+                            border: 1px solid $color-3;
+                            margin: 0 5px;
+                            position: relative;
+                            img {
+                                // border: 1px solid $color-3;
+                                margin: auto;
+                                width: 140px;
+                                height: 150px;
+                            }
+                            .lightbox-area {
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                display: inline-block;
+                                top: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                    .bottom-carousel-detail-btn {
+                        background-color: $color-bg;
+                        position: absolute;
+                        height: 100%;
+                        top: 0;
+                        &#carouselDetailBtnRight {
+                            right: 0;
+                        }
+                    }
+                }
+            }
+            .detail-wrap {
+                .detail-serial-product {
+                    color: $color-primary-2;
+                    font-weight: 700;
+                    font-size: remTransform(15);
+                }
+                .detail-name-product {
+                    color: $color-primary-text;
+                    font-weight: 700;
+                    font-size: remTransform(20);
+                }
+                .detail-description-product {
+                    color: $color-primary-text;
+                    font-weight: 300;
+                    font-size: remTransform(14);
+                    margin-bottom: 2px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 8;
+                    -webkit-box-orient: vertical;  
+                    overflow: hidden;
+                    &.show-text {
+                        -webkit-line-clamp: initial;
+                    }
+                }
+                .detail-show-hide {
+                    padding: 0;
+                    color: $color-primary-2;
+                    font-weight: 500;
+                    font-size: remTransform(13);
+                    &:hover {
+                        color: $color-primary-text
+                    }
+                }
+                .detail-availability {
+                    color: $color-succes;
+                    font-weight: 400;
+                    font-size: remTransform(15);
+                    display: flex;
+                    align-items: center;
+                    margin: 36px 0;
+                    span {
+                        padding-left: 10px;
+                    }
+                    &.not-availability {
+                        color: $color-danger
+                    }
+                }
+                .detail-info {
+                    padding: 30px 24px;
+                    background-color: $color-bg;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 40px;
+                    .detail-info-price {
+                        .detail-info-price-text {
+                            color: #949494;
+                            font-weight: 400;
+                            font-size: remTransform(15);
+                        }
+                        .detail-info-price-number {
+                            color: $color-primary-text;
+                            font-weight: 700;
+                            font-size: remTransform(26);
+                            text-transform: uppercase;
+                            padding-left: 20px;
+                        }
+                    }
+                    .btn-primary-1 {
+                        color: $color-primary-2;
+                        font-weight: 500;
+                        font-size: remTransform(13);
+                        padding: 6px 16px;
+                        &:hover {
+                            color: $color-primary-3;
+                            path {
+                                fill: $color-primary-3;
+                            }
+                        }
+                    }
+                }
+                .detail-btn {
+                    .btn-primary-2 {
+                        font-weight: 800;
+                        font-size: remTransform(13);
+                        padding: 20px 50px;
+                    }
+                }
+            }
+        }
+    }
+   
+    .similar-products {
+        .wrapper-similar-products {
+            width: 100%;
+            .similar-products-tittle {
+                color: $color-primary-text;
+                font-weight: 700;
+                font-size: remTransform(50);
+            }
+            .similar-products-slider-wrapper {
+                position: relative;
+                .btn-slider-wrapper {
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    bottom: 0;
+                    display: flex;
+                    &:last-child {
+                        right: 0;
+                    }
+                    .btn-slider.slick-disabled {
+                        path {
+                            stroke: $color-4;
+                        }
+                    }
+                }
+                .slider-similar {
+                    padding: 0;
+                    margin: 0 30px;
+                    .slider-similar-item {
+                        padding: 10px;
+                    }
+                    .slick-dots {
+                        bottom: -46px;
+                    }
+                    .slick-dots li button::before {
+                        width: 10px;
+                        height: 10px;
+                        color: transparent;
+                        border: 1px solid $color-primary-2;
+                        border-radius: 100%;
+                        opacity: 1;
+                    }
+                    .slick-dots li.slick-active button::before {
+                        background-color: $color-primary-2;
+                        transform: scale(1.6);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:470px) {
+    .top-images-carousel-detail {
+        .image-item-carousel-detail {
+            img {
+                width: 100% !important;
+                height: 314px !important;
+            }
+        }
+    }
+    .detail-info {
+        flex-direction: column;
+    }
+
+    .similar-products-tittle {
+        font-size: 2.5rem !important;
+    }
+}

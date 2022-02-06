@@ -1,0 +1,396 @@
+.container-xxxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 1440px) {
+  .container-xxxl {
+    max-width: 1440px !important;
+  }
+  .col-xxxl-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-xxxl {
+    max-width: 1140px;
+  }
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 0.82rem 1.6rem;
+  &.btn-primary {
+    border-color: $primary-color;
+    background-color: $primary-color;
+    color: $color-light;
+    circle {
+      fill: $color-light;
+    }
+    path {
+      stroke: $primary-color;
+    }
+    &:hover {
+      background-color: $color-light;
+      color: $primary-color;
+      border-color: $primary-color;
+      circle {
+        fill: $primary-color;
+      }
+      path {
+        stroke: $color-light;
+      }
+    }
+    &:active {
+        background-color: $primary-color;
+        color: $color-light;
+        circle {
+          fill: $color-light;
+        }
+        path {
+          stroke: $primary-color;
+        }
+    }
+    &:focus {
+        box-shadow: none;
+    }
+  }
+
+  &.btn-outline-primary {
+    border-color: $primary-color;
+    color: $primary-color;
+    circle {
+      fill: $primary-color;
+    }
+    path {
+      stroke: $color-light;
+    }
+    &:hover {
+      background-color: $primary-color;
+      color: $color-light;
+      border-color: $primary-color;
+      circle {
+        fill: $color-light;
+      }
+      path {
+        stroke: $primary-color;
+      }
+    }
+    &:active {
+        background-color: transparent;
+        color: $primary-color;
+        circle {
+          fill: $primary-color;
+        }
+        path {
+          stroke: $color-light;
+        }
+    }
+    &:focus {
+        box-shadow: none;
+    }
+  }
+}
+
+.nice-select {
+  &:after {
+    border: none;
+    content: '';
+    // background-color: red;
+    display: block;
+    height: 100%;
+    margin-top: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: initial;
+    transform: rotate(0deg);
+    width: 40px;
+    background-image: url(/images/icon/ArrowDown.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-left: 1px solid $color-1;
+  }
+
+  &.open:after {
+    transform: rotate(0deg);
+  }
+  
+}
+
+.breadcrumbs {
+  margin: 22px 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  .breadcrumbs-item {
+    margin-right: 10px;
+    a {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 0.875rem;
+      color: $color-hover;
+    }
+    &.breadcrumbs-select {
+      margin-right: 0;
+      a {
+        color: $color-2;
+      }
+    }
+  }
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.navbar-log {
+  .navbar-user-login {
+    background-color: $color-light;
+    position: relative;
+    .navbar-user-login-header {
+      .btn {
+        width: 250px;
+        &.open-navigation-login {
+          border-bottom: none;
+          border-bottom-left-radius: initial;
+          border-bottom-right-radius: initial;
+        }
+        path {
+          stroke: $primary-color;
+        }
+        &:hover {
+          path {
+            stroke: $color-light;
+          }
+        }
+      }
+    }
+    .navbar-user-login-body {
+      position: absolute;
+      background-color: $color-light;
+      width: 100%;
+      border: 1px solid $primary-color;
+      border-top: none;
+      border-radius: 0 0 5px 5px;
+      display: none;
+      &.open-navigation-login {
+        display: block;
+      }
+      .navbar-user-login-open-number {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 20px;
+        border-top: 1px solid #D8EDF8;
+        border-bottom: 1px solid #D8EDF8;
+        margin-top: 10px;
+        .login-open-number-text {
+          font-weight: 600;
+          font-size: 0.875rem;
+          color: $primary-color;
+        }
+        .login-open-number-qty {
+          font-weight: 600;
+          font-size: 0.75rem;
+          color: $primary-color;
+        }
+      }
+      .navbar-user-login-navigation {
+        .user-login-navigation {
+          list-style: none;
+          margin: 0;
+          padding: 14px 20px;
+          .user-login-navigation-item {
+            padding: 5px 0;
+            a {
+              text-decoration: none;
+              color: #3D3D3D;
+              font-weight: 400;
+              font-size: 0.875rem;
+              transition: .2s;
+              &:hover {
+                color: $color-hover;
+              }
+            }
+          }
+        }
+        .user-logout {
+          padding: 0 20px 20px 20px;
+          a {
+            text-decoration: none;
+            color: #3D3D3D;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: .2s;
+            &:hover {
+              color: $color-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.style-select {
+  &.nice-select {
+    width: 100%;
+    margin: 10px 0;
+    transition: none;
+    border-color: $color-7;
+    &::after {
+        border-left: none;
+        background-position: center 20px;
+    }
+    &.open {
+        height: fit-content;
+        padding: 0;
+        border-color: $color-7;
+      .list {
+          position: relative;
+          max-height: 250px;
+          border: none;
+          box-shadow: none;
+          overflow-y: auto;
+          -ms-overflow-style: none;
+          scrollbar-width: none;  
+          &::-webkit-scrollbar {
+            width: 4px;
+            display: none;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: $primary-color; 
+            border-radius: 4px;
+          }
+          &::-webkit-scrollbar-track {
+            background: $color-7;
+            border-radius: 1px;
+            position: absolute;
+            left: -20px;
+          }
+        }
+        .current {
+            width: 80%;
+            padding-left: 18px;
+        }
+    }
+    .list {
+        width: 100%;
+        color: $color-6;
+        font-weight: 400;
+        font-size: 0.9375rem;
+        white-space: break-spaces;
+        transform: none;
+        .option {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            line-height: 1rem;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            // display: flex;
+            // align-items: center;
+        }
+
+    }
+    .current {
+        color: $color-hover;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 90%;
+        display: inline-block;
+    }
+    &[data-enable] {
+        .current {
+            color: $color-6;
+        }
+    }
+}
+}
+
+.filter-list-check-custom {
+  width: fit-content;
+  label {
+      font-weight: 400;
+      font-size: 1rem;
+      color: $color-2;
+      cursor: pointer;
+      display: flex;
+      // align-items: baseline;
+      align-items: center;
+      gap: 10px;
+      input {
+          appearance: none;
+          width: 16px;
+          height: 16px;
+          border: 1px solid $color-1;
+          border-radius: 3px;
+          cursor: pointer;
+          flex-shrink: 0;
+          &:checked {
+              background-color: $primary-color;
+              border-color: $primary-color;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-image: url(/images/icon/check.svg);
+          }
+      }
+  }
+  &.option-check {
+      padding-bottom: 0;
+      >*{
+          margin: 10px 0;
+      }
+  }
+}
+
+.filter-list-radio-custom {
+  display: flex;
+  padding: 10px 0;
+  height: 100%;
+  label {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      width: 33.3333%;
+      color: $color-2;
+      font-weight: 400;
+      font-size: 1rem;
+      cursor: pointer;
+      input {
+          cursor: pointer;
+          width: 14px;
+          height: 14px;
+          border: 2px solid $color-1;
+          appearance: none;
+          border-radius: 100%;
+          &:checked {
+              border: 4px solid $primary-color;
+          }
+      }
+  }
+}
+
+.list {
+  max-height: 250px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

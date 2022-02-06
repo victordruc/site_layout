@@ -1,0 +1,27 @@
+:root {
+    --font-family: 'Raleway', sans-serif;
+    --color-primary-1: #FFFFFF;
+    --color-primary-text: #161616;
+    --color-primary-2: #00488E;
+    --color-primary-3: #FFD200;
+    --color-1: #FAFAFA;
+    --color-2: #BEBEBE;
+    --color-3: #EEEEEE;
+    --color-4: #ECECEC;
+    --color-bg: #F8F8F8;
+    --color-succes: #00A344;
+    --color-danger: #E30000;
+}
+
+$font-family: var(--font-family);
+$color-primary-1: var(--color-primary-1);
+$color-primary-text: var(--color-primary-text);
+$color-primary-2: var(--color-primary-2);
+$color-primary-3: var(--color-primary-3);
+$color-1: var(--color-1);
+$color-2: var(--color-2);
+$color-3: var(--color-3);
+$color-4: var(--color-4);
+$color-bg: var(--color-bg);
+$color-succes: var(--color-succes);
+$color-danger: var(--color-danger);

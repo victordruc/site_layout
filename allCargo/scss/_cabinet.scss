@@ -1,0 +1,231 @@
+.cabinet-main {
+    background-color: $color-4;
+    .main-filter-adaptiv {
+        margin-bottom: 10px;
+    }
+    .cabinet-main-list {
+        .cabinet-main-navigation {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            .cabinet-main-navigation-item {
+                margin-bottom: 24px;
+                a {
+                    text-decoration: none;
+                    color: $color-2;
+                    font-weight: 400;
+                    font-size: 1.1875rem;
+                    transition: .2s;
+                    span {
+                        padding-left: 10px;
+                    }
+                    &:hover {
+                        color: $color-hover;
+                        path {
+                            fill: $color-hover;
+                        }
+                    }
+                }
+                &.item-nav-select {
+                    a {
+                        color: $primary-color;
+                        path {
+                            fill: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        .cabinet-main-logout {
+            margin-top: 60px;
+            a {
+                text-decoration: none;
+                color: $color-2;
+                font-weight: 400;
+                font-size: 1.1875rem;
+                transition: .2s;
+                span {
+                    padding-left: 20px;
+                }
+                &:hover {
+                    color: $color-hover;
+                    path {
+                        fill: $color-hover;
+                    }
+                }
+            }
+        }
+    }
+    .cabinet-main-action {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .cabinet-status-ad {
+            display: flex;
+            // padding: 10px;
+            border: 1px solid $color-7;
+            border-radius: 3px;
+            background-color: $color-light;
+            .status-add-item {
+                position: relative;
+                transition: .2s;
+                color: $color-hover;
+                &:hover {
+                    color: $primary-color;
+                }
+                input {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    appearance: none;
+                    &:checked ~ .status-ad-text-wrapper{
+                        color: $primary-color;
+                        background-color: $color-3;
+                    }
+                }
+                .status-ad-text-wrapper {
+                   padding: 10px 0; 
+                }
+                .status-ad-text {
+                    padding: 11px 18px;
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                }
+                &:first-child {
+                    .status-ad-text {
+                        border-right: 1px solid $color-7;
+                    }
+                }
+            }
+        }
+        .cabinet-ad-date {
+            display: flex;
+            align-items: center;
+            .cabinet-ad-date-text {
+                font-weight: 400;
+                font-size: 0.875rem;
+                padding: 0 10px;
+                color: $color-hover;
+            }
+            input {
+                border: 1px solid $color-7;
+                border-radius: 3px;
+                color: $color-hover;
+                height: 63px;
+                padding-left: 10px;
+                cursor: pointer;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        .cabinet-add-ad {
+            flex: 0 0 auto;
+            margin-left: 10px;
+            .btn {
+                font-weight: 600;
+                height: 63px;
+            }
+        }
+    }
+    .hedear-item-ad-right {
+        color: $color-hover;
+        font-weight: 300;
+        font-size: 0.8125rem;
+        .hedear-item-ad-date-add-text {
+            padding-right: 6px;
+        }
+    }
+    .footer-item-ad-delete {
+        color: $color-danger;
+        font-weight: 300;
+        font-size: 0.9375rem;
+    }
+    .body-item-ad-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .btn-icon-small {
+            width: 48px;
+            height: 48px;
+            background-color: #F2FBFF;
+            border-radius: 5px;
+            margin-left: 6px;
+            transition: .2s;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:hover {
+                background-color: $primary-color;
+                path {
+                    fill: $color-light;
+                }
+            }
+            &.btn-reload {
+                &:hover {
+                    path {
+                        stroke: $color-light;
+                        fill: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1439px) {
+    .cabinet-ad-date {
+        input {
+            width: 138px;
+        }
+    }
+}
+
+@media (max-width:1199px) {
+    .cabinet-main-list.active-filter {
+        margin-top: 0 !important;
+    }
+}
+
+@media (max-width:900px) {
+    .cabinet-main-action {
+        flex-wrap: wrap;
+        .cabinet-add-ad {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 0 !important;
+        }
+    }
+}
+
+@media (max-width:660px) {
+    .cabinet-main-action {
+        flex-direction: column;
+        .cabinet-status-ad {
+            width: 100%;
+            .status-add-item {
+                width: 50%;
+                text-align: center;
+            }
+        }
+        .cabinet-ad-date {
+            flex-direction: column;
+            width: 100%;
+            .cabinet-ad-date-text {
+                margin: 8px 0;
+            }
+            input {
+                width: 100%;
+            }
+        }
+        .cabinet-add-ad {
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+}

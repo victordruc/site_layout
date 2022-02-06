@@ -1,0 +1,75 @@
+.solutions-main {
+    .solutions-principal {
+        .solutions-principal-wrapper {
+            width: 100%;
+            .solutions-principal-content {
+                max-width: 860px;
+                margin: auto;
+                .solutions-principal-title {
+                    color: $color-primary-text;
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: remTransform(50);
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                }
+                .solutions-principal-text {
+                    color: $color-primary-text;
+                    text-align: center;
+                    font-weight: 300;
+                    font-size: remTransform(14);
+                    margin-bottom: 50px;
+                }
+                .solutions-principal-selector {
+                    background-color: $color-primary-3;
+                    padding: 13px;
+                    border-radius: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 50px;
+                    .solutions-principal-selector-item {
+                        position: relative;
+                        input {
+                            appearance: none;
+                            position: absolute;
+                            &:checked + span {
+                                background-color: $color-primary-2;
+                                color: $color-primary-1;
+
+                            }
+                        }
+                        span {
+                            padding: 10px 50px;
+                            border-radius: 30px;
+                            font-weight: 700;
+                            font-size: remTransform(14);
+                            color: $color-primary-2;
+                            display: inline-block;
+                            cursor: pointer;
+                            text-transform: uppercase;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .solutions-list {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width:800px) {
+    .solutions-principal-selector {
+        flex-direction: column;
+        border-radius: 10px !important;
+        .solutions-principal-selector-item {
+            width: 100%;
+            span {
+                width: 100%;
+            }
+        }
+    }
+}

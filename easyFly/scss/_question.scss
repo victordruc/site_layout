@@ -1,0 +1,97 @@
+.main-question {
+    background-color: $primary-color;
+    padding-bottom: 60px;
+    h1 {
+        font-weight: 700;
+        font-size: 1.75rem;
+    }
+    .question-wrapper {
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        padding: 20px 0;
+        margin: 0;
+        margin-top: 16px;
+        .question-primary {
+            font-weight: 500;
+            font-size: 1.375rem;
+            color: $secondary-color-text;
+            &.show-text {
+                color: $primary-color-text;
+                path {
+                    fill: $primary-color-text;
+                }
+            }
+        }
+        .question-secondary {
+            overflow: hidden;
+            .question-secondary-text {
+                font-weight: 400;
+                font-size: 1.125rem;
+                // white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                visibility: hidden;
+                &.show-text {
+                    white-space: initial !important; 
+                    animation: animationShow 2s;
+                    &+.question-secondary-expand .question-expand-button {
+                        color: $primary-color-text;
+                        svg {
+                            transition: .5s;
+                            transform: rotate(180deg);
+                        }
+                        path {
+                            fill: $primary-color-text;
+                        }
+                    }
+                }
+                &.hide-text {
+                    white-space: initial !important;
+                    animation: animationHide 1s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .question-secondary-expand {
+                .question-expand-button {
+                    background-color: transparent;
+                    border: none;
+                    color: $secondary-color-text;
+                    padding: 0;
+                    transition: .2s;
+                    svg {
+                        transition: .5s;
+                    }
+                    span {
+                        text-decoration: underline;
+                    }
+                    &:hover {
+                        color: $primary-color-text; 
+                        path {
+                            fill: $primary-color-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes animationShow
+{
+  from {
+    max-height:26px
+    } 
+  to {
+    max-height:3000px
+    }
+}
+
+@keyframes animationHide
+{
+  from {
+    max-height:500px
+    } 
+  to {
+    max-height:26px
+    }
+}

@@ -1,0 +1,315 @@
+.header {
+    padding-bottom: 34px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    .container-xxxl {
+        z-index: 22;
+    }
+
+    .navbar {
+        margin: auto;
+        &.navbar-expand {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 200;
+            transition: 1s;
+            &.scroll-top {
+                background-color: $primary-color;
+                box-shadow: 0 0 20px lighten($primary-color,20);
+            }
+        }
+        .navbar-toggler {
+            path {
+                fill: $primary-color-text;
+            }
+            &:focus {
+                box-shadow: 0 0 0 0.25rem $primary-color-text;
+            }
+            &:focus-visible {
+                box-shadow: 0 0 0 0.25rem $primary-color-text;
+            }
+        }
+    }
+    .navbar-nav {
+        font-size: 1rem;
+        .nav-item {
+            .nice-select.form-select {
+                background-color: transparent;
+                border: none;
+                color: $primary-color-text;
+                box-shadow: none;
+                padding: 0 26px 0 16px;
+                .list {
+                    color: $color_5;
+                }
+            }
+        }
+        .nav-link {
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-top: 0;
+            padding-bottom: 0;
+            &.nav-youtube:hover {
+                path {
+                    fill: #E96B68;
+                }
+            }
+            &.nav-twitter:hover {
+                path {
+                    fill: #1C96E8;
+                }
+            }
+            &.nav-facebook:hover {
+                path {
+                    fill: #6B92DE;
+                }
+            }
+            &.nav-instagram:hover {
+                path {
+                    fill: url(#paintInst)
+                }
+            }
+        }
+    }
+
+    .telephone {
+        width: max-content;
+        padding-right: 25px;
+        padding-left: 25px;
+
+        .telephone-selected{
+            color: $secondary-color-text;
+            font-size: 1.375rem;
+        }
+    }
+
+    .home_header-info-h1 {
+        text-align: center;
+        font-size: 3.25rem;
+        max-width: 804px;
+        margin: auto;
+        // margin-top: 158px;
+        padding-top: 158px;
+        margin-bottom: 20px;
+        .home_header-info-h1-bgcolor {
+            background-color: $secondary-color-text;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 0 10px;
+        }
+    }
+    .home_header-info-h5 {
+        text-align: center;
+    }
+
+    .home_header-ticket {
+        background-color: $secondary-color;
+        border-radius: 10px;
+        // overflow: hidden;
+        margin-top: 50px;
+
+        .ticket-top {
+            padding-bottom: 38px;
+        }
+
+        .ticket-top-property {
+            padding: 20px 10px;
+        }
+
+        .form-check {
+            display: flex;
+            align-items: center;
+            height: fit-content;
+        }
+
+        .form-check-input {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            margin-top: 0;
+        }
+
+        .form-check-label {
+            font-size: 1.125rem;
+            margin-right: 30px;
+        }
+        .ticket-top-property-right {
+            font-size: 1rem;
+            .nice-select.form-select {
+                box-shadow: none;
+                border: none;
+                background-color: transparent;
+                color: $primary-color-text;
+                padding: 0 30px 0 14px;
+                .option {
+                    color: $color_5;
+                }
+            }
+        }
+
+        .form-select-ticket {
+            border: none;
+            height: 56px;
+            font-size: 1rem;
+            &:focus-visible {
+                outline: none;
+            }
+        }
+
+        select.form-select-ticket:hover {
+            cursor: pointer;
+        }
+
+        .form-select-destination {
+            display: flex;
+            background-color: #fff;
+            // overflow: hidden;
+            border-radius: 6px;
+            height: 100%;
+            .img-fly-selected {
+               margin-left: 13px;
+               position: relative;
+               z-index: 8;
+               top: 16px;
+               left: 16px;
+            }
+            div:first-child select {
+                border-right: 1px dashed $color_1;
+            }
+            div {
+                width: 100%;
+                position: relative;
+                height: 56px;
+                .nice-select.form-select-ticket {
+                    position: absolute;
+                    top: 0;
+                    .current {
+                        color: $color_5;
+                        width: 100%;
+                        height: 100%;
+                        display: inline-flex;
+                        justify-content: right;
+                        align-items: center;
+
+                    }
+                    .list {
+                        width: 100%;
+                    }
+                }
+                &:first-child {
+                    border-right: 1px dashed $color_1;
+                }
+                select {
+                    width: calc(100% - 41.8px);
+                }
+            }
+        }
+
+        .form-select-date {
+            background-color: #fff;
+            border-radius: 6px;
+            overflow:hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                margin-left: 13px;
+            }
+            .form-select-ticket {
+                padding-left: 6%;
+            }
+        }
+
+        .form-select-passenger {
+            background-color: #fff;
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .form-select-ticket {
+                // padding: 0 96px 0 16px;
+                width: 96%;
+            }
+        }
+        .search-button {
+            height: 56px;
+            background-color: $secondary-color-text;
+            border-radius: 6px;
+            overflow: hidden;
+            button {
+                height: 100%;
+                width: 100%;
+                background-color: inherit;
+                border: none;
+                font-size: 1.25rem;
+                color: $primary-color-text;
+                font-weight: 500;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // padding: 0 45px;
+                img {
+                    padding-right: 5px;
+                }
+            }
+        }
+        .ticket-bottom {
+            background-color: $primary-color;
+            margin: 0;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            // margin-top: 38px;
+            .ticket-bottom-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 16px 0;
+                .ticket-bottom-text {
+                    margin-left: 10px;
+                    h6 {
+                        margin: 0;
+                        font-size: 1.125rem;
+                        color: $secondary-color-text;
+                        line-height: 24px;
+                    }
+                    p {
+                        font-size: 1rem;
+                        margin: 0;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .ticket-top {
+        .ticket-top-property-left {
+            flex-direction: column;
+            align-items: flex-start !important;
+        }
+        .form-select-destination {
+            div {
+                text-align: center;
+                .img-fly-selected {
+                    left: initial !important;
+                    margin: 0 !important;
+                }
+            }   
+        }
+        
+        .form-select-ticket {
+            text-overflow: ellipsis;
+            // overflow: hidden !important;
+            .current {
+                display: none !important;
+            }
+        }
+    }
+}

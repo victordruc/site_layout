@@ -1,0 +1,79 @@
+.add-ad {
+    .add-ad-form {
+        background-color: $color-light;
+        box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        padding: 40px 50px;
+        .line-separators {
+            border-top: 1px solid $color-5;
+            margin: 30px 0;
+        }
+        .label-form-ad {
+            color: $color-2;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .label-form-ad-small {
+            color: $color-hover;
+            font-size: 0.8125rem;
+            font-weight: 300;
+            margin-left: 10px;
+        }
+        .cargo-text {
+            width: 100%;
+            border: 1px solid $color-7;
+            border-radius: 3px;
+            padding: 10px 18px;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                color: $color-hover;
+            }
+        }
+        .label-form-button-wrapper {
+            display: flex;
+            align-items: center;
+            .label-form-date-add {
+                color: $primary-color;
+                font-weight: 300;
+                font-size: 0.875rem;
+                transition: .2s;
+                margin-bottom: 6px;
+                &:hover {
+                    color: $color-hover;
+                }
+            }
+        }
+        .transport-ad-wrapper {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            height: 42px;
+        }
+        .input-style {
+            height: 42px;
+            margin: 10px 0;
+            width: 100%;
+            border: solid 1px $color-7;
+            border-radius: 5px;
+            padding: 6px 18px;
+            color: $color-2;
+            &::placeholder {
+                color: $color-hover;
+                font-weight: 300;
+                font-size: 0.9375rem;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .button-container {
+            .btn {
+                width: 100%;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+        }
+    }
+}

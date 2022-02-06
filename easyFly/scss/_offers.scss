@@ -1,0 +1,210 @@
+.offers-list {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  h1 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  .tabel-offers {
+    background-color: $primary-color;
+    border: 1px solid #0e34a6;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0;
+    .tabel-offers-text-small {
+      font-weight: 400;
+      font-size: 1rem;
+      opacity: 0.6;
+    }
+    .tabel-offers-chart-bar {
+      .tabel-offers-chart-line {
+        width: 100%;
+        background: linear-gradient(270deg, #152c6e 0.15%, #12265c 38.64%);
+        border-radius: 6px;
+        margin: 10px 0;
+        height: 37.6px;
+      }
+      .tabel-offers-chart-action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(270deg, #1035a0 0%, #143284 99.19%);
+        border-radius: 6px;
+        position: relative;
+        cursor: pointer;
+        &:hover {
+          background: lighten($secondary-color-text, 10);
+        }
+        &.selected {
+          background: $secondary-color-text;
+        }
+        .tabel-offers-chart-date {
+          font-weight: 500;
+          font-size: 1.188rem;
+          overflow: hidden;
+          white-space: nowrap;
+          span {
+            height: 100%;
+            font-size: 0.875rem;
+          }
+        }
+        .tabel-offers-chart-price {
+          background-color: $color_8;
+          border-radius: 5px;
+          padding: 4px 20px;
+          position: absolute;
+          right: 5px;
+        }
+      }
+    }
+    .offers-calendar {
+      .offers-calendar-list {
+        background-color: $color_8;
+        border-radius: 10px;
+        margin: 10px 0;
+        .offers-calendar-wrapper-change-month {
+          padding: 10px;
+          padding-bottom: 0;
+          // text-align: right;
+          display: flex;
+          justify-content: space-between;
+          .button-change-month-prev {
+            img {
+              transform: rotate(180deg);
+            }
+            span {
+              width: 100%;
+              text-align: right;
+            }
+          }
+          .button-change-month,
+          .button-change-month-prev {
+            display: inline-flex;
+            flex-direction: column;
+            background-color: transparent;
+            border: none;
+            color: $primary-color-text;
+            transition: 0.5s;
+            &:hover {
+              color: $secondary-color-text;
+            }
+            span:last-child {
+              line-height: 0;
+            }
+          }
+        }
+
+        .offers-calendar-month {
+          // padding: 10px;
+          text-align: center;
+          font-weight: 500;
+          font-size: 1.75rem;
+        }
+
+        .offers-calendar {
+          .offers-calendar-day {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            span {
+              width: calc(100% / 7);
+              text-align: right;
+              font-weight: 500;
+              font-size: 0.875rem;
+              opacity: 0.3;
+            }
+          }
+          .offers-calendar-date {
+            .monthly-header {
+              // display: none;
+              text-align: center;
+              font-weight: 500;
+              font-size: 1.75rem;
+              a {
+                text-decoration: none;
+                cursor: inherit;
+              }
+              .monthly-prev,
+              .monthly-next {
+                display: none;
+              }
+            }
+            .monthly-day-title-wrap {
+              display: table;
+              table-layout: fixed;
+              width: 100%;
+              text-align: right;
+              div {
+                display: table-cell;
+                padding: 4px;
+                font-weight: 500;
+                font-size: 0.875;
+                opacity: 0.3;
+              }
+            }
+            .monthly-day-wrap {
+              display: table;
+              border-collapse: collapse;
+              table-layout: fixed;
+              width: 100%;
+              overflow: hidden;
+              .monthly-week {
+                display: table-row;
+                width: 100%;
+                border-top: 1px solid rgba(33, 55, 117, 0.5);
+                .monthly-day,
+                .monthly-day-blank {
+                  width: calc(100% / 7);
+                  display: table-cell;
+                  border-right: 1px solid rgba(33, 55, 117, 0.5);
+                  height: 74px;
+                  text-align: right;
+                  padding: 4px;
+                  text-decoration: none;
+                  .monthly-day-number {
+                    font-weight: 500;
+                    font-size: 0.82rem;
+                    opacity: 0.15;
+                  }
+                }
+                .m-d:last-of-type {
+                  border-right: none;
+                }
+                .monthly-indicator-wrap {
+                  .monthly-event-indicator {
+                    font-weight: 500;
+                    font-size: 1.375rem;
+                    color: $primary-color-text;
+                    text-align: center;
+                    span {
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                      width: 100%;
+                      display: inline-block;
+                      overflow: hidden;
+                    }
+                  }
+                }
+              }
+            }
+            .monthly-event-list {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.title-main-offer {
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-align: center;
+  padding-bottom: 10px;
+}

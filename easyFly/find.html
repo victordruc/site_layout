@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/chart_style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Easy Fly</title>
+  </head>
+
+  <body>
+    <header class="header find_header">
+
+      <nav class="navbar navbar-expand">
+        <div class="container-xxxl">
+          <div class="w-100">
+            <a class="navbar-brand" href="/">
+              <img src="images/logo/EasyFly.png" alt="" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-navbar-target="#navbarContent"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+
+          <div class="navbar navbar-content flex-column" id="navbarContent">
+            <ul
+              class="navbar-nav navbar-content-top m-auto mb-2 mb-lg-0 justify-content-center"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="images/icon/telegram.png" alt="telegram" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="images/icon/viber.png" alt="viber" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="images/icon/whatsapp.png" alt="whatsapp" />
+                </a>
+              </li>
+            </ul>
+
+            <ul
+              class="navbar-nav navbar-content-bottom me-auto mb-2 mb-lg-0 align-items-center"
+            >
+              <li class="nav-item">
+                <ul class="navbar-nav align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link nav-youtube" href="#" style="padding-top: 5px">
+                      <svg width="27" height="29" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_144_150)" filter="url(#filter0_d_144_150)">
+                        <path d="M21.8792 10.8515C21.7777 10.3904 21.5529 10.0037 21.2054 9.69135C20.8575 9.37895 20.4572 9.19531 20.004 9.1406C18.5665 8.98438 16.3986 8.90631 13.5 8.90631C10.6014 8.90631 8.4374 8.98442 7.00766 9.1406C6.54685 9.19531 6.14452 9.37895 5.80064 9.69135C5.45684 10.0039 5.23027 10.3906 5.12084 10.8515C4.91775 11.7579 4.81616 13.125 4.81616 14.9532C4.81616 16.8125 4.91775 18.1798 5.12084 19.0549C5.22255 19.5156 5.4472 19.9026 5.79485 20.2148C6.14251 20.5274 6.54291 20.707 6.99597 20.7539C8.43363 20.918 10.6017 21 13.5001 21C16.3983 21 18.5667 20.918 20.0039 20.7539C20.4571 20.707 20.8555 20.5274 21.1994 20.2148C21.5432 19.9026 21.7698 19.5156 21.8791 19.0549C22.0822 18.1484 22.1839 16.7813 22.1839 14.9532C22.1838 13.0938 22.0821 11.7265 21.8792 10.8515ZM9.77364 12.0353H8.51974V18.7031H7.34793V12.0353H6.11739V10.9338H9.77368V12.0353H9.77364ZM12.9376 18.7031H11.8947V18.0702C11.4728 18.5469 11.0742 18.7851 10.6992 18.7851C10.3399 18.7851 10.1133 18.6405 10.0197 18.3515C9.95724 18.164 9.92584 17.8787 9.92584 17.496V12.914H10.9688V17.1797C10.9688 17.4295 10.9727 17.5663 10.9806 17.5898C11.0041 17.7539 11.086 17.8359 11.2267 17.8359C11.4376 17.8359 11.6604 17.6718 11.8947 17.3437V12.914H12.9377V18.7031H12.9376ZM16.922 16.9687C16.922 17.539 16.887 17.9298 16.817 18.1409C16.6838 18.5703 16.4067 18.7851 15.9849 18.7851C15.6098 18.7851 15.2466 18.5703 14.8948 18.1409V18.7033H13.852V10.9338H14.8948V13.4767C15.231 13.0551 15.5941 12.8441 15.9849 12.8441C16.4067 12.8441 16.6838 13.0629 16.817 13.5003C16.8869 13.7034 16.922 14.0901 16.922 14.6604V16.9687ZM20.883 16.0079H18.7854V17.0274C18.7854 17.5665 18.965 17.8359 19.3244 17.8359C19.5821 17.8359 19.7385 17.6954 19.7931 17.4139C19.8086 17.3359 19.8166 17.0976 19.8166 16.6993H20.883V16.8515C20.883 17.2344 20.875 17.4609 20.8595 17.5314C20.8362 17.7421 20.7544 17.953 20.6134 18.164C20.3322 18.5781 19.91 18.7851 19.3476 18.7851C18.8087 18.7851 18.3868 18.5859 18.082 18.1876C17.8555 17.8985 17.7423 17.4454 17.7423 16.8282V14.8007C17.7423 14.1835 17.8516 13.7304 18.0702 13.4413C18.375 13.043 18.793 12.8438 19.3244 12.8438C19.8479 12.8438 20.2623 13.043 20.5666 13.4413C20.7778 13.7304 20.883 14.1835 20.883 14.8007V16.0079Z" fill="white"/>
+                        <path d="M15.4218 13.7931C15.2421 13.7931 15.0665 13.8793 14.8945 14.051V17.5782C15.0664 17.75 15.2421 17.8359 15.4218 17.8359C15.7264 17.8359 15.8791 17.5744 15.8791 17.0507V14.5783C15.8791 14.0548 15.7267 13.7931 15.4218 13.7931Z" fill="white"/>
+                        <path d="M19.3127 13.7931C18.9612 13.7931 18.7854 14.0589 18.7854 14.5898V15.1289H19.84V14.5898C19.84 14.0586 19.6641 13.7931 19.3127 13.7931Z" fill="white"/>
+                        <path d="M9.09433 4.67578V7.85168H10.2661V4.67578L11.6839 0H10.4886L9.69191 3.08207L8.85979 0H7.61768C7.83645 0.656318 8.09036 1.38672 8.37944 2.19146C8.74667 3.26952 8.98482 4.09778 9.09433 4.67578Z" fill="white"/>
+                        <path d="M13.2541 7.93375C13.7932 7.93375 14.2072 7.73452 14.4963 7.33609C14.7151 7.04701 14.8244 6.58602 14.8244 5.95331V3.90242C14.8244 3.27751 14.7148 2.82034 14.4963 2.53126C14.2072 2.13283 13.7932 1.93359 13.2541 1.93359C12.7306 1.93359 12.3204 2.13283 12.0236 2.53126C11.8049 2.82034 11.6956 3.27751 11.6956 3.90242V5.95327C11.6956 6.57818 11.8048 7.03921 12.0236 7.33605C12.3205 7.73452 12.7305 7.93375 13.2541 7.93375ZM12.7501 3.69145C12.7501 3.15236 12.9181 2.88281 13.2541 2.88281C13.5901 2.88281 13.758 3.15236 13.758 3.69145V6.15234C13.758 6.69939 13.5901 6.97263 13.2541 6.97263C12.9181 6.97263 12.7501 6.69923 12.7501 6.15234V3.69145Z" fill="white"/>
+                        <path d="M16.4766 7.93371C16.8675 7.93371 17.2699 7.6915 17.6839 7.207V7.85154H18.7503V2.00391H17.6839V6.46871C17.4494 6.80471 17.2269 6.97255 17.0157 6.97255C16.875 6.97255 16.7929 6.88664 16.7696 6.71478C16.7618 6.69914 16.7578 6.5623 16.7578 6.30457V2.00391H15.6914V6.6212C15.6914 7.01955 15.7229 7.31241 15.7852 7.50003C15.8869 7.78911 16.1173 7.93371 16.4766 7.93371Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_144_150" x="-1" y="0" width="29" height="29" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_144_150"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_144_150" result="shape"/>
+                        </filter>
+                        <clipPath id="clip0_144_150">
+                        <rect width="21" height="21" fill="white" transform="translate(3)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-twitter" href="#">
+                      <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.3673 0.264591C17.6049 0.716295 16.7716 1.03556 15.9026 1.2089C15.1641 0.434365 14.1397 -0.00272985 13.0696 0.000110544C10.9614 -0.0157145 9.23396 1.66953 9.19777 3.77743C9.19866 4.07007 9.23347 4.36166 9.30164 4.64627C6.19685 4.4997 3.29713 3.05329 1.31251 0.661192C0.973039 1.23325 0.790604 1.88475 0.783705 2.54989C0.783787 3.83237 1.43456 5.02712 2.51188 5.72286C1.89665 5.70281 1.29481 5.53783 0.755383 5.24121C0.755383 5.24121 0.755383 5.24121 0.755383 5.28844C0.749215 7.13039 2.05369 8.71647 3.86229 9.06576C3.29218 9.21776 2.69521 9.24032 2.11528 9.1319C2.6367 10.6922 4.08717 11.7525 5.73208 11.7761C4.36269 12.841 2.67898 13.4221 0.94431 13.4287C0.628701 13.4284 0.313336 13.4095 0 13.372C1.77711 14.4962 3.83705 15.0923 5.93992 15.0907C11.9366 15.2003 16.8868 10.4277 16.9964 4.43096C16.9975 4.36742 16.9981 4.30388 16.9981 4.24025C16.9981 4.07656 16.9981 3.91288 16.9981 3.74919C17.7383 3.20675 18.3775 2.53877 18.8868 1.77552C18.1779 2.08593 17.4269 2.28955 16.6582 2.37987C17.4666 1.90666 18.0744 1.15445 18.3673 0.264591Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-facebook" href="#">
+                      <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.53945 2.65667H8V0.112667C7.74802 0.078 6.88143 0 5.87218 0C3.76635 0 2.32381 1.32467 2.32381 3.75933V6H0V8.844H2.32381V16H5.1729V8.84467H7.40272L7.75669 6.00067H5.17224V4.04133C5.1729 3.21933 5.39422 2.65667 6.53945 2.65667Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-instagram" href="#">
+                      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.1071 0H3.27677C1.46707 0 0 1.46706 0 3.27677V13.1071C0 14.9168 1.46707 16.3839 3.27677 16.3839H13.1071C14.9168 16.3839 16.3839 14.9168 16.3839 13.1071V3.27684C16.384 1.46706 14.9169 0 13.1071 0ZM11.4687 2.45759H13.9263V4.91518H11.4687V2.45759ZM8.19195 4.91525C10.0017 4.91525 11.4687 6.38232 11.4687 8.19202C11.4687 10.0017 10.0017 11.4688 8.19195 11.4688C6.38225 11.4688 4.91519 10.0017 4.91519 8.19202C4.91519 6.38232 6.38225 4.91525 8.19195 4.91525ZM14.7456 13.1072C14.7456 14.0121 14.012 14.7456 13.1071 14.7456H3.27677C2.37192 14.7456 1.63835 14.0121 1.63835 13.1072V7.37278H3.35864C2.86669 10.0424 4.63197 12.6054 7.3016 13.0974C9.97124 13.5894 12.5342 11.8241 13.0262 9.15446C13.0848 8.83709 13.1119 8.51473 13.1071 8.19202C13.1031 7.91711 13.0757 7.64311 13.0252 7.37285H14.7455V13.1072H14.7456Z" fill="white"/>
+                        <defs>
+                        <linearGradient id="paintInst" x1="15" y1="-1" x2="-1.5" y2="14.5" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#C22FA5"/>
+                        <stop offset="1" stop-color="#F79249"/>
+                        </linearGradient>
+                        </defs>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item telephone">
+                <a class="nav-link" href="tel:+37369258969">
+                  +373 69 <span class="telephone-selected">25 89 69</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Contacte </a>
+              </li>
+              <li class="nav-item">
+                <select class="form-select">
+                  <option value="1">Ro</option>
+                  <option value="2">Ru</option>
+                  <option value="3">En</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <div class="container-xxxl">
+        <h1 class="home_header-info-h1">
+          Comanda bilete de avion la cele mai
+          <span class="home_header-info-h1-bgcolor">accesibile</span> preturi
+        </h1>
+        <h5 class="home_header-info-h5">
+          Căutați cele mai sigure destinații. Bucurați-vă de condiții flexibile
+          de rezervare.
+        </h5>
+      </div> -->
+
+      <div class="container-xxxl">
+        <div class="home_header-ticket">
+          <div class="ticket-top">
+            <div class="ticket-top-property row">
+              <div
+                class="ticket-top-property-left d-flex col-md-9 align-items-center"
+              >
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radio-select-type"
+                    id="radioSelectTypeOne"
+                  />
+                  <label class="form-check-label" for="radioSelectTypeOne">
+                    Doar dus
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radio-select-type"
+                    id="radioSelectTypeTwo"
+                  />
+                  <label class="form-check-label" for="radioSelectTypeTwo">
+                    Dus-Intors
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radio-select-type"
+                    id="radioSelectTypeMultiple"
+                  />
+                  <label class="form-check-label" for="radioSelectTypeMultiple">
+                    Multiple
+                  </label>
+                </div>
+              </div>
+
+              <div
+                class="ticket-top-property-right d-flex align-items-center justify-content-end col-md-3"
+              >
+                <span>Clasa:</span>
+                <select class="form-select">
+                  <option value="1">Economic</option>
+                  <option value="2">Standard</option>
+                  <option value="3">Business</option>
+                </select>
+              </div>
+            </div>
+
+            <div
+              class="ticket-top-selected d-flex justify-content-between row px-3"
+            >
+              <div class="col-xl-4 col-md-12 pt-2 px-1">
+                <div class="form-select-destination">
+                  <div>
+                    <img
+                      class="img-fly-selected"
+                      src="images/icon/fly1.png"
+                      alt=""
+                    />
+                    <select class="form-select-ticket">
+                      <option selected disabled>Orasul de Plecare</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                  <div>
+                    <img
+                      class="img-fly-selected"
+                      src="images/icon/fly2.png"
+                      alt=""
+                    />
+                    <select class="form-select-ticket">
+                      <option selected disabled>Orasul de Plecare</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-2 col-md-3 pt-2 px-1">
+                <div class="form-select-date">
+                  <img src="images/icon/calendar.png" alt="" />
+                  <input
+                    type="text"
+                    value="12.01.2022"
+                    class="form-select-ticket"
+                  />
+                </div>
+              </div>
+
+              <div class="col-xl-2 col-md-3 pt-2 px-1">
+                <div class="form-select-date">
+                  <img src="images/icon/calendar.png" alt="" />
+                  <input
+                    type="text"
+                    value="12.01.2022"
+                    class="form-select-ticket"
+                  />
+                </div>
+              </div>
+
+              <div class="col-xl-2 col-md-3 pt-2 px-1">
+                <div class="form-select-passenger">
+                  <select class="form-select-ticket">
+                    <option value="1">1 pasager</option>
+                    <option value="2">2 pasageri</option>
+                    <option value="3">3 pasageri</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-xl-2 col-md-3 pt-2 px-1">
+                <div class="search-button">
+                  <button class="button">
+                    <img src="images/icon/search.png" alt="" />
+                    Cauta bilet
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="ticket-bottom row">
+            <div class="col-xl-3 col-md-6">
+              <div class="ticket-bottom-wrapper">
+                <div class="ticket-bottom-img">
+                  <img src="images/icon/ticket_info.png" alt="" />
+                </div>
+                <div class="ticket-bottom-text">
+                  <h6>Discover Pure Comfort</h6>
+                  <p>Easy booking</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+              <div class="ticket-bottom-wrapper">
+                <div class="ticket-bottom-img">
+                  <img src="images/icon/airplane_ticket.png" alt="" />
+                </div>
+                <div class="ticket-bottom-text">
+                  <h6>The best Selection</h6>
+                  <p>450,000 + tickets</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+              <div class="ticket-bottom-wrapper">
+                <div class="ticket-bottom-img">
+                  <img src="images/icon/currency_ticket.png" alt="" />
+                </div>
+                <div class="ticket-bottom-text">
+                  <h6>Lowest Price</h6>
+                  <p>Book online to lock in your tickets</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+              <div class="ticket-bottom-wrapper">
+                <div class="ticket-bottom-img">
+                  <img src="images/icon/transfer_ticket.png" alt="" />
+                </div>
+                <div class="ticket-bottom-text">
+                  <h6>Fast & Easy booking</h6>
+                  <p>Book online to lock in your tickets</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="header-trend">
+          <h1>Tendinta Preturilor</h1>
+
+          <div class="header-chart">
+            <div class="header-chart-wrapper">
+              <p class="chart-country">
+                Chisinau <img src="images/icon/Arrow_Right_Orange.png" /> Nisa
+              </p>
+
+              <button id="backButton" class="chart-back-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-arrow-counterclockwise"
+                  viewBox="0 0 26 26"
+                >
+                  <path
+                    d="M16.49 20.89L7.89 13l8.6-7.89 1.02 1.11-7.4 6.78 7.4 6.78-1.02 1.11z"
+                  ></path>
+                </svg>
+                <span> Înapoi </span>
+              </button>
+
+              <div id="container">
+                <!-- Render Element Chart -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-find">
+      <div class="container-xxxl">
+
+        <div class="filter-toggle" id="filterToggleButton">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
+            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z"/>
+          </svg>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-10 main-article">
+            <div class="main-article-wrapper-border">
+              <div class="filter-article pb-3" id="filterArticle">
+                <div class="filter-article-item filter-price">
+                  <h6>Pret, €</h6>
+                  <div class="range-filter"></div>
+                  <p class="range-limit">
+                    Pret: <span class="range-limit-opacity">153 - 729</span>
+                  </p>
+                </div>
+
+                <div class="filter-article-item">
+                  <h6>Escale</h6>
+                  <ul class="filter-check">
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Direct</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        <span>1 escale</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        <span>2 escale</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="filter-article-item">
+                  <h6>Companii aeriene</h6>
+                  <ul class="filter-check">
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Turkish Airlines</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Air Moldova</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Pegasus Airlines</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Monarch Airlines</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Wizz Air</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="filter_view-all">Vezi toate</div>
+                </div>
+
+                <div class="filter-article-item">
+                  <h6>Ore decolare</h6>
+                  <div class="range-filter"></div>
+                  <p class="range-limit">
+                    Dus: <span class="range-limit-opacity">02:30 - 21:40</span>
+                  </p>
+                </div>
+
+                <div class="filter-article-item">
+                  <h6>Ore aterizare</h6>
+                  <div class="range-filter"></div>
+                  <p class="range-limit">
+                    Dus: <span class="range-limit-opacity">05:30 - 23:40</span>
+                  </p>
+                </div>
+
+                <div class="filter-article-item">
+                  <h6>Cabină</h6>
+                  <ul class="filter-check">
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Basic Economy</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Economy</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Business</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Mixt</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="main-article_list">
+                <ul class="article_list-orders">
+                  <li class="article_list-order row">
+                    <div
+                      class="col-md-3 list-order-company d-flex flex-column justify-content-between"
+                    >
+                      <div class="list-order-company-img">
+                        <img src="images/upload/BlueAir.png" alt="" />
+                      </div>
+                      <p class="list-order-company-name">Blue Air</p>
+                      <div class="list-order-company-baggage">
+                        <div>
+                          <img src="images/icon/baggage.png" alt="" />
+                        </div>
+                        <p>Bagajul de mână inclus</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-6 list-order-date d-flex flex-column justify-content-between"
+                    >
+                      <div
+                        class="list-order-date-city d-flex justify-content-between"
+                      >
+                        <div class="order-city from-city">
+                          <h6>Chisinau</h6>
+                          <div class="city-date">26 dec., 2021, Mi</div>
+                        </div>
+                        <div class="order-city to-city">
+                          <h6>Nissa</h6>
+                          <div class="city-date">26 dec., 2021, Mi</div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="list-order-date-houre d-flex justify-content-between"
+                      >
+                        <div class="from-houre">12:40</div>
+                        <div class="to-houre">13:40</div>
+                      </div>
+
+                      <div class="list-order-date-scale">
+                        <div class="scale-houre d-flex justify-content-between">
+                          <div>KIV</div>
+                          <div>13 ore 35 min</div>
+                          <div>OTP</div>
+                        </div>
+
+                        <div class="scale-line"></div>
+
+                        <div class="scale-list">
+                          <span>1 escala</span> Londra
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-3 list-order-buy d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <div class="order-class">Econom class</div>
+                      <div class="order-price">78 €</div>
+                      <div class="button-price">
+                        <button class="button">Priveste oferta</button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="article_list-order row">
+                    <div
+                      class="col-md-3 list-order-company d-flex flex-column justify-content-between"
+                    >
+                      <div class="list-order-company-img">
+                        <img src="images/upload/BlueAir.png" alt="" />
+                      </div>
+                      <p class="list-order-company-name">Blue Air</p>
+                      <div class="list-order-company-baggage">
+                        <div>
+                          <img src="images/icon/baggage.png" alt="" />
+                        </div>
+                        <p>Bagajul de mână inclus</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-6 list-order-date d-flex flex-column justify-content-between"
+                    >
+                      <div
+                        class="list-order-date-city d-flex justify-content-between"
+                      >
+                        <div class="order-city from-city">
+                          <h6>Chisinau</h6>
+                          <div class="city-date">26 dec., 2021, Mi</div>
+                        </div>
+                        <div class="order-city to-city">
+                          <h6>Nissa</h6>
+                          <div class="city-date">26 dec., 2021, Mi</div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="list-order-date-houre d-flex justify-content-between"
+                      >
+                        <div class="from-houre">12:40</div>
+                        <div class="to-houre">13:40</div>
+                      </div>
+
+                      <div class="list-order-date-scale">
+                        <div class="scale-houre d-flex justify-content-between">
+                          <div>KIV</div>
+                          <div>13 ore 35 min</div>
+                          <div>OTP</div>
+                        </div>
+
+                        <div class="scale-line"></div>
+
+                        <div class="scale-list">
+                          <span>1 escala</span> Londra
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-3 list-order-buy d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <div class="order-class">Econom class</div>
+                      <div class="order-price">78 €</div>
+                      <div class="button-price">
+                        <button class="button">Priveste oferta</button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="article_list-order row">
+                    <div
+                      class="col-md-3 list-order-company d-flex flex-column justify-content-between"
+                    >
+                      <div class="list-order-company-img">
+                        <img src="images/upload/BlueAir.png" alt="" />
+                      </div>
+                      <p class="list-order-company-name">Blue Air</p>
+                      <div class="list-order-company-baggage">
+                        <div>
+                          <img src="images/icon/baggage.png" alt="" />
+                        </div>
+                        <p>Bagajul de mână inclus</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-6 list-order-date d-flex flex-column justify-content-between"
+                    >
+                      <div
+                        class="list-order-date-city d-flex justify-content-between"
+                      >
+                        <div class="order-city from-city">
+                          <h6>Chisinau</h6>
+                          <div class="city-date">26 dec., 2021, Mi</div>
+                        </div>
+                        <div class="order-city to-city">
+                          <h6>Nissa</h6>
+                          <div class="city-date">26 dec., 2021, Mi</div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="list-order-date-houre d-flex justify-content-between"
+                      >
+                        <div class="from-houre">12:40</div>
+                        <div class="to-houre">13:40</div>
+                      </div>
+
+                      <div class="list-order-date-scale">
+                        <div class="scale-houre d-flex justify-content-between">
+                          <div>KIV</div>
+                          <div>13 ore 35 min</div>
+                          <div>OTP</div>
+                        </div>
+
+                        <div class="scale-line"></div>
+
+                        <div class="scale-list">
+                          <span>1 escala</span> Londra
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-3 list-order-buy d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <div class="order-class">Econom class</div>
+                      <div class="order-price">78 €</div>
+                      <div class="button-price">
+                        <button class="button">Priveste oferta</button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="article_list-order row">
+                    <div
+                      class="col-md-3 list-order-company d-flex flex-column justify-content-between"
+                    >
+                      <div class="list-order-company-img">
+                        <img src="images/upload/BlueAir.png" alt="" />
+                      </div>
+                      <p class="list-order-company-name">Blue Air</p>
+                      <div class="list-order-company-baggage">
+                        <div>
+                          <img src="images/icon/baggage.png" alt="" />
+                        </div>
+                        <p>Bagajul de mână inclus</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-6 list-order-date d-flex flex-column justify-content-between"
+                    >
+                      <div
+                        class="list-order-date-city d-flex justify-content-between"
+                      >
+                        <div class="order-city from-city">
+                          <h6>Chisinau</h6>
+                          <div class="city-date">26 dec., 2021, Mi</div>
+                        </div>
+                        <div class="order-city to-city">
+                          <h6>Nissa</h6>
+                          <div class="city-date">26 dec., 2021, Mi</div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="list-order-date-houre d-flex justify-content-between"
+                      >
+                        <div class="from-houre">12:40</div>
+                        <div class="to-houre">13:40</div>
+                      </div>
+
+                      <div class="list-order-date-scale">
+                        <div class="scale-houre d-flex justify-content-between">
+                          <div>KIV</div>
+                          <div>13 ore 35 min</div>
+                          <div>OTP</div>
+                        </div>
+
+                        <div class="scale-line"></div>
+
+                        <div class="scale-list">
+                          <span>1 escala</span> Londra
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-3 list-order-buy d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <div class="order-class">Econom class</div>
+                      <div class="order-price">78 €</div>
+                      <div class="button-price">
+                        <button class="button">Priveste oferta</button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="article_list-order row">
+                    <div
+                      class="col-md-3 list-order-company d-flex flex-column justify-content-between"
+                    >
+                      <div class="list-order-company-img">
+                        <img src="images/upload/BlueAir.png" alt="" />
+                      </div>
+                      <p class="list-order-company-name">Blue Air</p>
+                      <div class="list-order-company-baggage">
+                        <div>
+                          <img src="images/icon/baggage.png" alt="" />
+                        </div>
+                        <p>Bagajul de mână inclus</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-6 list-order-date d-flex flex-column justify-content-between"
+                    >
+                      <div
+                        class="list-order-date-city d-flex justify-content-between"
+                      >
+                        <div class="order-city from-city">
+                          <h6>Chisinau</h6>
+                          <div class="city-date">26 dec., 2021, Mi</div>
+                        </div>
+                        <div class="order-city to-city">
+                          <h6>Nissa</h6>
+                          <div class="city-date">26 dec., 2021, Mi</div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="list-order-date-houre d-flex justify-content-between"
+                      >
+                        <div class="from-houre">12:40</div>
+                        <div class="to-houre">13:40</div>
+                      </div>
+
+                      <div class="list-order-date-scale">
+                        <div class="scale-houre d-flex justify-content-between">
+                          <div>KIV</div>
+                          <div>13 ore 35 min</div>
+                          <div>OTP</div>
+                        </div>
+
+                        <div class="scale-line"></div>
+
+                        <div class="scale-list">
+                          <span>1 escala</span> Londra
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-3 list-order-buy d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <div class="order-class">Econom class</div>
+                      <div class="order-price">78 €</div>
+                      <div class="button-price">
+                        <button class="button">Priveste oferta</button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="article_list-order row">
+                    <div
+                      class="col-md-3 list-order-company d-flex flex-column justify-content-between"
+                    >
+                      <div class="list-order-company-img">
+                        <img src="images/upload/BlueAir.png" alt="" />
+                      </div>
+                      <p class="list-order-company-name">Blue Air</p>
+                      <div class="list-order-company-baggage">
+                        <div>
+                          <img src="images/icon/baggage.png" alt="" />
+                        </div>
+                        <p>Bagajul de mână inclus</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-6 list-order-date d-flex flex-column justify-content-between"
+                    >
+                      <div
+                        class="list-order-date-city d-flex justify-content-between"
+                      >
+                        <div class="order-city from-city">
+                          <h6>Chisinau</h6>
+                          <div class="city-date">26 dec., 2021, Mi</div>
+                        </div>
+                        <div class="order-city to-city">
+                          <h6>Nissa</h6>
+                          <div class="city-date">26 dec., 2021, Mi</div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="list-order-date-houre d-flex justify-content-between"
+                      >
+                        <div class="from-houre">12:40</div>
+                        <div class="to-houre">13:40</div>
+                      </div>
+
+                      <div class="list-order-date-scale">
+                        <div class="scale-houre d-flex justify-content-between">
+                          <div>KIV</div>
+                          <div>13 ore 35 min</div>
+                          <div>OTP</div>
+                        </div>
+
+                        <div class="scale-line"></div>
+
+                        <div class="scale-list">
+                          <span>1 escala</span> Londra
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-3 list-order-buy d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <div class="order-class">Econom class</div>
+                      <div class="order-price">78 €</div>
+                      <div class="button-price">
+                        <button class="button">Priveste oferta</button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="article_list-order row">
+                    <div
+                      class="col-md-3 list-order-company d-flex flex-column justify-content-between"
+                    >
+                      <div class="list-order-company-img">
+                        <img src="images/upload/BlueAir.png" alt="" />
+                      </div>
+                      <p class="list-order-company-name">Blue Air</p>
+                      <div class="list-order-company-baggage">
+                        <div>
+                          <img src="images/icon/baggage.png" alt="" />
+                        </div>
+                        <p>Bagajul de mână inclus</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-6 list-order-date d-flex flex-column justify-content-between"
+                    >
+                      <div
+                        class="list-order-date-city d-flex justify-content-between"
+                      >
+                        <div class="order-city from-city">
+                          <h6>Chisinau</h6>
+                          <div class="city-date">26 dec., 2021, Mi</div>
+                        </div>
+                        <div class="order-city to-city">
+                          <h6>Nissa</h6>
+                          <div class="city-date">26 dec., 2021, Mi</div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="list-order-date-houre d-flex justify-content-between"
+                      >
+                        <div class="from-houre">12:40</div>
+                        <div class="to-houre">13:40</div>
+                      </div>
+
+                      <div class="list-order-date-scale">
+                        <div class="scale-houre d-flex justify-content-between">
+                          <div>KIV</div>
+                          <div>13 ore 35 min</div>
+                          <div>OTP</div>
+                        </div>
+
+                        <div class="scale-line"></div>
+
+                        <div class="scale-list">
+                          <span>1 escala</span> Londra
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-3 list-order-buy d-flex justify-content-between align-items-center flex-column"
+                    >
+                      <div class="order-class">Econom class</div>
+                      <div class="order-price">78 €</div>
+                      <div class="button-price">
+                        <button class="button">Priveste oferta</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 main-banner">
+            <ul class="list-banner">
+              <li class="list-item-banner">
+                <img src="images/upload/Banner_Dublin.png" alt="">
+              </li>
+              <li class="list-item-banner">
+                <img src="images/upload/Banner_Dublin.png" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <nav class="col-xl-10 d-flex align-items-center justify-content-end pagination-container">
+            <a class="page-link-move" href="#">
+              <img src="images/icon/Arrow_Left_Carousel.png" alt="">
+            </a>
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+            <a class="page-link-move" href="#">
+              <img src="images/icon/Arrow_Right_Carousel.png" alt="">
+            </a>
+          </nav>
+        </div>
+
+      </div>
+    </main>
+
+    <div class="modal-order" id="modalOrderFind">
+      <div class="modal-order-container">
+        <div class="modal-order-header">
+          <button id="closeModalOrder">
+            Inchide 
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_79_735)">
+            <path d="M0.585803 11.9999C0.4699 11.9999 0.356593 11.9656 0.260216 11.9012C0.163839 11.8368 0.0887213 11.7453 0.0443641 11.6382C6.85557e-06 11.5311 -0.0115968 11.4133 0.0110207 11.2996C0.0336383 11.1859 0.0894611 11.0815 0.171428 10.9996L10.9996 0.171457C11.1095 0.0615576 11.2585 -0.000183105 11.4139 -0.000183105C11.5694 -0.000183105 11.7184 0.0615576 11.8283 0.171457C11.9382 0.281356 11.9999 0.430411 11.9999 0.585832C11.9999 0.741252 11.9382 0.890308 11.8283 1.00021L1.00018 11.8283C0.945812 11.8828 0.881218 11.926 0.810107 11.9555C0.738996 11.9849 0.662768 12 0.585803 11.9999Z" fill="white"/>
+            <path d="M11.4139 11.9999C11.3369 12 11.2607 11.9849 11.1896 11.9554C11.1185 11.926 11.0539 11.8828 10.9995 11.8283L0.171396 1.00018C0.0614965 0.890277 -0.000244141 0.741222 -0.000244141 0.585801C-0.000244141 0.43038 0.0614965 0.281325 0.171396 0.171426C0.281295 0.061527 0.43035 -0.000213623 0.585771 -0.000213623C0.741191 -0.000213623 0.890246 0.061527 1.00015 0.171426L11.8283 10.9996C11.9102 11.0815 11.9661 11.1859 11.9887 11.2996C12.0113 11.4133 11.9997 11.5311 11.9553 11.6382C11.911 11.7452 11.8359 11.8368 11.7395 11.9011C11.6431 11.9655 11.5298 11.9999 11.4139 11.9999V11.9999Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_79_735">
+            <rect width="12" height="12" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+          </button>
+        </div>
+
+        <div class="modal-order-body">
+          <h6 class="modal-order-body-title">Durata totala a calatoriei</h6>
+          <div class="modal-order-scale">
+            <div class="modal-order-scale-hours">13 ore 35 min</div>
+            <div class="modal-order-scale-line"></div>
+            <div class="modal-order-scale-list">
+              <div class="modal-order-scale-from">
+                <h6>Chisinau</h6>
+                <p>12:10, 26 dec., 2021, Miercuri</p>
+              </div>
+
+              <div class="modal-order-scale-qty">
+                1 escala
+              </div>
+
+              <div class="modal-order-scale-to">
+                <h6>Nisa</h6>
+                <p>18:55, 26 dec., 2021, Miercuri</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-order-list row">
+
+            <div class="modal-order-list-header col-md-2">
+              <div class="modal-order-list-image">
+                <img src="images/upload/BlueAir.png" alt="">
+              </div>
+              <div class="modal-order-list-scale-image">
+                <img src="images/icon/scale.png" alt="">
+                <img src="images/icon/line-scale.png" alt="">
+                <img src="images/icon/scale.png" alt="">
+              </div>
+            </div>
+
+            <div class="modal-order-list-body col-md-6">
+              <div class="modal-order-list-body-top">
+                <h6 class="modal-order-list-body-name">
+                  Blue Air (9U-833)
+                </h6>
+                <p class="modal-order-list-body-duration">Durata zbor: 8 ore 10 min</p>
+              </div>
+
+              <div class="modal-order-list-body-bottom">
+                <div class = "modal-order-list-boddy-scale">
+                  <div class="modal-order-list-boddy-date">
+                    <div class="modal-order-list-boddy-hours">12:10</div>
+                    <div class="modal-order-list-boddy-month">26 dec., 2021, Miercuri</div>
+                  </div>
+                  <div class="modal-order-list-boddy-location">
+                    <div class="modal-order-list-boddy-city">Chisinau</div>
+                    <div class="modal-order-list-boddy-type">KIV</div>
+                  </div>
+                </div>
+
+                <div class = "modal-order-list-boddy-scale">
+                  <div class="modal-order-list-boddy-date">
+                    <div class="modal-order-list-boddy-hours">13:50</div>
+                    <div class="modal-order-list-boddy-month">26 dec., 2021, Miercuri</div>
+                  </div>
+                  <div class="modal-order-list-boddy-location">
+                    <div class="modal-order-list-boddy-city">Londra</div>
+                    <div class="modal-order-list-boddy-type">SIN</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-order-list-footer col-md-4">
+              <div  class="modal-order-list-footer-class-wrapper">
+                <div class="modal-order-list-footer-class">Econom class</div> 
+              </div>
+
+              <div class="modal-order-list-footer-baggage">Bagajul de mână inclus <img src="images/icon/baggage.png"></div> 
+            </div>
+
+          </div>
+
+          <div class="modal-order-list-scale-time">
+            <img src="images/icon/arrow_down-modal.png">
+            <span>Escala: Londra</span>
+            <img src="images/icon/time.png">
+            <span>3 ore 30 min</span>
+          </div>
+
+          <div class="modal-order-list row">
+
+            <div class="modal-order-list-header col-md-2">
+              <div class="modal-order-list-image">
+                <img src="images/upload/BlueAir.png" alt="">
+              </div>
+              <div class="modal-order-list-scale-image">
+                <img src="images/icon/scale.png" alt="">
+                <img src="images/icon/line-scale.png" alt="">
+                <img src="images/icon/scale.png" alt="">
+              </div>
+            </div>
+
+            <div class="modal-order-list-body col-md-6">
+              <div class="modal-order-list-body-top">
+                <h6 class="modal-order-list-body-name">
+                  Blue Air (9U-833)
+                </h6>
+                <p class="modal-order-list-body-duration">Durata zbor: 8 ore 10 min</p>
+              </div>
+
+              <div class="modal-order-list-body-bottom">
+                <div class = "modal-order-list-boddy-scale">
+                  <div class="modal-order-list-boddy-date">
+                    <div class="modal-order-list-boddy-hours">12:10</div>
+                    <div class="modal-order-list-boddy-month">26 dec., 2021, Miercuri</div>
+                  </div>
+                  <div class="modal-order-list-boddy-location">
+                    <div class="modal-order-list-boddy-city">Chisinau</div>
+                    <div class="modal-order-list-boddy-type">KIV</div>
+                  </div>
+                </div>
+
+                <div class = "modal-order-list-boddy-scale">
+                  <div class="modal-order-list-boddy-date">
+                    <div class="modal-order-list-boddy-hours">13:50</div>
+                    <div class="modal-order-list-boddy-month">26 dec., 2021, Miercuri</div>
+                  </div>
+                  <div class="modal-order-list-boddy-location">
+                    <div class="modal-order-list-boddy-city">Londra</div>
+                    <div class="modal-order-list-boddy-type">SIN</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-order-list-footer col-md-4">
+              <div  class="modal-order-list-footer-class-wrapper">
+                <div class="modal-order-list-footer-class">Econom class</div> 
+              </div>
+
+              <div class="modal-order-list-footer-baggage">Bagajul de mână inclus <img src="images/icon/baggage.png"></div> 
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="modal-order-footer">
+          <div class="modal-order-footer-price">78 €</div>
+          <div class="modal-order-footer-button">
+            <button class="button" onclick="location.replace('reservation.html')">Rezerveaza</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container-xxxl">
+        <div class="row footer_info justify-content-center">
+          <div class="col-md-4">
+            <div class="footer-help">
+              <h6 class="footer_top-text">Ajutor</h6>
+              <p>Adresa</p>
+              <p class="footer-secondary-text">
+                Str. Vasile Alecsandri 111/11, MD 2009 Chișinău, Republica
+                Moldova
+              </p>
+              <p>
+                Tel:<span class="footer-secondary-text"> +373 69 25 89 69</span>
+              </p>
+              <p>
+                Email:<span class="footer-secondary-text">
+                  easyfly@gmail.com</span
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="footer-instrument">
+              <h6 class="footer_top-text">Unelte</h6>
+              <ul class="footer-list">
+                <li class="footer-secondary-text">
+                  <a href="#">Cookies</a>
+                </li>
+                <li class="footer-secondary-text">
+                  <a href="#">Refund policy</a>
+                </li>
+                <li class="footer-secondary-text">
+                  <a href="#">Privacy policy</a>
+                </li>
+                <li class="footer-secondary-text">
+                  <a href="#">Termeni & Conditii</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="footer-company">
+              <h6 class="footer_top-text">Companie</h6>
+              <ul class="footer-list">
+                <li class="footer-secondary-text">
+                  <a href="#">Despre noi</a>
+                </li>
+                <li class="footer-secondary-text">
+                  <a href="#">Intrebari frecvente</a>
+                </li>
+                <li class="footer-secondary-text">
+                  <a href="#">Feedback</a>
+                </li>
+                <li class="footer-secondary-text">
+                  <a href="#">Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="footer-links">
+              <h6 class="footer_top-text">Quick Links</h6>
+              <ul class="footer-list">
+                <li class="footer-secondary-text">
+                  <a href="#">Tari</a>
+                </li>
+                <li class="footer-secondary-text">
+                  <a href="#">Orase</a>
+                </li>
+                <li class="footer-secondary-text">
+                  <a href="#">Companii aeriene</a>
+                </li>
+                <li class="footer-secondary-text">
+                  <a href="#">Destinatii</a>
+                </li>
+                <li class="footer-secondary-text">
+                  <a href="#">Aeropoarte</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="footer-follow">
+              <h6 class="footer_top-text">Follow us on</h6>
+              <ul class="footer-list social">
+                <li class="social-youtube">
+                  <a href="#">
+                    <svg
+                      width="27"
+                      height="29"
+                      viewBox="0 0 27 29"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        clip-path="url(#clip0_144_150)"
+                        filter="url(#filter0_d_144_150)"
+                      >
+                        <path
+                          d="M21.8792 10.8515C21.7777 10.3904 21.5529 10.0037 21.2054 9.69135C20.8575 9.37895 20.4572 9.19531 20.004 9.1406C18.5665 8.98438 16.3986 8.90631 13.5 8.90631C10.6014 8.90631 8.4374 8.98442 7.00766 9.1406C6.54685 9.19531 6.14452 9.37895 5.80064 9.69135C5.45684 10.0039 5.23027 10.3906 5.12084 10.8515C4.91775 11.7579 4.81616 13.125 4.81616 14.9532C4.81616 16.8125 4.91775 18.1798 5.12084 19.0549C5.22255 19.5156 5.4472 19.9026 5.79485 20.2148C6.14251 20.5274 6.54291 20.707 6.99597 20.7539C8.43363 20.918 10.6017 21 13.5001 21C16.3983 21 18.5667 20.918 20.0039 20.7539C20.4571 20.707 20.8555 20.5274 21.1994 20.2148C21.5432 19.9026 21.7698 19.5156 21.8791 19.0549C22.0822 18.1484 22.1839 16.7813 22.1839 14.9532C22.1838 13.0938 22.0821 11.7265 21.8792 10.8515ZM9.77364 12.0353H8.51974V18.7031H7.34793V12.0353H6.11739V10.9338H9.77368V12.0353H9.77364ZM12.9376 18.7031H11.8947V18.0702C11.4728 18.5469 11.0742 18.7851 10.6992 18.7851C10.3399 18.7851 10.1133 18.6405 10.0197 18.3515C9.95724 18.164 9.92584 17.8787 9.92584 17.496V12.914H10.9688V17.1797C10.9688 17.4295 10.9727 17.5663 10.9806 17.5898C11.0041 17.7539 11.086 17.8359 11.2267 17.8359C11.4376 17.8359 11.6604 17.6718 11.8947 17.3437V12.914H12.9377V18.7031H12.9376ZM16.922 16.9687C16.922 17.539 16.887 17.9298 16.817 18.1409C16.6838 18.5703 16.4067 18.7851 15.9849 18.7851C15.6098 18.7851 15.2466 18.5703 14.8948 18.1409V18.7033H13.852V10.9338H14.8948V13.4767C15.231 13.0551 15.5941 12.8441 15.9849 12.8441C16.4067 12.8441 16.6838 13.0629 16.817 13.5003C16.8869 13.7034 16.922 14.0901 16.922 14.6604V16.9687ZM20.883 16.0079H18.7854V17.0274C18.7854 17.5665 18.965 17.8359 19.3244 17.8359C19.5821 17.8359 19.7385 17.6954 19.7931 17.4139C19.8086 17.3359 19.8166 17.0976 19.8166 16.6993H20.883V16.8515C20.883 17.2344 20.875 17.4609 20.8595 17.5314C20.8362 17.7421 20.7544 17.953 20.6134 18.164C20.3322 18.5781 19.91 18.7851 19.3476 18.7851C18.8087 18.7851 18.3868 18.5859 18.082 18.1876C17.8555 17.8985 17.7423 17.4454 17.7423 16.8282V14.8007C17.7423 14.1835 17.8516 13.7304 18.0702 13.4413C18.375 13.043 18.793 12.8438 19.3244 12.8438C19.8479 12.8438 20.2623 13.043 20.5666 13.4413C20.7778 13.7304 20.883 14.1835 20.883 14.8007V16.0079Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M15.4218 13.7931C15.2421 13.7931 15.0665 13.8793 14.8945 14.051V17.5782C15.0664 17.75 15.2421 17.8359 15.4218 17.8359C15.7264 17.8359 15.8791 17.5744 15.8791 17.0507V14.5783C15.8791 14.0548 15.7267 13.7931 15.4218 13.7931Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M19.3127 13.7931C18.9612 13.7931 18.7854 14.0589 18.7854 14.5898V15.1289H19.84V14.5898C19.84 14.0586 19.6641 13.7931 19.3127 13.7931Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M9.09433 4.67578V7.85168H10.2661V4.67578L11.6839 0H10.4886L9.69191 3.08207L8.85979 0H7.61768C7.83645 0.656318 8.09036 1.38672 8.37944 2.19146C8.74667 3.26952 8.98482 4.09778 9.09433 4.67578Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M13.2541 7.93375C13.7932 7.93375 14.2072 7.73452 14.4963 7.33609C14.7151 7.04701 14.8244 6.58602 14.8244 5.95331V3.90242C14.8244 3.27751 14.7148 2.82034 14.4963 2.53126C14.2072 2.13283 13.7932 1.93359 13.2541 1.93359C12.7306 1.93359 12.3204 2.13283 12.0236 2.53126C11.8049 2.82034 11.6956 3.27751 11.6956 3.90242V5.95327C11.6956 6.57818 11.8048 7.03921 12.0236 7.33605C12.3205 7.73452 12.7305 7.93375 13.2541 7.93375ZM12.7501 3.69145C12.7501 3.15236 12.9181 2.88281 13.2541 2.88281C13.5901 2.88281 13.758 3.15236 13.758 3.69145V6.15234C13.758 6.69939 13.5901 6.97263 13.2541 6.97263C12.9181 6.97263 12.7501 6.69923 12.7501 6.15234V3.69145Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M16.4766 7.93371C16.8675 7.93371 17.2699 7.6915 17.6839 7.207V7.85154H18.7503V2.00391H17.6839V6.46871C17.4494 6.80471 17.2269 6.97255 17.0157 6.97255C16.875 6.97255 16.7929 6.88664 16.7696 6.71478C16.7618 6.69914 16.7578 6.5623 16.7578 6.30457V2.00391H15.6914V6.6212C15.6914 7.01955 15.7229 7.31241 15.7852 7.50003C15.8869 7.78911 16.1173 7.93371 16.4766 7.93371Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <filter
+                          id="filter0_d_144_150"
+                          x="-1"
+                          y="0"
+                          width="29"
+                          height="29"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feFlood
+                            flood-opacity="0"
+                            result="BackgroundImageFix"
+                          />
+                          <feColorMatrix
+                            in="SourceAlpha"
+                            type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha"
+                          />
+                          <feOffset dy="4" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix
+                            type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in2="BackgroundImageFix"
+                            result="effect1_dropShadow_144_150"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in="SourceGraphic"
+                            in2="effect1_dropShadow_144_150"
+                            result="shape"
+                          />
+                        </filter>
+                        <clipPath id="clip0_144_150">
+                          <rect
+                            width="21"
+                            height="21"
+                            fill="white"
+                            transform="translate(3)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social-twitter">
+                  <a href="#">
+                    <svg
+                      width="19"
+                      height="16"
+                      viewBox="0 0 19 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.3673 0.264591C17.6049 0.716295 16.7716 1.03556 15.9026 1.2089C15.1641 0.434365 14.1397 -0.00272985 13.0696 0.000110544C10.9614 -0.0157145 9.23396 1.66953 9.19777 3.77743C9.19866 4.07007 9.23347 4.36166 9.30164 4.64627C6.19685 4.4997 3.29713 3.05329 1.31251 0.661192C0.973039 1.23325 0.790604 1.88475 0.783705 2.54989C0.783787 3.83237 1.43456 5.02712 2.51188 5.72286C1.89665 5.70281 1.29481 5.53783 0.755383 5.24121C0.755383 5.24121 0.755383 5.24121 0.755383 5.28844C0.749215 7.13039 2.05369 8.71647 3.86229 9.06576C3.29218 9.21776 2.69521 9.24032 2.11528 9.1319C2.6367 10.6922 4.08717 11.7525 5.73208 11.7761C4.36269 12.841 2.67898 13.4221 0.94431 13.4287C0.628701 13.4284 0.313336 13.4095 0 13.372C1.77711 14.4962 3.83705 15.0923 5.93992 15.0907C11.9366 15.2003 16.8868 10.4277 16.9964 4.43096C16.9975 4.36742 16.9981 4.30388 16.9981 4.24025C16.9981 4.07656 16.9981 3.91288 16.9981 3.74919C17.7383 3.20675 18.3775 2.53877 18.8868 1.77552C18.1779 2.08593 17.4269 2.28955 16.6582 2.37987C17.4666 1.90666 18.0744 1.15445 18.3673 0.264591Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social-facebook">
+                  <a href="#">
+                    <svg
+                      width="8"
+                      height="16"
+                      viewBox="0 0 8 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.53945 2.65667H8V0.112667C7.74802 0.078 6.88143 0 5.87218 0C3.76635 0 2.32381 1.32467 2.32381 3.75933V6H0V8.844H2.32381V16H5.1729V8.84467H7.40272L7.75669 6.00067H5.17224V4.04133C5.1729 3.21933 5.39422 2.65667 6.53945 2.65667Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social-instagram">
+                  <a href="#">
+                    <svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.1071 0H3.27677C1.46707 0 0 1.46706 0 3.27677V13.1071C0 14.9168 1.46707 16.3839 3.27677 16.3839H13.1071C14.9168 16.3839 16.3839 14.9168 16.3839 13.1071V3.27684C16.384 1.46706 14.9169 0 13.1071 0ZM11.4687 2.45759H13.9263V4.91518H11.4687V2.45759ZM8.19195 4.91525C10.0017 4.91525 11.4687 6.38232 11.4687 8.19202C11.4687 10.0017 10.0017 11.4688 8.19195 11.4688C6.38225 11.4688 4.91519 10.0017 4.91519 8.19202C4.91519 6.38232 6.38225 4.91525 8.19195 4.91525ZM14.7456 13.1072C14.7456 14.0121 14.012 14.7456 13.1071 14.7456H3.27677C2.37192 14.7456 1.63835 14.0121 1.63835 13.1072V7.37278H3.35864C2.86669 10.0424 4.63197 12.6054 7.3016 13.0974C9.97124 13.5894 12.5342 11.8241 13.0262 9.15446C13.0848 8.83709 13.1119 8.51473 13.1071 8.19202C13.1031 7.91711 13.0757 7.64311 13.0252 7.37285H14.7455V13.1072H14.7456Z"
+                        fill="white"
+                      />
+                      <defs>
+                        <linearGradient id="paintInstagram" x1="15" y1="-1" x2="-1.5" y2="14.5" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#C22FA5"/>
+                          <stop offset="1" stop-color="#F79249"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-call">
+              <h6 class="footer_top-text">Call us on</h6>
+              <ul class="footer-list social">
+                <li>
+                  <img src="images/icon/viber.png" alt="" />
+                </li>
+                <li>
+                  <img src="images/icon/whatsapp.png" alt="" />
+                </li>
+                <li>
+                  <img src="images/icon/telegram.png" alt="" />
+                </li>
+              </ul>
+              <a class="footer-secondary-text phone" href="tel:+37369258969"
+                >+373 69 25 89 69</a
+              >
+            </div>
+          </div>
+
+          <div class="col-12 divider">
+            <div class="divider-line"></div>
+          </div>
+        </div>
+
+        <div class="row footer_copyright">
+          <p class="footer-secondary-text">
+            Copyright 2021. Developed by Webmaster Studio
+          </p>
+          <a href="#">
+            <img src="images/logo/WebMasterStudio.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/chartJS/d3_v4_min.js"></script>
+    <script src="js/chartJS/chartJS.js"></script>
+    <script src="js/chartJS/app.js"></script>
+    <script src="js/modal/modal.js"></script>
+    <script src="lib/nice-select/jquery.js"></script> 
+    <script src="lib/nice-select/jquery.nice-select.js"></script> 
+
+    <script src="js/selectStyle.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

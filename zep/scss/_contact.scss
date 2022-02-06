@@ -1,0 +1,106 @@
+.contact-main {
+  .contact-main-principal {
+    padding-bottom: 76px;
+    .contact-main-wrapper {
+      .contact-info {
+        margin-top: 40px;
+        .contact-info-title {
+          font-weight: 700;
+          font-size: remTransform(50);
+          color: $color-primary-text;
+        }
+        .contact-info-description {
+          font-weight: 300;
+          font-size: remTransform(13);
+          color: $color-primary-text;
+          margin: 16px 0 44px 0;
+        }
+        .contact-info-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          .contact-info-list-item {
+            display: flex;
+            margin: 20px 0;
+            .contact-item-title {
+              width: 26px;
+            }
+            .contact-item-description {
+              margin-left: 10px;
+              display: flex;
+              flex-direction: column;
+              .contact-title-name {
+                font-weight: 600;
+                font-size: remTransform(16);
+                color: $color-primary-2;
+                margin-bottom: 6px;
+              }
+              .contact-item-name {
+                font-weight: 400;
+                font-size: remTransform(15);
+                color: $color-primary-text;
+              }
+              .contact-email {
+                color: #0156ff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact-form {
+  background-color: $color-bg;
+  padding: 16px 50px 44px 50px;
+  margin-top: 40px;
+  .contact-form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    margin: 20px 0;
+    .contact-form-input {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      label {
+        margin-bottom: 10px;
+        color: $color-primary-text;
+        font-weight: 600;
+        font-size: remTransform(14);
+        span {
+          color: #c94d3f;
+        }
+      }
+      .contact-form-text {
+        background: $color-primary-1;
+        border: 1px solid $color-2;
+        border-radius: 4px;
+        color: $color-primary-text;
+        font-weight: 400;
+        font-size: remTransform(14);
+        padding: 14px 16px;
+        &::placeholder {
+          color: $color-2;
+          font-weight: 300;
+        }
+        &:focus {
+          border-color: $color-primary-2;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-form {
+    .contact-form-row {
+      flex-direction: column;
+    }
+  }
+  .contact-info-title {
+    font-size: 2rem !important;
+  }
+}

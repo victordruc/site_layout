@@ -1,0 +1,190 @@
+.main-ad-items {
+  padding: 0;
+  .main-ad-item {
+    margin: 14px 0;
+    list-style: none;
+    padding: 20px;
+    background-color: $color-light;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    .hedear-item-ad {
+      border-bottom: 1px dashed $color-1;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 10px;
+      .hedear-item-ad-left {
+        display: flex;
+        align-items: center;
+        .hedear-item-block {
+          width: 40px;
+          height: 0;
+          border-bottom: 1px solid $color-1;
+          margin: 0 10px;
+        }
+        .hedear-item-ad-to {
+          text-align: right;
+        }
+        .item-bolt-text {
+          color: $color-2;
+          font-weight: 600;
+          font-size: 1.0625rem;
+        }
+        .item-simple-text {
+          color: $color-2;
+          font-weight: 400;
+          font-size: 1.0625rem;
+        }
+      }
+      .hedear-item-ad-right {
+        display: flex;
+        align-items: center;
+        .hedear-item-ad-client {
+          font-weight: 300;
+          font-size: 1rem;
+          color: $color-2;
+        }
+        .hedear-item-ad-likes {
+          margin: 0 6px 0 10px;
+        }
+        .hedear-item-ad-likes-count {
+          font-weight: 400;
+          font-size: 0.8125rem;
+          color: $color-2;
+        }
+      }
+    }
+
+    .body-item-ad {
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+      padding: 16px 0;
+      .body-ad-list-small {
+        font-weight: 300;
+        color: $color-hover;
+        font-size: 0.9375rem;
+      }
+      .body-ad-list-bolt {
+        font-weight: 400;
+        color: $color-2;
+        font-size: 1.0625rem;
+      }
+      .body-item-ad-left {
+        display: flex;
+        width: 55%;
+        // justify-content: space-between;
+        > * {
+          padding-right: 10px;
+          width: 33%;
+        }
+      }
+
+      .body-item-ad-mid {
+        display: flex;
+        width: 30%;
+        > * {
+          padding-right: 10px;
+          width: 33%;
+        }
+      }
+      .body-item-ad-right {
+        width: 15%;
+        .body-item-ad-button {
+          text-align: right;
+          button {
+            font-size: 0.875rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .footer-item-ad {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 10px;
+      border-top: 1px dashed $color-1;
+      .footer-item-ad-left {
+        display: flex;
+        .footer-item-ad-option,
+        .footer-item-ad-comments {
+          color: $primary-color;
+          font-weight: 300;
+          font-size: 0.9375rem;
+          cursor: pointer;
+          margin-right: 30px;
+          transition: 0.2s;
+          &:hover {
+            color: $color-2;
+            path {
+              fill: $color-2;
+            }
+          }
+        }
+        .footer-item-ad-comments {
+          margin-right: 10px;
+          text-align: right;
+        }
+      }
+      .footer-item-ad-right {
+        font-weight: 300;
+        color: $color-hover;
+        font-size: 0.8125rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+    .body-item-ad {
+      flex-direction: column;
+      .body-item-ad-left {
+        width: 100% !important;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .body-item-ad-type-transport {
+          padding-right: 0 !important;
+          text-align: right;
+        }
+        .body-item-ad-date {
+          padding-right: 0 !important;
+          text-align: center;
+        }
+      }
+      .body-item-ad-mid {
+        width: 100% !important;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .body-item-ad-price {
+          padding-right: 0 !important;
+          text-align: right;
+        }
+        .body-item-ad-volume {
+          padding-right: 0 !important;
+          text-align: center;
+        }
+      }
+      .body-item-ad-right {
+        width: 100% !important;
+      }
+    }
+}
+
+@media (max-width: 650px) {
+  .body-item-ad {
+    .body-item-ad-left,
+    .body-item-ad-mid {
+      flex-direction: column;
+      margin-bottom: 0 !important;
+      > * {
+        width: 100% !important;
+        text-align: center !important;
+        padding-right: 0 !important;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
