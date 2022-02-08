@@ -1,0 +1,109 @@
+.detail-main {
+    .detail-main-content {
+        .detail-main-title {
+            @include text($color-2, 700, 35);
+            // text-transform: uppercase;
+            margin-bottom: 34px;
+        }
+        .detail-text-bold {
+            @include text($color-2, 700, 16);
+            line-height: remTransform(28)
+        }
+        .detail-text-small {
+            @include text($color-2, 300, 13);
+            line-height: remTransform(22.6)
+        }
+        .detail-text-semibold {
+            @include text($color-2, 500, 13);
+        }
+        .detail-main-card {
+            .detail-main-card-img {
+                display: flex;
+                .detail-img-full {
+                    width: 70%;
+                    
+                    display: inline-block;
+                }
+                .detail-img-banner {
+                    width: 30%;
+                    padding-left: 20px;
+                    display: inline-block;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .detail-main-card-text {
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+        }
+
+    }
+    .detail-main-content-after {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        .detail-main-item {
+            padding-bottom: 20px;
+        }
+    }
+    .detail-main-content-bottom {
+        margin-bottom: 40px;
+        .detail-main-content-bottom-img {
+            display: flex;
+            .detail-img-full {
+                width: 70%;
+            }
+            .detail-img-banner {
+                width: 30%;
+                padding-left: 20px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .detail-main-content-bottom-text {
+            .detail-main-content-bottom-wrapper {
+                margin-top: 40px;
+                .detail-tile-list {
+                    @include text($color-2, 600, 13);
+                    line-height: remTransform(22.8);
+                }
+                .detail-main-content-bottom-list {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    .detail-main-content-bottom-item {
+                        @include text($color-2, 400, 13);
+                        padding: 6px 0;
+                        position: relative;
+                        padding-left: 32px;
+                        &::before {
+                            content: "";
+                            background-image: url(../images/icon/list-style1.png);
+                            width: 18px;
+                            height: 10px;
+                            display: inline-block;
+                            margin-right: 10px;
+                            position: absolute;
+                            top: 12px;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .detail-contact {
+        margin-bottom: 60px;
+        .jobs-contact-title {
+            @include text($color-2, 700, 35);
+            margin-bottom: 20px;
+        }
+        .jobs-contact-text {
+            @include text($color-2, 300, 16);
+        }
+    }
+}

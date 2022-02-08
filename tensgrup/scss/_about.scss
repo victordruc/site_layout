@@ -1,0 +1,177 @@
+.about-main {
+    .about-image {
+        background-color: $color-2;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        margin: 20px 0;
+        .about-image-content {
+            width: 600px;
+            margin-left: 170px;
+            flex: 0 0 auto;
+            .about-image-mission {
+                @include text($color-1, 600, 12);
+                padding: 8px 16px;
+                border-radius: 28px;
+                background-color: $color-secondary;
+                width: fit-content;
+            }
+            .about-image-title {
+                @include text($color-1, 800, 35);
+                margin-top: 20px;
+            }
+        }
+        .about-image-img {
+            height: 336px;
+            width: 100%;
+            text-align: end;
+            img {
+                height: 100%;
+                position: relative;
+                z-index: 2;
+            }
+        }
+        &::before {
+            content: "";
+            background-image: url(../images/bg/“.png);
+            width: 260px;
+            height: 240px;
+            display: block;
+            position: absolute;
+            left: 80px;
+            top: -80px;
+        }
+        &::after {
+            content: "";
+            background-image: url(../images/bg/“.png);
+            width: 260px;
+            height: 240px;
+            display: block;
+            position: absolute;
+            left: 712px;
+            bottom: -80px;
+            transform: rotate(180deg);
+        }
+    }
+    .about-activity {
+        margin: 40px auto;
+        .about-activity-title {
+            @include text($color-2, 700, 35);
+            text-transform: uppercase;
+            margin-bottom: 40px
+        }
+        .about-activity-wrapper {
+            background: var(--color-bg-tr) url(../images/bg/tensgrup.png);
+            background-position: right top;
+            background-repeat: no-repeat;
+            padding: 50px;
+            .about-activity-text-bold {
+                @include text($color-2, 700, 16);
+                margin-bottom: 30px;
+            }
+            .about-activity-text-small {
+                @include text($color-2, 300, 13);
+            }
+            .about-activity-list {
+                list-style: none;
+                padding: 0;
+                .about-activity-item {
+                    padding: 8px 0;
+                    @include text($color-2, 400, 13);
+                    position: relative;
+                    padding-left: 32px;
+                    &::before {
+                        content: "";
+                        background-image: url(../images/icon/list-style1.png);
+                        width: 18px;
+                        height: 10px;
+                        display: inline-block;
+                        margin-right: 10px;
+                        position: absolute;
+                        top: 12px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .about-team {
+        margin-bottom: 40px;
+        .about-team-title {
+            @include text($color-2, 700, 35);
+            text-transform: uppercase;
+            margin-top: 80px;
+            margin-bottom: 24px;
+        }
+        .about-team-text-top {
+            @include text($color-2, 300, 13);
+        }
+        .about-team-wrapper {
+            padding: 26px;
+            background-color: $color-6;
+            height: 100%;
+            .about-team-img {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .about-team-name {
+                @include text($color-2, 700, 16);
+                margin-top: 24px;
+                margin-bottom: 10px;
+            }
+            .about-team-job {
+                @include text($color-2, 400, 13);
+            }
+            .about-team-email {
+                @include text(#C1C1C1, 400, 13);
+                margin-top: 24px;
+            }
+        }
+    }
+    .about-partners {
+        margin-top: 70px;
+        margin-bottom: 100px;
+        .about-partners-title {
+            @include text($color-2, 700, 35);
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 1259px) {
+    .about-image {
+        .about-image-content {
+            margin: 0 !important;
+            padding-left: var(--bs-gutter-x, 0.75rem);
+            padding-right: var(--bs-gutter-x, 0.75rem);
+        }
+        &::before {
+            left: 14px !important;
+        }
+        &::after {
+            left: 422px !important;
+        }
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .about-image-img {
+        display: none;
+    }
+    .about-image-content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: fit-content !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .about-image-title {
+        font-size: 2.2rem !important;
+    }
+}

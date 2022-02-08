@@ -1,0 +1,10 @@
+@function remTransform($px) {
+    @return $px/16+rem
+};
+
+@mixin text($color, $weight, $size) {
+    color: $color;
+    font-weight: $weight;
+    font-size: remTransform($size);
+}
+

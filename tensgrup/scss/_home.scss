@@ -1,0 +1,238 @@
+.home-main {
+    // background-color: $color-bg;
+    .home-main-title-wrapper {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 2px solid $color-4;
+        margin-top: 50px;
+        .home-main-title {
+            @include text($color-2, 800, 35)
+        }
+        .home-main-title-acces {
+            @include text($color-secondary, 600, 13);
+            &:hover {
+                color: $color-3;
+                path {
+                    fill: $color-3;
+                }
+            }
+        }
+    }
+
+    .home-row-services {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        margin-top: 46px;
+        .home-col-services {
+            width: 28%;
+            padding: 15px;
+            position: relative;
+            transition: .2s;
+            .home-services-content {
+                position: absolute;
+                padding: 30px 26px;
+                padding-right: 40px;
+                .home-services-header {
+                    background-color: $color-secondary;
+                    @include text($color-1, 400, 14);
+                    padding: 4px 12px;
+                    border-radius: 36px;
+                    width: fit-content;
+                    margin-bottom: 16px;
+                }
+                .home-services-tite {
+                    @include text($color-1, 800, 20);
+                    line-height: 26px;
+                }
+                .home-services-detail {
+                    @include text($color-secondary, 600, 13);
+                    display: none;
+                    span {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            &:hover {
+                transform: scale(1.1);
+                .home-services-detail {
+                    display: block;
+                }
+            }
+        }
+        .home-col-banner {
+            width: 16%;
+            padding: 15px;
+            text-align: right;
+            img {
+                width: 100%;
+                height: 100%;
+                
+            }
+        }
+    }
+
+    .home-banner-middle {
+        margin-top: 78px;
+        background: $color-bg-tr url(../images/bg/tensgrup.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        padding: 86px 18px 60px 86px;
+        .home-banner-middle-top-text {
+            @include text($color-3, 500, 15);
+        }
+        .home-banner-middle-title {
+            text-transform: uppercase;
+            @include text($color-secondary, 800, 45);
+            margin-bottom: 30px;
+        }
+        .home-banner-middle-text-bold {
+            margin-right: 90px;
+            line-height: remTransform(28);
+            @include text($color-2, 700, 16);
+        }
+        .home-banner-middle-text-small {
+            line-height: remTransform(22.5);
+            @include text($color-2, 300, 13);
+        }
+        .button-primary {
+            margin-top: 60px;
+        }
+    }
+
+    .home-banner-double {
+        margin-top: 60px;
+        .home-banner-double-img {
+            margin: 10px 0;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .home-contact {
+        .home-main-title-wrapper {
+            border: none;
+            margin-bottom: 26px;   
+        }
+        .contact-form-wrapper {
+            .home-form-adress {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                .home-form-adress-item {
+                    display: flex;
+                    align-items: baseline;
+                    
+                    margin-bottom: 20px;
+                    .home-form-adress-item-text {
+                        margin-left: 12px;
+                        .home-form-adress-primary {
+                            @include text($color-secondary, 500, 14);
+                        }
+                        .home-form-adress-secondary {
+                            margin-top: 4px;
+                            @include text($color-2, 700, 16);
+                            a:hover {
+                                color: inherit;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .home-subscribe {
+        background-color: $color-3;
+        padding: 36px 42px;
+        border-radius: 2px;
+        margin-top: 70px;
+        .home-subscribe-title {
+            @include text($color-1, 800, 20);
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .form-subscribe {
+            .input-subscribe {
+                width: 100%;
+                height: 100%;
+            }
+            .btn-subscribe {
+                width: 100%;
+                height: 100%;
+                padding: 12px 22px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1259px) {
+    .home-col-services {
+        &:hover {
+            transform: scale(1.036) !important;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .home-row-services {
+        .home-col-services {
+            width: 50% !important;
+        }
+        .home-col-banner {
+            width: 50% !important;
+            img {
+                width: fit-content !important;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .home-main {
+        .home-banner-middle {
+            padding: 46px;
+            .home-banner-middle-text-bold {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .home-main {
+        .home-main-title-wrapper {
+            .home-main-title {
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .home-row-services {
+        .home-col-services {
+            width: 100% !important;
+        }
+        .home-col-banner {
+            display: none;
+            width: 100% !important;
+        }
+    }
+    .home-main {
+        .home-banner-middle {
+           .home-banner-middle-title {
+               font-size: 2.2rem;
+           }
+        }
+    }
+}

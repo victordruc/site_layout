@@ -1,0 +1,27 @@
+:root {
+    --font-family: 'Montserrat', sans-serif;
+
+    --color-bg: #E5E5E5;
+    --color-bg-tr: rgba(106, 106, 106, 0.06);
+    --color-secondary: #71BC55;
+    --color-1: #FFFFFF;
+    --color-2: #323539;
+    --color-3: #2580C4;
+    --color-4: #D8D8D8;
+    --color-5: #6A6A6A;
+    --color-6: #FAFAFA;
+    --color-7: #EAEAEA;
+}
+
+$font-family: var(--font-family);
+
+$color-bg: var(--color-bg);
+$color-bg-tr: var(--color-bg-tr);
+$color-secondary: var(--color-secondary);
+$color-1: var(--color-1);
+$color-2: var(--color-2);
+$color-3: var(--color-3);
+$color-4: var(--color-4);
+$color-5: var(--color-5);
+$color-6: var(--color-6);
+$color-7: var(--color-7);

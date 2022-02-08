@@ -1,0 +1,133 @@
+.jobs-main {
+    .jobs-vacancies {
+        .jobs-vacancies-title {
+           @include text($color-2, 700, 35);
+           text-transform: uppercase;
+           margin-top: 20px;
+        }
+        .jobs-vacancies-wrapper {
+            margin: 30px 0;
+        }
+        .jobs-vacancies-item {
+            background-color: $color-6;
+            padding: 36px;
+            position: relative;
+            .jobs-vacancies-item-title {
+                @include text($color-2, 700, 16);
+                padding-bottom: 30px;
+                border-bottom: 1px solid $color-7;
+                margin-bottom: 30px;
+            }
+            .jobs-vacancies-list-title {
+                @include text($color-2, 600, 16);
+            }
+            .jobs-vacancies-list {
+                list-style: none;
+                padding: 0;
+                margin-bottom: 34px;
+                .jobs-vacancies-list-item {
+                    @include text($color-2, 300, 14);
+                    padding: 10px 0;
+                    &::before {
+                        content: "-";
+                        @include text($color-2, 300, 14);
+                    }
+                }
+            }
+            .jobs-vacancies-animation {
+                .jobs-vacancies-control {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+            .btn-visible-control-jobs {
+                @include text($color-2, 600, 13);
+                &:hover {
+                    color: $color-secondary;
+                    path {
+                        stroke: $color-secondary;
+                    }
+                }
+                span {
+                    margin-right: 4px;
+                }
+            }
+            .jobs-show-more {
+                // position: relative;
+                display: none;
+                .btn-show-jobs-vacancies {
+                    padding: 0;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 150px;
+                    bottom: 58px;
+                    left: 0;
+                    background: linear-gradient(180deg, rgba(250, 250, 250, 0) -35%, #FAFAFA 100%);
+                }
+            }
+
+            &.jobs-vacancies-item-hide {
+                .jobs-vacancies-animation {
+                    height: 360px;
+                    overflow: hidden;
+                }
+                .jobs-show-more {
+                    display: block;
+                }
+                .btn-hide-jobs-vacancies {
+                    display: none;
+                }
+            }
+        }
+    }
+    .jobs-contact {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .jobs-contact-title {
+            @include text($color-2, 700, 24);
+            margin-top: 16px;
+            margin-bottom: 20px; 
+        }
+        .jobs-contact-text {
+            @include text($color-2, 300, 16);
+        }
+        .btn-action-contact {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            label {
+                @include text($color-secondary, 600, 13);
+                cursor: pointer;
+                transition: .2s;
+                &:hover {
+                    color: $color-5;
+                    path {
+                        fill: $color-5;
+                    }
+                }
+                input {
+                    display: none;
+                }
+                span {
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:575px) {
+    .jobs-contact {
+        .btn-action-contact {
+            flex-direction: column;
+            &>* {
+                margin: 10px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TensGrup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/lib//aos-master/dist/aos.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header-main">
+      <nav class="navbar navbar-top">
+        <div class="container-content d-flex">
+          <a class="navbar-brand" href="/">
+            <img src="images/logo/tensgrup.png" alt="logo" />
+          </a>
+          <div class="navbar-top-info">
+            <div class="navbar-top-program">Luni - Vineri 8 : 00 - 17 : 00</div>
+            <div class="navbar-top-lang-cont">
+              <span class="navbar-lang" id="navbarLang">
+                <span>Ro</span>
+                <span class="navbar-lang-selection">
+                  <div class="navbar-lang-select">
+                    Ru
+                  </div>
+                  <div class="navbar-lang-select">
+                    Ru
+                  </div>
+                </span>
+              </span>
+              <span class="navbar-contact">
+                <span>info@tensgrup.md</span>
+                <a href="tel: +37379040001">+ (373) 79 04 00 01</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-md navbar-bottom">
+        <div class="container-content d-flex">
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="#000000"
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <div class="search-input">
+              <input type="search" placeholder="Cautare...">
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item search-item"> 
+                <svg
+                  class="search-btn"
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="6.41762"
+                    cy="6.96117"
+                    r="5.64571"
+                    stroke="#323539"
+                  />
+                  <line
+                    x1="10.0655"
+                    y1="11.3723"
+                    x2="14.6194"
+                    y2="15.9261"
+                    stroke="#323539"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicii</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Despre compania</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Angajari</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacte</a>
+              </li>
+              <li class="nav-item">
+                <span class="mobile-show-med">
+                  <span class="navbar-top-program">
+                    Luni - Vineri 8 : 00 - 17 : 00
+                  </span>
+                </span>
+              </li>
+              <li class="nav-item">
+                <span class="mobile-show-min">
+                  <span class="navbar-lang">
+                    <span>Ro</span>
+                    <span>Ru</span>
+                    <span>En</span>
+                  </span>
+                  <span class="navbar-contact">
+                    <span>info@tensgrup.md</span>
+                    <a href="tel: +37379040001">+ (373) 79 04 00 01</a>
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="jobs-main">
+      <div class="container-content">
+        <ul class="breadcrumbs">
+          <li class="crumbs">
+            <a href="#">Acasă</a>
+          </li>
+          <li class="crumbs">
+            <a href="#">Angajari</a>
+          </li>
+        </ul>
+      </div>
+
+      <section class="content-primary-top container-content">
+        <div class="row">
+          <div class="col-xl-10 col-lg-9 col-md-8 col-sm-7">
+            <div class="row">
+              <h1 class="content-primary-top-title">
+                Angajari
+              </h1>
+              <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
+                <p class="content-primary-top-text-bold">
+                  Salutăm apariția în rândurile noastre a specialiștilor ale căror cunoștințe și aptitudini profesionale vor contribui la atingerea obiectivelor strategice ale companiei. Dacă doriți să faceți parte din echipa TENSGRUP, atunci trimiteți CV-ul.
+                </p>
+                <p class="content-primary-top-text-small">
+                  Punem cerințe ridicate în selecția personalului, acordând atenție nu doar educației și experienței de succes, ci și conformării de către candidat cu cultura corporativă a companiei. Compania „TENSGRUP” apreciază fiecare angajat și se străduiește să ofere șanse egale pentru dezvoltarea și îmbunătățirea calităților și competențelor profesionale.
+                </p>
+                <p class="content-primary-top-text-small">
+                  Compania este interesată de colaborarea cu specialiști de înaltă calificare, cu experiență profesională, educație și motivație ridicată pentru muncă și autodezvoltare. Apreciem la angajatii nostri dorinta de a obtine rezultate, dorinta de a lucra in echipa si de a-si asuma responsabilitatea.
+                </p>
+                <p class="content-primary-top-text-small">
+                  Oferim oportunități ample pentru a debloca potențialul și creșterea în carieră a angajaților noștri.Integer bibendum cursus venenatis ut dignissim vel nulla convallis. Sit turpis natoque amet nunc. Molestie penatibus tincidunt donec quis massa, habitasse placerat eu quis.
+                </p>
+              </div>
+              <div class="col-lg-5" data-aos="fade-right"  data-aos-easing="ease-in-out" data-aos-delay="50" data-aos-duration="1500">
+                <p class="content-primary-top-text-small">
+                  Integer bibendum cursus venenatis ut dignissim vel nulla convallis. Sit turpis natoque amet nunc. Molestie penatibus tincidunt donec quis massa, habitasse placerat eu quis. Est ac feugiat nisi cursus pellentesque pharetra neque lectus. Eget iaculis eu integer fusce nascetur donec laoreet in lectus.
+                </p>
+                <p class="content-primary-top-text-small">
+                  Consequat risus, enim malesuada felis sed ut nunc. Quis rutrum pellentesque vel velit nulla sem leo eros. Hendrerit congue suscipit at tortor iaculis sed. Tellus eu at id arcu. Consectetur sem vitae ut nisl viverra enim viverra. Gravida faucibus in urna adipiscing et congue id arcu. Sit urna eget sapien donec mattis risus. suspendisse amet. In nunc purus lorem ridiculus lectus lacus lectus. Id tincidunt ac at malesuada nisi. Sem id commodo, habitant nunc vel turpis volutpat. Arcu venenatis id integer laoreet.
+                </p>
+                <p class="content-primary-top-text-small">
+                  Consequat risus, enim malesuada felis sed ut nunc. Quis rutrum pellentesque vel velit nulla sem leo eros. Hendrerit congue suscipit at tortor iaculis sed.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+            <div class="content-primary-top-img">
+              <img class="content-primary-top-img-desktop" src="/images/upload/banner.png" alt="banner-img">
+              <img class="content-primary-top-img-mobile" src="/images/upload/banner1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="jobs-vacancies container-content">
+        <h1 class="jobs-vacancies-title">
+          funcții vacante
+        </h1>
+        <div class="jobs-vacancies-wrapper">
+          <div class="row gy-3">
+          <div class="col-md-6">
+            <div class="jobs-vacancies-item jobs-vacancies-item-hide">
+              <div class="jobs-vacancies-animation" data-aos="fade-right"  data-aos-easing="ease-in-out"  data-aos-duration="1500">
+                <h2 class="jobs-vacancies-item-title">
+                  Lăcătuș-electrician la repararea instrumentelor electrice
+                </h2>
+
+                <h6 class="jobs-vacancies-list-title">
+                  Cerințe:
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Studii medii în domeniu sau superioare în domeniul electric;
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Experiență în domeniul reparațiilor aparatelor și componentelor electrice (constituie un avantaj);
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Persoană responsabilă cu viziune practică.
+                  </li>
+                </ul>
+
+                <h6 class="jobs-vacancies-list-title">
+                  Responsabilităţi:
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Identificarea cauzelor defecțiunilor;
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Diagnosticarea și repararea aparatelor electrice, mecanice
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Deservirea clienţilor.
+                  </li>
+                </ul>
+
+                <h6 class="jobs-vacancies-list-title">
+                  De ce să te alături companiei
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Vei avea parte de angajare oficială într-un oficiu confortabil şi modern
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei primi un salariu motivant şi întreg pachetul social
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei avea posibilitatea de a participa la diverse cursuri de dezvoltare 
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei fi înconjurat de colegi pozitivi şi cu pasiune de muncă
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Beneficiezi de un bon de masă la una din cele mai gustoase cafenele din oraş.
+                  </li>
+                </ul>
+
+                <div class="jobs-vacancies-control">
+                  <button class="button-primary">Trimite CV</button>
+                  <button class="btn-hide-jobs-vacancies btn-visible-control-jobs">
+                    <span>Свернуть</span>
+                    <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.18164 3.92151L3.76006 1.49997L1.33852 3.92151" stroke="#323539" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+              <div class="jobs-show-more">
+                <button class="btn-show-jobs-vacancies btn-visible-control-jobs">
+                  <span>Подробнее</span>
+                  <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.48828 1.49805L3.90986 3.91959L6.3314 1.49805" stroke="#323539" stroke-linecap="round"/>
+                  </svg>                    
+                </button>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="jobs-vacancies-item jobs-vacancies-item-hide">
+              <div class="jobs-vacancies-animation" data-aos="fade-right" data-aos-delay="50"  data-aos-easing="ease-in-out"  data-aos-duration="1500">
+                <h2 class="jobs-vacancies-item-title">
+                  Lăcătuș-electrician la repararea instrumentelor electrice
+                </h2>
+
+                <h6 class="jobs-vacancies-list-title">
+                  Cerințe:
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Studii medii în domeniu sau superioare în domeniul electric;
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Experiență în domeniul reparațiilor aparatelor și componentelor electrice (constituie un avantaj);
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Persoană responsabilă cu viziune practică.
+                  </li>
+                </ul>
+
+                <h6 class="jobs-vacancies-list-title">
+                  Responsabilităţi:
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Identificarea cauzelor defecțiunilor;
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Diagnosticarea și repararea aparatelor electrice, mecanice
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Deservirea clienţilor.
+                  </li>
+                </ul>
+
+                <h6 class="jobs-vacancies-list-title">
+                  De ce să te alături companiei
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Vei avea parte de angajare oficială într-un oficiu confortabil şi modern
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei primi un salariu motivant şi întreg pachetul social
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei avea posibilitatea de a participa la diverse cursuri de dezvoltare 
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei fi înconjurat de colegi pozitivi şi cu pasiune de muncă
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Beneficiezi de un bon de masă la una din cele mai gustoase cafenele din oraş.
+                  </li>
+                </ul>
+
+                <div class="jobs-vacancies-control">
+                  <button class="button-primary">Trimite CV</button>
+                  <button class="btn-hide-jobs-vacancies btn-visible-control-jobs">
+                    <span>Свернуть</span>
+                    <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.18164 3.92151L3.76006 1.49997L1.33852 3.92151" stroke="#323539" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+              <div class="jobs-show-more">
+                <button class="btn-show-jobs-vacancies btn-visible-control-jobs">
+                  <span>Подробнее</span>
+                  <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.48828 1.49805L3.90986 3.91959L6.3314 1.49805" stroke="#323539" stroke-linecap="round"/>
+                  </svg>                    
+                </button>
+              </div>
+              
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner-double container-content">
+        <div class="row gy-3">
+          <div class="banner-double-img col-md-6">
+            <img src="/images/upload/banner1.png" alt="banner-img">
+          </div>
+          <div class="banner-double-img col-md-6">
+            <img src="/images/upload/banner1.png" alt="banner-img">
+          </div>
+        </div>
+      </section>
+
+      <section class="jobs-vacancies container-content">
+        <div class="jobs-vacancies-wrapper">
+          <div class="row gy-3">
+          <div class="col-md-6">
+            <div class="jobs-vacancies-item jobs-vacancies-item-hide">
+              <div class="jobs-vacancies-animation" data-aos="fade-right"  data-aos-easing="ease-in-out"  data-aos-duration="1500">
+                <h2 class="jobs-vacancies-item-title">
+                  Lăcătuș-electrician la repararea instrumentelor electrice
+                </h2>
+
+                <h6 class="jobs-vacancies-list-title">
+                  Cerințe:
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Studii medii în domeniu sau superioare în domeniul electric;
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Experiență în domeniul reparațiilor aparatelor și componentelor electrice (constituie un avantaj);
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Persoană responsabilă cu viziune practică.
+                  </li>
+                </ul>
+
+                <h6 class="jobs-vacancies-list-title">
+                  Responsabilităţi:
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Identificarea cauzelor defecțiunilor;
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Diagnosticarea și repararea aparatelor electrice, mecanice
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Deservirea clienţilor.
+                  </li>
+                </ul>
+
+                <h6 class="jobs-vacancies-list-title">
+                  De ce să te alături companiei
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Vei avea parte de angajare oficială într-un oficiu confortabil şi modern
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei primi un salariu motivant şi întreg pachetul social
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei avea posibilitatea de a participa la diverse cursuri de dezvoltare 
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei fi înconjurat de colegi pozitivi şi cu pasiune de muncă
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Beneficiezi de un bon de masă la una din cele mai gustoase cafenele din oraş.
+                  </li>
+                </ul>
+
+                <div class="jobs-vacancies-control">
+                  <button class="button-primary">Trimite CV</button>
+                  <button class="btn-hide-jobs-vacancies btn-visible-control-jobs">
+                    <span>Свернуть</span>
+                    <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.18164 3.92151L3.76006 1.49997L1.33852 3.92151" stroke="#323539" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+              <div class="jobs-show-more">
+                <button class="btn-show-jobs-vacancies btn-visible-control-jobs">
+                  <span>Подробнее</span>
+                  <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.48828 1.49805L3.90986 3.91959L6.3314 1.49805" stroke="#323539" stroke-linecap="round"/>
+                  </svg>                    
+                </button>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="jobs-vacancies-item jobs-vacancies-item-hide">
+              <div class="jobs-vacancies-animation" data-aos="fade-right" data-aos-delay="50"  data-aos-easing="ease-in-out"  data-aos-duration="1500">
+                <h2 class="jobs-vacancies-item-title">
+                  Lăcătuș-electrician la repararea instrumentelor electrice
+                </h2>
+
+                <h6 class="jobs-vacancies-list-title">
+                  Cerințe:
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Studii medii în domeniu sau superioare în domeniul electric;
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Experiență în domeniul reparațiilor aparatelor și componentelor electrice (constituie un avantaj);
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Persoană responsabilă cu viziune practică.
+                  </li>
+                </ul>
+
+                <h6 class="jobs-vacancies-list-title">
+                  Responsabilităţi:
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Identificarea cauzelor defecțiunilor;
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Diagnosticarea și repararea aparatelor electrice, mecanice
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Deservirea clienţilor.
+                  </li>
+                </ul>
+
+                <h6 class="jobs-vacancies-list-title">
+                  De ce să te alături companiei
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Vei avea parte de angajare oficială într-un oficiu confortabil şi modern
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei primi un salariu motivant şi întreg pachetul social
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei avea posibilitatea de a participa la diverse cursuri de dezvoltare 
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei fi înconjurat de colegi pozitivi şi cu pasiune de muncă
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Beneficiezi de un bon de masă la una din cele mai gustoase cafenele din oraş.
+                  </li>
+                </ul>
+
+                <div class="jobs-vacancies-control">
+                  <button class="button-primary">Trimite CV</button>
+                  <button class="btn-hide-jobs-vacancies btn-visible-control-jobs">
+                    <span>Свернуть</span>
+                    <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.18164 3.92151L3.76006 1.49997L1.33852 3.92151" stroke="#323539" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+              <div class="jobs-show-more">
+                <button class="btn-show-jobs-vacancies btn-visible-control-jobs">
+                  <span>Подробнее</span>
+                  <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.48828 1.49805L3.90986 3.91959L6.3314 1.49805" stroke="#323539" stroke-linecap="round"/>
+                  </svg>                    
+                </button>
+              </div>
+              
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="jobs-vacancies container-content">
+        <div class="jobs-vacancies-wrapper">
+          <div class="row gy-3">
+          <div class="col-md-6">
+            <div class="jobs-vacancies-item jobs-vacancies-item-hide">
+              <div class="jobs-vacancies-animation" data-aos="fade-right"  data-aos-easing="ease-in-out"  data-aos-duration="1500">
+                <h2 class="jobs-vacancies-item-title">
+                  Lăcătuș-electrician la repararea instrumentelor electrice
+                </h2>
+
+                <h6 class="jobs-vacancies-list-title">
+                  Cerințe:
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Studii medii în domeniu sau superioare în domeniul electric;
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Experiență în domeniul reparațiilor aparatelor și componentelor electrice (constituie un avantaj);
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Persoană responsabilă cu viziune practică.
+                  </li>
+                </ul>
+
+                <h6 class="jobs-vacancies-list-title">
+                  Responsabilităţi:
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Identificarea cauzelor defecțiunilor;
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Diagnosticarea și repararea aparatelor electrice, mecanice
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Deservirea clienţilor.
+                  </li>
+                </ul>
+
+                <h6 class="jobs-vacancies-list-title">
+                  De ce să te alături companiei
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Vei avea parte de angajare oficială într-un oficiu confortabil şi modern
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei primi un salariu motivant şi întreg pachetul social
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei avea posibilitatea de a participa la diverse cursuri de dezvoltare 
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei fi înconjurat de colegi pozitivi şi cu pasiune de muncă
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Beneficiezi de un bon de masă la una din cele mai gustoase cafenele din oraş.
+                  </li>
+                </ul>
+
+                <div class="jobs-vacancies-control">
+                  <button class="button-primary">Trimite CV</button>
+                  <button class="btn-hide-jobs-vacancies btn-visible-control-jobs">
+                    <span>Свернуть</span>
+                    <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.18164 3.92151L3.76006 1.49997L1.33852 3.92151" stroke="#323539" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+              <div class="jobs-show-more">
+                <button class="btn-show-jobs-vacancies btn-visible-control-jobs">
+                  <span>Подробнее</span>
+                  <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.48828 1.49805L3.90986 3.91959L6.3314 1.49805" stroke="#323539" stroke-linecap="round"/>
+                  </svg>                    
+                </button>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="jobs-vacancies-item jobs-vacancies-item-hide">
+              <div class="jobs-vacancies-animation" data-aos="fade-right" data-aos-delay="50"  data-aos-easing="ease-in-out"  data-aos-duration="1500">
+                <h2 class="jobs-vacancies-item-title">
+                  Lăcătuș-electrician la repararea instrumentelor electrice
+                </h2>
+
+                <h6 class="jobs-vacancies-list-title">
+                  Cerințe:
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Studii medii în domeniu sau superioare în domeniul electric;
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Experiență în domeniul reparațiilor aparatelor și componentelor electrice (constituie un avantaj);
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Persoană responsabilă cu viziune practică.
+                  </li>
+                </ul>
+
+                <h6 class="jobs-vacancies-list-title">
+                  Responsabilităţi:
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Identificarea cauzelor defecțiunilor;
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Diagnosticarea și repararea aparatelor electrice, mecanice
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Deservirea clienţilor.
+                  </li>
+                </ul>
+
+                <h6 class="jobs-vacancies-list-title">
+                  De ce să te alături companiei
+                </h6>
+                <ul class="jobs-vacancies-list">
+                  <li class="jobs-vacancies-list-item">
+                    Vei avea parte de angajare oficială într-un oficiu confortabil şi modern
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei primi un salariu motivant şi întreg pachetul social
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei avea posibilitatea de a participa la diverse cursuri de dezvoltare 
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Vei fi înconjurat de colegi pozitivi şi cu pasiune de muncă
+                  </li>
+                  <li class="jobs-vacancies-list-item">
+                    Beneficiezi de un bon de masă la una din cele mai gustoase cafenele din oraş.
+                  </li>
+                </ul>
+
+                <div class="jobs-vacancies-control">
+                  <button class="button-primary">Trimite CV</button>
+                  <button class="btn-hide-jobs-vacancies btn-visible-control-jobs">
+                    <span>Свернуть</span>
+                    <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.18164 3.92151L3.76006 1.49997L1.33852 3.92151" stroke="#323539" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+              <div class="jobs-show-more">
+                <button class="btn-show-jobs-vacancies btn-visible-control-jobs">
+                  <span>Подробнее</span>
+                  <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.48828 1.49805L3.90986 3.91959L6.3314 1.49805" stroke="#323539" stroke-linecap="round"/>
+                  </svg>                    
+                </button>
+              </div>
+              
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container-content content-show-more">
+        <button class="btn-show-more-jobs">
+          <span>Toata functii vacante</span>
+          <span class="svg-btn">
+            <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.41992 0.688721L4.98006 4.00794L8.5402 0.688721" stroke="#71BC55" stroke-linecap="round"/>
+            </svg>
+            <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.41992 0.688721L4.98006 4.00794L8.5402 0.688721" stroke="#71BC55" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <section class="jobs-contact container-content">
+        <div class="contact-form-wrapper">
+          <div>
+            <div class="row gx-5 gy-3">
+
+              <div class="col-lg-6">
+                <h1 class="jobs-contact-title">Trimiteți-vă candidatura</h1>
+                <p class="jobs-contact-text">
+                  Dacă îți dorești să faci parte din echipa noastră poți să transmiți CV-ul cu anexarea pozei pe adresa: hr@tensgrup.md
+                </p>
+                <p class="jobs-contact-text">
+                  sau să suni la nr. + (373) 79 04 00 01
+                </p>
+                <p class="jobs-contact-text">
+                  Te rugăm să indici postul pentru care optezi.
+                </p>
+              </div>
+
+              <div class="col-lg-6">
+                <form class="home-contact-form">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="input-form" type="text" placeholder="Nume Prenume">
+                    </div>
+                    <div class="col-md-6">
+                      <input class="input-form" type="tel" placeholder="Telefon">
+                    </div>
+                  </div>
+                  <input class="input-form" type="email" placeholder="E-mail">
+                  <textarea rows="6" class="input-form" placeholder="Mesaj"></textarea>
+                  <div class="btn-action-contact">
+                    <label for="fileContact">
+                      <input type="file" id="fileContact">
+                      <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_55_817)">
+                        <path d="M17.3171 6.8631C17.3118 6.86901 17.3064 6.87477 17.3008 6.8804L7.4368 16.7444C6.59298 17.5882 5.59219 18.0293 4.52917 18.0293C4.44842 18.0293 4.36734 18.0268 4.28592 18.0217C3.2704 17.958 2.28518 17.497 1.51178 16.7236C0.738381 15.9502 0.277412 14.965 0.213709 13.9495C0.141358 12.7961 0.583025 11.7065 1.49093 10.7986L11.3226 0.967049C11.4874 0.802307 11.7545 0.802342 11.9192 0.967049C12.084 1.13183 12.084 1.39894 11.9192 1.56369L2.08757 11.3952C0.469225 13.0136 0.963943 14.9825 2.10842 16.127C3.25293 17.2715 5.22182 17.7662 6.84016 16.1478L16.6955 6.29245C17.778 5.07193 17.4118 3.67443 16.5666 2.82931C15.7214 1.98415 14.3239 1.61793 13.1035 2.70043L6.80659 8.99722C5.9749 9.82892 6.21326 10.8118 6.8184 11.417C7.42358 12.0222 8.40651 12.2605 9.2382 11.4288L14.6877 5.97927C14.8525 5.8145 15.1196 5.8145 15.2843 5.97927C15.4491 6.14405 15.4491 6.41113 15.2843 6.57591L9.83484 12.0254C8.65271 13.2075 7.12247 12.9143 6.2218 12.0136C5.32113 11.113 5.0279 9.58272 6.20995 8.40062L12.5155 2.09514C12.5211 2.08955 12.5269 2.0841 12.5328 2.07883C13.2622 1.42731 14.1202 1.12381 15.0137 1.20144C15.8033 1.26992 16.5667 1.63614 17.1632 2.23267C17.7597 2.82917 18.1259 3.59255 18.1944 4.38216C18.272 5.2758 17.9686 6.13372 17.3171 6.8631Z" fill="#71BC55"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_55_817">
+                        <rect width="18" height="18" fill="white" transform="translate(0.206055 0.436279)"/>
+                        </clipPath>
+                        </defs>
+                      </svg>
+                      <span>
+                        Incarcare CV - ul
+                      </span>
+                    </label>
+                    <button type="submit" class="button-primary">
+                      Trimite mesaj
+                    </button>
+                  </div>
+                </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-main">
+        <div class="container-content">
+            <div class="row">
+                <div class="col-xl-3 col-2">
+                    <img src="/images/logo/tensgrup.png" alt="logo-tens-grup">
+                </div>
+                <div class="col-xl-9 col-10">
+                    <div class="footer-top-info">
+                        <ul class="nav-footer-info">
+                            <li class="nav-footer-info-item">
+                                <a class="nav-footer-link" href="#">Servicii</a>
+                            </li>
+                            <li class="nav-footer-info-item">
+                                <a class="nav-footer-link" href="#">Despre companie</a>
+                            </li>
+                            <li class="nav-footer-info-item">
+                                <a class="nav-footer-link" href="#">Fotogalerie</a>
+                            </li>
+                            <li class="nav-footer-info-item">
+                                <a class="nav-footer-link" href="#">Angajari</a>
+                            </li>
+                            <li class="nav-footer-info-item">
+                                <a class="nav-footer-link" href="#">Contacte</a>
+                            </li>
+                            <li class="nav-footer-info-item-social">
+                                <span class="nav-footer-social">
+                                  <a href="">
+                                    <svg class="fb" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.80211 10.1621H0.647921C0.309839 10.1621 0.188477 10.0386 0.188477 9.69835C0.188477 8.82136 0.188477 7.94509 0.188477 7.06955C0.188477 6.73147 0.31634 6.6036 0.650088 6.6036H2.80211V4.70731C2.77657 3.85551 2.98094 3.01257 3.39375 2.26705C3.82289 1.5144 4.51054 0.943027 5.32905 0.658996C5.86025 0.465716 6.4217 0.368839 6.98695 0.372927H9.1173C9.42288 0.372927 9.55074 0.507293 9.55074 0.806365V3.27913C9.55074 3.58904 9.42071 3.71257 9.1173 3.71257C8.53433 3.71257 7.95135 3.71257 7.37055 3.73641C6.78974 3.76025 6.47333 4.02464 6.47333 4.63146C6.46033 5.28161 6.47333 5.91877 6.47333 6.58193H8.97644C9.33185 6.58193 9.45322 6.70329 9.45322 7.06088C9.45322 7.92775 9.45322 8.79896 9.45322 9.67451C9.45322 10.0278 9.34052 10.1383 8.98294 10.1405H6.46033V17.1925C6.46033 17.5696 6.3433 17.6888 5.97054 17.6888H3.25722C2.92997 17.6888 2.80211 17.5609 2.80211 17.2337V10.1621Z" fill="#3B5998"/>
+                                    </svg>
+                                  </a>
+                                  <a href="">
+                                    <svg class="instagram" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M10.2125 8.03083C10.2125 9.61104 8.93159 10.892 7.35139 10.892C5.77119 10.892 4.49023 9.61104 4.49023 8.03083C4.49023 6.45063 5.77119 5.16968 7.35139 5.16968C8.93159 5.16968 10.2125 6.45063 10.2125 8.03083Z" fill="url(#paint0_linear_90_449)"/>
+                                      <path d="M14.0427 2.96847C13.9052 2.59577 13.6857 2.25842 13.4006 1.98152C13.1237 1.69641 12.7866 1.47699 12.4137 1.33945C12.1112 1.22199 11.6569 1.08217 10.82 1.04408C9.91474 1.00279 9.64332 0.993896 7.35147 0.993896C5.0594 0.993896 4.78797 1.00256 3.88291 1.04385C3.04605 1.08217 2.59147 1.22199 2.28925 1.33945C1.91633 1.47699 1.57898 1.69641 1.30231 1.98152C1.0172 2.25842 0.797775 2.59554 0.660009 2.96847C0.542543 3.27091 0.402724 3.7255 0.364633 4.56236C0.323349 5.46742 0.314453 5.73884 0.314453 8.03092C0.314453 10.3228 0.323349 10.5942 0.364633 11.4995C0.402724 12.3363 0.542543 12.7907 0.660009 13.0931C0.797775 13.4661 1.01697 13.8032 1.30208 14.0801C1.57898 14.3652 1.9161 14.5846 2.28902 14.7222C2.59147 14.8398 3.04605 14.9797 3.88291 15.0178C4.78797 15.059 5.05917 15.0677 7.35124 15.0677C9.64354 15.0677 9.91497 15.059 10.8198 15.0178C11.6567 14.9797 12.1112 14.8398 12.4137 14.7222C13.1623 14.4334 13.7539 13.8417 14.0427 13.0931C14.1602 12.7907 14.3 12.3363 14.3383 11.4995C14.3796 10.5942 14.3883 10.3228 14.3883 8.03092C14.3883 5.73884 14.3796 5.46742 14.3383 4.56236C14.3002 3.7255 14.1604 3.27091 14.0427 2.96847ZM7.35147 12.4383C4.91707 12.4383 2.94364 10.4651 2.94364 8.03069C2.94364 5.59629 4.91707 3.62308 7.35147 3.62308C9.78564 3.62308 11.7591 5.59629 11.7591 8.03069C11.7591 10.4651 9.78564 12.4383 7.35147 12.4383ZM11.9333 4.47888C11.3645 4.47888 10.9033 4.01768 10.9033 3.44882C10.9033 2.87997 11.3645 2.41877 11.9333 2.41877C12.5022 2.41877 12.9634 2.87997 12.9634 3.44882C12.9632 4.01768 12.5022 4.47888 11.9333 4.47888Z" fill="url(#paint1_linear_90_449)"/>
+                                      <defs>
+                                      <linearGradient id="paint0_linear_90_449" x1="10.4694" y1="6.17305" x2="4.60869" y2="12.3229" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#FFDC80"/>
+                                      <stop offset="0.114583" stop-color="#FCAF45"/>
+                                      <stop offset="0.208333" stop-color="#F77737"/>
+                                      <stop offset="0.307292" stop-color="#F56040"/>
+                                      <stop offset="0.442708" stop-color="#FD1D1D"/>
+                                      <stop offset="0.557292" stop-color="#E1306C"/>
+                                      <stop offset="0.671875" stop-color="#C13584"/>
+                                      <stop offset="0.776042" stop-color="#833AB4"/>
+                                      <stop offset="0.901042" stop-color="#5851DB"/>
+                                      <stop offset="1" stop-color="#405DE6"/>
+                                      </linearGradient>
+                                      <linearGradient id="paint1_linear_90_449" x1="15.0201" y1="3.46166" x2="0.605797" y2="18.587" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#FFDC80"/>
+                                      <stop offset="0.114583" stop-color="#FCAF45"/>
+                                      <stop offset="0.208333" stop-color="#F77737"/>
+                                      <stop offset="0.307292" stop-color="#F56040"/>
+                                      <stop offset="0.442708" stop-color="#FD1D1D"/>
+                                      <stop offset="0.557292" stop-color="#E1306C"/>
+                                      <stop offset="0.671875" stop-color="#C13584"/>
+                                      <stop offset="0.776042" stop-color="#833AB4"/>
+                                      <stop offset="0.901042" stop-color="#5851DB"/>
+                                      <stop offset="1" stop-color="#405DE6"/>
+                                      </linearGradient>
+                                      </defs>
+                                    </svg>
+                                  </a>  
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-bottom-info">
+                        <ul class="nav-footer-info-bottom">
+                          <li class="nav-footer-info-bottom-item">
+                            <div class="nav-footer-info-context">
+                              Contactați
+                            </div>
+                            <div class="nav-footer-info-contact">
+                              <a href="tel: +37379040001">+ ( 373 ) 79 04 00 01</a>
+                            </div>
+                          </li>
+                          <li class="nav-footer-info-bottom-item">
+                            <div class="nav-footer-info-context">
+                              Vizitați
+                            </div>
+                            <div class="nav-footer-info-contact">
+                              Chișinău, șos. Balcani 3/4, of. 3
+                            </div>
+                          </li>
+                          <li class="nav-footer-info-bottom-item">
+                            <div class="nav-footer-info-context">
+                              Scrieți
+                            </div>
+                            <div class="nav-footer-info-contact">
+                              info@tensgrup.md
+                            </div>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                  <div class="footer-copyright">
+                    <span class="footer-copyright-develop">develop by</span>
+                    <a class="footer-copyright-link" href="#">
+                        <span class="footer-copyright-studio">Studio WebMaster, 2022</span>
+                        <span class="footer-copyright-logo">
+                            <img src="/images/logo/WebMasterStudio.png" alt="logo-ws">
+                        </span>
+                    </a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/lib/aos-master/dist/aos.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
