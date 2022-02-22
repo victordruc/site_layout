@@ -1,0 +1,632 @@
+.offers-detail-main {
+    .event-detail-star {
+        @include text($color-15, 350, 16);
+        span {
+            margin-left: 6px;
+        }
+    }
+    .event-detail-partner {
+        a {
+            color: $color-15 !important;
+            text-decoration: none !important;
+        }
+        span {
+            @include text($color-15, 350, 16);
+        }
+    }
+    .offers-detail-header {
+        .offers-detail-header-img-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -4px;
+            height: 100%;
+            &>* {
+                padding: 4px;
+            }
+            .offers-detail-origin {
+                width: calc(100% - 212px);
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px 0 0 10px;
+                }
+            }
+            .offers-detail-preview {
+                width: 212px;
+                display: flex;
+                flex-direction: column;
+                margin: -4px;
+                padding-right: 0;
+                .offers-detail-preview-img {
+                    padding: 4px;
+                    padding-right: 0;
+                    height: 100%;
+                    position: relative;
+                    .offers-detail-preview-wrapper {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    .offers-detail-control-img {
+                        cursor: pointer;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @include text($color-5, 700, 20);
+                        background-color: rgba(0, 0, 0, 0.5);
+                        transition: .2s;
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.6);
+                        }
+                    }
+                }
+            }
+        }
+        .offers-detail-card-reservation {
+            border: 1px solid $color-7;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 8px;
+            overflow: hidden;
+            &>* {
+                padding: 22px 46px 0 46px;
+            }
+            .offers-detail-reservation-adress {
+                @include text($color-2, 700, 22);
+                margin-bottom: 10px;
+            }
+            .offers-detail-reservation-map {
+                .offers-detail-reservation-map-action {
+                    padding: 4px 16px;
+                    background-color: #292929;
+                    @include text($color-5, 400, 14);
+                    border-radius: 100px;
+                }
+            }
+            .offers-detail-reservation-text {
+                @include text($color-20, 350, 15);
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
+                margin: 30px 0 20px 0;
+            }
+            .offers-detail-reservation-accesories {
+                display: flex;
+                flex-wrap: wrap;
+                margin: -2px;
+                &>* {
+                    padding: 2px;
+                }
+                .offers-accesories-card {
+                    padding: 8px;
+                    border: 1px solid $color-7;
+                    border-radius: 4px;
+                    @include text($color-2, 400, 15);
+                    span {
+                        margin-left: 2px;
+                    }
+                }
+            }
+            .offers-detail-reservation-toggle {
+                margin: 20px 0;
+                .offers-detail-reservation-toggle-btn {
+                    padding: 0;
+                    @include text($color-2, 400, 15);
+                    text-decoration: underline;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+            .offers-detail-reservation-bottom {
+                background-color: $color-21;
+                padding-bottom: 42px;
+                .offers-detail-reservation-price {
+                    @include text($color-22, 700, 24);
+                    text-align: center;
+                }
+                .offers-detail-reservation-action {
+                    margin-top: 10px;
+                    .offers-detail-reservation-action-btn {
+                        padding: 20px;
+                        width: 100%;
+                        background-color: $color-23;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @include text($color-5, 700, 20);
+                        &.opened-form {
+                            background-color: $color-7;
+                            &::before {
+                                transform: rotate(180deg);
+                            }
+                            &:hover {
+                                background-color: $color-8;
+                            }
+                        }
+                        &:hover {
+                            background-color: $color-23-hover;
+                        }
+                        &::before {
+                            content: "";
+                            transition: .2s;
+                            background-image: url(../images/icon/arrow-reserv.svg);
+                            display: inline-block;
+                            width: 12px;
+                            height: 6px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+    .offers-detail-content {
+        border: 1px solid $color-7;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 32px;
+        .offers-detail-content-wrapper {
+            .offers-detail-content-list {
+                list-style: none;
+                padding: 42px 48px;
+                margin: 0;
+                .offers-detail-content-item {
+                    border-bottom: 1px solid $color-7;
+                    padding-bottom: 18px;
+                    margin-bottom: 34px;
+                    &:last-child {
+                        border-bottom: none;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
+                    .offers-detail-content-title {
+                        @include text($color-1, 700, 22);
+                        margin-bottom: 16px
+                    }
+                    .offers-detail-content-text {
+                        @include text($color-2, 350, 18);
+                        display: -webkit-box;
+                        -webkit-line-clamp: 8;
+                        -webkit-box-orient: vertical;  
+                        overflow: hidden;
+                    }
+                    .offers-detail-content-action {
+                        .offers-detail-content-action-btn {
+                            @include text($color-2, 400, 15);
+                            padding: 0;
+                            text-decoration: underline;
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    .offers-detail-content-accesories {
+                        list-style: none;
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        padding: 10px 2px;
+                        margin-bottom: 16px;
+                        &>* {
+                            padding: 10px;
+                        }
+                        .offers-detail-content-accesories-item {
+                            .offers-accesories-wrapper {
+                                @include text($color-2, 400, 16);
+                                span {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .offers-content-accesories-wrapper {
+                        .offers-detail-content-option {
+                            .offers-detail-content-option-title {
+                                @include text($color-2, 400, 18);
+                            }
+                            .offers-detail-content-option-list {
+                                list-style: none;
+                                padding: 0;
+                                margin-bottom: 16px;
+                                .offers-detail-content-option-item {
+                                    padding: 2px 0;
+                                    @include text($color-20, 350, 16);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .offers-detail-content-feedback {
+            background-color: $color-21;
+            height: 100%;
+            padding: 40px;
+            .offers-detail-feedback-header {
+                display: flex;
+                gap: 6px;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .offers-detail-feedback-header-star {
+                    .offers-feedback-star {
+                        @include text($color-1, 400, 30);
+                        display: flex;
+                        align-items: baseline;
+                        span {
+                            margin-left: 6px;
+                        }
+                    }
+                    .offers-feedback-review {
+                        a {
+                            @include text($color-2, 400, 15);
+                            text-decoration: underline;
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                        
+                    }
+                }
+                .offers-detail-feedback-header-action {
+                    .offers-detail-feedback-btn {
+                        @include text($color-24, 400, 18);
+                        padding: 12px 44px;
+                        border: 1px solid #333333;
+                        border-radius: 6px;
+                        &:hover {
+                            color: $color-5;
+                            background-color: $color-17;
+                            border-color: $color-17;
+                        }
+                    }
+                }
+            }
+            .offers-detail-feedback-list {
+                list-style: none;
+                padding: 0;
+                margin: 30px 0 0 0;
+                .offers-detail-feedback-item {
+                    border-bottom: 1px solid $color-7;
+                    margin-top: 34px;
+                    .offers-feedback-item-header {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 6px;
+                        justify-content: space-between;
+                        .offers-feedback-item-name {
+                            @include text($color-2, 400, 17);
+                        }
+                        .offers-feedback-item-star {
+                            @include text($color-20, 400, 17);
+                            display: flex;
+                            align-items: baseline;
+                            span {
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+                    .offers-feedback-item-date {
+                        @include text($color-20, 350, 15);
+                    }
+                    .offers-feedback-item-text {
+                        @include text($color-20, 350, 15);
+                        display: -webkit-box;
+                        -webkit-line-clamp: 5;
+                        -webkit-box-orient: vertical;  
+                        overflow: hidden;
+                        margin-top: 14px;
+                    }
+                    .offers-feedback-toggle-text {
+                        margin-bottom: 10px;
+                        .offers-feedback-toggle-btn {
+                           padding: 0;
+                           @include text($color-2, 400, 15);
+                           text-decoration: underline;
+                           &:hover {
+                            text-decoration: none;
+                           } 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .offers-detail-content-mobile {
+        height: 100%;
+        .offers-detail-content-mobile-toggle {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: -48px;
+            padding: 10px;
+            background-color: $color-21;
+            border-radius: 0 0 0 10px;
+            path {
+                fill: $color-1;
+            }
+            &:hover path {
+               fill: $color-18;
+            }
+        }
+        .offers-detail-content-mobile-close {
+            display: none;
+            margin-left: auto;
+            path {
+                fill: $color-1;
+            }
+            &:hover path {
+                fill: $color-11-hover;
+            }
+        }
+    }
+    .offers-slick {
+        .offers-slick-title {
+            @include text($color-1, 700, 40);
+        }
+    }
+    .offers-form-reservation {
+        border: 1px solid $color-23;
+        border-radius: 10px;
+        padding: 42px;
+        margin-top: 30px;
+        display: none;
+        &.opened-form {
+            display: block;
+        }
+        .offers-form-title {
+            @include text($color-2, 700, 18);
+            margin-bottom: 12px;
+        }
+        .offers-form-select {
+            width: 100%;
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid $color-25;
+            .list {
+                width: 100%;
+            }
+        }
+        .offers-form-count {
+            border: 1px solid $color-25;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .offers-form-count-text {
+                .offers-form-count-text-bold {
+                    @include text($color-2, 700, 16);
+                }
+                .offers-form-count-text-small {
+                    @include text(#4A4A4A, 400, 16);
+                }
+            }
+            .offers-form-count-number {
+                display: flex;
+                align-items: center;
+                margin: -4px;
+                &>* {
+                    padding: 4px;
+                }
+                .offers-form-count {
+                    border: none;
+                    @include text($color-2, 400, 16);
+                }
+                .offers-form-count-number-result {
+                    @include text(#4A4A4A, 400, 16);
+                    background-color: #F2F2F2;
+                    border-radius: 4px;
+                    padding: 6px 16px;
+                }
+            }
+        }
+        .offers-form-input {
+            border: 1px solid $color-25;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            label {
+                @include text(#515151, 350, 15);
+                display: flex;
+                flex-direction: column;
+                input, textarea {
+                    border: none;
+                    outline: none;
+                    @include text($color-1, 400, 16);
+                }
+            }
+        }
+        .offers-form-action-btn {
+            padding: 20px;
+            width: 100%;
+            background-color: $color-23;
+            border-radius: 10px;
+            @include text($color-5, 700, 20);
+            margin-top: 10px;
+            &:hover {
+                background-color: $color-23-hover;
+            }
+        }
+    }
+
+    .event-header-title-text {
+        display: flex;
+        .event-header-title-type {
+            @include text($color-5, 700, 14);
+            padding: 4px 8px;
+            border-radius: 100px;
+            align-self: flex-start;
+            margin-left: 6px;
+        }
+    }
+    
+}
+
+.offers-detail-main {
+    &.accommodation-offers {
+        .offers-detail-content {
+            .offers-detail-content-accesories {
+                border: 1px solid $color-accommodation;
+                path {
+                    fill: $color-accommodation;
+                }
+            }
+        }
+        .event-header-title-type {
+            background-color: $color-accommodation-tr;
+        }
+    }
+    &.wine-offers {
+        .offers-detail-content {
+            .offers-detail-content-accesories {
+                border: 1px solid $color-wine;
+                path {
+                    fill: $color-wine;
+                }
+            }
+        }
+        .event-header-title-type {
+            background-color: $color-wine-tr;
+        }
+    }
+    &.travel-offers {
+        .offers-detail-content {
+            .offers-detail-content-accesories {
+                border: 1px solid $color-travel;
+                path {
+                    fill: $color-travel;
+                }
+            }
+        }
+        .event-header-title-type {
+            background-color: $color-travel-tr;
+        }
+    }
+    &.event-offers {
+        .offers-detail-content {
+            .offers-detail-content-accesories {
+                border: 1px solid $color-event;
+                path {
+                    fill: $color-event;
+                }
+            }
+        }
+        .event-header-title-type {
+            background-color: $color-event-tr;
+        }
+    }
+    &.experiences-offers {
+        .offers-detail-content {
+            .offers-detail-content-accesories {
+                border: 1px solid $color-experiences;
+                path {
+                    fill: $color-experiences;
+                }
+            }
+        }
+        .event-header-title-type {
+            background-color: $color-experiences-tr;
+        }
+    }
+    &.restaurant-offers {
+        .offers-detail-content {
+            .offers-detail-content-accesories {
+                border: 1px solid $color-restaurant;
+                path {
+                    fill: $color-restaurant;
+                }
+            }
+        }
+        .event-header-title-type {
+            background-color: $color-restaurant-tr;
+        }
+    }
+} 
+
+@media (max-width: 991px) {
+    .offers-detail-header-img-wrapper {
+        .offers-detail-origin {
+            img {
+                border-radius: 10px 0 0 0 !important;
+            }
+        }
+        .offers-detail-preview {
+            .offers-detail-preview-img:first-child img{
+                border-radius: 0 10px 0 0 !important;
+            }
+        }
+    }
+    .offers-detail-card-reservation {
+        border-radius: 0 0 10px 10px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .offers-detail-content {
+        .offers-detail-content-mobile {
+            .offers-detail-content-mobile-close {
+                display: block;
+            }
+            .offers-detail-content-mobile-toggle {
+                display: block !important;
+            }
+            position: absolute;
+            left: 100%;
+            transition: 1s;
+            &.show-mobile {
+                left: 0;
+                background-color: $color-21;
+                overflow-y: auto;
+                scrollbar-width: thin !important;
+                scrollbar-color: rgba(255, 0, 0, 0.651) !important;
+            }
+        }
+        
+    }
+    
+}
+
+@media (max-width: 575px) {
+    .offers-detail-header-img-wrapper {
+        .offers-detail-origin {
+            width: 100% !important;
+        }
+        .offers-detail-preview {
+            width: 100% !important;
+            flex-direction: row !important;
+            margin: 0!important;
+            padding-left: 0 !important;
+            padding-right: 4px !important;
+        }
+    }
+
+    .offers-detail-header-img-wrapper {
+        .offers-detail-origin {
+            img {
+                border-radius: 10px 10px 0 0 !important;
+            }
+        }
+        .offers-detail-preview {
+            .offers-detail-preview-img:first-child img{
+                border-radius: 0 !important;
+            }
+        }
+    }
+}

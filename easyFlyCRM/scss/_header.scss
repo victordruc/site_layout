@@ -1,0 +1,118 @@
+.header {
+    position: relative;
+    z-index: 2;
+    .navbar {
+        padding-bottom: 0;
+        .navbar-toggler {
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    @include text($primary-color-text, 500, 18);
+                    padding-bottom: 20px;
+                    margin-top: 20px;
+                    &.active {
+                        color: $secondary-color-text !important;
+                        border-bottom: 3px solid $secondary-color-text;
+                    }
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+        .nav-search {
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 100%;
+            margin-left: 22px;
+            &:hover {
+                border-color: $primary-color-text;
+                path {
+                    fill-opacity: 1;
+                }
+            }
+        }
+        .navbar-user {
+            .user-toggle {
+                display: flex;
+                align-items: center;
+                margin: auto;
+                &:hover {
+                    .img-user {
+                        opacity: .6;
+                    }
+                }
+                .img-user {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    margin-right: 16px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    .range-navbar {
+        height: 3px;
+        width: 100%;
+        background-color: $color_4;
+        position: absolute;
+        bottom: 0;
+    }
+    .find-header {
+        position: absolute;
+        width: 100%;
+        padding: 20px;
+        background-color: $color_4;
+        box-shadow:  0 4px 6px $color_2;
+        display: none;
+        input {
+            width: 100%;
+            padding: 10px;
+            z-index: 2;
+            border-radius: 10px;
+            border: none;
+            &:focus {
+                outline: none;
+            }
+        }
+        &.open-find {
+            display: block;
+        }
+    }
+}
+
+@media (max-width:1199px) {
+    .header {
+        .navbar {
+            padding-bottom: 0.5rem;  
+        }
+        .wrapper-nav {
+            flex-direction: column;
+            .nav-search {
+                margin-left: 100px !important;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+        .navbar-user {
+            display: flex;
+            justify-content: center;
+            .user-toggle {
+                margin: 0 !important;
+                margin-right: 80px !important;
+                
+            }
+        }
+        
+    }
+}

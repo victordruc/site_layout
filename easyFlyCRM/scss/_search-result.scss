@@ -1,0 +1,211 @@
+.main-search {
+    padding: 70px 0 100px 0;
+    .main-search-title {
+      @include text($primary-color-text, 700, 28);
+      margin-bottom: 34px;  
+    }
+    .row-search {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: $color_4;
+        position: relative;
+        min-height: 450px;
+        .col-content {
+            width: calc(100% - 320px);
+            .search-result-list {
+                .search-result-item {
+                    background-color: $primary-color-text;
+                    padding: 48px 36px;
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .search-company {
+                        .search-company-img {
+                            width: 48px;
+                            height: 48px;
+                            border-radius: 100%;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .search-company-brand {
+                            @include text($color_5, 500, 16);
+                        }
+                    }
+                    .search-date {
+                        .search-hours {
+                            display: flex;
+                            align-items: center;
+                            .search-hours-exact {
+                                @include text($color_5, 500, 34);
+                            }
+                            .hours-divider {
+                                display: inline-block;
+                                width: 96px;
+                                height: 1px;
+                                background-color: #DDDDDD;
+                                margin: 0 10px;
+                            }
+                        }
+                        .search-date-wrapper {
+                            display: flex;
+                            .search-date-col {
+                                &:nth-child(1) {
+                                    width: 132px;
+                                    flex: 0 0 auto;
+                                }
+                                &:nth-child(2) {
+                                    width: 132px;
+                                    margin-left: 70px;
+                                    margin-right: 30px;
+                                    flex: 0 0 auto;
+                                }
+                                
+                                .date-col-bold {
+                                    @include text($color_5, 500, 16);
+                                }
+                                .date-col-small {
+                                    @include text($color_10, 500, 16);
+                                }
+                            }
+                        }
+                    }
+                    .search-action {
+                        .search-price {
+                            @include text($color-5, 500, 34);
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .col-filter {
+            width: 320px;
+            position: relative;
+            .col-filter-scroll {
+                height: 100%;
+                overflow-y: auto;
+                padding: 26px;
+            }
+            .filter-type {
+                padding-bottom: 26px;
+                padding-top: 16px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                .filter-type-name {
+                    @include text($primary-color-text, 500, 19);
+                    margin-bottom: 6px;
+                }
+                .filter-type-list {
+                    .filter-type-item {
+                        padding: 6px 0;
+                        label {
+                            font-size: remTransform(18);
+                            input {
+                                opacity: .8;
+                                width: 16px;
+                                height: 16px;
+                                &:checked {
+                                    &+span {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                            span {
+                                opacity: .8;
+                                .filter-type-qty {
+                                    background-color: #1035A1;
+                                    border-radius: 2px;
+                                    padding: 0 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .filter-toggle {
+                position: absolute;
+                top: 0;
+                left: -44px;
+                display: none;
+                #filterToggle {
+                    background-color: $color-4;
+                    padding: 6px;
+                    border-radius: 0 0 0 6px;
+                    &:hover {
+                        background-color: $primary-color-text;
+                        path {
+                            fill: $color-4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1199px) {
+    .main-search {
+        .row-search {
+            .col-content {
+                width: 100%;
+            }
+            .col-filter {
+                position: absolute !important;
+                height: 100%;
+                background-color: $color_4;
+                right: -320px;
+                transition: .6s;
+                .filter-toggle {
+                    display: block !important;
+                }
+                &.open-filter {
+                    right: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .main-search {
+        .row-search {
+            .col-content {
+                .search-company-img {
+                    margin: auto;
+                }
+                .search-company-brand {
+                    margin: auto;
+                    width: fit-content;
+                }
+                .search-hours {
+                    justify-content: center;
+                }
+                .search-date-wrapper {
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    &>* {
+                        margin: 0 !important;
+                        width: 160px !important;
+                        flex: 0 0 auto !important;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) { 
+    .main-search {
+        .col-filter {
+            width: 236px !important;
+            right: -236px !important;
+        }
+    }
+}

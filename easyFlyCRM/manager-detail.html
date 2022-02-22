@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Easy Fly CRM</title>
+  </head>
+  <body>
+
+    <div class="main-property">
+      <header class="header">
+        <nav class="navbar navbar-light navbar-expand-xl">
+          <div class="container-xxxl">
+            <a class="navbar-brand">
+              <img src="images/logo/EasyFly.png" alt="EasyFly-img">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill="white" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="m-auto mb-2 mb-lg-0 d-flex align-items-center wrapper-nav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cautarea biletului</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tickets</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Calendar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contabilitate</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Manageri si accesuri</a>
+                  </li>
+                </ul>
+                <button class="nav-search" id="navSearch">
+                  <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.28378 0C2.82086 0 0 2.82086 0 6.28379C0 9.74669 2.82086 12.5731 6.28378 12.5731C7.7629 12.5731 9.12323 12.0547 10.1984 11.1941L12.8158 13.8101C12.9479 13.9367 13.1243 14.0066 13.3073 14.0047C13.4902 14.0029 13.6652 13.9294 13.7947 13.8001C13.9241 13.6708 13.9978 13.496 14 13.3131C14.0021 13.1301 13.9325 12.9536 13.806 12.8213L11.1886 10.2039C12.0499 9.12708 12.5689 7.76461 12.5689 6.28379C12.5689 2.82086 9.74669 0 6.28378 0ZM6.28378 1.39672C8.99186 1.39672 11.1709 3.57571 11.1709 6.28379C11.1709 8.99187 8.99186 11.1763 6.28378 11.1763C3.57569 11.1763 1.3967 8.99187 1.3967 6.28379C1.3967 3.57571 3.57569 1.39672 6.28378 1.39672Z" fill="white" fill-opacity="0.5"/>
+                  </svg>
+                </button>
+              </div>
+              
+              <div class="navbar-user">
+                <button class="user-toggle">
+                  <div class="img-user">
+                    <img src="images/upload/user.png" alt="user-images">
+                  </div>
+                  <div class="user-icon">
+                    <img src="images/icon/arrow-menu.svg" alt="icon-menu">
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="range-navbar"></div>
+        <div class="find-header" id="searchNavbar">
+          <input type="search" placeholder="Search...">
+        </div>
+      </header>
+
+      <main class="main-manager-detail">
+        <div class="container-content">
+          <div class="row-manager">
+            <div class="col-manager">
+              <div class="manager-card">
+                <div class="manager-card-header">
+                  <div class="manager-card-header-action">
+                    <button class="manager-card-setting">
+                      <span>Setari</span>
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5583 9.27172L13.9145 8.72378C13.4735 8.34844 13.4743 7.65081 13.9145 7.27622L14.5583 6.72828C15.0165 6.33831 15.1336 5.66963 14.8369 5.13822L13.5657 2.86178C13.2689 2.33041 12.6501 2.10103 12.0944 2.31622L11.3135 2.61869C10.7786 2.82581 10.1947 2.47647 10.1009 1.89491L9.96386 1.04447C9.86629 0.439281 9.36474 0 8.77127 0H6.22877C5.63527 0 5.1337 0.439281 5.03616 1.0445L4.89905 1.89491C4.80513 2.4775 4.22037 2.82547 3.68648 2.61872L2.90558 2.31622C2.34993 2.10103 1.73113 2.33044 1.43434 2.86178L0.163102 5.13819C-0.133632 5.66953 -0.016474 6.33825 0.441729 6.72825L1.08552 7.27619C1.52659 7.65156 1.52571 8.34912 1.08552 8.72375L0.441699 9.27169C-0.016474 9.66169 -0.133662 10.3304 0.163071 10.8617L1.43434 13.1382C1.7311 13.6695 2.34978 13.8989 2.90558 13.6838L3.68645 13.3813C4.22143 13.1741 4.80529 13.5237 4.89902 14.1051L5.03612 14.9554C5.1337 15.5607 5.63527 16 6.22874 16H8.77124C9.36471 16 9.86629 15.5607 9.96383 14.9555L10.1009 14.1051C10.1948 13.5227 10.7795 13.1745 11.3135 13.3813L12.0944 13.6838C12.6502 13.899 13.2689 13.6696 13.5657 13.1382L14.837 10.8617C15.1336 10.3304 15.0165 9.66169 14.5583 9.27172ZM12.5186 12.5132L11.7377 12.2107C10.4894 11.7273 9.12704 12.5429 8.90835 13.8996L8.77127 14.75H6.22877L6.09166 13.8996C5.87255 12.5403 4.50822 11.7282 3.26231 12.2107L2.48141 12.5132L1.21018 10.2368L1.85397 9.68884C2.88315 8.81291 2.88101 7.18528 1.85397 6.31116L1.21018 5.76322L2.48144 3.48678L3.26231 3.78925C4.51067 4.27269 5.87298 3.45706 6.09166 2.10041L6.22874 1.25H8.77124L8.90832 2.10041C9.12746 3.45984 10.4919 4.27169 11.7377 3.78925L12.5186 3.48678L13.7901 5.76291C13.7901 5.76291 13.79 5.763 13.7898 5.76319L13.146 6.31112C12.1169 7.187 12.1189 8.81466 13.146 9.68881L13.7898 10.2367L12.5186 12.5132ZM7.50001 4.91666C5.85554 4.91666 4.51765 6.29984 4.51765 8C4.51765 9.70016 5.85554 11.0833 7.50001 11.0833C9.14448 11.0833 10.4824 9.70016 10.4824 8C10.4824 6.29984 9.14448 4.91666 7.50001 4.91666ZM7.50001 9.83334C6.52221 9.83334 5.72671 9.01091 5.72671 8C5.72671 6.98909 6.52221 6.16666 7.50001 6.16666C8.4778 6.16666 9.2733 6.98909 9.2733 8C9.2733 9.01091 8.4778 9.83334 7.50001 9.83334Z" fill="#414141"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="manager-card-img">
+                    <img src="images/upload/user-1.png" alt="user-img">
+                  </div>
+                  <div class="manager-user-name">
+                    Mariana V
+                  </div>
+                  <div class="manager-role">
+                    <span>Administrator</span>
+                    <span>Developer</span>
+                  </div>
+                </div>
+                <div class="manager-card-body">
+                  <nav class="manager-card-body-nav">
+                    <ul class="manager-nav-list">
+                      <li class="manager-nav-item">
+                        <a href="#" class="manager-nav-link">
+                          Vinzari
+                        </a>
+                      </li>
+                      <li class="manager-nav-item">
+                        <a href="#" class="manager-nav-link">
+                          Rezervari
+                        </a>
+                      </li>
+                      <li class="manager-nav-item">
+                        <a href="#" class="manager-nav-link">
+                          Actiuni
+                        </a>
+                      </li>
+                      <li class="manager-nav-item">
+                        <a href="#" class="manager-nav-link">
+                          Salarii
+                        </a>
+                      </li>
+                      <li class="manager-nav-item">
+                        <a href="#" class="manager-nav-link">
+                          Informatii personale
+                        </a>
+                      </li>
+                      <li class="manager-nav-item">
+                        <a href="#" class="manager-nav-link">
+                          Incalcari
+                        </a>
+                      </li>
+                      <li class="manager-nav-item">
+                        <a href="#" class="manager-nav-link">
+                          Pierderi cauzate companiei 
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="manager-card-control-mobile">
+                  <button id="toggleManagerCard">
+                    <img src="images/upload/user-1.png" alt="images-toggle">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-settings">
+              <div class="manager-settings-wrapper">
+                <div class="manager-settings-header">
+                  <div class="manager-settings-title">
+                    Setari
+                  </div>
+                  <div class="manager-settings-action">
+                    <button class="btn-type-3">
+                      Cancel
+                    </button>
+                    <button class="btn-type-2">
+                      Save
+                    </button>
+                  </div>
+                </div>
+                <div class="manager-settings-body">
+                  <div class="row gy-4">
+                    <div class="col-md-6">
+                      <label class="input-text">
+                        <div class="label-name">
+                            <span class="label">Login</span>
+                        </div>
+                        <input placeholder="Login" type="text">
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="input-text">
+                        <div class="label-name">
+                            <span class="label">Numarul de telefon personal</span>
+                        </div>
+                        <input type="tel" placeholder="Phone">
+                      </label>
+                    </div>
+                    <div class="col-12">
+                      <label class="input-select">
+                        <div class="label-name">
+                            <span class="label">Genul de utilizator</span>
+                        </div>
+                        <select class="select-form">
+                            <option selected value="0">Developer</option>
+                            <option value="1">Content</option>
+                            <option value="2">Content</option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="col-12">
+                      <ul class="manager-settings-list-checkbox">
+                        <li class="manager-settings-item-checkbox">  
+                          <span class="item-checkbox-info">
+                            Administrator
+                          </span>
+                          <label class="input-toggle-checkbox">
+                            <span class="input-toggle-checkbox-text">
+                              Da
+                            </span>
+                            <input type="checkbox" checked>
+                          </label>
+                        </li>
+                        <li class="manager-settings-item-checkbox">  
+                          <span class="item-checkbox-info">
+                            Cont
+                          </span>
+                          <label class="input-toggle-checkbox">
+                            <span class="input-toggle-checkbox-text">
+                              Activ
+                            </span>
+                            <input type="checkbox" checked>
+                          </label>
+                        </li>
+                        <li class="manager-settings-item-checkbox">  
+                          <span class="item-checkbox-info">
+                            Rezervari bilete de avion
+                          </span>
+                          <label class="input-toggle-checkbox">
+                            <span class="input-toggle-checkbox-text">
+                              Activ
+                            </span>
+                            <input type="checkbox">
+                          </label>
+                        </li>
+                        <li class="manager-settings-item-checkbox">  
+                          <span class="item-checkbox-info">
+                            Afisare pe pagina “Tickets”
+                          </span>
+                          <label class="input-toggle-checkbox">
+                            <span class="input-toggle-checkbox-text">
+                              Da
+                            </span>
+                            <input type="checkbox" checked>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="lib/nice-select/jquery.js"></script> 
+    <script src="lib/nice-select/jquery.nice-select.js"></script> 
+    <script src="js/selectStyle.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

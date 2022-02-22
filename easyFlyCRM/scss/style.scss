@@ -1,0 +1,30 @@
+@import "_variables.scss";
+@import "_functions-mixin.scss";
+@import "_asset.scss";
+@import "_header.scss";
+@import "_form-search.scss";
+@import "_search-result.scss";
+@import "_ticket-reservation.scss";
+@import "_table.scss";
+@import "_modal-style.scss";
+@import "_accountancy.scss";
+@import "_manager-detail.scss";
+@import "_main-accountancy-income.scss";
+@import "_ticket-print.scss";
+@import "_calendar.scss";
+@import "../lib/nice-select/scss/nice-select.scss";
+
+
+body {
+    font-family: $font_family;
+    box-sizing: border-box;
+    color: $primary-color-text;
+}
+
+a {
+    color: inherit !important;
+}
+
+button, path, rect, input, a {
+    transition: .2s;
+}

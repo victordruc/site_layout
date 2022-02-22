@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Easy Fly CRM</title>
+  </head>
+  <body>
+
+    <div class="main-property">
+      <header class="header">
+        <nav class="navbar navbar-light navbar-expand-xl">
+          <div class="container-xxxl">
+            <a class="navbar-brand">
+              <img src="images/logo/EasyFly.png" alt="EasyFly-img">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill="white" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="m-auto mb-2 mb-lg-0 d-flex align-items-center wrapper-nav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cautarea biletului</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Tickets</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Calendar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contabilitate</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Manageri si accesuri</a>
+                  </li>
+                </ul>
+                <button class="nav-search" id="navSearch">
+                  <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.28378 0C2.82086 0 0 2.82086 0 6.28379C0 9.74669 2.82086 12.5731 6.28378 12.5731C7.7629 12.5731 9.12323 12.0547 10.1984 11.1941L12.8158 13.8101C12.9479 13.9367 13.1243 14.0066 13.3073 14.0047C13.4902 14.0029 13.6652 13.9294 13.7947 13.8001C13.9241 13.6708 13.9978 13.496 14 13.3131C14.0021 13.1301 13.9325 12.9536 13.806 12.8213L11.1886 10.2039C12.0499 9.12708 12.5689 7.76461 12.5689 6.28379C12.5689 2.82086 9.74669 0 6.28378 0ZM6.28378 1.39672C8.99186 1.39672 11.1709 3.57571 11.1709 6.28379C11.1709 8.99187 8.99186 11.1763 6.28378 11.1763C3.57569 11.1763 1.3967 8.99187 1.3967 6.28379C1.3967 3.57571 3.57569 1.39672 6.28378 1.39672Z" fill="white" fill-opacity="0.5"/>
+                  </svg>
+                </button>
+              </div>
+              
+              <div class="navbar-user">
+                <button class="user-toggle">
+                  <div class="img-user">
+                    <img src="images/upload/user.png" alt="user-images">
+                  </div>
+                  <div class="user-icon">
+                    <img src="images/icon/arrow-menu.svg" alt="icon-menu">
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="range-navbar"></div>
+        <div class="find-header" id="searchNavbar">
+          <input type="search" placeholder="Search...">
+        </div>
+      </header>
+
+      <main class="main-search main-tabel">
+        <div class="container-xxxl">
+          <div class="main-title">
+            Tickets
+          </div>
+          <div class="row-search">
+            <div class="col-content">
+              <div class="table-responsive table-list" id="tableTickets">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Airlines</th>
+                      <th scope="col">Flight detail</th>
+                      <th scope="col">Flight type</th>
+                      <th scope="col">Passenger data</th>
+                      <th scope="col">Phone</th>
+                      <th scope="col">Op</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="table-img-wrapper">
+                          <div class="table-img">
+                            <img src="images/upload/company-fly.png" alt="img-airlines">
+                          </div>
+                          <div class="table-img">
+                            <img src="images/upload/company-fly.png" alt="img-airlines">
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-table">
+                          Dublin 2022-01-23 23:10
+                        </div>
+                        <div class="text-table">
+                          Chisinau 2022-01-24 04:40
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-table">
+                          One way
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-table">
+                          Alexandrin Musteata
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-table">
+                          +373 68965623
+                        </div>
+                      </td>
+                      <td>
+                        <div class="table-img">
+                          <img src="images/upload/user.png" alt="img-user">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-table">
+                          98.00 €
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-table">
+                          Reserved
+                        </div>
+                      </td>
+                      <td>
+                        <button class="table-actions">
+                          Deschide itinerar
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="table-img-wrapper">
+                          <div class="table-img">
+                            <img src="images/upload/company-fly-1.png" alt="img-airlines">
+                          </div>
+                          <div class="table-img">
+                            <img src="images/upload/company-fly.png" alt="img-airlines">
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-table">
+                          Dublin 2022-01-23 23:10
+                        </div>
+                        <div class="text-table">
+                          Chisinau 2022-01-24 04:40
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-table">
+                          One way
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-table">
+                          Alexandrin Musteata
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-table">
+                          +373 68965623
+                        </div>
+                      </td>
+                      <td>
+                        <div class="table-img">
+                          <img src="images/upload/user.png" alt="img-user">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-table">
+                          98.00 €
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-table">
+                          Reserved
+                        </div>
+                      </td>
+                      <td>
+                        <button class="table-actions">
+                          Deschide itinerar
+                        </button>
+                      </td>
+                    </tr>
+                    <!-- ALL list render in js/app.js => function simList() -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-filter" id="filterSearch">
+              <div class="col-filter-scroll">
+                <div class="filter-type">
+                  <div class="filter-type-name">
+                    Status
+                  </div>
+                  <ul class="filter-type-list">
+                    <li class="filter-type-item">
+                      <label class="input-radio">
+                        <input type="radio" name="type-price">
+                        <span>
+                          Toate
+                        </span>
+                      </label>
+                    </li>
+                    <li class="filter-type-item">
+                      <label class="input-radio">
+                        <input type="radio" name="type-price">
+                        <span>
+                          Reserved 
+                          <span class="filter-type-qty">
+                            842
+                          </span>
+                        </span>
+                      </label>
+                    </li>
+                    <li class="filter-type-item">
+                      <label class="input-radio">
+                        <input type="radio" name="type-price">
+                        <span>
+                          To issue
+                          <span class="filter-type-qty">
+                            842
+                          </span>
+                        </span>
+                      </label>
+                    </li>
+                    <li class="filter-type-item">
+                      <label class="input-radio">
+                        <input type="radio" name="type-price">
+                        <span>
+                          To issue
+                          <span class="filter-type-qty">
+                            94
+                          </span>
+                        </span>
+                      </label>
+                    </li>
+                    <li class="filter-type-item">
+                      <label class="input-radio">
+                        <input type="radio" name="type-price">
+                        <span>
+                          Issued
+                          <span class="filter-type-qty">
+                            4659
+                          </span>
+                        </span>
+                      </label>
+                    </li>
+                    <li class="filter-type-item">
+                      <label class="input-radio">
+                        <input type="radio" name="type-price">
+                        <span>
+                          Refound
+                        </span>
+                      </label>
+                    </li>
+                    <li class="filter-type-item">
+                      <label class="input-radio">
+                        <input type="radio" name="type-price">
+                        <span>
+                          Canceled
+                        </span>
+                      </label>
+                    </li>
+                    <li class="filter-type-item">
+                      <label class="input-radio">
+                        <input type="radio" name="type-price">
+                        <span>
+                          Bin
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-type filter-type-user">
+                  <div class="filter-type-name">
+                    Manager
+                  </div>
+                  <ul class="list-manager">
+                    <li class="item-manager">
+                      <a href="#" class="link-manager">
+                        <div class="manager-wrapper-img">
+                          <img src="images/upload/user.png" alt="manager-img">
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item-manager">
+                      <a href="#" class="link-manager">
+                        <div class="manager-wrapper-img">
+                          <img src="images/upload/user.png" alt="manager-img">
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item-manager">
+                      <a href="#" class="link-manager">
+                        <div class="manager-wrapper-img">
+                          <img src="images/upload/user.png" alt="manager-img">
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item-manager">
+                      <a href="#" class="link-manager">
+                        <div class="manager-wrapper-img">
+                          <img src="images/upload/user.png" alt="manager-img">
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item-manager">
+                      <a href="#" class="link-manager">
+                        <div class="manager-wrapper-img">
+                          <img src="images/upload/user.png" alt="manager-img">
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item-manager">
+                      <a href="#" class="link-manager">
+                        <div class="manager-wrapper-img">
+                          <img src="images/upload/user.png" alt="manager-img">
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+             
+              <div class="filter-toggle">
+                <button id="filterToggle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
+                    <path fill="white" d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="modal-style modal fade" id="modal">
+      <div class="modal-dialog modal-dialog-top modal-dialog-scrollable container-content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-header-top">
+              <button type="button" class="btn-close-modal" data-bs-dismiss="modal">
+                <span>Inchide</span>
+                <img src="images/icon/close_modal.svg" alt="close_modal-icon">
+              </button>
+            </div>
+            <div class="modal-header-bottom">
+              <ul class="modal-navigation">
+                <li class="modal-item active-context">
+                  <button class="change-context-modal" data-id="#modalContentTicket">
+                    Bilet
+                  </button>
+                </li>
+                <li class="modal-item">
+                  <button class="change-context-modal">
+                    Pasageri
+                  </button>
+                </li>
+                <li class="modal-item">
+                  <button class="change-context-modal">
+                    Bagaje
+                  </button>
+                </li>
+                <li class="modal-item">
+                  <button class="change-context-modal">
+                    Pret
+                  </button>
+                </li>
+                <li class="modal-item">
+                  <button class="change-context-modal" data-id="#modalContentAction">
+                    Actiuni
+                  </button>
+                </li>
+                <li class="modal-item">
+                  <button class="change-context-modal" data-id="#modalContentIssue">
+                    Issue department
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="modal-body" id="modalContentTicket">
+            
+            <div class="modal-body-top">
+              <button class="modal-body-top-btn btn-top-first">
+                Bilet Musteata Alexandrina
+              </button>
+              <button class="modal-body-top-btn btn-top-second">
+                Nota de plata Musteata Alexandrina
+              </button>
+            </div>
+            
+            <div class="modal-body-content">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="modal-content">
+                    <div class="modal-content-title">
+                      Informatie despre zbor
+                    </div>
+
+                    <div class="modal-content-line">
+                      <table>
+                        <tr>
+                          <td class="table-type">
+                            Codul rezarvarii:
+                          </td>
+                          <td class="table-description">
+                            14803
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="table-type">
+                            Tip zbor:
+                          </td>
+                          <td class="table-description">
+                            Intro directie
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="table-type">
+                            Companie Aeriana:
+                          </td>
+                          <td class="table-description">
+                            Air Moldova
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="table-type">
+                            Plecare din:
+                          </td>
+                          <td class="table-description">
+                            Dublin (DUB) - 2022-01-23  23:10
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="table-type">
+                            Destinatie:
+                          </td>
+                          <td class="table-description">
+                            Chisinau (KIV) - 2022-01-24  04:40
+                          </td>
+                        </tr>
+                      </table>
+                      <div class="modal-body-img-wrapper">
+                        <div class="modal-body-img">
+                          <img src="images/upload/company-fly.png" alt="img-company">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-content-title">
+                      Detalii rezervare
+                    </div>
+
+                    <div class="modal-content-line">
+                      <table>
+                        <tr>
+                          <td class="table-type">
+                            Rezervat la ora:
+                          </td>
+                          <td class="table-description">
+                            2022-01-19  22:56
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="table-type">
+                            Telefon:
+                          </td>
+                          <td class="table-description">
+                            +373 68965569
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="table-type">
+                            Manager:
+                          </td>
+                          <td class="table-description">
+                            Mariana V
+                          </td>
+                      </table>
+                      <div class="modal-body-img-wrapper">
+                        <div class="modal-body-img">
+                          <img src="images/upload/user.png" alt="img-user">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-data-form">
+                      <div class="modal-data-form-title">
+                        Alte date
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <label class="input-select">
+                            <select class="select-form">
+                                <option selected value="0">De emis</option>
+                                <option value="1">De emis1</option>
+                                <option value="2">De emis2</option>
+                            </select>
+                        </label>
+                        </div>
+                        <div class="col-md-4">
+                          <label class="input-select">
+                            <select class="select-form">
+                                <option selected value="0">De emis</option>
+                                <option value="1">De emis1</option>
+                                <option value="2">De emis2</option>
+                            </select>
+                        </label>
+                        </div>
+                        <div class="col-md-4">
+                          <label class="input-select">
+                            <select class="select-form">
+                                <option selected value="0">De emis</option>
+                                <option value="1">De emis1</option>
+                                <option value="2">De emis2</option>
+                            </select>
+                        </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-data-form">
+                      <div class="modal-data-form-title">
+                        Informatii aditionale
+                      </div>
+                      <label class="input-text">
+                        <textarea rows="4"></textarea>
+                      </label>
+                      
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-4 modal-left-border">
+                  <div class="modal-content">
+                    <div class="modal-filtet-content">
+                      <div class="modal-content-title">
+                        Informatie despre zbor
+                      </div>
+                      <ul class="list-modal-filter-type">
+                        <li class="item-modal-filter-type">
+                          <label class="input-checkbox">
+                            <input type="checkbox" name="client-ver">
+                            <span>
+                              Apelat 7 zile inainte de zbor tur
+                            </span>
+                          </label>
+                        </li>
+                        <li class="item-modal-filter-type">
+                          <label class="input-checkbox">
+                            <input type="checkbox" name="client-ver">
+                            <span>
+                              Apelat 72 ore inainte de zbor tur
+                            </span>
+                          </label>
+                        </li>
+                        <li class="item-modal-filter-type">
+                          <label class="input-checkbox">
+                            <input type="checkbox" name="client-ver">
+                            <span>
+                              Efectuare si expediere Check-in tur
+                            </span>
+                          </label>
+                        </li>
+                        <li class="item-modal-filter-type">
+                          <label class="input-checkbox">
+                            <input type="checkbox" name="client-ver">
+                            <span>
+                              Verificare Check-in tur
+                            </span>
+                          </label>
+                        </li>
+                        <li class="item-modal-filter-type">
+                          <label class="input-checkbox">
+                            <input type="checkbox" name="client-ver">
+                            <span>
+                              Apelat după zbor tur
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="modal-filtet-content">
+                      <div class="modal-content-title">
+                        Verificare emitere
+                      </div>
+                      <ul class="list-modal-filter-type">
+                        <li class="item-modal-filter-type">
+                          <label class="input-checkbox">
+                            <input type="checkbox" name="release-ver">
+                            <span>
+                              Zbor tur emis
+                            </span>
+                          </label>
+                        </li>
+                        <li class="item-modal-filter-type">
+                          <label class="input-checkbox">
+                            <input type="checkbox" name="release-ver">
+                            <span>
+                              Bagaje emis tur
+                            </span>
+                          </label>
+                        </li>
+                        <li class="item-modal-filter-type">
+                          <label class="input-checkbox">
+                            <input type="checkbox" name="release-ver">
+                            <span>
+                              Emitere verificata tur
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="modal-filtet-content">
+                      <div class="modal-content-title">
+                        Scopul calatoriei
+                      </div>
+                      <ul class="list-modal-filter-type">
+                        <li class="item-modal-filter-type">
+                          <label class="input-checkbox">
+                            <input type="checkbox" name="travel-scope">
+                            <span>
+                              Business
+                            </span>
+                          </label>
+                        </li>
+                        <li class="item-modal-filter-type">
+                          <label class="input-checkbox">
+                            <input type="checkbox" name="travel-scope">
+                            <span>
+                              Lucru peste hotare
+                            </span>
+                          </label>
+                        </li>
+                        <li class="item-modal-filter-type">
+                          <label class="input-checkbox">
+                            <input type="checkbox" name="travel-scope">
+                            <span>
+                              Calatorie
+                            </span>
+                          </label>
+                        </li>
+                        <li class="item-modal-filter-type">
+                          <label class="input-checkbox">
+                            <input type="checkbox" name="travel-scope">
+                            <span>
+                              Medicina
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="modal-filtet-content">
+                      <div class="modal-content-title">
+                       Date financiare
+                      </div>
+                      <ul class="list-modal-filter-type">
+                        <li class="item-modal-filter-type">
+                          <label class="input-checkbox">
+                            <input type="checkbox" name="financial-data">
+                            <span>
+                              Refund
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+
+                      <ul class="modal-list-final-data">
+                        <li class="modal-item-data">
+                          <span class="modal-item-data-text text-left">
+                            Achitat:
+                          </span>
+                          <span class="modal-item-data-text text-right">
+                            2022-01-19  22:53:21
+                          </span>
+                        </li>
+                        <li class="modal-item-data">
+                          <span class="modal-item-data-text text-left">
+                            Pasageri:
+                          </span>
+                          <span class="modal-item-data-text text-right">
+                            1
+                          </span>
+                        </li>
+                        <li class="modal-item-data">
+                          <span class="modal-item-data-text text-left">
+                            Total incasat:
+                          </span>
+                          <span class="modal-item-data-text text-right">
+                            108.00 €
+                          </span>
+                        </li>
+                        <li class="modal-item-data">
+                          <span class="modal-item-data-text text-left">
+                            Total de emis:
+                          </span>
+                          <span class="modal-item-data-text text-right">
+                            100.00 €
+                          </span>
+                        </li>
+                        <li class="modal-item-data">
+                          <span class="modal-item-data-text text-left">
+                            Total emis:
+                          </span>
+                          <span class="modal-item-data-text text-right">
+                            0 €
+                          </span>
+                        </li>
+                        <li class="modal-item-data">
+                          <span class="modal-item-data-text text-left">
+                            Mark-up emitere:
+                          </span>
+                          <span class="modal-item-data-text text-right">
+                            0 €
+                          </span>
+                        </li>
+                        <li class="modal-item-data">
+                          <span class="modal-item-data-text text-left">
+                            Mark-up vinzare:
+                          </span>
+                          <span class="modal-item-data-text text-right">
+                            20.00 €
+                          </span>
+                        </li>
+                      </ul>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal-body" id="modalContentAction">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <th scope="col">Manager</th>
+                  <th scope="col">Actiunea</th>
+                  <th scope="col">Login</th>
+                  <th scope="col">Modificare</th>
+                  <th scope="col">Data si ora</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Mariana V
+                    </td>
+                    <td>
+                      A deschis biletul
+                    </td>
+                    <td>
+                      
+                    </td>
+                    <td>
+                      {price_1':'108.00','price_2”:”128.00','price_3':'0.00'}
+                    </td>
+                    <td>
+                      2022-01-21 10:20
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Mariana V
+                    </td>
+                    <td>
+                      A modificat biletul
+                    </td>
+                    <td>
+                      
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                      2022-01-21 10:20
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Mariana V
+                    </td>
+                    <td>
+                      A deschis biletul
+                    </td>
+                    <td>
+                      
+                    </td>
+                    <td>
+                      {price_1':'108.00','price_2”:”128.00','price_3':'0.00'}
+                    </td>
+                    <td>
+                      2022-01-21 10:20
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Mariana V
+                    </td>
+                    <td>
+                      A deschis biletul
+                    </td>
+                    <td>
+                      
+                    </td>
+                    <td>
+                      {price_1':'108.00','price_2”:”128.00','price_3':'0.00'}
+                    </td>
+                    <td>
+                      2022-01-21 10:20
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Mariana V
+                    </td>
+                    <td>
+                      A deschis biletul
+                    </td>
+                    <td>
+                      
+                    </td>
+                    <td>
+                      {price_1':'108.00','price_2”:”128.00','price_3':'0.00'}
+                    </td>
+                    <td>
+                      2022-01-21 10:20
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Mariana V
+                    </td>
+                    <td>
+                      A deschis biletul
+                    </td>
+                    <td>
+                      
+                    </td>
+                    <td>
+                      {price_1':'108.00','price_2”:”128.00','price_3':'0.00'}
+                    </td>
+                    <td>
+                      2022-01-21 10:20
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Mariana V
+                    </td>
+                    <td>
+                      A deschis biletul
+                    </td>
+                    <td>
+                      
+                    </td>
+                    <td>
+                      {price_1':'108.00','price_2”:”128.00','price_3':'0.00'}
+                    </td>
+                    <td>
+                      2022-01-21 10:20
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="modal-body" id="modalContentIssue">
+              <div class="modal-issue-content-input">
+                <div class="row gx-5">
+                  <div class="col-md-6 border-right-modal">
+                    <div class="modal-issue-content">
+                      <div class="issue-text">
+                        Cashflow out
+                      </div>
+                      <div class="input-text input-text-btn">
+                        <div class="label-name">
+                            <span class="label">Suma emisa</span>
+                        </div>
+                        <div class="input-btn">
+                          <input type="text" value="0.00" placeholder="Suma">
+                          <button class="btn-type-2">Adauga</button>
+                        </div>
+                      </div>
+
+                      <div class="input-select">
+                        <div class="label-name">
+                            <span class="label">Emis de platforma</span>
+                        </div>
+                        <select class="select-form">
+                          <option disabled selected>Easyfly (https:///easyfly.md)</option>
+                          <option value="1">Country</option>
+                          <option value="1">Country</option>
+                        </select>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="modal-issue-content">
+                      <div class="issue-text">
+                        Gribinet Cristina
+                      </div>
+                      <div class="input-text">
+                        <div class="label-name">
+                            <span class="label">Airline Ticket Number</span>
+                        </div>
+                          <input type="text" placeholder="Introduceti codul">
+                      </div>
+
+                      <div class="input-text input-text-btn">
+                        <div class="label-name">
+                            <span class="label">Airline Reservation Code</span>
+                        </div>
+                        <div class="input-btn">
+                          <input type="text" value="P3HU2S" placeholder="Code">
+                          <button class="btn-type-2">Salveaza</button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-issue-tabel">
+                <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <th scope="col">Utilizator</th>
+                    <th scope="col">Operation type</th>
+                    <th scope="col">Ammount</th>
+                    <th scope="col">Payd date</th>
+                    <th scope="col"></th>
+                  </thead>
+                  <tbody>
+                   
+                    <tr>
+                      <td>
+                        Mariana V
+                      </td>
+                      <td>
+                        Out
+                      </td>
+                      <td>
+                        77.00 €
+                      </td>
+                      <td>
+                        2022-01-21 10:20
+                      </td>
+                      <td>
+                       <button class="tabel-delete-item">
+                          Delete
+                       </button>
+                      </td>
+                    </tr>
+                  
+                  </tbody>
+                </table>
+              </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="lib/nice-select/jquery.js"></script> 
+    <script src="lib/nice-select/jquery.nice-select.js"></script> 
+    <script src="js/selectStyle.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/modal/modal.js"></script>
+  </body>
+</html>

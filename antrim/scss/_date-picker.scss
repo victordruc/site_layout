@@ -1,0 +1,59 @@
+#offersFormDate {
+    &>*{
+        width: 100%;
+    }
+    .ui-datepicker-header {
+        background: $color-5;
+        border: none;
+        .ui-datepicker-prev {
+            cursor: pointer;
+            &.ui-state-hover {
+                background: none;
+                border: none;
+                opacity: .6;
+            }
+            .ui-icon {
+                background-image: url(../images/icon/calendar-left.svg);
+                background-position: center;
+            }
+        }
+        .ui-datepicker-next {
+            cursor: pointer;
+            &.ui-state-hover {
+                background: none;
+                border: none;
+                opacity: .6;
+            }
+            .ui-icon {
+                background-image: url(../images/icon/calendar-right.svg);
+                background-position: center;
+            }
+        }
+    }
+    .ui-datepicker-calendar {
+        thead {
+            @include text(#AB9E9E, 400, 13);
+            font-family: $font-family;
+        }
+        .ui-state-default {
+            background: none;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            @include text($color-2, 400, 13);
+            &.ui-state-hover, &.ui-state-active {
+                outline-color: #828282;
+                outline-width: 1px;
+                outline-style: solid;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    #offersFormDate {
+        .ui-datepicker-header {
+            font-size: 1rem !important;
+        }
+    }
+}

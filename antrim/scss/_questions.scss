@@ -1,0 +1,114 @@
+.questions-main {
+    .questions-primary-container {
+        padding: 56px 0 120px 0;
+    }
+    .list-questions-wrapper {
+        padding-left: 48px;
+        .list-questions-title {
+            @include text($color-2, 700, 20);
+            border-bottom: 1px solid $color-7;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .list-questions {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .list-questions-item {
+                padding: 8px 0;
+                .item-questions-action {
+                    display: block;
+                    @include text($color-6, 400, 16);
+                    cursor: pointer;
+                    position: relative;
+                    transition: .2s;
+                    &:hover {
+                        color: $color-1;
+                        &::before {
+                            content: "";
+                            display: block;
+                            background-image: url(../images/icon/arrow-questions.svg);
+                            width: 26px;
+                            height: 26px;
+                            position: absolute;
+                            left: -32px;
+                            top: -3px;
+                        }
+                    }
+                }
+                .item-questions-content {
+                    display: none;
+                    margin-top: 10px;
+                    .answer-primary {
+                        @include text($color-2, 400, 16);
+                        line-height: remTransform(28);
+                    }
+                    .answer-secondary {
+                        @include text($color-2, 350, 16);
+                        line-height: remTransform(28);
+                    }
+                }
+                &.item-selected {
+                    .item-questions-action {
+                        color: $color-1;
+                        &::before {
+                            content: "";
+                            display: block;
+                            background-image: url(../images/icon/arrow-questions.svg);
+                            width: 26px;
+                            height: 26px;
+                            position: absolute;
+                            left: -32px;
+                            top: -3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .questions-content-desktop {
+        padding: 46px 52px 86px 52px;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        .questions-content-header {
+            @include text($color-1, 700, 20);
+            text-align: center;
+            padding: 46px;
+            background: $color-21;
+            border-radius: 10px;
+            margin-bottom: 36px;
+        }
+        .questions-content-body {
+            .answer-primary {
+                @include text($color-2, 400, 16);
+                line-height: remTransform(28);
+            }
+            .answer-secondary {
+                @include text($color-2, 350, 16);
+                line-height: remTransform(28);
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .questions-main {
+        .list-questions-wrapper {
+            .list-questions-item {
+                &.item-selected {
+                    .item-questions-content {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .questions-content-desktop {
+            display: none;
+        }
+    }
+}

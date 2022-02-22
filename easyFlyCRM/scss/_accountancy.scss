@@ -1,0 +1,141 @@
+.main-accountancy {
+    padding: 40px 0 60px 0;
+    .wrapper-header {
+        margin-bottom: 60px;
+    }
+    .row-table {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .col-table {
+            width: calc(100% - 100px);
+            .table-list {
+                border-radius: 10px;
+                th:first-child {
+                    padding-left: 28px;
+                }
+                thead {
+                    th:last-child {
+                        padding-right: 28px;
+                    }
+                }
+                tbody {
+                    tr {
+                        pointer-events: none;
+                    }
+                    td:last-child {
+                        padding-right: 28px;
+                    }
+                }
+                .table-accountancy-date-header {
+                    padding: 0 !important;
+                }
+                .table-accountancy-date {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    padding: 18px 20px;
+                    border-bottom: 2px solid $color_4;
+                    .table-accountancy-text {
+                        @include text($color-dark, 600, 18);
+                        margin: 8px;
+                    }
+                    .table-accountancy-input {
+                        margin: 8px;
+                        background-color: $color_12;
+                        padding: 10px;
+                        border-radius: 6px;
+                        input {
+                            @include text($primary-color-text, 400, 14);
+                            background-color: transparent;
+                            border: none;
+                            padding-right: 10px;
+                            width: remTransform(110);
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col-action {
+            width: 100px;
+            .action-container {
+               .action-btn-wrapper {
+                   &:first-child {
+                       margin-bottom: 40px;
+                       margin-top: 10px;
+                   }
+                   .btn-action {
+                       width: 50px;
+                       height: 50px;
+                       border-radius: 100%;
+                       padding: 0;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       box-shadow: 0px 0px 10px rgba(142, 49, 9, 0.2);
+                       margin: auto;
+                       margin-right: 30px;
+                       &.plus-upload {
+                        background-color: $secondary-color-text;
+                        &:hover {
+                            background-color: $primary-color-text;
+                            path {
+                                fill: $secondary-color-text;
+                            }
+                        }
+                        &:active {
+                            background-color: $secondary-color-text;
+                            path {
+                                fill: $primary-color-text;
+                            }
+                        }
+                       }
+                       &.pdf-download {
+                        background-color: $primary-color-text;
+                        &:hover {
+                            background-color: #CC4B4C;
+                            path {
+                                fill: $primary-color-text;
+                            }
+                        }
+                        &:active {
+                            background-color: $primary-color-text;
+                            path {
+                                fill: #CC4B4C;
+                            }
+                        }
+                       }
+                   }
+               } 
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .main-accountancy {
+        .row-table {
+            .col-table {
+                width: 100%;
+            }
+            .col-action {
+                position: fixed;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .main-accountancy {
+        .row-table {
+            .col-action {
+                bottom: 20px;
+            }
+        }
+    }
+}

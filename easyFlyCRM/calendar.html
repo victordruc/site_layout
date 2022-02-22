@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Easy Fly CRM</title>
+  </head>
+  <body>
+    <div class="main-property">
+      <header class="header">
+        <nav class="navbar navbar-light navbar-expand-xl">
+          <div class="container-xxxl">
+            <a class="navbar-brand">
+              <img src="images/logo/EasyFly.png" alt="EasyFly-img" />
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="white"
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div
+                class="m-auto mb-2 mb-lg-0 d-flex align-items-center wrapper-nav"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Cautarea biletului</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tickets</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Calendar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contabilitate</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Manageri si accesuri</a>
+                  </li>
+                </ul>
+                <button class="nav-search" id="navSearch">
+                  <svg
+                    width="14"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.28378 0C2.82086 0 0 2.82086 0 6.28379C0 9.74669 2.82086 12.5731 6.28378 12.5731C7.7629 12.5731 9.12323 12.0547 10.1984 11.1941L12.8158 13.8101C12.9479 13.9367 13.1243 14.0066 13.3073 14.0047C13.4902 14.0029 13.6652 13.9294 13.7947 13.8001C13.9241 13.6708 13.9978 13.496 14 13.3131C14.0021 13.1301 13.9325 12.9536 13.806 12.8213L11.1886 10.2039C12.0499 9.12708 12.5689 7.76461 12.5689 6.28379C12.5689 2.82086 9.74669 0 6.28378 0ZM6.28378 1.39672C8.99186 1.39672 11.1709 3.57571 11.1709 6.28379C11.1709 8.99187 8.99186 11.1763 6.28378 11.1763C3.57569 11.1763 1.3967 8.99187 1.3967 6.28379C1.3967 3.57571 3.57569 1.39672 6.28378 1.39672Z"
+                      fill="white"
+                      fill-opacity="0.5"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="navbar-user">
+                <button class="user-toggle">
+                  <div class="img-user">
+                    <img src="images/upload/user.png" alt="user-images" />
+                  </div>
+                  <div class="user-icon">
+                    <img src="images/icon/arrow-menu.svg" alt="icon-menu" />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="range-navbar"></div>
+        <div class="find-header" id="searchNavbar">
+          <input type="search" placeholder="Search..." />
+        </div>
+      </header>
+
+      <main class="main-calendar">
+        <div class="container-xxxl">
+          <div class="main-calendar-action">
+            <span class="main-calendar-title"> Calendar </span>
+            <span class="main-calendar-action-selector">
+              <label class="calendar-selector">
+                <input type="radio" name="calendar-selector" checked />
+                <span> All flight </span>
+              </label>
+              <label class="calendar-selector">
+                <input type="radio" name="calendar-selector" />
+                <span> De emis </span>
+              </label>
+            </span>
+          </div>
+
+          <div class="calendar-list">
+            <div class="calendar-wrapper-change-month">
+              <div class="calendar-btn">
+                <button class="button-change-month-prev">
+                  <span></span>
+                  <span>
+                    <img src="images/icon/arrow-prev-calendar.svg" />
+                  </span>
+                </button>
+
+                <button class="button-change-month">
+                  <span></span>
+                  <span>
+                    <img src="images/icon/arrow-next-calendar.svg" />
+                  </span>
+                </button>
+              </div>
+              <div class="calendar-month" id="calendarMonth">
+                <!-- Februarie 2022 -->
+              </div>
+              <div class="calendar-actions-input">
+                <label class="calendar-change">
+                  <input type="radio" name="calendar-change" value="today"/>
+                  <span> Today </span>
+                </label>
+                <label class="calendar-change">
+                  <input type="radio" name="calendar-change" checked value="month"/>
+                  <span> Month </span>
+                </label>
+                <label class="calendar-change">
+                  <input type="radio" name="calendar-change" value="week"/>
+                  <span> Week </span>
+                </label>
+                <label class="calendar-change">
+                  <input type="radio" name="calendar-change" value="day"/>
+                  <span> Day </span>
+                </label>
+              </div>
+            </div>
+            <div class="calendar">
+              <div class="calendar-back-event">
+                <button class="calendar-back-event-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-90deg-left"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill="#FF6F32"
+                      fill-rule="evenodd"
+                      d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"
+                    />
+                  </svg>
+                  <span>Inapoi</span>
+                </button>
+              </div>
+
+              <div class="calendar-date" id="calendarContent">
+                <!-- Render calendar JS -->
+              </div>
+
+              <div class="calendar-date-day" id="calendarPerDay">
+                <!-- Render calendar JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="lib/nice-select/jquery.js"></script>
+    <script src="lib/nice-select/jquery.nice-select.js"></script>
+    <script src="js/calendar/monthly.js"></script>
+    <script src="js/calendar/calendar.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

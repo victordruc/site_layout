@@ -1,0 +1,228 @@
+.main-manager-detail {
+    padding: 40px 0 60px 0;
+    .row-manager {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -6px;
+        &>* {
+            padding: 0 6px;
+        }
+        .col-manager {
+            width: 320px;
+            .manager-card {
+                border-radius: 10px;
+                background-color: $primary-color-text;
+                &>* {
+                    padding: 30px 20px;
+                }
+                .manager-card-header {
+                    .manager-card-header-action {
+                        text-align: right;
+                        .manager-card-setting {
+                            background-color: $color_7;
+                            border-radius: 200px;
+                            @include text(#111111, 400, 14);
+                            padding: 10px 28px;
+                            display: inline-flex;
+                            align-items: center;
+                            span {
+                                margin-right: 6px;
+                            }
+                            &:hover {
+                                color: $color_11;
+                                path {
+                                    fill: $color_11;
+                                }
+                            }
+                        }
+                    }
+                    .manager-card-img {
+                        width: 148px;
+                        height: 148px;
+                        border-radius: 100%;
+                        overflow: hidden;
+                        margin: 6px auto 20px auto;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .manager-user-name {
+                        @include text($color-dark, 500, 26);
+                        text-align: center
+                    }
+                    .manager-role {
+                        @include text(#111111, 300, 16);
+                        justify-content: center;
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 0 -6px;
+                        &>* {
+                            padding: 0 6px;
+                            border-right: 1px solid #111111;
+                            line-height: remTransform(12);
+                            margin-bottom: 10px;
+                        }
+                        span:last-child {
+                            border-right: none;
+                        }
+                    }
+                }
+                .manager-card-body {
+                    background-color: $color_7;
+                    border-radius: 0 0 10px 10px;
+                    .manager-nav-list {
+                        .manager-nav-item {
+                            padding: 4px 0;
+                            .manager-nav-link {
+                                @include text(#111111, 500, 18, true);
+                                text-decoration: none;
+                                &:hover {
+                                    color: $color_11 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                .manager-card-control-mobile {
+                    position: absolute;
+                    padding: 6px;
+                    border-radius: 0 10px 10px 0;
+                    box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2);
+                    background-color: $primary-color-text;
+                    top: 0;
+                    right: -62px;
+                    display: none;
+                    #toggleManagerCard {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 100%;
+                        overflow: hidden;
+                        padding: 0;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+        .col-settings {
+            width: calc(100% - 320px);
+            .manager-settings-wrapper {
+                background-color: $primary-color-text;
+                border-radius: 10px;
+                padding: 34px 52px 70px 52px;
+                .manager-settings-header {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $color_6;
+                    padding-bottom: 26px;
+                    margin-bottom: 32px;
+                    .manager-settings-title {
+                        @include text($color-dark, 500, 26);
+                        margin-right: 10px;
+                    }
+                    .manager-settings-action {
+                        display: flex;
+                        margin: 0 -10px;
+                        &>*{
+                            margin: 0 10px;
+                        }
+                        .btn-type-2 {
+                            @include text($primary-color-text, 400, 16);
+                            padding: 6px 28px;
+                        }
+                        .btn-type-3 {
+                            @include text(#6A6A6A, 400, 16);
+                            padding: 6px;
+                            padding-left: 0;
+                            &:hover {
+                                color: $color_10;
+                            }
+                            &:active {
+                                color: #6A6A6A;
+                            }
+                        }
+                    }
+                }
+                .manager-settings-body {
+                    .input-text input {
+                        @include text($color-dark, 500, 18);
+                        &::placeholder {
+                            font-size: remTransform(18);
+                        }
+                    }
+                    .input-select .select-form{
+                        @include text($color-dark, 500, 18);
+                    }
+                    .manager-settings-list-checkbox {
+                        .manager-settings-item-checkbox {
+                            padding: 16px 0;
+                            border-bottom: 1px solid $color_6;
+                            display: flex;
+                            justify-content: space-between;
+                            .item-checkbox-info {
+                                @include text(#111111, 500, 18)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .main-manager-detail {
+        .row-manager {
+            .col-settings {
+                width: 100%;
+            }
+        }
+        .col-manager {
+            .manager-card {
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                left: -256px;
+                box-shadow: 8px 0 10px rgba(0, 0, 07, 0.2);
+                border-radius: 0 0 10px 0 !important;
+                transition: ease-in-out .2s;
+                &.open-mobile {
+                    left: 0;
+                }
+                .manager-card-body {
+                    border-bottom-left-radius: 0 !important;
+                }
+                .manager-card-control-mobile {
+                    display: block !important;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .main-manager-detail {
+        .manager-settings-list-checkbox {
+            .manager-settings-item-checkbox {
+                flex-direction: column;
+                align-items: center;
+                .item-checkbox-info {
+                    font-size: 1rem !important;
+                    text-align: center;
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+}

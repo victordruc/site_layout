@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Easy Fly CRM</title>
+  </head>
+  <body>
+
+    <div class="main-property">
+      <header class="header">
+        <nav class="navbar navbar-light navbar-expand-xl">
+          <div class="container-xxxl">
+            <a class="navbar-brand">
+              <img src="images/logo/EasyFly.png" alt="EasyFly-img">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill="white" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="m-auto mb-2 mb-lg-0 d-flex align-items-center wrapper-nav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cautarea biletului</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tickets</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Calendar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Contabilitate</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Manageri si accesuri</a>
+                  </li>
+                </ul>
+                <button class="nav-search" id="navSearch">
+                  <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.28378 0C2.82086 0 0 2.82086 0 6.28379C0 9.74669 2.82086 12.5731 6.28378 12.5731C7.7629 12.5731 9.12323 12.0547 10.1984 11.1941L12.8158 13.8101C12.9479 13.9367 13.1243 14.0066 13.3073 14.0047C13.4902 14.0029 13.6652 13.9294 13.7947 13.8001C13.9241 13.6708 13.9978 13.496 14 13.3131C14.0021 13.1301 13.9325 12.9536 13.806 12.8213L11.1886 10.2039C12.0499 9.12708 12.5689 7.76461 12.5689 6.28379C12.5689 2.82086 9.74669 0 6.28378 0ZM6.28378 1.39672C8.99186 1.39672 11.1709 3.57571 11.1709 6.28379C11.1709 8.99187 8.99186 11.1763 6.28378 11.1763C3.57569 11.1763 1.3967 8.99187 1.3967 6.28379C1.3967 3.57571 3.57569 1.39672 6.28378 1.39672Z" fill="white" fill-opacity="0.5"/>
+                  </svg>
+                </button>
+              </div>
+              
+              <div class="navbar-user">
+                <button class="user-toggle">
+                  <div class="img-user">
+                    <img src="images/upload/user.png" alt="user-images">
+                  </div>
+                  <div class="user-icon">
+                    <img src="images/icon/arrow-menu.svg" alt="icon-menu">
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="range-navbar"></div>
+        <div class="find-header" id="searchNavbar">
+          <input type="search" placeholder="Search...">
+        </div>
+      </header>
+
+      <main class="main-accountancy">
+        <div class="container-xxxl">
+          
+          <div class="wrapper-header">
+            <div class="row-table">
+                <div class="col-table">
+                    <div class="row gy-3">
+                        <div class="col-lg-4">
+                            <div class="card-amount">
+                                <div class="card-amount-header">
+                                    <span class="card-amount-header-date">
+                                        Azi
+                                    </span>
+                                </div>
+                                <div class="card-amount-text-bold">
+                                    36 170.00 mdl
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card-amount">
+                                <div class="card-amount-header">
+                                    <span class="card-amount-header-date">
+                                        7 zile
+                                    </span>
+                                </div>
+                                <div class="card-amount-text-bold">
+                                    154 563.00 mdl
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card-amount">
+                                <div class="card-amount-header">
+                                    <span class="card-amount-header-date">
+                                        30 zile
+                                    </span>
+                                </div>
+                                <div class="card-amount-text-bold">
+                                    741 338.00 mdl
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+       
+          <div class="row-table">
+            <div class="col-table">
+              <div class="table-responsive table-list">
+                <table class="table">
+                  <thead>
+                      <tr>
+                          <th class="table-accountancy-date-header" colspan="7">
+                            <div class="table-accountancy-date">
+                                <div class="table-accountancy-text">
+                                    Ultimile cheltuieli adaugate
+                                </div>
+                                <div class="table-accountancy-input">
+                                    <input type="text" value="2022 - 01 - 19">
+                                    <span>
+                                        <img src="images/icon/calendar_1.svg" alt="date-img">
+                                    </span>
+                                </div>
+                              </div>
+                          </th>
+                      </tr>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Adaugat de</th>
+                      <th scope="col">Recipient</th>
+                      <th scope="col">Categoria</th>
+                      <th scope="col">Suma</th>
+                      <th scope="col">Comentariu</th>
+                      <th scope="col">Data</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="text-table" scope="row">
+                          #770
+                      </th>
+                      <td class="text-table-bold">
+                        Alexandrin Musteata
+                      </td>
+                      <td class="text-table-bold">
+                        Bacalim Elina
+                      </td>
+                      <td class="text-table">
+                        Administrative
+                      </td>
+                      <td class="text-table">
+                        150.00 mdl
+                      </td>
+                      <td class="text-table">
+                        taxi fete
+                      </td>
+                      <td class="text-table">
+                        2022 - 01 -19
+                      </td>
+                    </tr>
+
+                    <tr>
+                        <th class="text-table" scope="row">
+                            #772
+                        </th>
+                        <td class="text-table-bold">
+                            Nicolae Pinzaru
+                        </td>
+                        <td class="text-table-bold">
+                            Ion Burdila
+                        </td>
+                        <td class="text-table">
+                            Clients refund
+                        </td>
+                        <td class="text-table">
+                            16020.00 mdl
+                        </td>
+                        <td class="text-table">
+                            785 euro, KIV DUB 22 ianuarie Tcaci Victoras
+                        </td>
+                        <td class="text-table">
+                            2022 - 01 -19
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="text-table" scope="row">
+                            #772
+                        </th>
+                        <td class="text-table-bold">
+                            Nicolae Pinzaru
+                        </td>
+                        <td class="text-table-bold">
+                            Ion Burdila
+                        </td>
+                        <td class="text-table">
+                            Clients refund
+                        </td>
+                        <td class="text-table">
+                            16020.00 mdl
+                        </td>
+                        <td class="text-table">
+                            785 euro, KIV DUB 22 ianuarie Tcaci Victoras
+                        </td>
+                        <td class="text-table">
+                            2022 - 01 -19
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="text-table" scope="row">
+                            #770
+                        </th>
+                        <td class="text-table-bold">
+                          Alexandrin Musteata
+                        </td>
+                        <td class="text-table-bold">
+                          Bacalim Elina
+                        </td>
+                        <td class="text-table">
+                          Administrative
+                        </td>
+                        <td class="text-table">
+                          150.00 mdl
+                        </td>
+                        <td class="text-table">
+                          taxi fete
+                        </td>
+                        <td class="text-table">
+                          2022 - 01 -19
+                        </td>
+                    </tr>
+                    <!-- ALL list render in js/app.js => function simList() -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="col-action">
+                <div class="action-container">
+                    <div class="action-btn-wrapper">
+                        <button class="btn-action plus-upload">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.1797 9.67969H11.3203V0.820312C11.3203 0.367254 10.9531 0 10.5 0C10.0469 0 9.67969 0.367254 9.67969 0.820312V9.67969H0.820312C0.367254 9.67969 0 10.0469 0 10.5C0 10.9531 0.367254 11.3203 0.820312 11.3203H9.67969V20.1797C9.67969 20.6327 10.0469 21 10.5 21C10.9531 21 11.3203 20.6327 11.3203 20.1797V11.3203H20.1797C20.6327 11.3203 21 10.9531 21 10.5C21 10.0469 20.6327 9.67969 20.1797 9.67969Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="action-btn-wrapper">
+                        <button class="btn-action pdf-download">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_77_1001)">
+                                    <path d="M24.79 18.3124C23.9003 16.7057 20.0036 15.6823 16.5628 15.4883C16.2518 15.1554 15.9362 14.8052 15.6126 14.437C12.6555 11.056 11.4581 6.14268 11.0109 3.53982C10.9577 2.98828 10.8992 2.52977 10.8501 2.18821C10.8102 1.91643 10.7265 1.34961 10.137 1.34961C9.94832 1.34961 9.76625 1.43068 9.63667 1.57488C9.42669 1.81476 9.45792 2.07259 9.49513 2.37029C9.53699 2.71184 9.60012 3.16902 9.68983 3.69066C9.94168 6.3334 10.0606 11.365 8.02658 15.362C7.8146 15.7787 7.60329 16.1787 7.3933 16.5601C3.58702 17.6672 0.515678 19.6414 0.0658084 21.2788C-0.0969953 21.8715 0.0445442 22.4397 0.465176 22.8796C0.954916 23.3912 1.53303 23.6504 2.18358 23.6504C3.98439 23.6504 6.03705 21.6449 8.2844 17.6918C9.28515 17.4286 10.2786 17.2452 11.2388 17.1482C11.6129 17.1103 12.2183 17.0313 12.5904 16.9741C13.6157 16.816 14.776 16.7522 15.9681 16.7914C18.7271 19.6594 20.9831 21.1133 22.6736 21.1133C23.5813 21.1126 24.3329 20.6701 24.7887 19.8674C25.0691 19.3703 25.0705 18.8174 24.79 18.3124ZM2.18292 22.3214C1.90117 22.3214 1.66062 22.2071 1.42472 21.9606C1.32837 21.8602 1.3071 21.7738 1.34697 21.6316C1.57889 20.7884 3.52721 19.3431 6.37462 18.2938C4.76585 20.8322 3.22619 22.3214 2.18292 22.3214ZM12.3864 15.6624C12.0329 15.7169 11.4587 15.7913 11.1039 15.8285C10.4587 15.8923 9.79549 15.994 9.12633 16.1309C9.15424 16.0764 9.18215 16.0212 9.21006 15.9661C10.2075 14.0064 10.8255 11.6567 11.0541 8.96351C11.9691 11.5245 13.1625 13.6549 14.6118 15.3122C14.6543 15.3614 14.6989 15.4112 14.7414 15.4617C13.9048 15.4816 13.1154 15.5501 12.3864 15.6624ZM23.6298 19.2148C23.4092 19.6055 23.0955 19.787 22.6457 19.787H22.645C21.5885 19.787 19.9637 18.7869 18.0187 16.9528C21.0289 17.3309 23.2331 18.242 23.6285 18.9563C23.6856 19.06 23.6856 19.1151 23.6298 19.2148Z" fill="#CC4B4C"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_77_1001">
+                                        <rect width="25" height="25" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+           
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="lib/nice-select/jquery.js"></script> 
+    <script src="lib/nice-select/jquery.nice-select.js"></script> 
+    <script src="js/selectStyle.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

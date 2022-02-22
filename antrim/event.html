@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antrim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-main">
+        <nav class="navbar navbar-expand-xl flex-column">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/">
+                  <img src="images/logo/antrim.png" alt="logo">
+              </a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill="#000000" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Travel Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Bine de stiut</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Parteneriat</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacte</a>
+                  </li>
+                </ul>
+                <div class="navbar-item-action">
+                    <div class="navbar-item-action-btn">
+                    <button class="navbar-action-btn" id="searcBtnNavbar">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8.00177C0 3.58971 3.58971 0 8.00177 0C12.4141 0 16.0035 3.58971 16.0035 8.00177C16.0035 9.94258 15.3091 11.7242 14.1555 13.1111L17.9538 16.9094C18.2423 17.1977 18.2423 17.6655 17.9538 17.9538C17.8095 18.0981 17.6204 18.1702 17.4316 18.1702C17.2425 18.1702 17.0536 18.0981 16.9093 17.9538L13.1111 14.1556C11.7242 15.3091 9.94256 16.0035 8.00177 16.0035C3.58971 16.0035 0 12.4141 0 8.00177ZM1.47725 8.00181C1.47725 11.5994 4.40418 14.5263 8.00177 14.5263C11.5994 14.5263 14.5263 11.5994 14.5263 8.00177C14.5263 4.40418 11.5994 1.47725 8.00177 1.47725C4.40418 1.47725 1.47725 4.40421 1.47725 8.00181Z" fill="black"/>
+                        </svg>
+                    </button>
+                    <button class="navbar-action-btn">
+                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.9701 1.6695C15.8934 0.592872 14.453 0 12.9136 0C11.5883 0 10.3364 0.439536 9.3268 1.24872C8.30264 0.439536 7.04923 0 5.73688 0C4.19036 0 2.74608 0.593126 1.6695 1.6695C0.592872 2.7459 0 4.18661 0 5.72575C0 7.26511 0.592872 8.7056 1.6695 9.78197L8.83505 16.9475C8.96562 17.0784 9.13706 17.1437 9.30851 17.1437C9.47952 17.1437 9.65049 17.0785 9.78132 16.9484L16.9526 9.79891C18.0261 8.70135 18.617 7.25885 18.617 5.73691C18.617 4.2009 18.034 2.75841 16.9701 1.6695ZM16.001 8.85625L9.30916 15.5276L2.61642 8.83505C1.79294 8.01135 1.33933 6.90706 1.33933 5.72575C1.33933 4.54444 1.79294 3.44015 2.61642 2.61645C3.44011 1.79298 4.54822 1.33937 5.73688 1.33937C6.90659 1.33937 8.01692 1.79498 8.86272 2.6218C9.12477 2.87829 9.54511 2.87604 9.8043 2.61645C10.628 1.79298 11.7321 1.33937 12.9136 1.33937C14.0951 1.33937 15.1992 1.79298 16.0173 2.61107C16.8301 3.44258 17.2776 4.5527 17.2776 5.73691C17.2776 6.90684 16.8223 8.01692 16.001 8.85625Z" fill="black"/>
+                        </svg>
+                    </button>
+                    </div>
+                    <div class="navbar-log">
+                        <button class="navbar-action-log"> 
+                            Log in
+                        </button>
+                        <span class="navbar-log-divider">
+                            /
+                        </span>
+                        <button class="navbar-action-log"> 
+                            Sign up
+                        </button>
+                    </div>
+                </div>
+                <a class="navbar-shop-btn" href="#">Shop Suvenire</a>
+                <select class="navbar-country">
+                    <option data-country="images/icon/MD.png" selected value="ro">
+                        Ro
+                    </option>
+                    <option data-country="images/icon/MD.png" value="ru">
+                        Ru
+                    </option>
+                    <option data-country="images/icon/MD.png" value="en">
+                        En
+                    </option>
+                </select>
+              </div>
+            </div>
+            <div class="container-fluid">
+                <form class="search-navbar" id="formSearchNavbar">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="btn-navbar-img-search">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8.00177C0 3.58971 3.58971 0 8.00177 0C12.4141 0 16.0035 3.58971 16.0035 8.00177C16.0035 9.94258 15.3091 11.7242 14.1555 13.1111L17.9538 16.9094C18.2423 17.1977 18.2423 17.6655 17.9538 17.9538C17.8095 18.0981 17.6204 18.1702 17.4316 18.1702C17.2425 18.1702 17.0536 18.0981 16.9093 17.9538L13.1111 14.1556C11.7242 15.3091 9.94256 16.0035 8.00177 16.0035C3.58971 16.0035 0 12.4141 0 8.00177ZM1.47725 8.00181C1.47725 11.5994 4.40418 14.5263 8.00177 14.5263C11.5994 14.5263 14.5263 11.5994 14.5263 8.00177C14.5263 4.40418 11.5994 1.47725 8.00177 1.47725C4.40418 1.47725 1.47725 4.40421 1.47725 8.00181Z" fill="white"></path>
+                        </svg>
+                    </button>
+                </form>
+                
+            </div>
+        </nav>
+        
+        <nav class="hedear-navigation-auxiliar" id="navbarAuxiliar">
+            <div class="img-decor">
+                <img src="images/bg/left-decor.png" alt="img-decor">
+            </div>
+            <ul class="hedear-navigation-auxiliar-list">
+                <li class="hedear-navigation-auxiliar-item">
+                    <a class="hedear-navigation-auxiliar-link" href="#">
+                        <span class="hedear-auxiliar-text">
+                            Cazare
+                        </span>
+                        <span class="hedear-auxiliar-qty">
+                            (120)
+                        </span>
+                    </a>
+                </li>
+                <li class="hedear-navigation-auxiliar-item">
+                    <a class="hedear-navigation-auxiliar-link" href="#">
+                        <span class="hedear-auxiliar-text">
+                            Vinarii
+                        </span>
+                        <span class="hedear-auxiliar-qty">
+                            (86)
+                        </span>
+                    </a>
+                </li>
+                <li class="hedear-navigation-auxiliar-item">
+                    <a class="hedear-navigation-auxiliar-link" href="#">
+                        <span class="hedear-auxiliar-text">
+                            Excursii & Tururi
+                        </span>
+                        <span class="hedear-auxiliar-qty">
+                            (75)
+                        </span>
+                    </a>
+                </li>
+                <li class="hedear-navigation-auxiliar-item">
+                    <a class="hedear-navigation-auxiliar-link" href="#">
+                        <span class="hedear-auxiliar-text">
+                            Restaurante
+                        </span>
+                        <span class="hedear-auxiliar-qty">
+                            (256)
+                        </span>
+                    </a>
+                </li>
+                <li class="hedear-navigation-auxiliar-item">
+                    <a class="hedear-navigation-auxiliar-link" href="#">
+                        <span class="hedear-auxiliar-text">
+                            Evenimente
+                        </span>
+                        <span class="hedear-auxiliar-qty">
+                            (26)
+                        </span>
+                    </a>
+                </li>
+                <li class="hedear-navigation-auxiliar-item">
+                    <a class="hedear-navigation-auxiliar-link" href="#">
+                        <span class="hedear-auxiliar-text">
+                            Experiențe
+                        </span>
+                        <span class="hedear-auxiliar-qty">
+                            (120)
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <div class="img-decor">
+                <img src="images/bg/right-decor.png" alt="img-decor">
+            </div>
+        </nav>
+    </header>
+
+    <main class="event-main">
+        <div class="container-xxl">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="">Principala</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="">Evenimente</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-xxl">
+            <div class="event-header">
+                <div class="event-header-title">
+                    <a href="#" class="change-icon">
+                        <svg width="36" height="26" viewBox="0 0 52 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.707107" y="18.2637" width="22" height="22" rx="3.5" transform="rotate(-45 0.707107 18.2637)" fill="white" stroke="black"/>
+                            <rect x="18" y="10" width="21" height="18" fill="white"/>
+                            <path d="M44.4952 17.5909L45.9236 18.5622L18.7578 18.5629V19.3229L45.7534 19.3222L44.4078 20.0955L44.7863 20.7544L47.8829 18.9752L44.9227 16.9624L44.4952 17.5909Z" fill="black"/>
+                        </svg>
+                    </a>
+                    <span class="event-header-title-text">
+                        Evenimente
+                    </span>
+                </div>
+                <div class="event-header-qty">
+                    <span class="event-header-qty-text">Accesibil</span>
+                    <span class="event-header-qty-number">26 oferte</span>
+                </div>
+            </div>
+
+            <div class="row-list">
+                <div class="col-filter" id="filterContainer">
+                    <div class="row-list-date">
+                        <div class="row-list-date-title">
+                            Data evenimentului:
+                        </div>
+                        <div class="row-list-date-number">
+                            <img src="images/icon/date.svg" alt="date-icon">
+                            <span class="text-date">
+                                -/-/-
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row-list-filter">
+                        <div class="row-list-title">
+                            Filter by:
+                        </div>
+                        <div class="filter-type">
+                            <div class="filter-type-name">
+                                Location
+                            </div>
+                            <ul class="filter-type-list">
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Chisinau</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Nord</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Centru</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Sud</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Gagauzia</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Regiunea Transnistriana</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Regiunea Transnistriana</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Regiunea Transnistriana</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="filter-type-action">
+                                <button class="btn-type-action">
+                                    Vezi toate
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="filter-type">
+                            <div class="filter-type-name">
+                                Tip
+                            </div>
+                            <ul class="filter-type-list">
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Sportiv</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Cultural</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Gastronomic</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Vinicol</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Traditional</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Vinicol</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="filter-type-action">
+                                <button class="btn-type-action">
+                                    Vezi toate
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="filter-type">
+                            <div class="filter-type-name">
+                                Potrivit pentru
+                            </div>
+                            <ul class="filter-type-list">
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Copii</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Adulti</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Copii</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Adulti</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Copii</span>
+                                    </label>
+                                </li>
+                                <li class="filter-type-item">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Adulti</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="filter-type-action">
+                                <button class="btn-type-action">
+                                    Vezi toate
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="filter-wrapper">
+                        <button class="filter-extend" id="btnShowFilter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-filter-square" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M6 11.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-list">
+                    <ul class="col-list-catalog catalog-event">
+                        <li class="col-list-item">
+                            <div class="col-list-item-preview">
+                                <div class="list-item-content">
+                                    <div class="list-item-top">
+                                        <span class="list-item-date">
+                                            02 ianuarie
+                                        </span>
+                                        <span class="list-item-price">
+                                            265 mdl
+                                        </span>
+                                    </div>
+                                    <div class="list-item-title">
+                                        Hederlez
+                                    </div>
+                                    <div class="list-item-location">
+                                        <img src="images/icon/location.svg" alt="location-img">
+                                        <span>
+                                            Ceadîr-Lunga
+                                        </span>
+                                    </div>
+                                    <p class="list-item-text">
+                                        Sărbătoarea curselor de cai și a jocurilor populare, Hederlez este sărbătoarea la care, conform tradiției găgăuze, începe Anul Nou pentru creșterea bovinelor. Iată de ce, la Ceadîr-Lunga în această zi se dă un adevărat
+                                    </p>
+                                    <div class="list-item-action">
+                                        <a href="#" class="list-action-link">Vezii detalii</a>
+                                    </div>
+                                </div>
+                                <div class="list-item-img">
+                                    <img src="images/upload/hdz.png" alt="img-event">
+                                    <div class="list-fav">
+                                        <button class="list-fav-btn">
+                                            <img src="images/icon/fav.svg" alt="fav-img">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-list-item">
+                            <div class="col-list-item-origin">
+                                <div class="list-item-img">
+                                    <img src="images/upload/hdz.png" alt="img-event">
+                                </div>
+                                <div class="list-item-content">
+                                    <div class="list-item-header">
+                                        <div class="list-item-top-info">
+                                            <span class="list-item-date">
+                                                18 ianuarie - 21 ianuarie
+                                            </span>
+                                            <span class="list-item-price">
+                                                265 mdl
+                                            </span>
+                                        </div>
+
+                                        <div class="list-item-top-fav">
+                                            <button class="list-fav-btn">
+                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.4343 1.29269C12.618 0.47638 11.5259 0.0268555 10.3587 0.0268555C9.35381 0.0268555 8.40463 0.360119 7.63911 0.973656C6.86258 0.360119 5.91222 0.0268555 4.91717 0.0268555C3.74458 0.0268555 2.64951 0.476573 1.83322 1.29269C1.01691 2.10884 0.567383 3.20121 0.567383 4.36821C0.567383 5.53537 1.01691 6.62758 1.83322 7.4437L7.26625 12.8767C7.36526 12.9759 7.49525 13.0255 7.62524 13.0255C7.7549 13.0255 7.88453 12.9761 7.98373 12.8774L13.4211 7.45654C14.2351 6.62435 14.6831 5.53063 14.6831 4.37667C14.6831 3.21204 14.241 2.11832 13.4343 1.29269ZM12.6996 6.7418L7.62573 11.8001L2.55119 6.72573C1.92682 6.10119 1.58289 5.26389 1.58289 4.36821C1.58289 3.47252 1.92682 2.63523 2.55119 2.01069C3.17573 1.38632 4.01592 1.04239 4.91717 1.04239C5.80406 1.04239 6.64593 1.38784 7.28723 2.01474C7.48593 2.20922 7.80463 2.20751 8.00115 2.01069C8.62569 1.38632 9.46282 1.04239 10.3587 1.04239C11.2545 1.04239 12.0916 1.38632 12.712 2.00661C13.3282 2.63708 13.6676 3.47878 13.6676 4.37667C13.6676 5.26373 13.3223 6.10541 12.6996 6.7418Z" fill="#333333"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-item-body">
+                                        <a href="#" class="list-item-title">
+                                            DescOpera
+                                        </a>
+                                        <p class="list-item-text">
+                                            <span class="list-item-text-bold">
+                                                Festival de muzică clasică în aer liber.
+                                            </span>
+                                            Când ai fost ultima dată la un eveniment care să-ți taie răsuflarea? Festivalul DescOperă este un eveniment muzical inedit, de o frumusețe rară, organizat la poalele stâncilor din Rezervația Orheiul Vechi.
+                                        </p>
+                                    </div>
+                                    <div class="list-item-footer">
+                                        <div class="list-item-footer-location">
+                                            <img src="images/icon/location.svg" alt="location-img">
+                                            <span>
+                                                Butuceni
+                                            </span>
+                                        </div>
+                                        <div class="list-item-footer-detail">
+                                            <a href="#" class="list-item-footer-link">
+                                                <span>Vezi detalii</span>
+                                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.477072 3.19558H8.48061L6.98117 4.69504C6.55047 5.12573 7.19652 5.77175 7.62722 5.34106L8.99281 3.97334L9.90441 3.06031C10.0811 2.88258 10.0811 2.59554 9.90441 2.41781L7.62722 0.137964C7.54058 0.0489358 7.42133 -0.00101749 7.29708 1.57154e-05C6.88693 6.73758e-05 6.68565 0.499627 6.98117 0.784035L8.48417 2.28349H0.453491C-0.178172 2.31483 -0.131008 3.22702 0.477072 3.19558Z" fill="#E65D31"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-main">
+        <div class="footer-main-category-wrapper">
+            <div class="img-bg-decor">
+                <img src="images/bg/left-decor.png" alt="left-decor">
+            </div>
+            <div class="container-xxl">
+                <div class="footer-category">
+                    <div class="row gx-1">
+                        <div class="py-1 col-xxl-2 col-md-4 col-sm-6">
+                            <a class="footer-category-link" href="#">
+                                <span class="footer-category-name">Cazare</span>
+                                <span class="footer-category-qty">(120)</span>
+                            </a>
+                        </div>
+                        <div class="py-1 col-xxl-2 col-md-4 col-sm-6">
+                            <a class="footer-category-link" href="#">
+                                <span class="footer-category-name">Vinarii</span>
+                                <span class="footer-category-qty">(86)</span>
+                            </a>
+                        </div>
+                        <div class="py-1 col-xxl-2 col-md-4 col-sm-6">
+                            <a class="footer-category-link" href="#">
+                                <span class="footer-category-name">Excursii & Tururi</span>
+                                <span class="footer-category-qty">(75)</span>
+                            </a>
+                        </div>
+                        <div class="py-1 col-xxl-2 col-md-4 col-sm-6">
+                            <a class="footer-category-link" href="#">
+                                <span class="footer-category-name">Restaurante</span>
+                                <span class="footer-category-qty">(256)</span>
+                            </a>
+                        </div>
+                        <div class="py-1 col-xxl-2 col-md-4 col-sm-6">
+                            <a class="footer-category-link" href="#">
+                                <span class="footer-category-name">Evenimente</span>
+                                <span class="footer-category-qty">(26)</span>
+                            </a>
+                        </div>
+                        <div class="py-1 col-xxl-2 col-md-4 col-sm-6">
+                            <a class="footer-category-link" href="#">
+                                <span class="footer-category-name">Experiente</span>
+                                <span class="footer-category-qty">(120)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="img-bg-decor">
+                <img src="images/bg/right-decor.png" alt="left-decor">
+            </div>
+        </div>
+        
+        <div class="container-xxl">
+            <div class="footer-main-link-wrapper">
+                <div class="row gy-5">
+                    <div class="col-lg-2 col-sm-6">
+                        <h4 class="footer-main-link-title">
+                            Home
+                        </h4>
+                        <ul class="footer-main-link-list">
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    Travel Blog
+                                </a>
+                            </li>
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    Bine de stiut
+                                </a>
+                            </li>
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    Parteneriat
+                                </a>
+                            </li>
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    Contacte
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <h4 class="footer-main-link-title">
+                            Links
+                        </h4>
+                        <ul class="footer-main-link-list">
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    www.moldova.travel
+                                </a>
+                                <a class="footer-main-link auxiliar-link" href="#">
+                                    Instagram
+                                </a>
+                                <a class="footer-main-link auxiliar-link" href="#">
+                                    Youtube
+                                </a>
+                                <a class="footer-main-link auxiliar-link" href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    www.antrim.md
+                                </a>
+                                <a class="footer-main-link auxiliar-link" href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    google.map
+                                </a>
+                            </li>
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    360.moldova.travel
+                                </a>
+                            </li>
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    wineofmoldova.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h4 class="footer-main-link-title">
+                            Contact us
+                        </h4>
+                        <p class="footer-main-contact">
+                            Chisinau. bd. Stefan cel Mare si Sfint, 83
+                        </p>
+                        <a class="footer-main-contact" href="tel: 37322904040">(+373) 22 90 40 40</a>
+                        <p class="footer-main-contact">
+                            info@antrim.md
+                        </p>
+                        <div class="footer-main-social">
+                            <a class="instagram" href="#">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.75 0H5.25C2.31 0 0 2.31 0 5.25V15.75C0 18.69 2.31 21 5.25 21H15.75C18.69 21 21 18.69 21 15.75V5.25C21 2.31 18.69 0 15.75 0ZM18.9 15.75C18.9 17.535 17.535 18.9 15.75 18.9H5.25C3.465 18.9 2.1 17.535 2.1 15.75V5.25C2.1 3.465 3.465 2.1 5.25 2.1H15.75C17.535 2.1 18.9 3.465 18.9 5.25V15.75ZM10.5 5.25C7.56 5.25 5.25 7.56 5.25 10.5C5.25 13.44 7.56 15.75 10.5 15.75C13.44 15.75 15.75 13.44 15.75 10.5C15.75 7.56 13.44 5.25 10.5 5.25ZM10.5 13.65C8.715 13.65 7.35 12.285 7.35 10.5C7.35 8.715 8.715 7.35 10.5 7.35C12.285 7.35 13.65 8.715 13.65 10.5C13.65 12.285 12.285 13.65 10.5 13.65ZM16.8 5.25011C16.8 5.83001 16.3299 6.30011 15.75 6.30011C15.1701 6.30011 14.7 5.83001 14.7 5.25011C14.7 4.67021 15.1701 4.20011 15.75 4.20011C16.3299 4.20011 16.8 4.67021 16.8 5.25011Z" fill="url(#paint0_linear_258_260)"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_258_260" x1="10.5" y1="0" x2="10.5" y2="21" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#C837AC"/>
+                                    <stop offset="1" stop-color="#FD9848"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>  
+                            </a>
+                            <a class="fb" href="#">
+                                <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4.44503V1.03054C12 1.03054 8.4592 1 8.21778 1C6.61452 1 4.31795 2.79581 4.31795 4.83595V8.49476H1V12.3735H4.26843V22H8.13731V12.3246H11.5605L11.9938 8.53141H8.18064C8.18064 8.53141 8.18064 6.20419 8.18064 5.74607C8.18064 5.08028 8.68824 4.42059 9.45582 4.42059C9.96961 4.4267 12 4.44503 12 4.44503Z" fill="#4867AA" stroke="#154944"/>
+                                </svg>
+                            </a>                          
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h4 class="footer-main-link-title">
+                            Abonare la noutati
+                        </h4>
+                        <form class="footer-input-wrapper">
+                            <input type="email" required placeholder="Your email">
+                            <button type="submit" class="footer-input-btn">
+                                <svg width="36" height="5" viewBox="0 0 36 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M31.8126 4.17126L33.5782 2.89057L0 2.88957V1.88746L33.3678 1.88847L31.7046 0.868825L32.1724 0L36 2.34593L32.341 5L31.8126 4.17126Z" fill="white" fill-opacity="0.6"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl">
+            <div class="footer-main-company">
+                <div class="footer-logo">
+                    <img src="images/logo/antrim_logo_footer.png" alt="logo-antrim">
+                </div>
+                <div class="footer-company-text">
+                    ANTRIM is a non-profit organization representing the voice of the private sector in Moldova’s inbound tourism industry. Here, we believe in Moldova’s potential.
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl">
+            <div class="footer-copyright">
+                <div class="footer-copyright-date">
+                    Copyright 2021, Antrim. All Right Reserved.
+                </div>
+                <div class="footer-copyright-logo">
+                    <span class="footer-copyright-develop">
+                        Developed by 
+                    </span>
+                    <a href="#">
+                        <img src="images/logo/WebMasterStudio.png" alt="logo-ws">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-cooperation">
+            <div class="container-xxl">
+                <div class="footer-cooperation-container">
+                    <p class="footer-cooperation-text">
+                        Această pagină web a fost actualizată cu susținerea Proiectului de Competitivitate din Moldova, finanțat de USAID, Suedia și UK. Conținutul materialului este responsabilitatea autorului și nu reflectă neapărat opinia USAID, a Guvernelor SUA, Suediei sau al Marii Britanii.
+                    </p>
+                    <div class="footer-cooperation-logo">
+                        <img src="images/logo/USAID.png" alt="cooperation-logo">
+                        <img src="images/logo/ukaid.png" alt="cooperation-logo">
+                        <img src="images/logo/sweden_sverige.png" alt="cooperation-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="scrollUP">
+            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23 46C35.7025 46 46 35.7025 46 23C46 10.2975 35.7025 0 23 0C10.2975 0 0 10.2975 0 23C0 35.7025 10.2975 46 23 46ZM24.6081 15.6032V33.7959C24.6795 35.1782 22.6061 35.2854 22.5348 33.8495V15.5951L19.1264 19.0116C18.4799 19.6833 17.3444 19.2258 17.3443 18.2935C17.3419 18.011 17.4555 17.74 17.6578 17.543L22.8401 12.3668C23.2441 11.9652 23.8966 11.9652 24.3006 12.3668L26.376 14.4389L29.4849 17.543C30.4639 18.5221 28.9955 19.9906 28.0165 19.0116L24.6081 15.6032Z" fill="#3D3D3D" fill-opacity="0.6"/>
+            </svg>    
+        </button>
+    </footer>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/lib/nice-select/jquery.nice-select.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/js/select-nice.js"></script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

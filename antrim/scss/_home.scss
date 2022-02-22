@@ -1,0 +1,336 @@
+.home-main {
+    .home-main-top {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: -34px;
+        .home-main-top-wrapper {
+            padding: 24px 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: $color-5;
+            display: block;
+            &:hover {
+                .home-main-top-title {
+                    color: $color-6;
+                }
+            }
+            .home-main-top-title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transition: .2s;
+                @include text($color-1, 700, 20);
+            }
+            .home-main-second-info {
+                @include text($color-3, 400, 15);
+            }
+        }
+    }
+    .home-main-recomand {
+        padding: 50px 0;
+        .home-main-recomand-title {
+            text-align: center;
+            @include text($color-1, 700, 40)
+        }
+        .home-main-recomand-text {
+            text-align: center;
+            width: 640px;
+            margin: auto;
+            margin-bottom: 50px;
+            @include text($color-1, 400, 18)
+        }
+        .slider-recomand-wrapper {
+            position: relative;
+            .slider-control {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                height: fit-content;
+                &:hover {
+                    path {
+                        fill: $color-experiences;
+                    }
+                    .rect-change {
+                        stroke: $color-experiences;
+                    }
+                }
+                &.control-left {
+                    left: -108px;
+                }
+                &.control-right {
+                    right: -108px;
+                }
+            }
+            .slider-home-main-recomand {
+                margin: 0 -10px;
+                padding: 0;
+                .slider-home-main-recomand-item {
+                    padding: 10px;
+                }
+            }
+        }
+        
+    }
+    .home-main-interesting {
+        padding: 50px 0;
+        .home-main-interesting-title {
+            @include text($color-1, 700, 46);
+            margin-bottom: 32px;
+        }
+        .home-main-interesting-text {
+            @include text($color-13, 400, 18);
+            margin-bottom: 32px;
+        }
+        .slide-interesting-wrapper {
+            position: relative;
+            .slide-interesting {
+                margin: 0 -10px;
+                padding: 0;
+                .slide-interesting-item {
+                    padding: 0 10px;
+                    .slide-interesting-item-wrapper {
+                        position: relative;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        .slide-interesting-item-img {
+                            width: 100%;
+                        }
+                        .slide-interesting-item-content {
+                            position: absolute;
+                            top: 0;
+                            background-color: $color-5;
+                            max-width: 390px;
+                            left: initial;
+                            right: 20px;
+                            padding: 76px 26px 30px 26px;
+                            .slide-interesting-item-header {
+                                display: flex;
+                                justify-content: space-between;
+                                margin-bottom: 40px;
+                                .slide-item-header-star {
+                                    @include text(#1C1C1C, 400, 16);
+                                    display: flex;
+                                    align-items: baseline;
+                                    span {
+                                        margin-right: 6px;
+                                    }
+                                }
+                            }
+                            .slide-interesting-item-body {
+                                .slide-item-title {
+                                    @include text(#121212, 700, 26);
+                                }
+                                .slide-item-position {
+                                    @include text(#121212, 400, 16);
+                                    display: flex;
+                                    align-items: baseline;
+                                    span {
+                                        margin-left: 4px;
+                                    }
+                                    img {
+                                        width: 12px;
+                                        height: 14px
+                                    }
+                                }
+                                .slide-body-text {
+                                    @include text(#2E2E2ED9, 400, 16);
+                                    margin: 20px 0 40px 0;
+                                }
+                            }
+                            .slide-interesting-item-footer {
+                                a {
+                                    @include text($color-11, 700, 18);
+                                    span {
+                                        margin-right: 4px;
+                                    }
+                                    &:hover {
+                                        color: $color-14;
+                                        path {
+                                            fill: $color-14;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .slick-dots {
+                    padding: 0 76px;
+                    button::before {
+                        font-size: 12px;
+                        color: $color-7;
+                        opacity: 1;
+                        &:hover {
+                            color: #333333;
+                        }
+                    }
+                    button:hover::before {
+                        color: #333333;
+                    }
+                    .slick-active {
+                        button::before {
+                            color: #333333;
+                        }
+                    }
+                }
+            }
+            .slider-interesting-control {
+                position: absolute;
+                padding: 0;
+                &.control-right {
+                    right: 0;
+                }
+                &:hover {
+                    path {
+                        fill: $color-experiences;
+                    }
+                    .rect-change {
+                        stroke: $color-experiences;
+                    }
+                }
+            }
+        }
+        
+    }
+    .home-main-maps {
+        background-color: $color-7;
+        margin-top: 60px;
+        .home-main-maps-wrapper-text {
+            padding: 40px 0;
+            .home-main-maps-title {
+                @include text($color-1, 700, 40);
+            }
+            .home-main-maps-text {
+                @include text($color-13, 400, 18);
+            }
+        }
+        .home-maps-container {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .home-main-last-blog {
+        padding: 70px 0;
+        .home-main-last-blog-title {
+            @include text($color-1, 700, 40);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+    .home-main-travel {
+        background-image: url(../images/bg/travel.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 300px;
+        margin-top: 30px;
+        .home-main-travel-card {
+            width: 392px;
+            padding: 70px 36px;
+            background-color: $color-5;
+            margin-right: 10px;
+            margin-left: auto;
+            .home-main-travel-card-title {
+                @include text($color-16, 700, 26);
+                margin-bottom: 30px;
+            }
+            .home-main-travel-card-text {
+                @include text($color-13, 400, 18);
+                margin-bottom: 40px;
+            }
+            .home-main-travel-card-action {
+                .home-main-travel-btn {
+                    @include text($color-5, 700, 18);
+                    padding: 12px 36px;
+                    border-radius: 10px;
+                    background-color: $color-17;
+                    border: 1px solid $color-17;
+                    &:hover {
+                        color: $color-2;
+                        background-color: $color-5;
+                        border: 1px solid $color-2;
+                    }
+                }
+            }
+        }
+    }
+    .home-main-recent-search {
+        padding: 80px 0;
+        .home-main-recent-search-text {
+            @include text($color-1, 700, 24);
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media (max-width:1600px) {
+    .slider-control {
+        &.control-left {            
+            left: 0 !important;
+            z-index: 1;
+            top: 260px !important;
+            bottom: initial !important;
+        }
+        &.control-right {            
+            right: 0 !important;
+            z-index: 1;
+            top: 260px !important;
+            bottom: initial !important;
+        }
+    }
+    .home-main-last-blog {
+        .slider-control {
+            &.control-left {            
+                top: initial !important;
+                bottom: -40px !important;
+            }
+            &.control-right {            
+                top: initial !important;
+                bottom: -40px !important;
+            }
+        }
+    }
+}
+
+@media (min-width:1399px) {
+    .home-main-top {
+        .container-xxl {
+            flex: 0 0 auto;
+        }
+        .img-bg-decor {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .img-bg-decor {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-main-recomand-text {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .home-main-interesting {
+        .slide-interesting-item-content {
+            position: static !important;
+            max-width: 100% !important;
+            padding: 40px 0 30px 0 !important;
+        }
+    }
+    .home-main-travel {
+        .home-main-travel-card {
+            width: 100% !important;
+            margin: auto !important;
+        }
+    }
+}

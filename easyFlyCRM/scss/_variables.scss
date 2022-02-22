@@ -1,0 +1,51 @@
+:root {
+  --font_family: "Jost", sans-serif;
+  --primary-color-text: #fff;
+  --color-dark: #000;
+  --secondary-color-text: #ff6f32;
+  --secondary-color-text-hover: #FF560E;
+  --primary-color: #152c6e;
+  --secondary-color: rgba(21, 44, 110, 0.8);
+  --color_1: #616161;
+  --color_2: #0d49e2;
+  --color_3: #0b1733;
+  --color_4: #112355;
+  --color_5: #060606;
+  --color_6: #e4e4e4;
+  --color_7: #f8f8f8;
+  --color_8: #12265c;
+  --color_9: #133592;
+  --color_10: #313131;
+  --color_11: #092A9A;
+  --color_12: #0E34A7;
+
+  --bg-color: linear-gradient(180deg, rgb(22, 22, 66) 0%, rgb(13, 73, 226) 20%,  rgb(21, 44, 110) 100%);
+  --width_find: 250px;
+
+  --height-input: 50px;
+}
+
+$font_family: var(--font_family);
+$primary-color-text: var(--primary-color-text);
+$color-dark: var(--color-dark);
+$secondary-color-text: var(--secondary-color-text);
+$secondary-color-text-hover: var(--secondary-color-text-hover);
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$color_1: var(--color_1);
+$color_2: var(--color_2);
+$color_3: var(--color_3);
+$color_4: var(--color_4);
+$color_5: var(--color_5);
+$color_6: var(--color_6);
+$color_7: var(--color_7);
+$color_8: var(--color_8);
+$color_9: var(--color_9);
+$color_10: var(--color_10);
+$color_11: var(--color_11);
+$color_12: var(--color_12);
+
+$bg-color: var(--bg-color);
+$width_find: var(--width_find);
+
+$height-input: var(--height-input);

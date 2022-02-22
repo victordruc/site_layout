@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Easy Fly CRM</title>
+  </head>
+  <body>
+
+    <div class="main-property">
+      <header class="header">
+        <nav class="navbar navbar-light navbar-expand-xl">
+          <div class="container-xxxl">
+            <a class="navbar-brand">
+              <img src="images/logo/EasyFly.png" alt="EasyFly-img">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill="white" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="m-auto mb-2 mb-lg-0 d-flex align-items-center wrapper-nav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Cautarea biletului</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tickets</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Calendar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contabilitate</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Manageri si accesuri</a>
+                  </li>
+                </ul>
+                <button class="nav-search" id="navSearch">
+                  <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.28378 0C2.82086 0 0 2.82086 0 6.28379C0 9.74669 2.82086 12.5731 6.28378 12.5731C7.7629 12.5731 9.12323 12.0547 10.1984 11.1941L12.8158 13.8101C12.9479 13.9367 13.1243 14.0066 13.3073 14.0047C13.4902 14.0029 13.6652 13.9294 13.7947 13.8001C13.9241 13.6708 13.9978 13.496 14 13.3131C14.0021 13.1301 13.9325 12.9536 13.806 12.8213L11.1886 10.2039C12.0499 9.12708 12.5689 7.76461 12.5689 6.28379C12.5689 2.82086 9.74669 0 6.28378 0ZM6.28378 1.39672C8.99186 1.39672 11.1709 3.57571 11.1709 6.28379C11.1709 8.99187 8.99186 11.1763 6.28378 11.1763C3.57569 11.1763 1.3967 8.99187 1.3967 6.28379C1.3967 3.57571 3.57569 1.39672 6.28378 1.39672Z" fill="white" fill-opacity="0.5"/>
+                  </svg>
+                </button>
+              </div>
+              
+              <div class="navbar-user">
+                <button class="user-toggle">
+                  <div class="img-user">
+                    <img src="images/upload/user.png" alt="user-images">
+                  </div>
+                  <div class="user-icon">
+                    <img src="images/icon/arrow-menu.svg" alt="icon-menu">
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="range-navbar"></div>
+        <div class="find-header" id="searchNavbar">
+          <input type="search" placeholder="Search...">
+        </div>
+      </header>
+
+
+      <main class="ticket-reservation">
+        <div class="container-content">
+            <div class="ticket-reservation-title">
+                Rezervarea biletului
+            </div>
+            <div class="ticket-reservation-date">
+                pe data 30 Dec 2021
+            </div>
+
+            <div class="row gy-3">
+                <div class="col-lg-9">
+                    <form class="ticket-wrapper">
+                        <div class="ticket-info-text">
+                            Informatii despre pasageri
+                        </div>
+                        <div class="ticket-info-small">
+                            Introduceti informatiile Dvs personale asa cum este indicat in pasaportul cu care veti zbura
+                        </div>
+
+                        <div class="ticket-type">
+                            <span class="ticket-type-text">
+                                Adult
+                            </span>
+                        </div>
+
+                        <div class="ticket-first-inputs">
+                        <div class="row gy-4">
+                            <div class="col-xl-4 col-md-6">
+                                <label class="input-text">
+                                    <div class="label-name">
+                                        <span class="label">Numele</span>
+                                        <span class="label-important">*</span>
+                                    </div>
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <label class="input-text">
+                                    <div class="label-name">
+                                        <span class="label">Prenumele</span>
+                                        <span class="label-important">*</span>
+                                    </div>
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <label class="input-text">
+                                    <div class="label-name">
+                                        <span class="label">Data nasterii</span>
+                                        <span class="label-important">*</span>
+                                    </div>
+                                    <input type="text" placeholder="ZZ/LL/AAAA">
+                                </label>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <label class="input-text">
+                                    <div class="label-name">
+                                        <span class="label">Codul din seria documentului</span>
+                                        <span class="label-important">*</span>
+                                    </div>
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <label class="input-select">
+                                    <div class="label-name">
+                                        <span class="label">Tara emitenta document</span>
+                                        <span class="label-important">*</span>
+                                    </div>
+                                    <select class="select-form">
+                                        <option disabled selected></option>
+                                        <option value="1">Country</option>
+                                        <option value="1">Country</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <label class="input-text">
+                                    <div class="label-name">
+                                        <span class="label">Data de eliberare a documentului</span>
+                                        <span class="label-important">*</span>
+                                    </div>
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <label class="input-select">
+                                    <div class="label-name">
+                                        <span class="label">Tipul documentului</span>
+                                        <span class="label-important">*</span>
+                                    </div>
+                                    <select class="select-form">
+                                        <option selected disabled></option>
+                                        <option value="1">Content</option>
+                                        <option value="2">Content</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <label class="input-text">
+                                    <div class="label-name">
+                                        <span class="label">Data de expirare a documentului</span>
+                                        <span class="label-important">*</span>
+                                    </div>
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="input-radio-double">
+                                    <div class="label-name">
+                                        <span class="label">Sexul</span>
+                                        <span class="label-important">*</span>
+                                    </div>
+                                    <div class="input-radio-double-wrapper">
+                                        <label class="info-type-radio">
+                                            <input type="radio" name="sex-type">
+                                            <span>
+                                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17.4166 14.0917L16.3083 12.9833L15.1999 14.0917L13.5374 12.4292C14.4083 11.3208 14.9624 9.81666 14.9624 8.3125C14.9624 4.59166 11.9541 1.58333 8.23325 1.58333C4.51242 1.58333 1.58325 4.59166 1.58325 8.3125C1.58325 12.0333 4.59159 15.0417 8.31242 15.0417C9.89575 15.0417 11.3208 14.4875 12.4291 13.6167L14.0916 15.2792L12.9833 16.3875L14.0916 17.4958L15.1999 16.3875L16.3083 17.4958L17.4166 16.3875L16.3083 15.2792L17.4166 14.0917ZM12.2708 11.4L11.9541 11.875L11.4791 12.2708C10.6083 12.9833 9.49992 13.3792 8.31242 13.3792C5.46242 13.3792 3.16659 11.0833 3.16659 8.3125C3.16659 5.4625 5.46242 3.16666 8.31242 3.16666C11.1624 3.16666 13.4583 5.4625 13.4583 8.3125C13.3791 9.42083 12.9833 10.5292 12.2708 11.4Z" fill="#606060"></path>
+                                                </svg>
+                                                Femeie
+                                            </span>
+                                        </label>
+                                        <label class="info-type-radio">
+                                            <input type="radio" name="sex-type">
+                                            <span>
+                                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.6666 1.58333V3.16666H14.7249L11.7958 6.09583C10.7666 5.225 9.42075 4.75 7.91659 4.75C4.43325 4.75 1.58325 7.6 1.58325 11.0833C1.58325 14.5667 4.43325 17.4167 7.91659 17.4167C11.3999 17.4167 14.2499 14.5667 14.2499 11.0833C14.2499 9.57916 13.7749 8.23333 12.9041 7.20416L15.8333 4.275V6.33333H17.4166V1.58333H12.6666ZM7.91659 15.8333C5.30409 15.8333 3.16659 13.6958 3.16659 11.0833C3.16659 8.47083 5.30409 6.33333 7.91659 6.33333C10.5291 6.33333 12.6666 8.47083 12.6666 11.0833C12.6666 13.6958 10.5291 15.8333 7.91659 15.8333Z" fill="#606060"></path>
+                                                </svg>
+                                                Barbat
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="ticket-info-text">
+                            Date de contact
+                        </div>
+                        <div class="ticket-info-small">
+                            Va vom trimite biletul pe e-mail si vom apela in caz de modificarii in program
+                        </div>
+
+                        <div class="ticket-second-inputs">
+                            <div class="row gy-4">
+                                <div class="col-xl-4 col-md-6">
+                                    <label class="input-text">
+                                        <div class="label-name">
+                                            <span class="label">Email</span>
+                                            <span class="label-important">*</span>
+                                        </div>
+                                        <input type="email">
+                                    </label>
+                                </div>
+                                <div class="col-xl-4 col-md-6">
+                                    <label class="input-double-select">
+                                        <div class="label-name">
+                                            <span class="label">Nr. de telefon</span>
+                                            <span class="label-important">*</span>
+                                        </div>
+                                        <div class="wrapper-input">
+                                            <select class="input-form-select country-select">
+                                                <option data-country="images/icon/MD.png" value="MD" selected>+373</option>
+                                                <option data-country="images/icon/MD.png" value="MD">+373</option>
+                                                <option data-country="images/icon/MD.png" value="MDd">+372</option>
+                                            </select>
+                                            <input type="tel">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label class="input-checkbox">
+                                        <input type="checkbox" name="type-escale">
+                                        <span>
+                                            Rezarvind acest zbor, confirm corectitudinea datelor introduse si sunt de acord cu <a href="#">Termeni si conditii</a>
+                                        </span>
+                                      </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ticket-action">
+                            <div class="row">
+                                <div class="col-xl-4 col-md-6">
+                                    <button type="submit" class="btn-type-1">
+                                        Rezerveaza gratuit
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card-ticket">
+                        <div class="card-ticket-header">
+                            <div class="header-img">
+                                <img src="images/upload/company-fly-1.png" alt="img-company">
+                            </div>
+                            <div class="header-company">
+                                Swiss international airlines
+                            </div>
+                            <div class="header-hour">
+                                8 ore 10 min
+                            </div>
+                            <div class="header-type">
+                                Zbor direct
+                            </div>
+                        </div>
+                        <div class="card-ticket-body">
+                            <div class="ticket-body-content">
+                                <div class="ticket-body-hours">
+                                    22:45
+                                </div>
+                                <div class="ticket-body-content-wrapper">
+                                    <div class="ticket-body-date">
+                                        30 dec., 2021, Du
+                                    </div>
+                                    <div class="ticket-body-location">
+                                        Chisinau
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket-body-content">
+                                <div class="ticket-body-hours">
+                                    02:35
+                                </div>
+                                <div class="ticket-body-content-wrapper">
+                                    <div class="ticket-body-date">
+                                        30 dec., 2021, Du
+                                    </div>
+                                    <div class="ticket-body-location">
+                                        Nisa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-ticket-footer">
+                            <div class="ticket-price">
+                                2520 €
+                            </div>
+                            <div class="ticket-action">
+                                <button class="btn-type-2">
+                                    Alege
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+
+    </div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="lib/nice-select/jquery.js"></script> 
+    <script src="lib/nice-select/jquery.nice-select.js"></script> 
+    <script src="js/selectStyle.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

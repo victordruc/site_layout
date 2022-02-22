@@ -1,0 +1,392 @@
+.modal-style {
+  .modal-content {
+    border-radius: 10px;
+  }
+  .modal-dialog {
+    max-width: 100%;
+  }
+  .modal-header {
+    padding: 0;
+    display: block;
+    border-bottom: none;
+    .modal-header-top {
+      background-color: $primary-color;
+      padding: 10px 20px;
+      .btn-close-modal {
+        @include text($primary-color-text, 400, 15);
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        span {
+          margin-right: 10px;
+        }
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    .modal-header-bottom {
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: $primary-color;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .modal-navigation {
+        display: block;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        white-space: nowrap;
+        overflow-x: auto;
+        text-align: center;
+        .modal-item {
+          padding: 20px 20px 16px 20px;
+          display: inline-block;
+          .change-context-modal {
+            @include text($color-dark, 500, 20);
+            padding: 0;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+          &.active-context {
+            border-bottom: 3px solid $secondary-color-text;
+          }
+        }
+      }
+    }
+  }
+  .modal-body {
+    padding: 0;
+    overflow-x: hidden;
+    .modal-body-top {
+      background-color: $color_7;
+      padding: 24px 36px;
+      border-bottom: 1px solid #ddd;
+      .modal-body-top-btn {
+        @include text($primary-color-text, 400, 18);
+        padding: 6px 18px;
+        border-radius: 6px;
+        margin: 6px 0;
+        &.btn-top-first {
+          background-color: $secondary-color-text;
+          &:hover {
+            background-color: $secondary-color-text-hover;
+          }
+          &:active {
+            background-color: $secondary-color-text;
+          }
+        }
+        &.btn-top-second {
+          background-color: $color_11;
+          &:hover {
+            background-color: $primary-color;
+          }
+          &:active {
+            background-color: $color_11;
+          }
+        }
+      }
+    }
+    .modal-body-content {
+      .modal-left-border {
+        position: relative;
+        &:before {
+          content: "";
+          display: block;
+          height: 100%;
+          border-left: 1px solid #ddd;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+      .modal-content {
+        border-radius: 0;
+        border: none;
+        display: block;
+        padding: 40px 60px 40px 40px;
+        .modal-content-title {
+          @include text(#00000099, 400, 16);
+          border-bottom: 1px solid #dddddd;
+        }
+        .modal-content-line {
+          display: flex;
+          .modal-body-img-wrapper {
+            width: 46px;
+            .modal-body-img {
+              width: 46px;
+              height: 46px;
+              border-radius: 100%;
+              overflow: hidden;
+              margin-top: 20px;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+          table {
+            width: calc(100% - 46px);
+            margin: 20px 0 36px 0;
+            .table-type {
+              @include text(#111111, 500, 18);
+              padding: 4px 8px;
+              width: 200px;
+              vertical-align: top;
+            }
+            .table-description {
+              @include text(#111111, 400, 18);
+              padding: 4px 32px;
+              vertical-align: top;
+            }
+          }
+        }
+        .modal-data-form {
+          margin-bottom: 50px;
+          &:last-child {
+            margin-bottom: 20px;
+          }
+          .modal-data-form-title {
+            @include text(#00000099, 400, 16);
+            margin-bottom: 6px;
+          }
+          .select-form {
+            @include text(#111111, 500, 18);
+          }
+          .input-text {
+            textarea {
+              height: fit-content;
+            }
+          }
+        }
+        .modal-filtet-content {
+          padding-bottom: 16px;
+          .list-modal-filter-type {
+            .item-modal-filter-type {
+              padding: 8px 0;
+              .input-checkbox {
+                align-items: baseline;
+                input {
+                  border-color: #c8c8c8;
+                }
+                span {
+                  @include text($color-dark, 400, 16);
+                }
+              }
+            }
+          }
+
+          .modal-list-final-data {
+            .modal-item-data {
+              .modal-item-data-text {
+                @include text($color-dark, 400, 16);
+                &.text-right {
+                  margin-left: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-style {
+  .modal-body#modalContentAction {
+    .table-responsive {
+      margin-top: 30px;
+      .table {
+        margin-bottom: 50px;
+        thead {
+          th {
+            @include text(#00000099, 400, 16);
+            &:first-child {
+              padding-left: 40px;
+            }
+            &:last-child {
+              padding-right: 40px;
+            }
+          }
+        }
+        tbody {
+          border-color: #cecece;
+          tr {
+            border-color: #cecece;
+            &:nth-child(even) {
+              background-color: $color_7;
+            }
+          }
+          td {
+            @include text(#111111, 400, 16);
+            white-space: nowrap;
+            &:first-child {
+              padding-left: 40px;
+              font-weight: 500;
+            }
+            &:last-child {
+              padding-right: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-style {
+  .modal-body#modalContentIssue {
+    .modal-issue-content-input {
+      margin: 0 44px;
+      border-bottom: 1px solid $color_6;
+      .border-right-modal {
+        border-right: 1px solid $color_6;
+      }
+      .modal-issue-content {
+        padding-bottom: 60px;
+        padding-top: 40px;
+        .issue-text {
+          @include text($color-dark, 500, 20);
+          margin-bottom: 20px;
+        }
+
+        .label-name .label {
+          color: #00000099;
+        }
+
+        .label-name {
+          margin-top: 20px;
+        }
+
+        .input-text {
+          input {
+            @include text(#111111, 500, 18);
+          }
+          input::placeholder {
+            @include text(#1111114d, 500, 18);
+          }
+        }
+
+        .select-form {
+          @include text(#111111, 500, 18);
+        }
+      }
+    }
+    .modal-issue-tabel {
+        padding: 60px 0;
+      .table {
+        thead {
+          th {
+            white-space: nowrap;
+            @include text(#00000099, 400, 16);
+          }
+          th:first-child {
+            padding-left: 44px;
+          }
+          th:last-child {
+            padding-right: 44px;
+          }
+        }
+        tbody {
+          border-top: 3px solid #cecece;
+          tr {
+            border: transparent;
+          }
+          td {
+            white-space: nowrap;
+            @include text(#111111, 500, 18);
+            .tabel-delete-item {
+                padding: 0;
+                @include text($secondary-color-text, 400, 16);
+                text-decoration: underline;
+                &:hover {
+                    color: #6A6A6A;
+                    text-decoration: none;
+                }
+            }
+          }
+          td:first-child {
+            padding-left: 44px;
+          }
+          td:last-child {
+            padding-right: 44px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .modal-style {
+    .modal-body-content {
+      .modal-content {
+        &:first-child {
+          padding-bottom: 10px !important;
+        }
+        &:last-child {
+          padding-top: 10px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-style {
+    .modal-content-line {
+      flex-direction: column-reverse;
+      table {
+        width: 100% !important;
+        .table-description {
+          padding-right: 0 !important;
+        }
+      }
+    }
+    .modal-body#modalContentIssue {
+      .border-right-modal {
+        border-right: none !important;
+        padding-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .modal-style {
+    .modal-navigation {
+      .modal-item {
+        padding: 10px !important;
+      }
+    }
+    .modal-content-line {
+      table {
+        .table-description {
+          padding-left: 0 !important;
+        }
+        .table-type {
+          width: 170px !important;
+        }
+      }
+    }
+    .modal-body {
+      .modal-body-top {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+    .modal-body-content {
+      .modal-content {
+        padding: 10px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+.event-main {
+   padding-bottom: 100px;
+   .detail-event-img {
+      position: relative;
+      &>img {
+         width: 100%;
+         height: 100%;
+         border-radius: 10px;
+         max-height: 630px;
+         object-fit: cover;
+      }
+      .card-event {
+         background-color: $color-5;
+         position: absolute;
+         top: 0;
+         width: 400px;
+         left: 22px;
+         &>* {
+            padding: 24px;
+         }
+         .card-event-content {
+            .card-event-content-title {
+               @include text($color-2, 700, 22);
+               margin-bottom: 12px
+            }
+            .card-event-date {
+               .list-item-date {
+                  @include text($color-5, 700, 14);
+                  padding: 4px 18px;
+                  border-radius: 100px;
+               }
+            }
+            .card-event-text {
+               @include text($color-20, 350, 15);
+               display: -webkit-box;
+               -webkit-line-clamp: 4;
+               -webkit-box-orient: vertical;  
+               overflow: hidden;
+               margin: 20px 0 18px 0;
+            }
+            .card-event-list-type {
+               list-style: none;
+               padding: 0;
+               margin: 0;
+               display: flex;
+               flex-wrap: wrap;
+               margin: -2px;
+               .card-event-item-type {
+                  padding: 2px;
+                  .card-event-type-wrapper {
+                     @include text($color-2, 350, 14);
+                     padding: 6px 12px;
+                     border: 1px solid $color-7;
+                     border-radius: 4px;
+                  }
+               }
+            }
+            .card-event-type-action {
+               padding-top: 16px;
+               .card-event-type-btn-show {
+                  padding: 0;
+                  text-decoration: underline;
+                  @include text($color-2, 400, 15);
+                  &:hover {
+                     text-decoration: none;
+                  }
+               }
+            }
+         }
+         .card-event-footer {
+            background-color: $color-21;
+            .card-event-footer-price {
+               text-align: center;
+               @include text($color-22, 700, 20);
+               margin-bottom: 10px;
+            }
+            .card-event-footer-btn {
+               padding: 20px 30px;
+               width: 100%;
+               background-color: $color-6;
+               border-radius: 10px;
+               @include text($color-5, 700, 20);
+               &:hover {
+                  background-color: $color-6-hover;
+               }
+            }
+         }
+      }
+      .detail-all-photo {
+         position: absolute;
+         top: 0;
+         right: 0;
+         padding: 8px;
+         background-color: $color-17;
+         border-radius: 100px;
+         margin: 26px 20px;
+         @include text($color-5, 400, 16);
+         cursor: pointer;
+         transition: .2s;
+         &:hover {
+            opacity: .8;
+         }
+      }
+   }
+
+   .event-description {
+      padding-top: 52px;
+      padding-bottom: 20px;
+      .event-description-title {
+         @include text($color-2, 700, 22);
+         margin-bottom: 20px;
+      }
+      .event-description-text {
+         @include text($color-20, 350, 18);
+         column-count: 2;
+      }
+   }
+
+   .event-type-wrapper {
+      .event-type-list{
+         list-style: none;
+         padding: 0;
+         padding-top: 30px;
+         border-top: 1px solid $color-7;
+         display: flex;
+         flex-wrap: wrap;
+         margin: -2px;
+         .event-type-item {
+            padding: 2px;
+            .event-type-text {
+               border: 1px solid $color-7;
+               border-radius: 4px;
+               @include text($color-2, 350, 14);
+               padding: 6px 14px;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width:767px) {
+   .detail-event-img{
+      .card-event {
+         position: static !important;
+         width: 100% !important;
+      }
+   }  
+}
+
+@media (max-width:575px) {
+   .event-description{
+      .event-description-text {
+         column-count: 1 !important;
+      }
+   }  
+}

@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antrim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-main">
+        <nav class="navbar navbar-expand-xl flex-column">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/">
+                  <img src="images/logo/antrim.png" alt="logo">
+              </a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill="#000000" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Travel Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Bine de stiut</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Parteneriat</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacte</a>
+                  </li>
+                </ul>
+                <div class="navbar-item-action">
+                    <div class="navbar-item-action-btn">
+                    <button class="navbar-action-btn" id="searcBtnNavbar">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8.00177C0 3.58971 3.58971 0 8.00177 0C12.4141 0 16.0035 3.58971 16.0035 8.00177C16.0035 9.94258 15.3091 11.7242 14.1555 13.1111L17.9538 16.9094C18.2423 17.1977 18.2423 17.6655 17.9538 17.9538C17.8095 18.0981 17.6204 18.1702 17.4316 18.1702C17.2425 18.1702 17.0536 18.0981 16.9093 17.9538L13.1111 14.1556C11.7242 15.3091 9.94256 16.0035 8.00177 16.0035C3.58971 16.0035 0 12.4141 0 8.00177ZM1.47725 8.00181C1.47725 11.5994 4.40418 14.5263 8.00177 14.5263C11.5994 14.5263 14.5263 11.5994 14.5263 8.00177C14.5263 4.40418 11.5994 1.47725 8.00177 1.47725C4.40418 1.47725 1.47725 4.40421 1.47725 8.00181Z" fill="black"/>
+                        </svg>
+                    </button>
+                    <button class="navbar-action-btn">
+                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.9701 1.6695C15.8934 0.592872 14.453 0 12.9136 0C11.5883 0 10.3364 0.439536 9.3268 1.24872C8.30264 0.439536 7.04923 0 5.73688 0C4.19036 0 2.74608 0.593126 1.6695 1.6695C0.592872 2.7459 0 4.18661 0 5.72575C0 7.26511 0.592872 8.7056 1.6695 9.78197L8.83505 16.9475C8.96562 17.0784 9.13706 17.1437 9.30851 17.1437C9.47952 17.1437 9.65049 17.0785 9.78132 16.9484L16.9526 9.79891C18.0261 8.70135 18.617 7.25885 18.617 5.73691C18.617 4.2009 18.034 2.75841 16.9701 1.6695ZM16.001 8.85625L9.30916 15.5276L2.61642 8.83505C1.79294 8.01135 1.33933 6.90706 1.33933 5.72575C1.33933 4.54444 1.79294 3.44015 2.61642 2.61645C3.44011 1.79298 4.54822 1.33937 5.73688 1.33937C6.90659 1.33937 8.01692 1.79498 8.86272 2.6218C9.12477 2.87829 9.54511 2.87604 9.8043 2.61645C10.628 1.79298 11.7321 1.33937 12.9136 1.33937C14.0951 1.33937 15.1992 1.79298 16.0173 2.61107C16.8301 3.44258 17.2776 4.5527 17.2776 5.73691C17.2776 6.90684 16.8223 8.01692 16.001 8.85625Z" fill="black"/>
+                        </svg>
+                    </button>
+                    </div>
+                    <div class="navbar-log">
+                        <button class="navbar-action-log"> 
+                            Log in
+                        </button>
+                        <span class="navbar-log-divider">
+                            /
+                        </span>
+                        <button class="navbar-action-log"> 
+                            Sign up
+                        </button>
+                    </div>
+                </div>
+                <a class="navbar-shop-btn" href="#">Shop Suvenire</a>
+                <select class="navbar-country">
+                    <option data-country="images/icon/MD.png" selected value="ro">
+                        Ro
+                    </option>
+                    <option data-country="images/icon/MD.png" value="ru">
+                        Ru
+                    </option>
+                    <option data-country="images/icon/MD.png" value="en">
+                        En
+                    </option>
+                </select>
+              </div>
+            </div>
+            <div class="container-fluid">
+                <form class="search-navbar" id="formSearchNavbar">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="btn-navbar-img-search">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8.00177C0 3.58971 3.58971 0 8.00177 0C12.4141 0 16.0035 3.58971 16.0035 8.00177C16.0035 9.94258 15.3091 11.7242 14.1555 13.1111L17.9538 16.9094C18.2423 17.1977 18.2423 17.6655 17.9538 17.9538C17.8095 18.0981 17.6204 18.1702 17.4316 18.1702C17.2425 18.1702 17.0536 18.0981 16.9093 17.9538L13.1111 14.1556C11.7242 15.3091 9.94256 16.0035 8.00177 16.0035C3.58971 16.0035 0 12.4141 0 8.00177ZM1.47725 8.00181C1.47725 11.5994 4.40418 14.5263 8.00177 14.5263C11.5994 14.5263 14.5263 11.5994 14.5263 8.00177C14.5263 4.40418 11.5994 1.47725 8.00177 1.47725C4.40418 1.47725 1.47725 4.40421 1.47725 8.00181Z" fill="white"></path>
+                        </svg>
+                    </button>
+                </form>
+                
+            </div>
+        </nav>
+        
+        <nav class="hedear-navigation-auxiliar" id="navbarAuxiliar">
+            <div class="img-decor">
+                <img src="images/bg/left-decor.png" alt="img-decor">
+            </div>
+            <ul class="hedear-navigation-auxiliar-list">
+                <li class="hedear-navigation-auxiliar-item">
+                    <a class="hedear-navigation-auxiliar-link" href="#">
+                        <span class="hedear-auxiliar-text">
+                            Cazare
+                        </span>
+                        <span class="hedear-auxiliar-qty">
+                            (120)
+                        </span>
+                    </a>
+                </li>
+                <li class="hedear-navigation-auxiliar-item">
+                    <a class="hedear-navigation-auxiliar-link" href="#">
+                        <span class="hedear-auxiliar-text">
+                            Vinarii
+                        </span>
+                        <span class="hedear-auxiliar-qty">
+                            (86)
+                        </span>
+                    </a>
+                </li>
+                <li class="hedear-navigation-auxiliar-item">
+                    <a class="hedear-navigation-auxiliar-link" href="#">
+                        <span class="hedear-auxiliar-text">
+                            Excursii & Tururi
+                        </span>
+                        <span class="hedear-auxiliar-qty">
+                            (75)
+                        </span>
+                    </a>
+                </li>
+                <li class="hedear-navigation-auxiliar-item">
+                    <a class="hedear-navigation-auxiliar-link" href="#">
+                        <span class="hedear-auxiliar-text">
+                            Restaurante
+                        </span>
+                        <span class="hedear-auxiliar-qty">
+                            (256)
+                        </span>
+                    </a>
+                </li>
+                <li class="hedear-navigation-auxiliar-item">
+                    <a class="hedear-navigation-auxiliar-link" href="#">
+                        <span class="hedear-auxiliar-text">
+                            Evenimente
+                        </span>
+                        <span class="hedear-auxiliar-qty">
+                            (26)
+                        </span>
+                    </a>
+                </li>
+                <li class="hedear-navigation-auxiliar-item">
+                    <a class="hedear-navigation-auxiliar-link" href="#">
+                        <span class="hedear-auxiliar-text">
+                            Experiențe
+                        </span>
+                        <span class="hedear-auxiliar-qty">
+                            (120)
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <div class="img-decor">
+                <img src="images/bg/right-decor.png" alt="img-decor">
+            </div>
+        </nav>
+    </header>
+
+    <main class="offers-detail-main accommodation-offers">
+        <div class="container-xxl">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="">Principala</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="">Cazare</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-xxl">
+            <div class="event-header">
+                <div class="event-header-title">
+                    <a href="#" class="change-icon">
+                        <svg width="36" height="26" viewBox="0 0 52 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="-0.707107" width="22" height="22" rx="3.5" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 50.7929 17.7637)" fill="white" stroke="black"/>
+                            <rect width="21" height="18" transform="matrix(-1 0 0 1 34 10)" fill="white"/>
+                            <path d="M7.50479 17.5909L6.07637 18.5622L33.2422 18.5629V19.3229L6.24661 19.3222L7.59219 20.0955L7.21371 20.7544L4.11709 18.9752L7.07729 16.9624L7.50479 17.5909Z" fill="black"/>
+                        </svg>
+                    </a>
+                    <span class="event-header-title-text">
+                        Hanu lui Hanganu
+                        <span class="event-header-title-type">Villa</span>
+                    </span>
+                </div>
+                <!-- <div class="event-header-qty">
+                    <span class="event-header-qty-text">Accesibil</span>
+                    <span class="event-header-qty-number">120 oferte</span>
+                </div> -->
+            </div>
+            <div class="event-detail-info">
+                <div class="event-detail-adress">
+                    <span class="event-detail-star">
+                        <img src="images/icon/star.svg" alt="star-img">
+                        <img src="images/icon/star.svg" alt="star-img">
+                        <img src="images/icon/star.svg" alt="star-img">
+                        <img src="images/icon/star.svg" alt="star-img">
+                        <img src="images/icon/star.svg" alt="star-img">
+                        <span>125 review</span>
+                    </span>
+                    <span class="event-point"></span>
+                    <span class="event-detail-partner">
+                        <span>De la Partener</span>
+                        <a href="#">Ways Travel</a>
+                    </span>
+                    <span class="event-detail-partner-adress">
+                        <img src="images/icon/External_Link.svg" alt="external_link">
+                        <a href="#">www.ways.md</a>
+                    </span>
+                </div>
+               
+            </div>
+        </div>
+
+        <section class="offers-detail-header container-xxl">
+            <div class="row gy-2 gx-2">
+                <div class="col-lg-8">
+                    <div class="offers-detail-header-img-wrapper">
+                        <div class="offers-detail-origin">
+                            <img src="images/upload/hh2.jpg" alt="event img">
+                        </div>
+                        <div class="offers-detail-preview">
+                            <div class="offers-detail-preview-img">
+                                <div class="offers-detail-preview-wrapper">
+                                    <img src="images/upload/hh2.jpg" alt="event img">
+                                </div>
+                            </div>
+                            <div class="offers-detail-preview-img">
+                                <div class="offers-detail-preview-wrapper">
+                                    <img src="images/upload/hh2.jpg" alt="event img">
+                                </div>
+                            </div>
+                            <div class="offers-detail-preview-img">
+                                <div class="offers-detail-preview-wrapper">
+                                    <img src="images/upload/hh2.jpg" alt="event img">
+                                    <div class="offers-detail-control-img">
+                                        + 20 photo
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="offers-detail-card-reservation text-toggle-container">
+                        <div class="offers-detail-reservation-top">
+                            <div class="offers-detail-reservation-adress">
+                                Moldova, s. Cioburciu, raionul Ștefan Vodă
+                            </div>
+                            <div class="offers-detail-reservation-map">
+                                <button class="offers-detail-reservation-map-action">
+                                    <span>Vezi pe carta</span>
+                                    <img src="images/icon/map_small_white.svg" alt="map-img">
+                                </button>
+                            </div>
+                            <p class="offers-detail-reservation-text text-toggle-text">
+                                Familia Hanganu vă oferă la alegere 7 camere, 2 încăperi de tip bască și o fîneață. Toate în aspect rustic cu elemente arhaice și decor în stil tradițional
+                                Familia Hanganu vă oferă la alegere 7 camere, 2 încăperi de tip bască și o fîneață. Toate în aspect rustic cu elemente arhaice și decor în stil tradițional
+                            </p>
+                            <div class="offers-detail-reservation-accesories">
+                                <div class="offers-accesories-wrapper">
+                                    <div class="offers-accesories-card">
+                                        <img src="images/icon/wi-fi.svg" alt="img-accesories">
+                                        <span>Free WiFi</span>
+                                    </div>
+                                </div>
+                                <div class="offers-accesories-wrapper">
+                                    <div class="offers-accesories-card">
+                                        <img src="images/icon/parking.svg" alt="img-accesories">
+                                        <span>Free parking</span>
+                                    </div>
+                                </div>
+                                <div class="offers-accesories-wrapper">
+                                    <div class="offers-accesories-card">
+                                        <img src="images/icon/transfer.svg" alt="img-accesories">
+                                        <span>Transfer</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offers-detail-reservation-toggle">
+                                <button class="offers-detail-reservation-toggle-btn text-toggle-btn">
+                                    Vezi toata descrierea
+                                </button>
+                            </div>
+                        </div>
+                        <div class="offers-detail-reservation-bottom">
+                            <div class="offers-detail-reservation-price">
+                                250 mdl/noaptea
+                            </div>
+                            <div class="offers-detail-reservation-action">
+                                <button class="offers-detail-reservation-action-btn" id="offersFormBtn">
+                                    Rezerva acum
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-xxl">
+            <form class="offers-form-reservation" id="offersForm">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="offers-form-title">
+                            Selectati perioada
+                        </div>
+                        <div class="offers-form-date">
+                            <div id="offersFormDate"></div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="offers-form-title">
+                            Camere
+                        </div>
+                        <select class="offers-form-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="offers-form-title">
+                            Participants
+                        </div>
+
+                        <div class="offers-form-count">
+                            <div class="offers-form-count-text">
+                                <div class="offers-form-count-text-bold">
+                                    Adult
+                                </div>
+                                <div class="offers-form-count-text-small">
+                                    250 mdl/pers
+                                </div>
+                            </div>
+                            <div class="offers-form-count-number">
+                                <button type="button" class="offers-form-count" data-action="decrement"> - </button>
+                                <span class="offers-form-count-number-result"> 1 </span>
+                                <button type="button" class="offers-form-count" data-action="increment"> + </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="offers-form-title">
+                            Introduceti datele personale
+                        </div>
+                        <div class="offers-form-input">
+                            <label>
+                                <span>Nume prenume</span>
+                                <input type="text">
+                            </label>
+                        </div>
+                        <div class="offers-form-input">
+                            <label>
+                                <span>Telefon</span>
+                                <input type="tel">
+                            </label>
+                        </div>
+                        <div class="offers-form-input">
+                            <label>
+                                <span>Email</span>
+                                <input type="email">
+                            </label>
+                        </div>
+                        <div class="offers-form-input">
+                            <label>
+                                <span>Comentarii</span>
+                                <textarea rows="2"></textarea>
+                            </label>
+                        </div>
+                        <button type="submit" class="offers-form-action-btn">
+                            Rezerva acum
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="container-xxl">
+            <section class="offers-detail-content">
+                <div class="row gx-2 position-relative">
+                    <div class="col-md-8">
+                        <div class="offers-detail-content-wrapper">
+                            <ul class="offers-detail-content-list">
+                                <li class="offers-detail-content-item text-toggle-container">
+                                    <div class="offers-detail-content-title">
+                                        Despre pansionatului Hana lui Hanganu
+                                    </div>
+                                    <p class="offers-detail-content-text text-toggle-text">
+                                        Vă recomandăm să veniți la Hanul lui Hanganu iarna, atunci când Nistrul e înghețat și puteți să patinați pe el. Totodată, în februarie îngheață și cascada Țipova, aflată în zonă – și totul în jur seamănă cu un regat din gheață. Bojdeucile calde și focul din sobă o să vă-încălzească după asta toate simțurile. Dar dacă ajungeți aici vara, oricum n-o să vă plictisiți. Plimbările cu barca pe Nistru și cu căruța, prin satele alăturate, o să vă placă la nebunie! Și sigur că, nu în ultimul rând trebuie să gustați din specialitatea culinară a casei care sunt sarmalele pitice, cât unghia.
+                                        Hanul lui Hanganu are o capacitate de cazare pentru 20 de persoane. Este o alegere perfectă pentru cei care apreciază valorile tradiționale și design-ul rustic. Deși este păstrat stilul arhaic, nu lipsesc însă elementele moderne.
+                                    </p>
+                                    <div class="offers-detail-content-action">
+                                        <button class="offers-detail-content-action-btn text-toggle-btn">
+                                            Vezi toate
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li class="offers-detail-content-item">
+                                    <div class="offers-detail-content-title">
+                                        Facilități pansionatului Hana lui Hanganu
+                                    </div>
+                                    <ul class="offers-detail-content-accesories">
+                                        <li class="offers-detail-content-accesories-item">
+                                            <div class="offers-accesories-wrapper">
+                                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.83463 0.233048C5.14541 0.543829 5.14541 1.04768 4.83463 1.35841C0.51741 5.67563 0.51741 12.7003 4.83463 17.0176C5.14541 17.3284 5.14541 17.8322 4.83463 18.1429C4.67929 18.2983 4.47555 18.376 4.27197 18.376C4.06834 18.376 3.86471 18.2983 3.70932 18.1429C1.31732 15.751 0 12.5707 0 9.18797C0 5.80527 1.31732 2.625 3.70927 0.233048C4.02005 -0.0776826 4.5239 -0.0776826 4.83463 0.233048ZM21.1654 0.233048C21.4762 -0.0776826 21.98 -0.0776826 22.2908 0.233048C24.6827 2.625 26 5.80522 26 9.18802C26 12.5708 24.6827 15.7511 22.2907 18.1431C22.1354 18.2985 21.9317 18.3762 21.7281 18.3762C21.5244 18.3762 21.3208 18.2985 21.1654 18.1431C20.8546 17.8323 20.8546 17.3285 21.1654 17.0177C25.4827 12.7004 25.4827 5.67568 21.1654 1.35841C20.8546 1.04763 20.8546 0.543778 21.1654 0.233048ZM18.8637 3.65997C18.553 3.34918 18.0492 3.34918 17.7383 3.65997C17.4276 3.9707 17.4276 4.47455 17.7383 4.78533C20.1659 7.21298 20.1659 11.163 17.7383 13.5905C17.4276 13.9013 17.4276 14.4051 17.7383 14.7159C17.8937 14.8713 18.0974 14.949 18.301 14.949C18.5046 14.949 18.7083 14.8713 18.8636 14.7159C21.9118 11.6678 21.9118 6.70811 18.8637 3.65997ZM15.2037 6.98416C13.9886 5.76896 12.0114 5.76896 10.7962 6.98411C10.2075 7.57276 9.88339 8.3554 9.88339 9.18786C9.88339 10.0203 10.2075 10.803 10.7962 11.3916C11.2 11.7954 11.6881 12.0642 12.2042 12.1996V23.2163C12.2042 23.6558 12.5605 24.0121 13 24.0121C13.4395 24.0121 13.7957 23.6558 13.7957 23.2163V12.1996C14.3119 12.0642 14.8 11.7954 15.2037 11.3917C15.7925 10.803 16.1166 10.0204 16.1166 9.18791C16.1166 8.35545 15.7925 7.57281 15.2037 6.98416ZM14.0784 10.2663C13.4838 10.8609 12.5162 10.8609 11.9216 10.2663C11.6336 9.97822 11.475 9.59533 11.475 9.18791C11.475 8.78054 11.6336 8.39755 11.9216 8.10952C12.2189 7.81225 12.6095 7.66356 13 7.66356C13.3905 7.66356 13.7812 7.8122 14.0784 8.10952C14.3665 8.3976 14.5251 8.78054 14.5251 9.18791C14.5251 9.59528 14.3665 9.97827 14.0784 10.2663ZM8.26153 4.78541C8.57241 4.47468 8.57241 3.97083 8.26158 3.66005C7.95085 3.34932 7.447 3.34932 7.13622 3.66005C4.08807 6.70819 4.08812 11.6679 7.13622 14.7159C7.29161 14.8713 7.49524 14.949 7.69887 14.949C7.90251 14.949 8.10619 14.8713 8.26153 14.7159C8.57231 14.4052 8.57231 13.9014 8.26153 13.5906C5.83393 11.163 5.83393 7.21301 8.26153 4.78541Z" fill="#EB7D5A"/>
+                                                </svg>
+                                                <span>Free WiFi</span>
+                                            </div>
+                                        </li>
+                                        <li class="offers-detail-content-accesories-item">
+                                            <div class="offers-accesories-wrapper">
+                                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 0C16.4724 0 19.737 1.3522 22.1924 3.80758C24.6477 6.263 26 9.52763 26 13C26 16.4724 24.6477 19.737 22.1924 22.1924C19.737 24.6478 16.4724 26 13 26C9.52758 26 6.263 24.6477 3.80763 22.1924C1.35225 19.737 0 16.4724 0 13C0 9.52763 1.35225 6.263 3.80758 3.80758C6.263 1.3522 9.52758 0 13 0ZM13 24.4766C16.0655 24.4766 18.9475 23.2828 21.1152 21.1152C23.2828 18.9475 24.4766 16.0655 24.4766 13C24.4766 9.93454 23.2828 7.0525 21.1152 4.8848C18.9475 2.7172 16.0655 1.52344 13 1.52344C9.93449 1.52344 7.0525 2.7172 4.88485 4.8848C2.7172 7.0525 1.52344 9.93454 1.52344 13C1.52344 16.0655 2.7172 18.9475 4.88485 21.1151C7.0525 23.2828 9.93449 24.4766 13 24.4766ZM9.64844 6.30847H14.297C16.7739 6.30847 18.7891 8.32362 18.7891 10.8005V10.957C18.7891 13.4339 16.7739 15.449 14.297 15.449H11.1719V19.6914H9.64844V6.30847ZM14.297 13.9257C15.9339 13.9257 17.2656 12.5939 17.2656 10.957V10.8005C17.2656 9.16365 15.9339 7.83191 14.297 7.83191H11.1719V13.9257H14.297Z" fill="#EB7D5A"/>
+                                                </svg>
+                                                <span>Free parking</span>
+                                            </div>
+                                        </li>
+                                        <li class="offers-detail-content-accesories-item">
+                                            <div class="offers-accesories-wrapper">
+                                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00160703 5.6C0.00160703 2.5123 2.20031 0 4.90161 0C7.60291 0 9.80161 2.5123 9.80161 5.6C9.82568 6.61545 9.579 7.61899 9.08692 8.50757C8.59484 9.39614 7.87509 10.1377 7.00161 10.6561V18.9C7.00161 19.457 6.78036 19.9911 6.38653 20.3849C5.99271 20.7788 5.45856 21 4.90161 21C4.34465 21 3.81051 20.7788 3.41668 20.3849C3.02286 19.9911 2.80161 19.457 2.80161 18.9V10.6561C1.92812 10.1377 1.20837 9.39614 0.716293 8.50757C0.224212 7.61899 -0.022462 6.61545 0.00160703 5.6ZM5.71975 9.82605C5.79676 9.71092 5.9062 9.62121 6.03421 9.5683C6.7721 9.20889 7.38911 8.64202 7.80962 7.93715C8.23012 7.23229 8.43586 6.42005 8.40161 5.6C8.40161 3.2837 6.83151 1.4 4.90161 1.4C2.97171 1.4 1.40161 3.2837 1.40161 5.6C1.36736 6.42005 1.57309 7.23229 1.9936 7.93715C2.41411 8.64202 3.03112 9.20889 3.76901 9.5683C3.89702 9.62121 4.00645 9.71092 4.08346 9.82605C4.16047 9.94119 4.20158 10.0766 4.20161 10.2151V18.9C4.20161 19.0857 4.27536 19.2637 4.40663 19.395C4.53791 19.5263 4.71596 19.6 4.90161 19.6C5.08726 19.6 5.26531 19.5263 5.39658 19.395C5.52786 19.2637 5.60161 19.0857 5.60161 18.9V10.2151C5.60163 10.0766 5.64275 9.94119 5.71975 9.82605ZM19.8066 0.205025C19.9379 0.0737498 20.116 0 20.3016 0C20.4873 0 20.6653 0.0737498 20.7966 0.205025C20.9279 0.336301 21.0016 0.514349 21.0016 0.7V7.7C21.0007 8.50658 20.7217 9.28818 20.2117 9.913C19.7016 10.5378 18.9917 10.9677 18.2016 11.13V18.9C18.2016 19.457 17.9804 19.9911 17.5865 20.3849C17.1927 20.7788 16.6586 21 16.1016 21C15.5447 21 15.0105 20.7788 14.6167 20.3849C14.2229 19.9911 14.0016 19.457 14.0016 18.9V11.13C13.2116 10.9677 12.5016 10.5378 11.9916 9.913C11.4815 9.28818 11.2025 8.50658 11.2016 7.7V0.7C11.2016 0.514349 11.2754 0.336301 11.4066 0.205025C11.5379 0.0737498 11.716 0 11.9016 0C12.0873 0 12.2653 0.0737498 12.3966 0.205025C12.5279 0.336301 12.6016 0.514349 12.6016 0.7V7.7C12.6016 8.25696 12.8229 8.7911 13.2167 9.18493C13.6105 9.57875 14.1447 9.8 14.7016 9.8C14.8873 9.8 15.0653 9.87375 15.1966 10.005C15.3279 10.1363 15.4016 10.3143 15.4016 10.5V18.9C15.4016 19.0857 15.4754 19.2637 15.6066 19.395C15.7379 19.5263 15.916 19.6 16.1016 19.6C16.2873 19.6 16.4653 19.5263 16.5966 19.395C16.7279 19.2637 16.8016 19.0857 16.8016 18.9V10.5C16.8016 10.3143 16.8754 10.1363 17.0066 10.005C17.1379 9.87375 17.316 9.8 17.5016 9.8C18.0586 9.8 18.5927 9.57875 18.9865 9.18493C19.3804 8.7911 19.6016 8.25696 19.6016 7.7V0.7C19.6016 0.514349 19.6754 0.336301 19.8066 0.205025ZM14.7016 8.4C14.8873 8.4 15.0653 8.32625 15.1966 8.19498C15.3279 8.0637 15.4016 7.88565 15.4016 7.7V0.7C15.4016 0.514349 15.3279 0.336301 15.1966 0.205025C15.0653 0.0737498 14.8873 0 14.7016 0C14.516 0 14.3379 0.0737498 14.2066 0.205025C14.0754 0.336301 14.0016 0.514349 14.0016 0.7V7.7C14.0016 7.88565 14.0754 8.0637 14.2066 8.19498C14.3379 8.32625 14.516 8.4 14.7016 8.4ZM17.9966 8.19498C17.8653 8.32625 17.6873 8.4 17.5016 8.4C17.316 8.4 17.1379 8.32625 17.0067 8.19498C16.8754 8.0637 16.8016 7.88565 16.8016 7.7V0.7C16.8016 0.514349 16.8754 0.336301 17.0067 0.205025C17.1379 0.0737498 17.316 0 17.5016 0C17.6873 0 17.8653 0.0737498 17.9966 0.205025C18.1279 0.336301 18.2016 0.514349 18.2016 0.7V7.7C18.2016 7.88565 18.1279 8.0637 17.9966 8.19498Z" fill="#EB7D5A"/>
+                                                </svg>
+                                                <span>Restaurant</span>
+                                            </div>
+                                        </li>
+                                        <li class="offers-detail-content-accesories-item">
+                                            <div class="offers-accesories-wrapper">
+                                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.63 12.2188H22.3263C22.6985 12.2188 23.0002 12.5205 23.0002 12.8927C23.0002 13.2648 22.6985 13.5665 22.3263 13.5665H0.673833C0.301698 13.5665 0 13.2648 0 12.8927C0 12.5205 0.301698 12.2188 0.673833 12.2188H1.37062C1.68306 7.50556 5.25707 3.68528 9.70796 2.86361C9.58991 2.60706 9.52351 2.32194 9.52351 2.0215C9.52351 0.906845 10.4304 0 11.545 0C12.6597 0 13.5665 0.906845 13.5665 2.0215C13.5665 2.3223 13.5 2.60774 13.3817 2.86451C17.8335 3.69184 21.3244 7.5225 21.63 12.2188ZM12.2188 2.0215C12.2188 1.64995 11.9166 1.34767 11.545 1.34767C11.1735 1.34767 10.8712 1.64995 10.8712 2.0215C10.8712 2.39305 11.1735 2.69533 11.545 2.69533C11.9166 2.69533 12.2188 2.39305 12.2188 2.0215ZM11.545 4.03402C6.97436 4.03402 3.07955 7.72218 2.72211 12.2188H20.2796C19.9377 7.65268 16.1508 4.03402 11.545 4.03402ZM18.2017 15.5066C18.9898 14.7183 20.2722 14.7184 21.0603 15.5065C21.8484 16.2946 21.8484 17.577 21.0603 18.3651L17.0173 22.4081C16.6355 22.79 16.1278 23.0003 15.588 23.0003H2.0215C1.64936 23.0003 1.34767 22.6986 1.34767 22.3265V16.9358C1.34767 16.5637 1.64936 16.262 2.0215 16.262H4.61468C5.41344 15.3479 6.49849 14.7839 7.70452 14.6632C9.00426 14.5329 10.3119 14.9532 11.2919 15.8155C11.3362 15.8545 11.3769 15.8913 11.4152 15.9259C11.6482 16.1366 11.787 16.262 12.0535 16.262H14.2403C15.1057 16.262 15.8456 16.8088 16.1334 17.5749L18.2017 15.5066ZM2.69533 21.6527H4.13284V17.6097H2.69533V21.6527ZM16.0644 21.4552L20.1074 17.4122C20.3701 17.1495 20.3701 16.7221 20.1074 16.4594C19.8447 16.1968 19.4173 16.1968 19.1546 16.4594L15.5064 20.1076C15.3801 20.234 15.2087 20.305 15.03 20.305H11.4876C11.272 20.305 11.0679 20.4093 10.9416 20.5839C10.7234 20.8855 10.3021 20.9531 10.0007 20.7351C9.69911 20.517 9.63146 20.0957 9.84956 19.7942C10.2285 19.2702 10.8409 18.9573 11.4876 18.9573H14.2403C14.6119 18.9573 14.9142 18.6551 14.9142 18.2835C14.9142 17.912 14.6119 17.6097 14.2403 17.6097H12.0535C11.2704 17.6097 10.8258 17.209 10.4947 16.9104C10.4626 16.8816 10.4317 16.8537 10.4016 16.8272C9.70163 16.2112 8.76729 15.9113 7.83875 16.0042C6.90127 16.098 6.06455 16.5693 5.48051 17.3314V21.6527H15.588C15.7653 21.6527 15.9389 21.5807 16.0644 21.4552Z" fill="#EB7D5A"/>
+                                                </svg>
+                                                <span>Mesele de 3 ori pe zi</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="row gy-2 offers-content-accesories-wrapper">
+                                        <div class="col-sm-6">
+                                            <div class="offers-detail-content-option">
+                                                <div class="offers-detail-content-option-title">
+                                                    Cazare
+                                                </div>
+                                                <ul class="offers-detail-content-option-list">
+                                                    <li class="offers-detail-content-option-item">
+                                                        Camera Lux - 2
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Camera double - 4
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Cazare single - 10
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Basca cu soba
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="offers-detail-content-option">
+                                                <div class="offers-detail-content-option-title">
+                                                    Room features
+                                                </div>
+                                                <ul class="offers-detail-content-option-list">
+                                                    <li class="offers-detail-content-option-item">
+                                                        Air conditioning
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Cable / satellite TV
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Coffee / tea maker
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Iron
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Minibar
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Hair dryer
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="offers-detail-content-option">
+                                                <div class="offers-detail-content-option-title">
+                                                    Outdoors
+                                                </div>
+                                                <ul class="offers-detail-content-option-list">
+                                                    <li class="offers-detail-content-option-item">
+                                                        Terrace
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Camera double - 4
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Cazare single - 10
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Basca cu soba
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="offers-detail-content-action">
+                                        <button class="offers-detail-content-action-btn">
+                                            Vezi toate
+                                        </button>
+                                    </div>
+                                </li>
+
+                                <li class="offers-detail-content-item">
+                                    <div class="offers-detail-content-title">
+                                        Ce poate de facut in regiune
+                                    </div>
+
+                                    <div class="row gy-2 offers-content-accesories-wrapper">
+                                        <div class="col-sm-6">
+                                            <div class="offers-detail-content-option">
+                                                <div class="offers-detail-content-option-title">
+                                                    La 2 km distanță
+                                                </div>
+                                                <ul class="offers-detail-content-option-list">
+                                                    <li class="offers-detail-content-option-item">
+                                                        Mănăstirea rupestra Țipova (sec. XI)
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Biserica „Adormirea Maicii Domnului”
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Canionul Țipova
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Numeroase cascade și izvoare
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="offers-detail-content-option">
+                                                <div class="offers-detail-content-option-title">
+                                                    Odihnă activă
+                                                </div>
+                                                <ul class="offers-detail-content-option-list">
+                                                    <li class="offers-detail-content-option-item">
+                                                        Plimbare cu barca
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Pescuit
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Vânătoare
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="offers-detail-content-option">
+                                                <div class="offers-detail-content-option-title">
+                                                    La 10 km distanță
+                                                </div>
+                                                <ul class="offers-detail-content-option-list">
+                                                    <li class="offers-detail-content-option-item">
+                                                        Cetatea geto-dacică „Saharna Mică”
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Cetatea geto-dacică „Saharna Mare” 
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="offers-detail-content-option">
+                                                <div class="offers-detail-content-option-title">
+                                                    Alte
+                                                </div>
+                                                <ul class="offers-detail-content-option-list">
+                                                    <li class="offers-detail-content-option-item">
+                                                        Saună pe râul Nistru
+                                                    </li>
+                                                    <li class="offers-detail-content-option-item">
+                                                        Beci
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="offers-detail-content-action">
+                                        <button class="offers-detail-content-action-btn">
+                                            Vezi toate
+                                        </button>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 offers-detail-content-mobile" id="feedbackContent">
+                        <div class="offers-detail-content-feedback">
+                            <button class="offers-detail-content-mobile-close" id="offersCloseFeedback">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                                    <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                                </svg>
+                            </button>
+                            <div class="offers-detail-feedback-header">
+                                <div class="offers-detail-feedback-header-star">
+                                    <div class="offers-feedback-star">
+                                        <img src="images/icon/star-big.svg" alt="images-star">
+                                        <span>4.8</span>
+                                    </div>
+                                    <div class="offers-feedback-review">
+                                        <a href="#">126 reviews</a>
+                                    </div>
+                                </div>
+                                <div class="offers-detail-feedback-header-action">
+                                    <button class="offers-detail-feedback-btn">
+                                        Feedback
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="offers-detail-feedback-list">
+                                <li class="offers-detail-feedback-item text-toggle-container">
+                                    <div class="offers-feedback-item-header">
+                                        <div class="offers-feedback-item-name">
+                                            Alexander
+                                        </div>
+                                        <div class="offers-feedback-item-star">
+                                            <span>4</span>
+                                            <img src="images/icon/star.svg" alt="star-img">
+                                        </div>
+                                    </div>
+                                    <div class="offers-feedback-item-date">
+                                        12 dec/2021
+                                    </div>
+                                    <p class="offers-feedback-item-text text-toggle-text">
+                                        Great property, friendly hosts, accommodating to dietary needs.
+                                        Lovely host Emilia made us wonderful vegan meals, breakfast, lunch and dinner! Will miss her cooking certainly.
+                                        Lovely host Emilia made us wonderful vegan meals, breakfast, lunch and dinner! Will miss her cooking certainly.
+                                    </p>
+                                    <div class="offers-feedback-toggle-text">
+                                        <button class="offers-feedback-toggle-btn text-toggle-btn">
+                                            Vezi toata
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="offers-detail-feedback-item text-toggle-container">
+                                    <div class="offers-feedback-item-header">
+                                        <div class="offers-feedback-item-name">
+                                            Alexander
+                                        </div>
+                                        <div class="offers-feedback-item-star">
+                                            <span>5</span>
+                                            <img src="images/icon/star.svg" alt="star-img">
+                                        </div>
+                                    </div>
+                                    <div class="offers-feedback-item-date">
+                                        12 dec/2021
+                                    </div>
+                                    <p class="offers-feedback-item-text text-toggle-text">
+                                        Great property
+                                    </p>
+                                    <div class="offers-feedback-toggle-text">
+                                        <button class="offers-feedback-toggle-btn text-toggle-btn">
+                                            Vezi toata
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="offers-detail-feedback-item text-toggle-container">
+                                    <div class="offers-feedback-item-header">
+                                        <div class="offers-feedback-item-name">
+                                            Alexander
+                                        </div>
+                                        <div class="offers-feedback-item-star">
+                                            <span>5</span>
+                                            <img src="images/icon/star.svg" alt="star-img">
+                                        </div>
+                                    </div>
+                                    <div class="offers-feedback-item-date">
+                                        12 dec/2021
+                                    </div>
+                                    <p class="offers-feedback-item-text text-toggle-text">
+                                        Great property
+                                    </p>
+                                    <div class="offers-feedback-toggle-text">
+                                        <button class="offers-feedback-toggle-btn text-toggle-btn">
+                                            Vezi toata
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="offers-detail-feedback-item text-toggle-container">
+                                    <div class="offers-feedback-item-header">
+                                        <div class="offers-feedback-item-name">
+                                            Alexander
+                                        </div>
+                                        <div class="offers-feedback-item-star">
+                                            <span>4</span>
+                                            <img src="images/icon/star.svg" alt="star-img">
+                                        </div>
+                                    </div>
+                                    <div class="offers-feedback-item-date">
+                                        12 dec/2021
+                                    </div>
+                                    <p class="offers-feedback-item-text text-toggle-text">
+                                        Great property, friendly hosts, accommodating to dietary needs.
+                                        Lovely host Emilia made us wonderful vegan meals, breakfast, lunch and dinner! Will miss her cooking certainly.
+                                        Lovely host Emilia made us wonderful vegan meals, breakfast, lunch and dinner! Will miss her cooking certainly.
+                                    </p>
+                                    <div class="offers-feedback-toggle-text">
+                                        <button class="offers-feedback-toggle-btn text-toggle-btn">
+                                            Vezi toata
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="offers-detail-feedback-item text-toggle-container">
+                                    <div class="offers-feedback-item-header">
+                                        <div class="offers-feedback-item-name">
+                                            Alexander
+                                        </div>
+                                        <div class="offers-feedback-item-star">
+                                            <span>4</span>
+                                            <img src="images/icon/star.svg" alt="star-img">
+                                        </div>
+                                    </div>
+                                    <div class="offers-feedback-item-date">
+                                        12 dec/2021
+                                    </div>
+                                    <p class="offers-feedback-item-text text-toggle-text">
+                                        Great property, friendly hosts, accommodating to dietary needs.
+                                        Lovely host Emilia made us wonderful vegan meals, breakfast, lunch and dinner! Will miss her cooking certainly.
+                                        Lovely host Emilia made us wonderful vegan meals, breakfast, lunch and dinner! Will miss her cooking certainly.
+                                    </p>
+                                    <div class="offers-feedback-toggle-text">
+                                        <button class="offers-feedback-toggle-btn text-toggle-btn">
+                                            Vezi toata
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="offers-detail-feedback-item text-toggle-container">
+                                    <div class="offers-feedback-item-header">
+                                        <div class="offers-feedback-item-name">
+                                            Alexander
+                                        </div>
+                                        <div class="offers-feedback-item-star">
+                                            <span>4</span>
+                                            <img src="images/icon/star.svg" alt="star-img">
+                                        </div>
+                                    </div>
+                                    <div class="offers-feedback-item-date">
+                                        12 dec/2021
+                                    </div>
+                                    <p class="offers-feedback-item-text text-toggle-text">
+                                        Great property, friendly hosts, accommodating to dietary needs.
+                                        Lovely host Emilia made us wonderful vegan meals, breakfast, lunch and dinner! Will miss her cooking certainly.
+                                        Lovely host Emilia made us wonderful vegan meals, breakfast, lunch and dinner! Will miss her cooking certainly.
+                                    </p>
+                                    <div class="offers-feedback-toggle-text">
+                                        <button class="offers-feedback-toggle-btn text-toggle-btn">
+                                            Vezi toata
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="offers-detail-feedback-item text-toggle-container">
+                                    <div class="offers-feedback-item-header">
+                                        <div class="offers-feedback-item-name">
+                                            Alexander
+                                        </div>
+                                        <div class="offers-feedback-item-star">
+                                            <span>4</span>
+                                            <img src="images/icon/star.svg" alt="star-img">
+                                        </div>
+                                    </div>
+                                    <div class="offers-feedback-item-date">
+                                        12 dec/2021
+                                    </div>
+                                    <p class="offers-feedback-item-text text-toggle-text">
+                                        Great property, friendly hosts, accommodating to dietary needs.
+                                        Lovely host Emilia made us wonderful vegan meals, breakfast, lunch and dinner! Will miss her cooking certainly.
+                                        Lovely host Emilia made us wonderful vegan meals, breakfast, lunch and dinner! Will miss her cooking certainly.
+                                    </p>
+                                    <div class="offers-feedback-toggle-text">
+                                        <button class="offers-feedback-toggle-btn text-toggle-btn">
+                                            Vezi toata
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="offers-detail-feedback-item text-toggle-container">
+                                    <div class="offers-feedback-item-header">
+                                        <div class="offers-feedback-item-name">
+                                            Alexander
+                                        </div>
+                                        <div class="offers-feedback-item-star">
+                                            <span>4</span>
+                                            <img src="images/icon/star.svg" alt="star-img">
+                                        </div>
+                                    </div>
+                                    <div class="offers-feedback-item-date">
+                                        12 dec/2021
+                                    </div>
+                                    <p class="offers-feedback-item-text text-toggle-text">
+                                        Great property, friendly hosts, accommodating to dietary needs.
+                                        Lovely host Emilia made us wonderful vegan meals, breakfast, lunch and dinner! Will miss her cooking certainly.
+                                        Lovely host Emilia made us wonderful vegan meals, breakfast, lunch and dinner! Will miss her cooking certainly.
+                                    </p>
+                                    <div class="offers-feedback-toggle-text">
+                                        <button class="offers-feedback-toggle-btn text-toggle-btn">
+                                            Vezi toata
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="offers-detail-feedback-item text-toggle-container">
+                                    <div class="offers-feedback-item-header">
+                                        <div class="offers-feedback-item-name">
+                                            Alexander
+                                        </div>
+                                        <div class="offers-feedback-item-star">
+                                            <span>4</span>
+                                            <img src="images/icon/star.svg" alt="star-img">
+                                        </div>
+                                    </div>
+                                    <div class="offers-feedback-item-date">
+                                        12 dec/2021
+                                    </div>
+                                    <p class="offers-feedback-item-text text-toggle-text">
+                                        Great property, friendly hosts, accommodating to dietary needs.
+                                        Lovely host Emilia made us wonderful vegan meals, breakfast, lunch and dinner! Will miss her cooking certainly.
+                                        Lovely host Emilia made us wonderful vegan meals, breakfast, lunch and dinner! Will miss her cooking certainly.
+                                    </p>
+                                    <div class="offers-feedback-toggle-text">
+                                        <button class="offers-feedback-toggle-btn text-toggle-btn">
+                                            Vezi toata
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="offers-detail-content-mobile-toggle" id="offersOpenFeedback">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-rss" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="container-xxl home-main offers-slick">
+            <div class="home-main-recomand">
+                <div class="offers-slick-title">
+                    Ai putea fi interesant
+                </div>
+                <div class="slider-recomand-wrapper">
+                    <button class="slider-control control-left">
+                        <svg width="52" height="38" viewBox="0 0 52 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="rect-change" x="-0.707107" width="22" height="22" rx="3.5" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 50.7929 17.7637)" fill="white" stroke="black"/>
+                            <rect width="21" height="18" transform="matrix(-1 0 0 1 34 10)" fill="white"/>
+                            <path d="M7.50479 17.5909L6.07637 18.5622L33.2422 18.5629V19.3229L6.24661 19.3222L7.59219 20.0955L7.21371 20.7544L4.11709 18.9752L7.07729 16.9624L7.50479 17.5909Z" fill="black"/>
+                        </svg>
+                    </button>
+                    <ul class="slider-home-main-recomand">
+                        <li class="slider-home-main-recomand-item">
+                            <div class="card-type-1">
+                                <div class="card-type-header">
+                                    <img src="images/upload/card-info1.png" alt="card-img">
+                                    <div class="card-fav">
+                                        <button class="card-fav-btn">
+                                            <img src="images/icon/fav.svg" alt="fav-img">
+                                        </button>
+                                    </div>
+                                    <div class="card-header-info">
+                                        <span class="card-header-info-item bg-color-accommodation">
+                                            Cazare
+                                        </span>
+                                        <span class="card-header-info-item card-head-price">
+                                            1250 mdl/noaptea
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-type-body">
+                                    <a href="#">
+                                        <h3 class="card-body-title">
+                                            Pensiunea Meșter Faur
+                                        </h3>
+                                        <div class="card-body-info">
+                                            s. Cioburciu, raionul Ștefan Vodă
+                                        </div>
+                                        <p class="card-body-text">
+                                            Beleu este cel mai mare lac natural din Moldova, situat la sud.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="card-type-footer">
+                                    <div class="card-footer-fav">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                    </div>
+                                    <div class="card-footer-action">
+                                        <a href="#">
+                                            <span>Vezi detalii</span>
+                                            <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.477072 3.19558H8.48061L6.98117 4.69504C6.55047 5.12573 7.19652 5.77175 7.62722 5.34106L8.99281 3.97334L9.90441 3.06031C10.0811 2.88258 10.0811 2.59554 9.90441 2.41781L7.62722 0.137964C7.54058 0.0489358 7.42133 -0.00101749 7.29708 1.57154e-05C6.88693 6.73758e-05 6.68565 0.499627 6.98117 0.784035L8.48417 2.28349H0.453491C-0.178172 2.31483 -0.131008 3.22702 0.477072 3.19558Z" fill="#E65D31"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-home-main-recomand-item">
+                            <div class="card-type-1">
+                                <div class="card-type-header">
+                                    <img src="images/upload/card-info2.png" alt="card-img">
+                                    <div class="card-fav">
+                                        <button class="card-fav-btn">
+                                            <img src="images/icon/fav.svg" alt="fav-img">
+                                        </button>
+                                    </div>
+                                    <div class="card-header-info">
+                                        <span class="card-header-info-item bg-color-wine">
+                                            Vinarii
+                                        </span>
+                                        <span class="card-header-info-item card-head-price">
+                                            650 mdl
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-type-body">
+                                    <a href="#">
+                                        <h3 class="card-body-title">
+                                            Zona vitivinicolă „Valul lui Traian”
+                                        </h3>
+                                        <div class="card-body-info">
+                                            s. Cioburciu, raionul Ștefan Vodă
+                                        </div>
+                                        <p class="card-body-text">
+                                            Beleu este cel mai mare lac natural din Moldova, situat la sud.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="card-type-footer">
+                                    <div class="card-footer-fav">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                    </div>
+                                    <div class="card-footer-action">
+                                        <a href="#">
+                                            <span>Vezi detalii</span>
+                                            <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.477072 3.19558H8.48061L6.98117 4.69504C6.55047 5.12573 7.19652 5.77175 7.62722 5.34106L8.99281 3.97334L9.90441 3.06031C10.0811 2.88258 10.0811 2.59554 9.90441 2.41781L7.62722 0.137964C7.54058 0.0489358 7.42133 -0.00101749 7.29708 1.57154e-05C6.88693 6.73758e-05 6.68565 0.499627 6.98117 0.784035L8.48417 2.28349H0.453491C-0.178172 2.31483 -0.131008 3.22702 0.477072 3.19558Z" fill="#E65D31"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-home-main-recomand-item">
+                            <div class="card-type-1">
+                                <div class="card-type-header">
+                                    <img src="images/upload/card-info1.png" alt="card-img">
+                                    <div class="card-fav">
+                                        <button class="card-fav-btn">
+                                            <img src="images/icon/fav.svg" alt="fav-img">
+                                        </button>
+                                    </div>
+                                    <div class="card-header-info">
+                                        <span class="card-header-info-item bg-color-accommodation">
+                                            Cazare
+                                        </span>
+                                        <span class="card-header-info-item card-head-price">
+                                            1250 mdl/noaptea
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-type-body">
+                                    <a href="#">
+                                        <h3 class="card-body-title">
+                                            Gagauz Sofrasi
+                                        </h3>
+                                        <div class="card-body-info">
+                                            str. Lenin 141, Kongaz, Moldova
+                                        </div>
+                                        <p class="card-body-text">
+                                            Beleu este cel mai mare lac natural din Moldova, situat la sud.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="card-type-footer">
+                                    <div class="card-footer-fav">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                    </div>
+                                    <div class="card-footer-action">
+                                        <a href="#">
+                                            <span>Vezi detalii</span>
+                                            <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.477072 3.19558H8.48061L6.98117 4.69504C6.55047 5.12573 7.19652 5.77175 7.62722 5.34106L8.99281 3.97334L9.90441 3.06031C10.0811 2.88258 10.0811 2.59554 9.90441 2.41781L7.62722 0.137964C7.54058 0.0489358 7.42133 -0.00101749 7.29708 1.57154e-05C6.88693 6.73758e-05 6.68565 0.499627 6.98117 0.784035L8.48417 2.28349H0.453491C-0.178172 2.31483 -0.131008 3.22702 0.477072 3.19558Z" fill="#E65D31"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-home-main-recomand-item">
+                            <div class="card-type-1">
+                                <div class="card-type-header">
+                                    <img src="images/upload/card-info1.png" alt="card-img">
+                                    <div class="card-fav">
+                                        <button class="card-fav-btn">
+                                            <img src="images/icon/fav.svg" alt="fav-img">
+                                        </button>
+                                    </div>
+                                    <div class="card-header-info">
+                                        <span class="card-header-info-item bg-color-travel">
+                                            Excursii & Tururi
+                                        </span>
+                                        <span class="card-header-info-item card-head-price">
+                                            650 mdl
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-type-body">
+                                    <a href="#">
+                                        <h3 class="card-body-title">
+                                            Muzeul Pâinii
+                                        </h3>
+                                        <div class="card-body-info">
+                                            satul Văleni, raionul Cahul
+                                        </div>
+                                        <p class="card-body-text">
+                                            Beleu este cel mai mare lac natural din Moldova, situat la sud.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="card-type-footer">
+                                    <div class="card-footer-fav">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                    </div>
+                                    <div class="card-footer-action">
+                                        <a href="#">
+                                            <span>Vezi detalii</span>
+                                            <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.477072 3.19558H8.48061L6.98117 4.69504C6.55047 5.12573 7.19652 5.77175 7.62722 5.34106L8.99281 3.97334L9.90441 3.06031C10.0811 2.88258 10.0811 2.59554 9.90441 2.41781L7.62722 0.137964C7.54058 0.0489358 7.42133 -0.00101749 7.29708 1.57154e-05C6.88693 6.73758e-05 6.68565 0.499627 6.98117 0.784035L8.48417 2.28349H0.453491C-0.178172 2.31483 -0.131008 3.22702 0.477072 3.19558Z" fill="#E65D31"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-home-main-recomand-item">
+                            <div class="card-type-1">
+                                <div class="card-type-header">
+                                    <img src="images/upload/card-info1.png" alt="card-img">
+                                    <div class="card-fav">
+                                        <button class="card-fav-btn">
+                                            <img src="images/icon/fav.svg" alt="fav-img">
+                                        </button>
+                                    </div>
+                                    <div class="card-header-info">
+                                        <span class="card-header-info-item bg-color-accommodation">
+                                            Cazare
+                                        </span>
+                                        <span class="card-header-info-item card-head-price">
+                                            1250 mdl/noaptea
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-type-body">
+                                    <a href="#">
+                                        <h3 class="card-body-title">
+                                            Pensiunea Meșter Faur
+                                        </h3>
+                                        <div class="card-body-info">
+                                            s. Cioburciu, raionul Ștefan Vodă
+                                        </div>
+                                        <p class="card-body-text">
+                                            Beleu este cel mai mare lac natural din Moldova, situat la sud.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="card-type-footer">
+                                    <div class="card-footer-fav">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                        <img src="images/icon/star.svg">
+                                    </div>
+                                    <div class="card-footer-action">
+                                        <a href="#">
+                                            <span>Vezi detalii</span>
+                                            <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.477072 3.19558H8.48061L6.98117 4.69504C6.55047 5.12573 7.19652 5.77175 7.62722 5.34106L8.99281 3.97334L9.90441 3.06031C10.0811 2.88258 10.0811 2.59554 9.90441 2.41781L7.62722 0.137964C7.54058 0.0489358 7.42133 -0.00101749 7.29708 1.57154e-05C6.88693 6.73758e-05 6.68565 0.499627 6.98117 0.784035L8.48417 2.28349H0.453491C-0.178172 2.31483 -0.131008 3.22702 0.477072 3.19558Z" fill="#E65D31"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="slider-control control-right">
+                        <svg width="52" height="38" viewBox="0 0 52 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="rect-change" x="0.707107" y="18.2637" width="22" height="22" rx="3.5" transform="rotate(-45 0.707107 18.2637)" fill="white" stroke="black"/>
+                            <rect x="18" y="10" width="21" height="18" fill="white"/>
+                            <path d="M44.4952 17.5909L45.9236 18.5622L18.7578 18.5629V19.3229L45.7534 19.3222L44.4078 20.0955L44.7863 20.7544L47.8829 18.9752L44.9227 16.9624L44.4952 17.5909Z" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-main">
+        <div class="footer-main-category-wrapper">
+            <div class="img-bg-decor">
+                <img src="images/bg/left-decor.png" alt="left-decor">
+            </div>
+            <div class="container-xxl">
+                <div class="footer-category">
+                    <div class="row gx-1">
+                        <div class="py-1 col-xxl-2 col-md-4 col-sm-6">
+                            <a class="footer-category-link" href="#">
+                                <span class="footer-category-name">Cazare</span>
+                                <span class="footer-category-qty">(120)</span>
+                            </a>
+                        </div>
+                        <div class="py-1 col-xxl-2 col-md-4 col-sm-6">
+                            <a class="footer-category-link" href="#">
+                                <span class="footer-category-name">Vinarii</span>
+                                <span class="footer-category-qty">(86)</span>
+                            </a>
+                        </div>
+                        <div class="py-1 col-xxl-2 col-md-4 col-sm-6">
+                            <a class="footer-category-link" href="#">
+                                <span class="footer-category-name">Excursii & Tururi</span>
+                                <span class="footer-category-qty">(75)</span>
+                            </a>
+                        </div>
+                        <div class="py-1 col-xxl-2 col-md-4 col-sm-6">
+                            <a class="footer-category-link" href="#">
+                                <span class="footer-category-name">Restaurante</span>
+                                <span class="footer-category-qty">(256)</span>
+                            </a>
+                        </div>
+                        <div class="py-1 col-xxl-2 col-md-4 col-sm-6">
+                            <a class="footer-category-link" href="#">
+                                <span class="footer-category-name">Evenimente</span>
+                                <span class="footer-category-qty">(26)</span>
+                            </a>
+                        </div>
+                        <div class="py-1 col-xxl-2 col-md-4 col-sm-6">
+                            <a class="footer-category-link" href="#">
+                                <span class="footer-category-name">Experiente</span>
+                                <span class="footer-category-qty">(120)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="img-bg-decor">
+                <img src="images/bg/right-decor.png" alt="left-decor">
+            </div>
+        </div>
+        
+        <div class="container-xxl">
+            <div class="footer-main-link-wrapper">
+                <div class="row gy-5">
+                    <div class="col-lg-2 col-sm-6">
+                        <h4 class="footer-main-link-title">
+                            Home
+                        </h4>
+                        <ul class="footer-main-link-list">
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    Travel Blog
+                                </a>
+                            </li>
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    Bine de stiut
+                                </a>
+                            </li>
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    Parteneriat
+                                </a>
+                            </li>
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    Contacte
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <h4 class="footer-main-link-title">
+                            Links
+                        </h4>
+                        <ul class="footer-main-link-list">
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    www.moldova.travel
+                                </a>
+                                <a class="footer-main-link auxiliar-link" href="#">
+                                    Instagram
+                                </a>
+                                <a class="footer-main-link auxiliar-link" href="#">
+                                    Youtube
+                                </a>
+                                <a class="footer-main-link auxiliar-link" href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    www.antrim.md
+                                </a>
+                                <a class="footer-main-link auxiliar-link" href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    google.map
+                                </a>
+                            </li>
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    360.moldova.travel
+                                </a>
+                            </li>
+                            <li class="footer-main-link-item">
+                                <a class="footer-main-link" href="#">
+                                    wineofmoldova.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h4 class="footer-main-link-title">
+                            Contact us
+                        </h4>
+                        <p class="footer-main-contact">
+                            Chisinau. bd. Stefan cel Mare si Sfint, 83
+                        </p>
+                        <a class="footer-main-contact" href="tel: 37322904040">(+373) 22 90 40 40</a>
+                        <p class="footer-main-contact">
+                            info@antrim.md
+                        </p>
+                        <div class="footer-main-social">
+                            <a class="instagram" href="#">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.75 0H5.25C2.31 0 0 2.31 0 5.25V15.75C0 18.69 2.31 21 5.25 21H15.75C18.69 21 21 18.69 21 15.75V5.25C21 2.31 18.69 0 15.75 0ZM18.9 15.75C18.9 17.535 17.535 18.9 15.75 18.9H5.25C3.465 18.9 2.1 17.535 2.1 15.75V5.25C2.1 3.465 3.465 2.1 5.25 2.1H15.75C17.535 2.1 18.9 3.465 18.9 5.25V15.75ZM10.5 5.25C7.56 5.25 5.25 7.56 5.25 10.5C5.25 13.44 7.56 15.75 10.5 15.75C13.44 15.75 15.75 13.44 15.75 10.5C15.75 7.56 13.44 5.25 10.5 5.25ZM10.5 13.65C8.715 13.65 7.35 12.285 7.35 10.5C7.35 8.715 8.715 7.35 10.5 7.35C12.285 7.35 13.65 8.715 13.65 10.5C13.65 12.285 12.285 13.65 10.5 13.65ZM16.8 5.25011C16.8 5.83001 16.3299 6.30011 15.75 6.30011C15.1701 6.30011 14.7 5.83001 14.7 5.25011C14.7 4.67021 15.1701 4.20011 15.75 4.20011C16.3299 4.20011 16.8 4.67021 16.8 5.25011Z" fill="url(#paint0_linear_258_260)"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_258_260" x1="10.5" y1="0" x2="10.5" y2="21" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#C837AC"/>
+                                    <stop offset="1" stop-color="#FD9848"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>  
+                            </a>
+                            <a class="fb" href="#">
+                                <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4.44503V1.03054C12 1.03054 8.4592 1 8.21778 1C6.61452 1 4.31795 2.79581 4.31795 4.83595V8.49476H1V12.3735H4.26843V22H8.13731V12.3246H11.5605L11.9938 8.53141H8.18064C8.18064 8.53141 8.18064 6.20419 8.18064 5.74607C8.18064 5.08028 8.68824 4.42059 9.45582 4.42059C9.96961 4.4267 12 4.44503 12 4.44503Z" fill="#4867AA" stroke="#154944"/>
+                                </svg>
+                            </a>                          
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h4 class="footer-main-link-title">
+                            Abonare la noutati
+                        </h4>
+                        <form class="footer-input-wrapper">
+                            <input type="email" required placeholder="Your email">
+                            <button type="submit" class="footer-input-btn">
+                                <svg width="36" height="5" viewBox="0 0 36 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M31.8126 4.17126L33.5782 2.89057L0 2.88957V1.88746L33.3678 1.88847L31.7046 0.868825L32.1724 0L36 2.34593L32.341 5L31.8126 4.17126Z" fill="white" fill-opacity="0.6"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl">
+            <div class="footer-main-company">
+                <div class="footer-logo">
+                    <img src="images/logo/antrim_logo_footer.png" alt="logo-antrim">
+                </div>
+                <div class="footer-company-text">
+                    ANTRIM is a non-profit organization representing the voice of the private sector in Moldova’s inbound tourism industry. Here, we believe in Moldova’s potential.
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl">
+            <div class="footer-copyright">
+                <div class="footer-copyright-date">
+                    Copyright 2021, Antrim. All Right Reserved.
+                </div>
+                <div class="footer-copyright-logo">
+                    <span class="footer-copyright-develop">
+                        Developed by 
+                    </span>
+                    <a href="#">
+                        <img src="images/logo/WebMasterStudio.png" alt="logo-ws">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-cooperation">
+            <div class="container-xxl">
+                <div class="footer-cooperation-container">
+                    <p class="footer-cooperation-text">
+                        Această pagină web a fost actualizată cu susținerea Proiectului de Competitivitate din Moldova, finanțat de USAID, Suedia și UK. Conținutul materialului este responsabilitatea autorului și nu reflectă neapărat opinia USAID, a Guvernelor SUA, Suediei sau al Marii Britanii.
+                    </p>
+                    <div class="footer-cooperation-logo">
+                        <img src="images/logo/USAID.png" alt="cooperation-logo">
+                        <img src="images/logo/ukaid.png" alt="cooperation-logo">
+                        <img src="images/logo/sweden_sverige.png" alt="cooperation-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="scrollUP">
+            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23 46C35.7025 46 46 35.7025 46 23C46 10.2975 35.7025 0 23 0C10.2975 0 0 10.2975 0 23C0 35.7025 10.2975 46 23 46ZM24.6081 15.6032V33.7959C24.6795 35.1782 22.6061 35.2854 22.5348 33.8495V15.5951L19.1264 19.0116C18.4799 19.6833 17.3444 19.2258 17.3443 18.2935C17.3419 18.011 17.4555 17.74 17.6578 17.543L22.8401 12.3668C23.2441 11.9652 23.8966 11.9652 24.3006 12.3668L26.376 14.4389L29.4849 17.543C30.4639 18.5221 28.9955 19.9906 28.0165 19.0116L24.6081 15.6032Z" fill="#3D3D3D" fill-opacity="0.6"/>
+            </svg>    
+        </button>
+    </footer>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="/lib/nice-select/jquery.nice-select.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/js/select-nice.js"></script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

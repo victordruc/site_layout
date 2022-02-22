@@ -1,0 +1,97 @@
+:root {
+    --font-family: 'Circe', sans-serif;
+
+    --color-accommodation: #E65D31;
+    --color-wine: #D5002F;
+    --color-travel: #940144;
+    --color-restaurant: #B94676;
+    --color-event: #006C50;
+    --color-experiences: #1B7396;
+
+    --color-accommodation-tr: rgba(230, 94, 49, 0.8);
+    --color-wine-tr: rgba(214, 0, 46, 0.8);
+    --color-travel-tr: rgba(148, 1, 67, 0.8);
+    --color-restaurant-tr: rgba(185, 70, 118, 0.8);
+    --color-event-tr: rgba(0, 108, 79, 0.8);
+    --color-experiences-tr: rgba(27, 115, 150, 0.8);
+
+    --color-1: #22201E;
+    --color-2: #000000;
+    --color-3: #5F5F5F;
+    --color-4: #E5E5E5;
+    --color-5: #FFFFFF;
+    --color-6: #1B7396;
+    --color-6-hover: #258DB7;
+    --color-7: #E6E7E9;
+    --color-8: #848484;
+    --color-9: #B94676;
+    --color-9-hover: #940144;
+    --color-10: #B8B8B8;
+    --color-11: #E65D31;
+    --color-11-hover: #D5002F;
+    --color-12: #5E5E5E;
+    --color-13: #404040;
+    --color-14: #353535;
+    --color-15: #414141;
+    --color-16: #2B2B2B;
+    --color-17: #333333;
+    --color-18: #154944;
+    --color-19: #202020;
+    --color-20: #2E2E2E;
+    --color-21: #F8F8F8;
+    --color-22: #232323;
+    --color-23: #B71540;
+    --color-23-hover: #D21B4C;
+    --color-24: #323232;
+    --color-25: #DEE2E6;
+    --color-26: #34871D;
+    --color-26-hover: #006C50;
+}
+
+$font-family: var(--font-family);
+
+$color-accommodation: var(--color-accommodation);
+$color-wine: var(--color-wine);
+$color-travel: var(--color-travel);
+$color-restaurant: var(--color-restaurant);
+$color-event: var(--color-event);
+$color-experiences: var(--color-experiences);
+
+$color-accommodation-tr: var(--color-accommodation-tr);
+$color-wine-tr: var(--color-wine-tr);
+$color-travel-tr: var(--color-travel-tr);
+$color-restaurant-tr: var(--color-restaurant-tr);
+$color-event-tr: var(--color-event-tr);
+$color-experiences-tr: var(--color-experiences-tr);
+
+$color-1: var(--color-1);
+$color-2: var(--color-2);
+$color-3: var(--color-3);
+$color-4: var(--color-4);
+$color-5: var(--color-5);
+$color-6: var(--color-6);
+$color-6-hover: var(--color-6-hover);
+$color-7: var(--color-7);
+$color-8: var(--color-8);
+$color-9: var(--color-9);
+$color-9-hover: var(--color-9-hover);
+$color-10: var(--color-10);
+$color-11: var(--color-11);
+$color-11-hover: var(--color-11-hover);
+$color-12: var(--color-12);
+$color-13: var(--color-13);
+$color-14: var(--color-14);
+$color-15: var(--color-15);
+$color-16: var(--color-16);
+$color-17: var(--color-17);
+$color-18: var(--color-18);
+$color-19: var(--color-19);
+$color-20: var(--color-20);
+$color-21: var(--color-21);
+$color-22: var(--color-22);
+$color-23: var(--color-23);
+$color-23-hover: var(--color-23-hover);
+$color-24: var(--color-24);
+$color-25: var(--color-25);
+$color-26: var(--color-26);
+$color-26-hover: var(--color-26-hover);

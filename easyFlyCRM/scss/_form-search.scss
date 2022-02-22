@@ -1,0 +1,34 @@
+.search-form {
+    background-color: $color_4;
+    padding: 56px 0;
+    .input-radio-search-wrapper {
+        margin: 0 -10px;
+        &>* {
+            margin: 10px;
+        }
+    }
+    .input-search {
+        display: flex;
+        align-items: center;
+        background-color: $primary-color-text;
+        width: 100%;
+        padding: 10px 14px;
+        border-radius: 6px;
+        span {
+            @include text(#06060699, 400, 14);
+            padding-left: 10px;
+            flex: 0 0 auto;
+        }
+        input {
+            border: none;
+            @include text(#0F0F0F, 500, 20);
+            width: 100%;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .btn-type-1 {
+        height: 100%;
+    }
+}
