@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>WS</title>
+  </head>
+  <body>
+    <header class="header-main bg-grey">
+      <div class="search-input-navbar" id="searchInputNavbar">
+        <div class="container-xxxl">
+          <input class="input-search input-text" type="search" placeholder="search...">
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-xl py-3">
+        <div class="container-xxxl">
+          <a href="/" class="navbar-brand p-0">
+            <img src="/images/logo/WebMasterStudio.png" alt="WebMaster-img" />
+          </a>
+
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="#FFFFFF"
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbar"
+          >
+            <ul class="navbar-nav align-items-center m-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Услуги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Блог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Портфолио</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Отзывы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Вакансии</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="navbar-action-list">
+              <button class="navbar-search-btn">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.8392 16.0756L12.45 11.7565C13.5994 10.5077 14.3056 8.85617 14.3056 7.0388C14.3051 3.15113 11.1029 0 7.15253 0C3.20216 0 0 3.15113 0 7.0388C0 10.9265 3.20216 14.0776 7.15253 14.0776C8.85936 14.0776 10.4248 13.4872 11.6545 12.5058L16.0608 16.8419C16.2755 17.0534 16.624 17.0534 16.8387 16.8419C17.0539 16.6304 17.0539 16.2871 16.8392 16.0756ZM7.15253 12.9946C3.81009 12.9946 1.10052 10.3281 1.10052 7.0388C1.10052 3.74948 3.81009 1.08296 7.15253 1.08296C10.495 1.08296 13.2045 3.74948 13.2045 7.0388C13.2045 10.3281 10.495 12.9946 7.15253 12.9946Z"
+                    fill="white"
+                    fill-opacity="0.8"
+                  />
+                </svg>
+              </button>
+              <select>
+                <option value="Ru">Ru</option>
+                <option value="Ro">Ro</option>
+                <option value="En">En</option>
+              </select>
+              <span class="navbar-contact-us">
+                <a class="navbar-contact-phone" href="tel:+37360106666"
+                  >+(373) 60-10-6666</a
+                >
+                <div class="navbar-contact-text">Связаться с нами</div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-hero">
+        <div class="container-content">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#">Сайты</a>
+            </li>
+          </ul>
+          <h1 class="header-hero-title">
+            Разработка интернет магазина шин и дисков
+          </h1>
+          <div class="header-hero-text">
+            На примере разработки интернет магазина Autoshina
+          </div>
+        </div>
+      </div>
+
+      <div class="offer-wrapper">
+        <div class="container-content">
+          <div class="offer-header">
+            <div class="offer-header-col">
+              <div class="offer-header-time">
+                <img src="/images/icon/clock.svg" alt="clock-img" />
+                <span> 3 минуты </span>
+              </div>
+              <div class="offer-header-question">
+                <a href="#"> Нет времени читать? </a>
+              </div>
+              <div class="offer-header-msg">
+                <img src="/images/icon/msg.svg" alt="msg-img" />
+                <span>1</span>
+              </div>
+            </div>
+            <div class="offer-header-col">
+              <div class="offer-header-time">15.02.2022</div>
+            </div>
+          </div>
+          <div class="offer-card">
+            <div class="offer-card-question">
+              Хотите получить коммерческое предложение на разработку интернет
+              магазин шин и дисков?
+            </div>
+            <div class="row g-3">
+              <div class="col-lg-3 col-sm-6">
+                <input class="input-text" type="text" placeholder="Имя" />
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <input
+                  class="input-text"
+                  type="tel"
+                  placeholder="Номер телефона: +373"
+                />
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <span class="input-placeholder">
+                  <input class="input-text" type="email" />
+                  <span class="input-placeholder-text">
+                    <span class="input-placeholder-text-wrapper">
+                      Электронная почта
+                      <span class="placeholder-required">*</span>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <button class="button-type-1">Получить коммерческое</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section-developer-web bg-grey">
+
+        <div class="left-content-menu bg-grey" id="leftContentMenu">
+          <div class="left-content-menu-title">
+            Содержание статьи:
+          </div>
+          <ul class="left-content-menu-list">
+            <li class="left-content-menu-item">
+              <a class="left-content-menu-link" href="#">
+                Цели разработки интернет магазина шин и дисков
+              </a>
+            </li>
+            <li class="left-content-menu-item">
+              <a class="left-content-menu-link" href="#">
+                Результаты создания интернет магазина шин
+              </a>
+            </li>
+            <li class="left-content-menu-item">
+              <a class="left-content-menu-link" href="#">
+                Структура магазина автошин и дисков: must-have функции, элементы и страницы
+              </a>
+            </li>
+            <li class="left-content-menu-item">
+              <a class="left-content-menu-link" href="#">
+                Система управления сайтом
+              </a>
+            </li>
+            <li class="left-content-menu-item">
+              <a class="left-content-menu-link" href="#">
+                Основные этапы разработки проекта
+              </a>
+            </li>
+          </ul>
+
+          <ul class="left-content-action bg-grey">
+            <li class="left-content-action-item btn-action">
+              <button class="left-content-btn" id="btnNavigationTop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill="white" fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg>
+              </button>
+            </li>
+            <li class="left-content-action-item">
+              <a class="left-content-action-link" href="#">
+                <svg class="facebook" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.1579 0H2.84211C1.27245 0 0 1.27245 0 2.84211V33.1579C0 34.7275 1.27245 36 2.84211 36H33.1579C34.7275 36 36 34.7275 36 33.1579V2.84211C36 1.27245 34.7275 0 33.1579 0Z" fill="#4A6EA9"/>
+                  <path d="M15.7358 19.2244H13.3816C13.0121 19.2244 12.8795 19.0894 12.8795 18.7176C12.8795 17.7592 12.8795 16.8015 12.8795 15.8447C12.8795 15.4752 13.0192 15.3355 13.3839 15.3355H15.7358V13.2631C15.7079 12.3322 15.9312 11.411 16.3823 10.5963C16.8513 9.77372 17.6028 9.14929 18.4973 8.83889C19.0779 8.62766 19.6914 8.52179 20.3092 8.52626H22.6373C22.9713 8.52626 23.111 8.6731 23.111 8.99994V11.7023C23.111 12.041 22.9689 12.176 22.6373 12.176C22.0002 12.176 21.3631 12.176 20.7284 12.202C20.0937 12.2281 19.7479 12.517 19.7479 13.1802C19.7337 13.8907 19.7479 14.587 19.7479 15.3118H22.4834C22.8718 15.3118 23.0045 15.4444 23.0045 15.8352C23.0045 16.7826 23.0045 17.7347 23.0045 18.6915C23.0045 19.0776 22.8813 19.1984 22.4905 19.2007H19.7337V26.9076C19.7337 27.3197 19.6058 27.4499 19.1984 27.4499H16.2331C15.8755 27.4499 15.7358 27.3102 15.7358 26.9526V19.2244Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="left-content-action-item">
+              <a class="left-content-action-link" href="#">
+                <svg class="linkedin" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.1579 0H2.84211C1.27245 0 0 1.27245 0 2.84211V33.1579C0 34.7275 1.27245 36 2.84211 36H33.1579C34.7275 36 36 34.7275 36 33.1579V2.84211C36 1.27245 34.7275 0 33.1579 0Z" fill="#4875B4"/>
+                  <path d="M27.4737 27.4737V20.5248C27.4737 17.1237 26.7418 14.5066 22.7676 14.5066C20.8563 14.5066 19.575 15.5534 19.0516 16.5482H18.9971V14.824H15.2289V27.4737H19.1511V21.2092C19.1511 19.5513 19.4637 17.9645 21.5195 17.9645C23.5753 17.9645 23.5611 19.8592 23.5611 21.3158V27.4737H27.4737Z" fill="white"/>
+                  <path d="M8.83893 14.824H12.7658V27.4737H8.83893V14.824Z" fill="white"/>
+                  <path d="M10.8 8.52639C10.347 8.52452 9.90376 8.65727 9.52641 8.90779C9.14906 9.15831 8.85465 9.5153 8.68056 9.93345C8.50648 10.3516 8.46056 10.812 8.54864 11.2563C8.63671 11.7006 8.85482 12.1087 9.17526 12.4289C9.49571 12.749 9.90404 12.9666 10.3484 13.0543C10.7928 13.1419 11.2532 13.0955 11.6712 12.921C12.0891 12.7464 12.4458 12.4517 12.696 12.074C12.9461 11.6964 13.0784 11.253 13.076 10.8001C13.076 10.5013 13.0171 10.2054 12.9027 9.92942C12.7883 9.65341 12.6206 9.40266 12.4092 9.1915C12.1979 8.98033 11.9469 8.81291 11.6708 8.69878C11.3947 8.58466 11.0988 8.52608 10.8 8.52639Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="left-content-action-item">
+              <a class="left-content-action-link" href="#">
+                <svg class="telegram" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.1579 0H2.84211C1.27245 0 0 1.27245 0 2.84211V33.1579C0 34.7275 1.27245 36 2.84211 36H33.1579C34.7275 36 36 34.7275 36 33.1579V2.84211C36 1.27245 34.7275 0 33.1579 0Z" fill="#39A7DA"/>
+                  <path d="M7.37092 18.1253L12.2097 19.9313L14.0827 25.9546C14.2025 26.3403 14.6742 26.4829 14.9873 26.2269L17.6846 24.0281C17.9673 23.7977 18.37 23.7862 18.6655 24.0007L23.5304 27.5327C23.8653 27.7762 24.3398 27.5926 24.4238 27.1879L27.9876 10.0455C28.0793 9.6034 27.6449 9.23457 27.2239 9.39739L7.36525 17.0583C6.87518 17.2473 6.87945 17.9411 7.37092 18.1253ZM13.7808 18.9699L23.2377 13.1454C23.4076 13.041 23.5825 13.2708 23.4366 13.4062L15.6319 20.661C15.3576 20.9164 15.1806 21.2581 15.1305 21.629L14.8646 23.5993C14.8294 23.8623 14.4599 23.8884 14.3873 23.6338L13.3648 20.0411C13.2477 19.6313 13.4184 19.1936 13.7808 18.9699Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container-content">
+          <h2 class="section-developer-title">
+            Цели разработки интернет магазина шин и дисков
+          </h2>
+          <ol class="section-developer-list">
+            <li class="section-developer-item">
+              Создать адаптивный и конверсионный интернет-магазин шин и дисков
+              со специализированным функционалом и внешними интеграциями.
+            </li>
+            <li class="section-developer-item">
+              Увеличение объемов продаж за счет выхода в онлайн.
+            </li>
+            <li class="section-developer-item">
+              Повышение лояльности клиентов и известности бренда среди
+              покупателей.
+            </li>
+          </ol>
+          <div class="section-developer-text">
+            <span class="section-developer-text-bold"
+              >Причина ухода в онлайн:</span
+            >
+            автомобильные шины относятся к группе товаров устойчивого спроса.
+            Дважды в год владельцы автомобилей «переобуваются» и меняют сезонную
+            резину. Кроме того, значительная часть автопарка выезжает на дороги
+            независимо от времени года и погоды. В условиях повышенного спроса
+            обострилась и конкуренция между продавцами шин.
+          </div>
+          <div class="section-developer-divider">
+            <img src="/images/icon/line-center.svg" alt="img-line" />
+          </div>
+          <h3 class="section-developer-second-title">Достигнутые результаты</h3>
+          <div class="row gy-3">
+            <div class="col-lg-3 col-sm-6">
+              <div class="section-developer-percent">+61%</div>
+              <div class="section-developer-percent-text">
+                к органическому трафику на второй месяц работы нового сайта
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="section-developer-percent">+40%</div>
+              <div class="section-developer-percent-text">
+                к плану продаж с нового сайта в 4м квартале 2020 года
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="section-developer-percent">+6%</div>
+              <div class="section-developer-percent-text">
+                к общему показателю конверсии из лида в заказ
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="section-developer-percent">+40%</div>
+              <div class="section-developer-percent-text">
+                к плану продаж с нового сайта в 4м квартале 2020 года
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-structure-store">
+        <div class="container-content">
+          <h2 class="section-structure-store-title">
+            Структура интернет магазина автошин и дисков
+          </h2>
+          <p class="section-structure-store-text">
+            На решение покупателя о покупке влияет несколько факторов: это
+            ассортимент, цены, friendly-дизайн и логичная структура сайта.
+            Посетителя нужно провести к покупке с минимальным количеством кликов
+            и переходов, создать доступную систему фильтров.
+          </p>
+          <p class="section-structure-store-text">
+            <span class="section-structure-store-primary"
+              >Обязательные функции сайта:</span
+            >
+            кнопки «Купить», «Быстрый заказ», «Мы вам перезвоним» (с галочкой
+            отмены обязательного звонка), переход в разделы «Хиты продаж»,
+            «Акции» и «Новинки». Предоставляйте покупателям возможность сравнить
+            разные модели и добавить товар в избранное.
+          </p>
+        </div>
+      </section>
+      <section class="section-must-have">
+        <div class="container-content">
+          <div class="section-must-have-header">
+            <div class="slider-btn-wrapper">
+              <button class="slider-btn prev-btn must-have">
+                <img
+                  src="/images/icon/arrow-left-slider.svg"
+                  alt="arrow-left-slider"
+                />
+              </button>
+            </div>
+            <div class="section-must-have-header-title">
+              <span>Must-Have</span> функции
+            </div>
+            <div class="slider-btn-wrapper">
+              <button class="slider-btn next-btn must-have">
+                <img
+                  src="/images/icon/arrow-right-slider.svg"
+                  alt="arrow-right-slider"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="section-must-have-slider" id="sliderMustHave">
+            <div class="slider-item">
+              <div class="slider-item-wrapper">
+                <div class="row gy-3">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="col-wrapper-text">
+                      <div class="must-have-text">
+                        Для выбора шин и дисков организуйте фильтрацию по типу
+                        автомобиля и параметрам изделий.
+                      </div>
+                      <ul class="must-have-list">
+                        <li class="must-have-item">
+                          <div class="must-have-text-bold">
+                            Фильтры по типу автомобиля:
+                          </div>
+                          <div class="must-have-text">
+                            марка, модель, год выпуска, тип автомобиля и т д
+                          </div>
+                        </li>
+                        <li class="must-have-item">
+                          <div class="must-have-text-bold">
+                            Фильтры по параметрам шин:
+                          </div>
+                          <div class="must-have-text">
+                            ширина, высота профиля, диаметр, сезонность, наличие
+                            шипов, цена (от и до), производитель, страна
+                            производства.
+                          </div>
+                        </li>
+                        <li class="must-have-item">
+                          <div class="must-have-text-bold">
+                            Фильтры по параметрам дисков:
+                          </div>
+                          <div class="must-have-text">
+                            тип, диаметр, ширина обода, PCD, ET, DIA, бренд,
+                            цена, страна производства.
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-6">
+                    <div class="col-wrapper-img">
+                      <img
+                        src="/images/upload/image-slider-1.png"
+                        alt="img-slider"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="slider-item-wrapper">
+                <div class="row gy-3">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="col-wrapper-text">
+                      <div class="must-have-text">
+                        Для выбора шин и дисков организуйте фильтрацию по типу
+                        автомобиля и параметрам изделий.
+                      </div>
+                      <ul class="must-have-list">
+                        <li class="must-have-item">
+                          <div class="must-have-text-bold">
+                            Фильтры по типу автомобиля:
+                          </div>
+                          <div class="must-have-text">
+                            марка, модель, год выпуска, тип автомобиля и т д
+                          </div>
+                        </li>
+                        <li class="must-have-item">
+                          <div class="must-have-text-bold">
+                            Фильтры по параметрам шин:
+                          </div>
+                          <div class="must-have-text">
+                            ширина, высота профиля, диаметр, сезонность, наличие
+                            шипов, цена (от и до), производитель, страна
+                            производства.
+                          </div>
+                        </li>
+                        <li class="must-have-item">
+                          <div class="must-have-text-bold">
+                            Фильтры по параметрам дисков:
+                          </div>
+                          <div class="must-have-text">
+                            тип, диаметр, ширина обода, PCD, ET, DIA, бренд,
+                            цена, страна производства.
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-6">
+                    <div class="col-wrapper-img">
+                      <img
+                        src="/images/upload/image-slider-1.png"
+                        alt="img-slider"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-must-have-footer">
+            <p class="section-must-have-footer-text">
+              Если на вашей интернет-площадке эти функции будут доступны, это может стать точкой роста и конкурентным преимуществом. Чем детальнее вы сделаете функционал сайта, тем лояльнее будет клиент и тем вероятнее он совершит покупку именно у вас.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-content-management bg-grey">
+        <div class="container-content">
+          <div class="content-management-wrapper">
+            <h2 class="section-content-management-title">
+              Система управления сайтом
+            </h2>
+            <p class="section-content-management-text">
+              CMS или система управления контентом поможет вашим сотрудникам добавлять, удалять и редактировать страницы с товарами и услугами.  CMS или система управления контентом поможет вашим сотрудникам добавлять, удалять и редактировать страницы с товарами и услугами.
+            </p>
+            <div class="section-content-management-bold">
+              Преимущества интеграции CMS:
+            </div>
+            <ul class="content-management-list">
+              <li class="content-management-item">
+                Удобный визуальный редактор контента.
+              </li>
+              <li class="content-management-item">
+                Добавление товаров не требует знаний языков разметки и программирования.
+              </li>
+              <li class="content-management-item">
+                Возможность загрузки фотографий и интеграции видео с YouTube и других хостингов.
+              </li>
+            </ul>
+          </div>
+          <div class="content-management-wrapper-img">
+            <div class="content-management-img">
+              <img src="/images/upload/CMS_1.png" alt="cms-img">
+            </div>
+            <div class="content-management-img">
+              <img src="/images/upload/CMS_2.png" alt="cms-img">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-stages-development">
+        <div class="container-content">
+          <h2 class="section-stages-development-title">
+            Интернет магазин шин и дисков:
+          </h2>
+          <h3 class="section-stages-development-title">
+            основные этапы разработки
+          </h3>
+          <div class="section-stages-development-control">
+            <div class="slider-btn-wrapper">
+              <button class="slider-btn prev-btn stages-development">
+                <img src="/images/icon/arrow-left-slider.svg" alt="arrow-left-slider">
+              </button>
+            </div>
+            <div class="slider-btn-wrapper">
+              <button class="slider-btn next-btn stages-development">
+                <img src="/images/icon/arrow-right-slider.svg" alt="arrow-right-slider">
+              </button>
+            </div>
+          </div>
+          <div class="section-stages-development-slider" id="sliderStagesDevelopment">
+            <div class="section-stages-development-item">
+              <div class="stages-development-content">
+                <div class="stages-development-content-header">
+                  <div class="stages-development-number">
+                    1.
+                  </div>
+                  <div class="stages-development-title">
+                    Изучение бизнеса клиента и потребностей рынка в нише
+                  </div>
+                </div>
+                <p class="stages-development-content-body">
+                  Чтобы добиться поставленной бизнес-цели заказчика, наша команда глубоко изучает нишу клиента. На основе полученных данных удается выяснить, что именно будет работать, принесет прибыль и позволит улучшить позицию на рынке по сравнению с конкурентами
+                </p>
+              </div>
+            </div>
+            <div class="section-stages-development-item">
+              <div class="stages-development-content">
+                <div class="stages-development-content-header">
+                  <div class="stages-development-number">
+                    2.
+                  </div>
+                  <div class="stages-development-title">
+                    Формирование технического задания
+                  </div>
+                </div>
+                <p class="stages-development-content-body">
+                  Мы уверены, что техническое задание и прототип - это фундамент, без которого сайт может рухнуть, поэтому для каждого проекта пишется спецификация с описанием всех функций и алгоритмов интернет-магазина
+                </p>
+              </div>
+            </div>
+            <div class="section-stages-development-item">
+              <div class="stages-development-content">
+                <div class="stages-development-content-header">
+                  <div class="stages-development-number">
+                    3.
+                  </div>
+                  <div class="stages-development-title">
+                    Разработка дизайна
+                  </div>
+                </div>
+                <p class="stages-development-content-body">
+                  При создании дизайна учитываются пожелания заказчика, маркетинговые тренды, чтобы по итогу выполнения данной работы визуальная часть сайта была удобна и понятна для пользователей (соответствие UX/UI) и презентовала товар или услугу в максимально выгодном цвете
+                </p>
+              </div>
+            </div>
+            <div class="section-stages-development-item">
+              <div class="stages-development-content">
+                <div class="stages-development-content-header">
+                  <div class="stages-development-number">
+                    4.
+                  </div>
+                  <div class="stages-development-title">
+                    Изучение бизнеса клиента и потребностей рынка в нише
+                  </div>
+                </div>
+                <p class="stages-development-content-body">
+                  Чтобы добиться поставленной бизнес-цели заказчика, наша команда глубоко изучает нишу клиента. На основе полученных данных удается выяснить, что именно будет работать, принесет прибыль и позволит улучшить позицию на рынке по сравнению с конкурентами
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-contact-us bg-grey">
+        <div class="section-contact-us-inputs">
+          <div class="container-content">
+            <div class="offer-card">
+              <div class="offer-card-question">
+                Заполните форму, и мы подготовим для Вас индивидуальное предложение!
+              </div>
+              <div class="row g-3">
+                <div class="col-lg-3 col-sm-6">
+                  <input class="input-text" type="text" placeholder="Имя">
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <input class="input-text" type="tel" placeholder="Номер телефона: +373">
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <span class="input-placeholder">
+                    <input class="input-text" type="email">
+                    <span class="input-placeholder-text" style="padding: 12px 18px;">
+                      <span class="input-placeholder-text-wrapper">
+                        Электронная почта
+                        <span class="placeholder-required">*</span>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <button class="button-type-1">Получить коммерческое</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-content">
+          <h2 class="section-contact-us-title">
+            Не знаете с чего начать?
+          </h2>
+          <div class="section-contact-us-text">
+            Свяжитесь с нами для получения профессиональной консультации
+          </div>
+          <a class="section-contact-us-phone" href="tel:+37360106666">+373 60 10 6666</a>
+          <a class="section-contact-us-email" href="mailto:manager@webmaster.md">manager@webmaster.md</a>
+        </div>
+      </section>
+      <section class="section-similar-services">
+        <div class="container-content">
+          <h2 class="section-similar-services-title">
+            Похожие услуги
+          </h2>
+          <div class="row gy-3">
+            <div class="col-md-4">
+              <div class="section-similar-services-content">
+                <div class="section-similar-services-content-img">
+                  <img src="images/upload/services-1.png" alt="services-img">
+                </div>
+                <div class="section-similar-services-text">
+                  Разработка интернет магазина подарков
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="section-similar-services-content">
+                <div class="section-similar-services-content-img">
+                  <img src="images/upload/services-1.png" alt="services-img">
+                </div>
+                <div class="section-similar-services-text">
+                  Разработка интернет магазина подарков
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="section-similar-services-content">
+                <div class="section-similar-services-content-img">
+                  <img src="images/upload/services-1.png" alt="services-img">
+                </div>
+                <div class="section-similar-services-text">
+                  Разработка интернет магазина подарков
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-main">
+      <img class="footer-main-img" src="images/upload/footer.png" alt="footer-img">
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="lib/nice-select/jquery.js"></script>
+    <script src="lib/nice-select/jquery.nice-select.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/selectStyle.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

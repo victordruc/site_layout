@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat&family=Oswald:wght@300;400;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ceim</title>
+  </head>
+  <body>
+    <header class="header-main">
+      <nav class="navbar-top">
+        <div class="container-xxxl justify-content-between d-flex">
+          <ul class="navbar-contact-list">
+            <li class="navbar-contact-item">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM13.1134 11.4537L14.5434 12.4528C14.9549 12.7403 15.1248 13.259 14.9565 13.7138C14.9076 13.8455 14.8484 13.9673 14.7804 14.0759L14.6413 14.2745C14.5964 14.3324 14.5546 14.3784 14.5109 14.4221C14.2699 14.6631 13.9651 14.834 13.6047 14.9304C13.382 14.9899 13.1378 15.0201 12.8786 15.0201H12.8785C11.3656 15.0199 9.41926 14.0134 7.79912 12.3933C5.86987 10.464 4.85017 8.13082 5.26178 6.58785C5.35824 6.22744 5.52918 5.92264 5.77007 5.68186C5.81404 5.63788 5.85995 5.59585 5.90932 5.55748L6.10677 5.41845C6.22619 5.34343 6.34798 5.28415 6.47871 5.23587C6.59382 5.1934 6.71475 5.17163 6.83805 5.17163C7.19383 5.17163 7.53086 5.35011 7.73973 5.64888L8.73863 7.07889C8.90763 7.3214 8.9723 7.61434 8.92099 7.90427C8.86958 8.19441 8.7077 8.44726 8.4653 8.61604L7.98978 8.948C8.3628 9.50436 8.8837 10.1252 9.47541 10.7169C10.0672 11.3086 10.688 11.8296 11.2444 12.2027L11.5764 11.727C11.7824 11.4312 12.1207 11.2545 12.4812 11.2545C12.7078 11.2545 12.9264 11.3232 13.1134 11.4537Z"
+                  fill="white"
+                />
+              </svg>
+              <a class="contact" href="tel: +37367050768">+ (373) 67 050 768</a>
+              <a class="next-contact contact" href="tel: +37367050768"
+                >+ (373) 67 050 768</a
+              >
+            </li>
+            <li class="navbar-contact-item">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM7.31692 6.00589C8.05412 5.26869 9.05358 4.85392 10.0961 4.85254C11.1387 4.85392 12.1382 5.26869 12.8753 6.00589C13.6125 6.74309 14.0273 7.74255 14.0287 8.7851C14.0287 11.6084 10.3649 15.1444 10.2092 15.2935C10.1789 15.3229 10.1384 15.3394 10.0961 15.3394C10.0539 15.3394 10.0134 15.3229 9.98308 15.2935C9.82741 15.1444 6.16357 11.6084 6.16357 8.7851C6.16496 7.74255 6.57972 6.74309 7.31692 6.00589ZM9.09476 10.2838C9.39117 10.4818 9.73965 10.5875 10.0961 10.5875C10.5741 10.5872 11.0324 10.3972 11.3703 10.0593C11.7083 9.72133 11.8983 9.26305 11.8986 8.7851C11.8986 8.42862 11.7929 8.08014 11.5948 7.78373C11.3967 7.48732 11.1152 7.2563 10.7859 7.11988C10.4565 6.98346 10.0941 6.94776 9.7445 7.01731C9.39487 7.08686 9.0737 7.25852 8.82163 7.51059C8.56956 7.76267 8.39789 8.08383 8.32835 8.43347C8.2588 8.7831 8.29449 9.14551 8.43091 9.47486C8.56734 9.80421 8.79836 10.0857 9.09476 10.2838Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="contact"> str. Andrei Doga, 24 </span>
+              <span class="contact-more-info">( în incinta spitalului Teramed )</span>
+            </li>
+            <!-- <li class="navbar-contact-item">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10ZM10.847 11.1087C10.6234 11.2578 10.3637 11.3366 10.096 11.3366C9.82822 11.3366 9.56851 11.2578 9.34493 11.1087L5.66238 8.65362C5.64194 8.64 5.62204 8.6258 5.60254 8.61119V12.6342C5.60254 13.0954 5.97684 13.4615 6.42984 13.4615H13.7621C14.2233 13.4615 14.5894 13.0872 14.5894 12.6342V8.61118C14.5698 8.62581 14.5499 8.64005 14.5294 8.65369L10.847 11.1087ZM9.63702 10.6705L5.95447 8.21536C5.73411 8.06853 5.60254 7.8228 5.60254 7.55802C5.60254 7.10157 5.97355 6.73058 6.42956 6.73056H13.7624C14.2184 6.73056 14.5894 7.10155 14.5894 7.55758C14.5894 7.8228 14.4578 8.06853 14.2375 8.21536L10.5549 10.6705C10.4155 10.7634 10.2557 10.8099 10.0959 10.8099C9.93618 10.8099 9.77642 10.7634 9.63702 10.6705Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="contact"> gerardo@gmail.com </span>
+            </li> -->
+          </ul>
+          <ul class="lang-select">
+            <li class="lang-select-item">
+              <a class="lang-select-link active" href="#">Ro</a>
+            </li>
+            <li class="lang-select-item">
+              <a class="lang-select-link" href="#">Ru</a>
+            </li>
+            <li class="lang-select-item">
+              <a class="lang-select-link" href="#">En</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-xl p-0">
+        <div class="container-xxxl justify-content-between">
+          <a class="navbar-brand p-0">
+            <img src="images/logo/Ceim_Header.png" alt="Ceim-img" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="#3AB795"
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+
+          <div class="collapse navbar-collapse flex-grow-0" id="navbar">
+            <nav class="navbar-top navbar-top-mobile">
+              <ul class="navbar-contact-list">
+                <li class="navbar-contact-item">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM13.1134 11.4537L14.5434 12.4528C14.9549 12.7403 15.1248 13.259 14.9565 13.7138C14.9076 13.8455 14.8484 13.9673 14.7804 14.0759L14.6413 14.2745C14.5964 14.3324 14.5546 14.3784 14.5109 14.4221C14.2699 14.6631 13.9651 14.834 13.6047 14.9304C13.382 14.9899 13.1378 15.0201 12.8786 15.0201H12.8785C11.3656 15.0199 9.41926 14.0134 7.79912 12.3933C5.86987 10.464 4.85017 8.13082 5.26178 6.58785C5.35824 6.22744 5.52918 5.92264 5.77007 5.68186C5.81404 5.63788 5.85995 5.59585 5.90932 5.55748L6.10677 5.41845C6.22619 5.34343 6.34798 5.28415 6.47871 5.23587C6.59382 5.1934 6.71475 5.17163 6.83805 5.17163C7.19383 5.17163 7.53086 5.35011 7.73973 5.64888L8.73863 7.07889C8.90763 7.3214 8.9723 7.61434 8.92099 7.90427C8.86958 8.19441 8.7077 8.44726 8.4653 8.61604L7.98978 8.948C8.3628 9.50436 8.8837 10.1252 9.47541 10.7169C10.0672 11.3086 10.688 11.8296 11.2444 12.2027L11.5764 11.727C11.7824 11.4312 12.1207 11.2545 12.4812 11.2545C12.7078 11.2545 12.9264 11.3232 13.1134 11.4537Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <a class="contact" href="tel: +37367050768"
+                    >+ (373) 67 050 768</a
+                  >
+                  <a class="next-contact contact" href="tel: +37367050768"
+                    >+ (373) 67 050 768</a
+                  >
+                </li>
+                <li class="navbar-contact-item">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM7.31692 6.00589C8.05412 5.26869 9.05358 4.85392 10.0961 4.85254C11.1387 4.85392 12.1382 5.26869 12.8753 6.00589C13.6125 6.74309 14.0273 7.74255 14.0287 8.7851C14.0287 11.6084 10.3649 15.1444 10.2092 15.2935C10.1789 15.3229 10.1384 15.3394 10.0961 15.3394C10.0539 15.3394 10.0134 15.3229 9.98308 15.2935C9.82741 15.1444 6.16357 11.6084 6.16357 8.7851C6.16496 7.74255 6.57972 6.74309 7.31692 6.00589ZM9.09476 10.2838C9.39117 10.4818 9.73965 10.5875 10.0961 10.5875C10.5741 10.5872 11.0324 10.3972 11.3703 10.0593C11.7083 9.72133 11.8983 9.26305 11.8986 8.7851C11.8986 8.42862 11.7929 8.08014 11.5948 7.78373C11.3967 7.48732 11.1152 7.2563 10.7859 7.11988C10.4565 6.98346 10.0941 6.94776 9.7445 7.01731C9.39487 7.08686 9.0737 7.25852 8.82163 7.51059C8.56956 7.76267 8.39789 8.08383 8.32835 8.43347C8.2588 8.7831 8.29449 9.14551 8.43091 9.47486C8.56734 9.80421 8.79836 10.0857 9.09476 10.2838Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="contact"> str. Andrei Doga, 24 </span>
+                  <span class="contact-more-info">( în incinta spitalului Teramed )</span>
+                </li>
+                <!-- <li class="navbar-contact-item">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10ZM10.847 11.1087C10.6234 11.2578 10.3637 11.3366 10.096 11.3366C9.82822 11.3366 9.56851 11.2578 9.34493 11.1087L5.66238 8.65362C5.64194 8.64 5.62204 8.6258 5.60254 8.61119V12.6342C5.60254 13.0954 5.97684 13.4615 6.42984 13.4615H13.7621C14.2233 13.4615 14.5894 13.0872 14.5894 12.6342V8.61118C14.5698 8.62581 14.5499 8.64005 14.5294 8.65369L10.847 11.1087ZM9.63702 10.6705L5.95447 8.21536C5.73411 8.06853 5.60254 7.8228 5.60254 7.55802C5.60254 7.10157 5.97355 6.73058 6.42956 6.73056H13.7624C14.2184 6.73056 14.5894 7.10155 14.5894 7.55758C14.5894 7.8228 14.4578 8.06853 14.2375 8.21536L10.5549 10.6705C10.4155 10.7634 10.2557 10.8099 10.0959 10.8099C9.93618 10.8099 9.77642 10.7634 9.63702 10.6705Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="contact"> gerardo@gmail.com </span>
+                </li> -->
+              </ul>
+            </nav>
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Rezonanța Magnetica</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tomografie computerizata</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicii</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Despre noi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacte</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn-type btn-type-1">Programare</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-alter-img">
+        <div class="container-xxxl">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#"> Pincipala </a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#"> Servicii </a>
+            </li>
+          </ul>
+          <h1 class="header-title">Servicii</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-home main-alter">
+      <section class="main-similar-services">
+        <div class="container-xxxl">
+          <div class="row gy-3">
+            <div class="col-lg-6">
+              <div data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out">
+              <div class="primary-title">Tomografie Computerizata</div>
+              <p class="primary-text">
+                Dolor id sed nulla id. Sit nulla enim euismod convallis aenean
+                tincidunt. Porta elit ultricies lectus malesuada. Ut pretium nec
+                volutpat pretium, ut mauris. Eget tincidunt laoreet iaculis
+                habitant aliquet. Diam purus sed ultrices aliquam varius vivamus
+                fermentum. Magnis facilisi in donec pellentesque. Cras nunc
+                mauris at amet, diam ut tincidunt ut. Tellus amet, vitae, lacus
+                ut in libero quis aliquam velit. Rhoncus fringilla tellus
+                venenatis nullam et. Lobortis id etiam consequat proin orci ac
+                tincidunt sed. Sollicitudin diam tincidunt sem et.
+              </p>
+              <p class="primary-text">
+                Dolor platea nibh sed diam turpis sed. Tristique eget volutpat
+                nisl pellentesque neque ut amet, ornare a. In mattis pulvinar
+                accumsan, bibendum tempus. Est viverra a tincidunt sed amet et
+                facilisi nam. Nisi at aliquet tortor, id in lobortis nullam.
+              </p>
+              <p class="primary-text">
+                Cursus tortor porttitor diam vitae. Bibendum sed mi in porttitor
+                pretium purus id hac non. Sollicitudin tellus nunc mi leo,
+                magna. Amet diam nec blandit commodo id varius imperdiet sit.
+                Adipiscing magna eu sollicitudin ipsum vitae rhoncus. Facilisis
+                dis aliquam diam tellus at. Molestie phasellus interdum
+                ultricies cursus elit. Aliquam iaculis.
+              </p>
+              </div>
+              <ul class="main-services-list">
+                <li class="main-services-item">
+                  <div class="main-services-item-left left-special">
+                    IRM- 1.5T cerebrală - protocol standard
+                  </div>
+                  <div class="main-services-item-right">500 mdl</div>
+                </li>
+                <li class="main-services-item">
+                  <div class="main-services-item-left">
+                    IRM-l.ST fără contrast a vaselor intracraniene MRA si MRV
+                    (TOF)
+                  </div>
+                  <div class="main-services-item-right">1 500 mdl</div>
+                </li>
+                <li class="main-services-item">
+                  <div class="main-services-item-left">
+                    IRM-1.5T cerebrală - protocol standard cu contrast
+                  </div>
+                  <div class="main-services-item-right">800 mdl</div>
+                </li>
+                <li class="main-services-item">
+                  <div class="main-services-item-left">
+                    IRM 1.5T a glandei pituitare fără contrast (hipofiza, şaua
+                    turcească)
+                  </div>
+                  <div class="main-services-item-right">700 mdl</div>
+                </li>
+                <li class="main-services-item">
+                  <div class="main-services-item-left">
+                    IRM-1.5T a glandei pituitare cu contrast (hipofiza, şaua
+                    turcească)
+                  </div>
+                  <div class="main-services-item-right">1 500 mdl</div>
+                </li>
+                <li class="main-services-item">
+                  <div class="main-services-item-left left-special">
+                    IRM 1.5T a regiunii cervicale (ţesuturile moi)
+                  </div>
+                  <div class="main-services-item-right">500 mdl</div>
+                </li>
+              </ul>
+              <button class="services-open-list-btn">
+                <span> Toate servicii </span>
+                <svg
+                  width="6"
+                  height="6"
+                  viewBox="0 0 6 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.91113 5.26301L5.79788 0.263015L0.0243814 0.263015L2.91113 5.26301Z"
+                    fill="#3AB795"
+                  ></path>
+                </svg>
+              </button>
+              <div class="main-services-option">
+                * - Investigația necesită <span>pregătire</span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out">
+              <div class="primary-title">Rezonanța Magnetica</div>
+              <p class="primary-text">
+                Dolor id sed nulla id. Sit nulla enim euismod convallis aenean
+                tincidunt. Porta elit ultricies lectus malesuada. Ut pretium nec
+                volutpat pretium, ut mauris. Eget tincidunt laoreet iaculis
+                habitant aliquet. Diam purus sed ultrices aliquam varius vivamus
+                fermentum. Magnis facilisi in donec pellentesque. Cras nunc
+                mauris at amet, diam ut tincidunt ut. Tellus amet, vitae, lacus
+                ut in libero quis aliquam velit. Rhoncus fringilla tellus
+                venenatis nullam et. Lobortis id etiam consequat proin orci ac
+                tincidunt sed. Sollicitudin diam tincidunt sem et.
+              </p>
+              <p class="primary-text">
+                Dolor platea nibh sed diam turpis sed. Tristique eget volutpat
+                nisl pellentesque neque ut amet, ornare a. In mattis pulvinar
+                accumsan, bibendum tempus. Est viverra a tincidunt sed amet et
+                facilisi nam. Nisi at aliquet tortor, id in lobortis nullam.
+              </p>
+              <p class="primary-text">
+                Cursus tortor porttitor diam vitae. Bibendum sed mi in porttitor
+                pretium purus id hac non. Sollicitudin tellus nunc mi leo,
+                magna. Amet diam nec blandit commodo id varius imperdiet sit.
+                Adipiscing magna eu sollicitudin ipsum vitae rhoncus. Facilisis
+                dis aliquam diam tellus at. Molestie phasellus interdum
+                ultricies cursus elit. Aliquam iaculis.
+              </p>
+              </div>
+              <ul class="main-services-list">
+                <li class="main-services-item">
+                  <div class="main-services-item-left left-special">
+                    IRM- 1.5T cerebrală - protocol standard
+                  </div>
+                  <div class="main-services-item-right">500 mdl</div>
+                </li>
+                <li class="main-services-item">
+                  <div class="main-services-item-left">
+                    IRM-l.ST fără contrast a vaselor intracraniene MRA si MRV
+                    (TOF)
+                  </div>
+                  <div class="main-services-item-right">1 500 mdl</div>
+                </li>
+                <li class="main-services-item">
+                  <div class="main-services-item-left">
+                    IRM-1.5T cerebrală - protocol standard cu contrast
+                  </div>
+                  <div class="main-services-item-right">800 mdl</div>
+                </li>
+                <li class="main-services-item">
+                  <div class="main-services-item-left">
+                    IRM 1.5T a glandei pituitare fără contrast (hipofiza, şaua
+                    turcească)
+                  </div>
+                  <div class="main-services-item-right">700 mdl</div>
+                </li>
+                <li class="main-services-item">
+                  <div class="main-services-item-left">
+                    IRM-1.5T a glandei pituitare cu contrast (hipofiza, şaua
+                    turcească)
+                  </div>
+                  <div class="main-services-item-right">1 500 mdl</div>
+                </li>
+                <li class="main-services-item">
+                  <div class="main-services-item-left left-special">
+                    IRM 1.5T a regiunii cervicale (ţesuturile moi)
+                  </div>
+                  <div class="main-services-item-right">500 mdl</div>
+                </li>
+              </ul>
+              <button class="services-open-list-btn">
+                <span> Toate servicii </span>
+                <svg
+                  width="6"
+                  height="6"
+                  viewBox="0 0 6 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.91113 5.26301L5.79788 0.263015L0.0243814 0.263015L2.91113 5.26301Z"
+                    fill="#3AB795"
+                  ></path>
+                </svg>
+              </button>
+              <div class="main-services-option">
+                * - Investigația necesită <span>pregătire</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-similar-services">
+        <div class="container-xxxl">
+          <div class="row gy-3">
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
+              <p class="primary-text">
+                Terminologia RMN - Rezonanta Magnetica Nucleara - a fost inlocuita cu IRM - Imagistica prin Rezonanta Magnetica - pentru a elimina confuzia si a nu lasa sa se creada ca acest tip de investigatie ar fi periculos datorita unor radiatii nucleare.
+              </p>
+              <p class="primary-text">
+                O scanare IRM - Rezonanta Magnetica Nucleara - este o tehnica a imagisticii medicale care utilizeaza campul magnetic puternic, undele radio si un computer pentru a produce imagini ale structurilor corpului. Scanerul pentru Imagistica prin Rezonanta Magnetica(IRM) este un tub inconjurat de un magnet de dimensiuni apreciabile de forma cilindrica. Pacientul este plasat pe un pat mobil care se introduce in magnet.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <ul class="main-services-list">
+                <li class="main-services-item">
+                  <div class="main-services-item-left">
+                    IRM-l.ST fără contrast a vaselor intracraniene MRA si MRV
+                    (TOF)
+                  </div>
+                  <div class="main-services-item-right">1 500 mdl</div>
+                </li>
+                <li class="main-services-item">
+                  <div class="main-services-item-left">
+                    IRM-1.5T cerebrală - protocol standard cu contrast
+                  </div>
+                  <div class="main-services-item-right">800 mdl</div>
+                </li>
+                <li class="main-services-item">
+                  <div class="main-services-item-left">
+                    IRM 1.5T a glandei pituitare fără contrast (hipofiza, şaua
+                    turcească)
+                  </div>
+                  <div class="main-services-item-right">700 mdl</div>
+                </li>
+                <li class="main-services-item">
+                  <div class="main-services-item-left">
+                    IRM-1.5T a glandei pituitare cu contrast (hipofiza, şaua
+                    turcească)
+                  </div>
+                  <div class="main-services-item-right">1 500 mdl</div>
+                </li>
+                <li class="main-services-item">
+                  <div class="main-services-item-left left-special">
+                    IRM 1.5T a regiunii cervicale (ţesuturile moi)
+                  </div>
+                  <div class="main-services-item-right">500 mdl</div>
+                </li>
+              </ul>
+              <button class="services-open-list-btn">
+                <span> Toate servicii </span>
+                <svg
+                  width="6"
+                  height="6"
+                  viewBox="0 0 6 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.91113 5.26301L5.79788 0.263015L0.0243814 0.263015L2.91113 5.26301Z"
+                    fill="#3AB795"
+                  ></path>
+                </svg>
+              </button>
+              <div class="main-services-option">
+                * - Investigația necesită <span>pregătire</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-similar-services">
+        <div class="container-xxxl">
+          <div class="row gy-3" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
+            <div class="col-12">
+              <h2 class="primary-title">
+                pregatirea
+              </h2>
+            </div>
+            <div class="col-lg-6">
+              <p class="primary-text">
+                Tellus leo suspendisse malesuada lacus donec. Nulla fermentum sed ut proin pellentesque commodo. Pellentesque molestie aenean vel pulvinar. Volutpat interdum sed risus at eget risus nam. Egestas sagittis ipsum gravida vel ligula vivamus nisl in. Vel interdum dictum commodo ipsum non ipsum nibh ac. At curabitur pharetra, morbi metus potenti lectus venenatis. Feugiat imperdiet nec fermentum, lacus, enim, ultrices ipsum amet. Duis scelerisque fermentum, vulputate turpis blandit faucibus cursus tincidunt quisque. Pretium commodo viverra placerat tempor pellentesque ut fringilla venenatis urna. Odio dui, malesuada netus facilisi. Ut et nisl blandit proin luctus pellentesque. Nec eget felis, hac ullamcorper neque pellentesque eget.
+              </p>
+              <p class="primary-text">
+                Mattis pretium volutpat accumsan at nisi, nisi, lacus, vitae eu. Vitae egestas enim feugiat consectetur nunc consectetur elementum quisque quam. Elit aenean aliquam massa, diam. Faucibus quam felis egestas et pharetra suscipit. Semper tempor ipsum habitant justo sit mattis nullam ante. Praesent vitae fames convallis posuere euismod nullam.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <p class="primary-text">
+                Proin enim euismod etiam dui mauris dictum id aliquam tellus. Ut urna, arcu viverra faucibus amet. Rhoncus elementum at ut fermentum tincidunt. Convallis feugiat at semper in purus felis augue. Pretium maecenas vel eleifend et etiam porttitor eget. Ipsum vitae elit egestas leo dui. Elit id eget lectus et. Erat convallis viverra erat at purus nunc id rhoncus. Et nibh commodo volutpat id phasellus aenean viverra porttitor. Ac gravida est consequat lectus.
+              </p>
+              <p class="primary-text">
+                Purus fames blandit sed amet, enim maecenas consequat. Hac ornare pellentesque ornare porttitor ante facilisis venenatis tellus metus. Velit in egestas quam tempus tellus. In at nec dui proin. Viverra sit aliquam aliquam viverra curabitur rhoncus. Nec id maecenas sed vel ac eget at nisi maecenas. Vestibulum, senectus semper potenti lorem blandit facilisis. Interdum convallis lectus mauris sit massa imperdiet viverra. Convallis fringilla consectetur neque vitae erat mattis. Quam nibh feugiat sit at. Vestibulum diam tristique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-similar-services">
+        <div class="container-xxxl">
+          <div class="row gy-3">
+            <div class="col-lg-6">
+              <h2 class="primary-title">
+                companiilor de asigurare cu care colaborăm
+              </h2>
+              <div class="row gy-3">
+                <div class="col-sm-6">
+                  <div class="services-partners-img-wrapper">
+                    <img src="images/upload/grawe.png" alt="partner-img">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="services-partners-img-wrapper">
+                    <img src="images/upload/moldasig.png" alt="partner-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
+              <p class="primary-text">
+                Netus volutpat quis faucibus vestibulum. Pharetra, nibh est quis commodo nulla nunc, massa. Lectus pharetra, cursus varius neque dolor a nisi. A nam tellus sollicitudin quis fames. Bibendum urna hac ullamcorper felis donec in. Pellentesque justo pellentesque urna pulvinar. Et ultricies pulvinar euismod tempus. Nunc dictumst id sociis vestibulum, id condimentum. Quam vestibulum habitant mauris lacus pharetra phasellus pellentesque id. Tincidunt habitant fringilla cursus consectetur in adipiscing. Quisque consectetur est id ultrices enim volutpat metus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-questionnaire">
+        <div class="container-xxxl">
+            <div class="row gy-3">
+                <div class="col-lg-5" data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out">
+                    <h2 class="main-questionnaire-title">
+                        Chestionar de satisfactie
+                    </h2>
+                    <p class="main-questionnaire-text">
+                        Terminologia RMN - Rezonanta Magnetica Nucleara - a fost inlocuita cu IRM - Imagistica prin Rezonanta Magnetica - pentru a elimina confuzia si a nu lasa sa se creada ca acest tip de investigatie ar fi periculos datorita unor radiatii nucleare.
+                    </p>
+                    <p class="main-questionnaire-text">
+                        Terminologia RMN - Rezonanta Magnetica Nucleara - a fost inlocuita cu IRM - Imagistica prin Rezonanta Magnetica - pentru a elimina confuzia si a nu lasa sa se creada ca acest tip de investigatie ar fi periculos datorita unor radiatii nucleare.
+                    </p>
+                </div>
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-6">
+                    <form class="main-questionnaire-form">
+                        <div class="wrapper-form-input">
+                            <label for="name">
+                                Numele
+                            </label>
+                            <input class="input-text-type-2" type="text" name="name" id="name" placeholder="Numele">
+                        </div>
+                        <div class="wrapper-form-input">
+                            <label for="email">
+                                Email
+                            </label>
+                            <input class="input-text-type-2" type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="wrapper-form-input">
+                            <label for="phone">
+                                Numărul de telefon
+                            </label>
+                            <input class="input-text-type-2" type="tel" name="phone" id="phone" placeholder="Numărul de telefon">
+                        </div>
+                        <div class="wrapper-form-input">
+                            <label for="msg">
+                                Mesaj
+                            </label>
+                            <textarea class="input-text-type-2" name="msg" id="msg" rows="5" placeholder="Mesaj"></textarea>
+                        </div>
+                        <div class="wrapper-btn">
+                            <button class="btn-type btn-type-2" type="submit">
+                                Trimite
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container-xxxl">
+        <div class="row gy-3">
+          <div class="col-xl-2 col-sm-4">
+            <div class="footer-logo">
+              <img src="images/logo/Ceim_Footer.png" alt="Ceim-Logo">
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-4">
+            <div class="footer-title">
+              Menu
+            </div>
+            <ul class="list-footer-link">
+              <li class="list-footer-item">
+                <a class="footer-link" href="#">Rezonanta Magnetica</a>
+              </li>
+              <li class="list-footer-item">
+                <a class="footer-link" href="#">Tomografie computerizata</a>
+              </li>
+              <li class="list-footer-item">
+                <a class="footer-link" href="#">Servicii</a>
+              </li>
+              <li class="list-footer-item">
+                <a class="footer-link" href="#">Despre noi</a>
+              </li>
+              <li class="list-footer-item">
+                <a class="footer-link" href="#">Blog</a>
+              </li>
+              <li class="list-footer-item">
+                <a class="footer-link" href="#">Contacte</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-sm-4">
+            <div class="footer-title">
+              Lincuri Utile
+            </div>
+            <ul class="list-footer-link">
+              <li class="list-footer-item">
+                <a class="footer-link" href="#">Politica de confidentialitate</a>
+              </li>
+              <li class="list-footer-item">
+                <a class="footer-link" href="#">Termeni si conditii</a>
+              </li>
+            </ul>
+            <div class="footer-work-program">
+              <div class="footer-title">
+                Program de lucru
+              </div>
+              <div class="footer-work-wrapper">
+                <div class="footer-work-day">
+                  <div>Пн – Сб:</div>
+                  <div>Вс:</div>
+                </div>
+                <div class="footer-work-hour">
+                  <div>8.00 – 19:00</div>
+                  <div>8.00 – 18:00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-4">
+            <div class="footer-title">
+              Contacte
+            </div>
+            <ul class="list-footer-contact">
+              <li class="list-footer-item">
+                <a href="tel: +37367050768" class="footer-info">
+                  + (373) 67 050 768
+                </a>
+              </li>
+              <li class="list-footer-item">
+                <a href="tel: +37367050768" class="footer-info">
+                  + (373) 67 050 768
+                </a>
+              </li>
+              <li class="list-footer-item">
+                <div class="footer-info">
+                  str. Andrei Doga, 24
+                </div>
+                <div class="footer-info-second">
+                  în incinta spitalului Terramed
+                </div>
+              </li>
+              <li class="list-footer-item">
+                <div class="footer-info">
+                  gerardo@gmail.com
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-sm-4">
+            <div class="footer-title">
+              Rețele Sociale
+            </div>
+            <ul class="list-footer-social">
+              <li class="list-footer-item">
+                <a href="#" class="footer-link">
+                  Facebook
+                </a>
+              </li>
+              <li class="list-footer-item">
+                <a href="#" class="footer-link">
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-sm-4">
+            <div class="footer-action">
+              <button class="btn-type btn-type-2">
+                Contactează-ne
+              </button>
+            </div>
+            <div class="footer-partner">
+              <img src="images/logo/Canon.png" alt="partner-logo">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright-footer">
+        <div class="container-xxxl">
+          <div class="copyright-wrapper">
+            <div class="footer-copyright-date">
+              Copyright © Create
+            </div>
+            <div class="footer-copyright-logo">
+              <span class="footer-copyright-develop">
+                  Studio WebMaster, 2021
+              </span>
+              <a href="#">
+                  <img src="images/logo/WebMasterStudio.png" alt="logo-ws">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-up" id="scrollUP">
+        <span class="arrow-round">
+          <img src="images/icon/arrow-up.svg" alt="arrow-up">
+        </span>
+        <span class="btn-text">
+          În sus
+        </span>
+      </button>
+
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="lib/nice-select/jquery.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

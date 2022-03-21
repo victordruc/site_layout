@@ -1,0 +1,43 @@
+:root {
+  --font_family: "Roboto", sans-serif;
+  --font_family-1: "Oswald", sans-serif;
+  --font_family-2: "Jura", sans-serif;
+
+  --color-1: #262626;
+  --color-2: #E5E5E5;
+  --color-3: #0C9BD8;
+  --color-4: #FFFFFF;
+  --color-4-opacity: rgba(255, 255, 255, 0.8);
+  --color-5: #1A1B1C;
+  --color-6: #E4E4E4;
+  --color-7: #F7F9FA;
+  --color-8: #5E5E5E;
+  --color-9: #101010;
+  --color-10: #000000;
+  --color-11: #C20000;
+  --color-12: #070707;
+  --color-13: #ECF1F3;
+  --color-14: #717171;
+  --color-15: #3D3D3D;
+}
+
+$font_family: var(--font_family);
+$font_family-1: var(--font_family-1);
+$font_family-2: var(--font_family-2);
+
+$color-1: var(--color-1);
+$color-2: var(--color-2);
+$color-3: var(--color-3);
+$color-4: var(--color-4);
+$color-4-opacity: var(--color-4-opacity);
+$color-5: var(--color-5);
+$color-6: var(--color-6);
+$color-7: var(--color-7);
+$color-8: var(--color-8);
+$color-9: var(--color-9);
+$color-10: var(--color-10);
+$color-11: var(--color-11);
+$color-12: var(--color-12);
+$color-13: var(--color-13);
+$color-14: var(--color-14);
+$color-15: var(--color-15);

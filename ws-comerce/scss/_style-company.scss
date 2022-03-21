@@ -1,0 +1,50 @@
+.style-company {
+    .internal-optimization {
+        .section-tabel-text-bold {
+            @include text($color-12, 500, 15);
+        }
+        .section-tabel-text-small {
+            @include text($color-22, 300, 14);
+        }
+        .style-company-text-small-important {
+            @include text($color-10, 300, 14);
+        }
+        .style-company-text-small-info {
+            @include text($color-6, 300, 14);
+        }
+        .table {
+            td {
+                border: none !important;
+                &.table-section-divider {
+                    padding: 20px;
+                }
+                &:first-child {
+                    width: 64% !important;
+                }
+                padding: 6px 20px;
+                text-align: left !important;
+                vertical-align: top !important;
+            }
+        }
+    }
+
+    .slider-content {
+        .style-company-slide-list {
+            .style-company-slide-item {
+                padding: 4px 0;
+                position: relative;
+                padding-left: 16px;
+                &::before {
+                    content: "";
+                    background-image: url(../images/icon/arrow_list.png);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    width: 10px;
+                    height: 8px;
+                    left: 0;
+                    top: remTransform(10);
+                }
+            }
+        }
+    }
+}

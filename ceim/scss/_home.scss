@@ -1,0 +1,401 @@
+.main-home {
+    overflow: hidden;
+    .option-section {
+        padding: 100px 0;
+        border-bottom: 1px solid $color-5;
+        .option-item {
+            background: $bg-linear;
+            border-radius: 5px;
+            overflow: hidden;
+            padding: 30px 40px;
+            position: relative;
+            height: 100%;
+            &:hover {
+                outline: 1px solid $color-1;
+                .small-img path {
+                    fill: $color-1;
+                }
+            }
+            .option-content {
+                position: relative;
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                .option-title {
+                    @include text(null, 600, 26);
+                    font-family: $font_family-second2;
+                    text-transform: uppercase;
+                }
+                .option-text {
+                    @include text(null, 400, 16);
+                    margin: 10px 0 20px 0;
+                    width: 70%;
+                }
+                .option-working-hours {
+                    @include text(null, 700, 16);
+                }
+                .option-action {
+                    margin: auto 0 0 0;
+                    padding-top: 30px;
+                }
+            }
+            .option-img-container {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                max-width: 210px;
+                .big-img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .small-img {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+    .services-section {
+        padding: 78px 0;
+        border-bottom: 1px solid $color-5;
+        position: relative;
+        .services-section-title {
+            @include text(null, 600, 36);
+            margin-bottom: 36px;
+            text-transform: uppercase;
+        }
+        .services-section-text {
+            @include text(null, 300, 16);
+            column-count: 2;
+            column-gap: 40px;
+            margin-bottom: 50px;
+        }
+        .services-item {
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            transition: .2s;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .services-item-text {
+                position: absolute;
+                padding: 24px;
+                @include text($color-2, 700, 26);
+                font-family: $font_family-second2;
+                text-transform: uppercase;
+                bottom: 0;
+            }
+            &:hover {
+                filter: contrast(1.4);
+            }
+        }
+        &::after {
+            content: "";
+            background: $bg-linear;
+            width: 100%;
+            height: 280px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    .about-section {
+        background: $bg-linear;
+        padding-top: 94px;
+        padding-bottom: 54px;
+       
+        .about-content {
+            .about-title {
+                @include text(null, 600, 36);
+                font-family: $font_family-second2;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+            .about-text-bold {
+                @include text(null, 700, 17);
+            }
+            .about-text-small {
+                @include text(null, 300, 16);
+            }
+            .about-action {
+                padding: 18px 0;
+                background: linear-gradient(90deg, #3AB795 40.73%, rgba(58, 183, 149, 0) 114.25%);
+                margin-bottom: 20px;
+                width: calc(100% + 24px);
+                position: relative;
+                    a {
+                        @include text($color-2, 400, 14, true);
+                        span {
+                            margin-right: 10px;
+                        }
+                        svg {
+                            border-radius: 100%;
+                        }
+                        &:hover {
+                            circle {
+                                fill: $color-2;
+                            }
+                            path {
+                                stroke: $color-1;
+                            }
+                            svg {
+                                box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+                            }
+                        }
+                    }
+                &::before {
+                    content: "";
+                    height: 100%;
+                    position: absolute;
+                    width: calc(100vw - 100%);
+                    top: 0;
+                    left: calc(-100vw + 100%);
+                    background-color: $color-1;
+                }
+            }
+        }
+        .about-video {
+            height: 100%;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            min-height: 290px;
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .reviews-section {
+        padding: 120px 0 80px 0;
+        .reviews-title {
+            @include text(null, 600, 36);
+            font-family: $font_family-second2;
+            text-transform: uppercase;
+            margin-bottom: 36px;
+        }
+        .slider-reviews {
+            margin: 0 -12px;
+            .slider-item {
+                padding-top: 38px;
+                padding-left: 12px;
+                padding-right: 12px;
+                .slider-wrapper {
+                    border-radius: 5px;
+                    background: $bg-linear;
+                    padding: 30px 40px;
+                    position: relative;
+                    .slider-header {
+                        display: flex;
+                        justify-content: space-between;
+                        .slider-name-user {
+                            @include text(null, 500, 15);
+                            font-family: $font_family-second2;
+                            text-transform: uppercase;
+                            padding: 0 10px;
+                            text-align: center;
+                            margin-left: 90px;
+                            margin-right: 56px;
+                            width: 100%;
+                        }
+                        .slider-img-header {
+                            width: 90px;
+                            height: 90px;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            position: absolute;
+                            top: -34px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .slider-header-icon {
+                            height: 50px;
+                            width: 56px;
+                            position: absolute;
+                            right: 40px;
+                            top: -26px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                    .slider-body {
+                        padding: 24px 0 8px 0;
+                        border-bottom: 1px solid $color-5;
+                        .slider-body-text {
+                            @include text(null, 400, 14);
+                        }
+                    }
+                    .slider-footer {
+                        padding-top: 14px;
+                        .slider-footer-content {
+                            @include text($color-4, 400, 13);
+                            font-family: $font_family-second2;
+                        }
+                    }
+                }
+            }
+            .slick-dots {
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+                margin: 60px 0 0 0;
+            }
+        }
+    }
+    .news-section {
+        background: $bg-linear;
+        padding: 56px 0 100px 0;
+        .news-title {
+            @include text(null, 600, 36);
+            font-family: $font_family-second2;
+            text-transform: uppercase;
+            margin-bottom: 44px;
+        }
+        
+        .news-action {
+            margin: auto;
+            width: fit-content;
+            margin-top: 100px;
+            .news-link {
+                @include text($color-2, 400, 14, true);
+                display: inline-block;
+                &:hover {
+                    background-color: $color-1;
+                    box-shadow: 0px 0px 19px rgba(58, 183, 149, 0.6);
+                    color: $color-2;
+                    circle {
+                        fill: $color-2;
+                    }
+                    path {
+                        stroke: $color-1;
+                    }
+                }
+            }
+        }
+    }
+    .maps-section {
+        .maps-wrapper {
+            display: grid;
+            align-items: center;
+            grid-auto-flow: column;
+            &>* {
+                width: 50%;
+            }
+            .maps-section-info {
+                padding: 16px 0;
+                &>* {
+                    width: 380px;
+                }
+                .maps-name {
+                    @include text($color-6, 400, 28);
+                    font-family: $font_family-second1;
+                }
+                .maps-adress {
+                    @include text($color-6, 700, 20);
+                }
+                .maps-logo {
+                    padding: 26px 0 46px 0;
+                }
+                .maps-text {
+                    @include text($color-6, 500, 15);
+                }
+            }
+            .maps-section-content {
+                height: 100%;
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        } 
+    }
+}
+
+@media (max-width: 991px) {
+    .main-home {
+        .about-section {
+            .about-action {
+                left: -12px;
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .main-home {
+        .maps-section {
+            .maps-wrapper {
+                grid-auto-flow: row;
+                .maps-section-info {
+                    padding-right: var(--bs-gutter-x, 0.75rem);
+                    padding-left: var(--bs-gutter-x, 0.75rem);
+                }
+            }
+            .container-right-full {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .main-home {
+        .services-section {
+            .services-section-text {
+                column-count: 1;
+            }
+        }
+
+        .maps-section {
+            .maps-wrapper {
+                .maps-section-info {
+                    width: 100%;
+                    &>* {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        h2 {
+            font-size: 2rem !important;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .main-home {
+        .reviews-section {
+            .slick-dots {
+                margin: 0 !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .main-home {
+        .option-section {
+            .option-text {
+                width: 100% !important;
+            }
+        }
+    }
+}

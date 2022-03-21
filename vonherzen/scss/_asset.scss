@@ -1,0 +1,657 @@
+.navbar > .container-xxxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navbar > .container-content {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.container-content {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.container-xxxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1780px) {
+  .container-xxxl {
+    max-width: 1720px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container-content {
+    max-width: 1440px !important;
+  }
+}
+
+.btn-type-1 {
+  background-color: transparent;
+  border: 1px solid $color-1;
+  padding: 14px 34px;
+  @include text($color-1, 700, 16);
+  border-radius: 5px;
+  &:hover {
+    background-color: $color-1;
+    color: $color-2;
+  }
+  &:active {
+    background-color: transparent;
+    color: $color-1;
+  }
+}
+
+.btn-type-2 {
+  background-color: $color-1;
+  border: 1px solid $color-1;
+  padding: 14px 34px;
+  @include text($color-2, 700, 16);
+  border-radius: 5px;
+  &:hover {
+    background-color: transparent;
+    color: $color-1;
+  }
+  &:active {
+    background-color: $color-1;
+    color: $color-2;
+  }
+}
+
+.btn-type-3 {
+  background-color: transparent;
+  border: 1px solid $color-3;
+  padding: 14px 34px;
+  @include text($color-3, 500, 14);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &:hover {
+    background-color: $color-3;
+    color: $color-2;
+    path {
+      fill: $color-2;
+      stroke: $color-2;
+    }
+    circle {
+      fill: $color-3;
+    }
+  }
+  &:active {
+    background-color: transparent;
+    color: $color-3;
+    path {
+      fill: $color-3;
+      stroke: $color-3;
+    }
+    circle {
+      fill: $color-2;
+    }
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: -4px;
+  // gap: 4px;
+  margin-bottom: 10px;
+  .breadcrumbs-item {
+    padding: 4px;
+    &::before {
+      content: url(/images/icon/arrow-link.svg);
+      margin-right: 2px;
+    }
+    &:first-child::before {
+      content: "";
+      margin-right: 0;
+    }
+    .breadcrumbs-link {
+      @include text($color-6, 400, 14);
+    }
+  }
+}
+
+.select-label-style {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  label {
+    @include text($color-3, 400, 14);
+    margin-bottom: 6px;
+  }
+  .nice-select {
+    height: $height-input;
+    border-color: $color-4;
+    &::after {
+      border-color: $color-6;
+    }
+    &[data-enable="true"] {
+      .current {
+        @include text($color-3, 400, 14);
+      }
+    }
+    &:active {
+      border-color: $color-1;
+    }
+    &:focus {
+      border-color: $color-1;
+    }
+    .current {
+      line-height: $height-input;
+      overflow: hidden;
+      display: block;
+      text-overflow: ellipsis;
+      @include text($color-6, 400, 14);
+    }
+    .list {
+      width: 100%;
+    }
+    img {
+      width: 28px;
+      height: 20px;
+      border-radius: 2px;
+    }
+  }
+}
+
+.input-radio {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  @include text($color-3, 300, 16);
+  input {
+    margin-right: 4px;
+    cursor: inherit;
+    width: 1rem;
+    height: 1rem;
+    appearance: none;
+    border: 1px solid $color-1;
+    border-radius: 100%;
+    position: relative;
+    &:checked {
+      border: 1px solid $color-1;
+      &::after {
+        content: "";
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 100%;
+        background-color: $color-1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.input-text-type1 {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  @include text($color-3, 400, 14);
+  span {
+    margin-bottom: 6px;
+  }
+  input {
+    width: 100%;
+    height: $height-input;
+    border: 1px solid $color-4;
+    border-radius: 6px;
+    padding: 22px;
+    @include text($color-3, 400, 14);
+    &:focus {
+      border: 1px solid $color-1;
+    }
+    &::placeholder {
+      @include text($color-6, 400, 14);
+    }
+  }
+}
+
+.input-text-type2 {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  @include text($color-3, 400, 14);
+  span {
+    margin-bottom: 6px;
+  }
+  .input-wrapper {
+    height: $height-input;
+    border: 1px solid $color-4;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    transition: .2s;
+    input {
+      padding: 0;
+      @include text($color-3, 400, 14);
+      &::placeholder {
+        @include text($color-6, 400, 14);
+      }
+      width: 100%;
+    }
+    .btn-toggle-pass {
+      flex: 0 0 auto;
+      padding: 6px;
+      margin-right: 12px;
+      &:hover path {
+        fill: $color-1;
+      }
+    }
+    &:focus-within {
+      border: 1px solid $color-1;
+    }
+  }
+}
+
+.input-text-type3 {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  @include text($color-3, 400, 14);
+  span {
+    margin-bottom: 6px;
+  }
+  textarea {
+    width: 100%;
+    border: 1px solid $color-4;
+    border-radius: 6px;
+    padding: 22px;
+    resize: none;
+    @include text($color-3, 400, 14);
+    &:focus {
+      outline: none;
+      border: 1px solid $color-1;
+    }
+    &::placeholder {
+      @include text($color-6, 400, 14);
+    }
+  }
+}
+
+.registration-detail-form-img {
+  max-width: 320px;
+  margin: auto;
+  .img-wrapper {
+      // border: 1px solid $color-6;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 50px;
+      img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+  }
+  .img-action {
+      .form-img-change {
+          input {
+              display: none;
+          }
+          .btn-img-change {
+              padding: 0;
+              display: inline-flex;
+              align-items: baseline;
+              cursor: pointer;
+              transition: .2s;
+              &:hover {
+                  color: $color-1;
+                  path {
+                      fill: $color-1;
+                  }
+              }
+              @include text($color-6, 300, 16);
+              span {
+                  margin-left: 16px;
+              }
+          }
+      }
+  }
+}
+
+.autoresize {
+  max-width: 100%;
+  transition: none;
+}
+
+.card-doctors-item {
+  border-radius: 6px;
+  border: 1px solid $color-4;
+  overflow: hidden;
+  background-color: $color-2;
+  .card-doctors-item-left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .card-doctors-item-left-top {
+      border-bottom: 1px solid $color-4;
+      flex: 1;
+      >.row {
+        height: 100%;
+      }
+      .card-doctors-item-img {
+        width: 100%;
+        height: 100%;
+        max-width: 480px;
+        margin: auto;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .card-doctors-name {
+        @include text($color-3, 700, 24);
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        margin-bottom: 6px;
+      }
+      .card-doctors-description {
+        @include text($color-9, 400, 16);
+      }
+      .card-doctors-information-top {
+        display: flex;
+        margin: 0 -12px;
+        justify-content: end;
+        >* {
+          padding: 0 12px;
+          // padding-top: 0;
+        }
+        .card-doctors-information-top-left {
+          border-right: 1px solid $color-4;
+          .card-doctors-information-star {
+            @include text($color-3, 700, 22);
+            line-height: remTransform(30);
+          }
+          .card-doctors-information-rating {
+            @include text($color-9, 300, 14);
+          }
+        }
+        .card-doctors-information-top-right {
+
+          .card-doctors-information-prices {
+            @include text($color-1, 700, 26);
+            line-height: remTransform(30);
+          }
+          .card-doctors-information-prices-text {
+            @include text($color-1, 300, 14);
+          }
+        }
+      }
+      .card-doctors-information-list {
+        .card-doctors-information-list-item {
+          @include text($color-9, 400, 17);
+          span {
+            @include text($color-3, 700, 17);
+          }
+          position: relative;
+          padding-right: 22px;
+          margin-right: 22px;
+          white-space: nowrap;
+          &:last-child::after {
+            content: none;
+          }
+          &::after {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            background-color: $color-1;
+            display: inline-block;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+          }
+        }
+      }
+      .card-doctors-text {
+        @include text($color-3, 300, 15);
+      }
+    }
+    .card-doctors-item-left-bottom {
+      padding: 20px;
+      border: 5px solid transparent;
+      border-left-color: $color-1;
+      .card-doctors-item-left-bottom-name {
+        @include text($color-3, 600, 16);
+      }
+      .card-doctors-item-left-bottom-candidat {
+        @include text($color-9, 400, 15);
+      }
+    }
+  }
+  .card-doctors-pre-registration {
+    padding: 1.5rem;
+    border-left: 1px solid $color-4;
+    .card-doctors-pre-registration-title {
+      @include text($color-3, 700, 17);
+      margin-bottom: 16px;
+    }
+    .card-doctors-pre-registration-text {
+      display: flex;
+      margin-bottom: 16px;
+      .pre-registration-icon {
+        margin-right: 10px;
+        span {
+          width: 22px;
+          height: 22px;
+          display: block;
+          border: 2px solid $color-3;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .pre-registration-text {
+        @include text($color-3, 400, 13);
+      }
+    }
+    .card-doctors-pre-registration-date {
+      position: relative;
+      .btn-control-date {
+        width: 22px;
+        height: 22px;
+        border: 1px solid $color-4;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: $color-2;
+        svg {
+          margin-bottom: 1px;
+        }
+        &:hover {
+          border-color: $color-1;
+        }
+        &.control-left {
+          left: -10px;
+        }
+        &.control-right {
+          right: -10px;
+        }
+      }
+      .pre-registration-date-wrapper {
+        white-space: nowrap;
+        overflow: auto;
+        border: 1px solid $color-4;
+        border-radius: 6px;
+        text-align: center;
+        &>* {
+          display: inline-block;
+          padding: 10px 20px;
+          text-align: left;
+        }
+        .pre-registration-date {
+          color: $color-3;
+          &.pre-registration-date-active {
+            color: $color-1
+          }
+          .pre-registration-date-header {
+            @include text(inherit, 500, 14);
+          }
+          .pre-registration-date-body {
+            @include text(inherit, 300, 14);
+          }
+        }
+      }
+    }
+    .card-doctors-pre-registration-hours {
+      margin-top: 16px;
+      .pre-registration-hours-content {
+        padding: 12px;
+        border: 1px solid rgba(236, 28, 36, 0.16);
+        border-radius: 6px;
+        text-align: center;
+      }
+      .pre-registration-hours-go {
+        text-align: right;
+        .pre-registration-hours-btn-go {
+          @include text($color-1, 300, 15);
+          padding: 0;
+          span {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .card-doctors-pre-registration-action-btn {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+      justify-content: space-between;
+      .pre-registration-action-left {
+        .pre-registration-action-link {
+          @include text($color-1, 300, 15);
+        }
+      }
+      .pre-registration-action-right {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        .btn-message {
+          padding: 12px 18px;
+          border: 1px solid $color-3;
+          border-radius: 6px;
+          &:hover {
+            background-color: $color-3;
+            path {
+              fill: $color-2;
+              stroke: $color-2;
+            }
+            circle {
+              fill: $color-3;
+            }
+          }
+          &:active {
+            background-color: transparent;
+            path {
+              fill: $color-3;
+              stroke: $color-3;
+            }
+            circle {
+              fill: $color-2;
+            }
+          }
+        }
+        button {
+          font-size: remTransform(14);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .card-doctors-item {
+    .card-doctors-pre-registration {
+      border-left: none;
+      border-top: 1px solid $color-4;
+    }
+  }
+}
+
+.pagination-wrapper {
+  background-color: $color-2;
+  border: 1px solid $color-4;
+  border-radius: 6px;
+  padding: 16px;
+  .pagination {
+    display: flex;
+    justify-content: center;
+    .pagination-action {
+      &:hover path {
+        stroke: $color-3;
+      }
+    }
+    .pagination-list {
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      .pagination-item {
+        padding: 0 8px;
+        .pagination-link {
+          padding: 10px 15px;
+          border-radius: 4px;
+          @include text($color-3, 500, 15);
+          &.active {
+            background-color: $color-1;
+            color: $color-2;
+          }
+          &:hover:not(.active) {
+            color: $color-1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .pagination-wrapper {
+    .pagination {
+      .pagination-list {
+        .pagination-item {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+.navbar > .container-xxxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+.container-content {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.container-xxxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1900px) {
+  .container-xxxl {
+    max-width: 1840px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .container-content {
+    max-width: 1200px;
+  }
+}
+
+.navbar-toggler {
+  box-shadow: none !important;
+  padding-left: 0;
+  padding-right: 0;
+  path {
+    fill: $color-3;
+  }
+  &.collapsed {
+    path {
+      fill: $color-4;
+    }
+    &:hover path {
+      fill: $color-3;
+    }
+  }
+  &:hover path {
+    fill: $color-4;
+  }
+}
+
+.bg-grey {
+  background-color: $color-7;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -4px;
+  .breadcrumbs-item {
+    padding: 4px 4px;
+    &::after {
+      content: "/";
+      @include text($color-4, 300, 13);
+      margin-left: 4px;
+    }
+    &:last-child::after {
+      content: none;
+    }
+    .breadcrumbs-link {
+      @include text($color-4, 300, 13);
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}
+
+.offer-wrapper {
+  margin-top: -94px;
+}
+
+.offer-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  .offer-header-col {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    .offer-header-time {
+      @include text($color-4, 400, 14);
+    }
+    .offer-header-question a {
+      @include text($color-4, 400, 14);
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .offer-header-msg {
+      @include text($color-4, 400, 14);
+    }
+  }
+}
+
+.offer-card {
+  padding: 22px 42px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(15, 65, 86, 0.2);
+  background-color: $color-4;
+  .offer-card-question {
+    @include text($color-1, 400, 14);
+    font-style: italic;
+    margin-bottom: 6px;
+  }
+}
+
+.input-text {
+  @include text($color-1, 300, 14);
+  background: $color-7;
+  border: 1px solid $color-6;
+  box-shadow: inset 0px 4px 4px rgba(15, 65, 86, 0.1);
+  border-radius: 4px;
+  height: 48px;
+  width: 100%;
+  padding: 12px 18px;
+  &:focus {
+    outline: none;
+    border: 1px solid $color-3; 
+  }
+  &::placeholder {
+    @include text($color-8, 300, 14);
+  }
+}
+
+.button-type-1 {
+  @include text($color-4, 500, 16);
+  background-color: $color-3;
+  border: 1px solid $color-3;
+  border-radius: 4px;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 18px;
+  &:hover {
+    background-color: transparent;
+    color: $color-3;
+  }
+  &:active {
+    background-color: $color-3;
+    color: $color-4;
+  }
+}
+
+.input-placeholder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  .input-placeholder-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    pointer-events: none;
+    display: inline-flex;
+    align-items: center;
+    @include text($color-8, 300, 14);
+    .placeholder-required {
+      color: $color-3;
+    }
+  }
+}
+
+.slider-btn {
+  padding: 0;
+  display: none;
+  &.slick-disabled {
+    cursor: initial;
+    opacity: .2 !important;
+  }
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  margin: 0 -6px;
+  li {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: $color-13;
+    margin: 6px;
+    cursor: pointer;
+    transition: .2s;
+    &:hover {
+      background-color: $color-6;
+    }
+    &.slick-active {
+      background-color: $color-14;
+    }
+    button {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@400;600&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Follow Pets</title>
+  </head>
+
+  <body>
+
+    <header class="header-main">
+      <nav class="navbar navbar-light navbar-expand-xl">
+        <div class="container-content">
+          <a href="/" class="navbar-brand">
+            <img src="/images/logo/FollowPets.png" alt="FollowPets-img"/>
+          </a>
+
+          <div class="show-in-mobile">
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="#32A071"
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbar">
+            <div
+              class="m-auto mb-2 mb-lg-0 d-flex align-items-center wrapper-nav justify-content-center"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">О приложении</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Преимущества</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="navbar-action">
+              <select class="select-lang">
+                <option value="Ru">Ru</option>
+                <option value="Ro">Ro</option>
+                <option value="En">En</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-content container-content">
+        <div class="row gy-3">
+          <div class="col-lg-4">
+            <div class="header-content-text"  data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+              <div class="header-content-logo">
+                <img src="/images/logo/FollowPets-Header.png" alt="FollowPets-img">
+              </div>
+              <div class="header-content-text-bold-top">
+                идеальное приложение для всех любителей животных и энтузиастов социальных сетей!
+              </div>
+              <div class="header-content-text-small">
+                In risus est, adipiscing amet in. Elit mi facilisis sit quam blandit in scelerisque. Odio duis aliquam scelerisque massa mi. Tempus suspendisse mauris id commodo sapien, pulvinar eleifend pellentesque eget.
+              </div>
+              <div class="header-content-text-bold-bottom">
+                Загрузите это приложение БЕСПЛАТНО, чтобы сделать уход за вашим питомцем проще и приятнее.
+              </div>
+              <div class="header-content-action">
+                <div class="header-content-action-wrapper">
+                  <a class="header-content-action-link" href="#">
+                    <img src="/images/icon/app-store.png" alt="app-store-img">
+                  </a>
+                </div>
+                <div class="header-content-action-wrapper">
+                  <a class="header-content-action-link" href="#">
+                    <img src="/images/icon/google-play.png" alt="google-play-img">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="header-content-img">
+              <div class="header-content-img-wrapper">
+                <img src="/images/bg/img-header-1.png" alt="img-header">
+              </div>
+              <div class="header-content-img-wrapper">
+                <img src="/images/bg/img-header-2.png" alt="img-header">
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </header>
+
+    <main class="home-main">
+        <section class="section_1-home">
+          <div class="container-content">
+            <div class="row">
+              <div class="col-xl-6">
+                <div class="container-img-section_1">
+                  <img class="img-section_1-1" src="/images/bg/img-bg-main-1-1.png" alt="img-main">
+                  <img class="img-section_1-2" src="/images/bg/img-bg-main-1-3.png" alt="img-main">
+                  <img class="img-section_1-3" src="/images/bg/img-bg-main-1-2.png" alt="img-main">
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="container-text-section_1">
+                  <h2 class="text-section_1-title">
+                    Делитесь интересными постами с домашними животными
+                  </h2>
+                  <div class="text-section_1-detail">
+                    Делитесь интересными постами с домашними животными
+                  </div>
+                  <ul class="section_1-list">
+                    <li class="section_1-item" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                      Создавайте посты используя текст, фотографии или видео.
+                    </li>
+                    <li class="section_1-item" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"  data-aos-delay="100">
+                      Подписывайтесь и следите за другими интересными аккаунтами
+                    </li>
+                    <li class="section_1-item" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"  data-aos-delay="200">
+                      Комментируйте, лайкайте, а также получайте лайки и комментарии за свои посты
+                    </li>
+                    <li class="section_1-item" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"  data-aos-delay="300">
+                      Делитесь понравившимися постами
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="section_2-home">
+          <div class="container-content">
+            <div class="row">
+              <div class="col-xl-6">
+                <div class="container-text-section_2">
+                  <h2 class="text-section_1-title">
+                    Делитесь интересными постами с домашними животными
+                  </h2>
+                  <div class="text-section_1-detail">
+                    Делитесь интересными постами с домашними животными
+                  </div>
+                  <ul class="section_1-list">
+                    <li class="section_1-item" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                      Создавайте посты используя текст, фотографии или видео.
+                    </li>
+                    <li class="section_1-item" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="100">
+                      Подписывайтесь и следите за другими интересными аккаунтами
+                    </li>
+                    <li class="section_1-item" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200">
+                      Комментируйте, лайкайте, а также получайте лайки и комментарии за свои посты
+                    </li>
+                    <li class="section_1-item" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300">
+                      Делитесь понравившимися постами
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="section_2-img">
+                  <img src="/images/bg/img-bg-main-2-1.png" alt="img-section">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="section_3-home">
+          <div class="container-content">
+            <div class="row">
+              <div class="col-xl-6">
+                <div class="section_3-img">
+                  <!-- <div class="phone-section">
+                    <img src="images/bg/phone_3.png" alt="img-phone">
+                  </div> -->
+                  <img class="section_3-img-1" src="/images/bg/img-bg-main-3-1.png" alt="img-main">
+                  <img class="section_3-img-2" src="/images/bg/img-bg-main-3-2.png" alt="img-main">
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="container-text-section_3">
+                  <h2 class="text-section_1-title" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    Находите людей рядом с вами, находи новых друзей по интересам
+                  </h2>
+                  <div data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                  <p class="text-section_1-detail">
+                    С <b>Follow Pets</b> вы сможете просматривать других местных домашних животных, обмениваться опытом с другими владельцами домашних животных, загружать милые фотографии и видео, устраивать свидания с домашними животными и многое другое!
+                  </p>
+                  <p class="text-section_1-detail">
+                    Это приложение позволяет пользователям общаться с сообществом людей, которые любят домашних животных и заботятся о них, и позволяет им создавать профили для своих питомцев, чтобы они могли делиться сообщениями со своей точки зрения, взаимодействовать с другими сообщениями, связанными с домашними животными, и находить людей вокруг них, которые делятся их же интересы.
+                  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <div class="section-content-normal">
+          <div class="container-content">
+            <section class="section_4-home">
+              <h2 class="text-section_1-title">
+                Преимущества нашего использования приложения
+              </h2>
+              <div class="row gy-4">
+                <div class="col-xl-3 col-md-6">
+                  <div class="section_4-home-card" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <div class="section-card-header">
+                      <img src="/images/upload/img-section-1.png" alt="img-section">
+                    </div>
+                    <div class="section-card-title">
+                      Делитесь интересными
+                    </div>
+                    <div class="section-card-text">
+                      Множество положительных отзывов и эмоций.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                  <div class="section_4-home-card" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="100">
+                    <div class="section-card-header">
+                      <img src="/images/upload/img-section-2.png" alt="img-section">
+                    </div>
+                    <div class="section-card-title">
+                      Делитесь интересными
+                    </div>
+                    <div class="section-card-text">
+                      Создавайте посты используя текст, фотографии или видео, делитесь интересными постами с домашними животными.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                  <div class="section_4-home-card" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200">
+                    <div class="section-card-header">
+                      <img src="/images/upload/img-section-3.png" alt="img-section">
+                    </div>
+                    <div class="section-card-title">
+                      Делитесь интересными
+                    </div>
+                    <div class="section-card-text">
+                      Создавайте посты используя текст, фотографии или видео.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                  <div class="section_4-home-card" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300">
+                    <div class="section-card-header">
+                      <img src="/images/upload/img-section-4.png" alt="img-section">
+                    </div>
+                    <div class="section-card-title">
+                      Делитесь интересными
+                    </div>
+                    <div class="section-card-text">
+                      Создавайте посты используя текст, фотографии или видео.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+  
+            <section class="section_5-home">
+              <h2 class="text-section_1-title">
+                Приложение пользуются более 10 000 человек
+              </h2>
+  
+              <p class="section_5-home-text">
+                In risus est, adipiscing amet in. Elit mi facilisis sit quam blandit in scelerisque. Odio duis aliquam scelerisque massa mi. Tempus suspendisse mauris id commodo sapien, pulvinar eleifend pellentesque eget.
+              </p>
+  
+              <div class="slider-wrapper">
+                <div class="section_5-slider" id="sliderSection5">
+                  <div class="slider-item">
+                    <div class="slider-content">
+                      <div class="slider-img">
+                          <img src="/images/upload/img-slider-1.png" alt="img-slider">
+                      </div>
+                      <div class="slider-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                      </div>
+                      <div class="slider-name">
+                        Егор Кюрджиев
+                      </div>
+                      <div class="slider-date">
+                        26 октября 2021 г.
+                      </div>
+                      <p class="slider-text">
+                        Большое спасибо, за заботу о нас - петоводах.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="slider-content">
+                      <div class="slider-img">
+                          <img src="/images/upload/img-slider-2.png" alt="img-slider">
+                      </div>
+                      <div class="slider-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                      </div>
+                      <div class="slider-name">
+                        Егор Кюрджиев
+                      </div>
+                      <div class="slider-date">
+                        26 октября 2021 г.
+                      </div>
+                      <p class="slider-text">
+                        Приложение очень хорошее👍🏻 Все очень понятно и интересно! Follow Pets подходят как для детей, так и для взрослых. Есть администрация, которой можно задавать вопросы. Примерно через месяц питомец становится популярным.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="slider-content">
+                      <div class="slider-img">
+                          <img src="/images/upload/img-slider-3.png" alt="img-slider">
+                      </div>
+                      <div class="slider-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                      </div>
+                      <div class="slider-name">
+                        Егор Кюрджиев
+                      </div>
+                      <div class="slider-date">
+                        26 октября 2021 г.
+                      </div>
+                      <p class="slider-text">
+                        Хорошее приложение. Большое спасибо от моей собаки.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="slider-content">
+                      <div class="slider-img">
+                          <img src="/images/upload/img-slider-4.png" alt="img-slider">
+                      </div>
+                      <div class="slider-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                      </div>
+                      <div class="slider-name">
+                        Егор Кюрджиев
+                      </div>
+                      <div class="slider-date">
+                        26 октября 2021 г.
+                      </div>
+                      <p class="slider-text">
+                        Приложение очень хорошее👍🏻 Все очень понятно и интересно! Follow Pets подходят как для детей, так и для взрослых. Есть администрация, которой можно задавать вопросы. Примерно через месяц питомец становится популярным.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="slider-content">
+                      <div class="slider-img">
+                          <img src="/images/upload/img-slider-1.png" alt="img-slider">
+                      </div>
+                      <div class="slider-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                        <img src="/images/icon/star.svg" alt="img-star">
+                      </div>
+                      <div class="slider-name">
+                        Егор Кюрджиев
+                      </div>
+                      <div class="slider-date">
+                        26 октября 2021 г.
+                      </div>
+                      <p class="slider-text">
+                        Большое спасибо, за заботу о нас - петоводах.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-btns">
+                  <button class="btn-slider prev-btn">
+                    <img src="/images/icon/prev-btn.svg" alt="btn-slider">
+                  </button>
+                  <div class="dots-slider" id="dotsSlider">
+                    <!-- Dots JS -->
+                  </div>
+                  <button class="btn-slider next-btn">
+                    <img src="/images/icon/next-btn.svg" alt="btn-slider">
+                  </button>
+                </div>
+              </div>
+              
+            </section>
+          </div>
+        </div>
+  
+        <section class="section_6-home">
+          <div class="container-content">
+            <div class="row">
+              <div class="col-xl-6 order-1 order-xl-0">
+                <div class="section_6-img">
+                  <img src="/images/bg/img-bg-main-6-1.png" alt="img-phone">
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="section_6-text" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                  <h2 class="section_6-title">
+                    Приложение доступно на платформах Android И IOS
+                  </h2>
+                  <div class="section_6-text-content">
+                    Загрузите это приложение БЕСПЛАТНО, чтобы сделать уход за вашим питомцем проще и приятнее.
+                  </div>
+                  <div class="section_6-content-action">
+  
+                      <div class="section_6-content-action-wrapper">
+                        <a class="section_6-content-action-link" href="#">
+                          <img src="/images/icon/app-store.png" alt="app-store-img">
+                        </a>
+                      </div>
+  
+                      <div class="section_6-content-action-wrapper">
+                        <a class="section_6-content-action-link" href="#">
+                          <img src="/images/icon/google-play.png" alt="google-play-img">
+                        </a>
+                      </div>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer-main">
+          <div class="container-content">
+            <div class="footer-content">
+              <div class="footer-policy">
+                Политика конфиденциальности
+              </div>
+              <div class="footer-social">
+                <a class="footer-social-link-fb" href="#">
+                  <img src="/images/icon/facebook.svg" alt="social-img">
+                </a>
+                <a class="footer-social-link-instagram" href="#">
+                  <img src="/images/icon/instagram.svg" alt="social-img">
+                </a>
+              </div>
+              <div class="footer-copyright">
+                <div class="footer-copyright-develop">
+                  develop by
+                </div>
+                <div class="footer-copyright-logo">
+                  <span>
+                    Studio WebMaster, 2021
+                  </span>
+                  <img src="/images/logo/WebMasterStudio.png" alt="logo-ws">
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/lib/nice-select/jquery.js"></script> 
+    <script src="/lib/nice-select/jquery.nice-select.js"></script> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/selectStyle.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

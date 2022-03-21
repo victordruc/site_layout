@@ -1,0 +1,265 @@
+.develop-section {
+    .development-time {
+        padding: 50px 0;
+        background-color: $color-7;
+        overflow: auto;
+        .development-time-title {
+            @include text($color-6, 500, 26);
+            margin: 0;
+        }
+        .development-time-info {
+            text-align: right;
+            .development-time-info-text {
+                @include text($color-28, 300, 13);
+            }
+            .development-time-days {
+                @include text($color-6, 500, 26);
+            }
+        }
+        table {
+            min-width: 680px;
+        }
+        table:first-child {
+            border-bottom: 1px solid $color-19;
+            td {
+                padding-bottom: 20px;
+            }
+        }
+        table:last-child {
+            margin-top: 50px;
+            tr:first-child {
+                .chart-design-wrapper .chart-design {
+                    border-right: none;
+                    border-left: none;
+                }
+            }
+            tr .chart-design-wrapper {
+                .chart-design:last-child {
+                    border-right: none;
+                }
+            }
+            tr:nth-child(1) .chart-design-wrapper .chart-design:nth-child(1)::before {
+                content: "";
+                width: 100%;
+                background-color: $color-8;
+                position: absolute;
+            }
+
+            tr:nth-child(3) .chart-design-wrapper .chart-design:nth-child(2)::before {
+                content: "";
+                width: 60%;
+                background-color: $color-8;
+                position: absolute;
+            }
+            tr:nth-child(4) .chart-design-wrapper .chart-design:nth-child(3)::before {
+                content: "";
+                background-color: $color-8;
+                position: absolute;
+                left: -40%;
+                width: 140%;
+            }
+            tr:nth-child(6) .chart-design-wrapper .chart-design:nth-child(4)::before {
+                content: "";
+                background-color: $color-8;
+                position: absolute;
+                left: 0;
+                width: 200%;
+            }
+            tr:nth-child(7) .chart-design-wrapper .chart-design:nth-child(6)::before {
+                content: "";
+                background-color: $color-8;
+                position: absolute;
+                left: 0;
+                width: 340%;
+            }
+            tr:nth-child(8) .chart-design-wrapper .chart-design:nth-child(9)::before {
+                content: "";
+                background-color: $color-8;
+                position: absolute;
+                right: 0;
+                width: 60%;
+            }
+            tr:nth-child(10) .chart-design-wrapper .chart-design:nth-child(10)::before {
+                content: "";
+                background-color: $color-8;
+                position: absolute;
+                left: 0;
+                width: 100%;
+            }
+
+            tr:nth-child(1) .chart-design-wrapper .chart-design:nth-child(1)::after {
+                content: "";
+                width: 100%;
+                height: 32%;
+                bottom: 0;
+                left: 0px;
+                border-right: 1px dashed #2aa859;
+                position: absolute;
+            }
+
+            tr:nth-child(1) .chart-design-wrapper .chart-design:nth-child(3)::after {
+                content: "";
+                width: 100%;
+                height: 32%;
+                bottom: 0;
+                left: 1px;
+                border-right: 1px dashed #2aa859;
+                position: absolute;
+            }
+
+            tr:nth-child(1) .chart-design-wrapper .chart-design:nth-child(9)::after {
+                content: "";
+                width: 100%;
+                height: 32%;
+                bottom: 0;
+                left: 1px;
+                border-right: 1px dashed #2aa859;
+                position: absolute;
+            }
+
+            tr:nth-child(10) .chart-design-wrapper .chart-design:nth-child(1)::after {
+                content: "";
+                width: 100%;
+                height: 32%;
+                bottom: -32%;
+                left: 1px;
+                border-right: 1px dashed #2aa859;
+                position: absolute;
+            }
+
+            tr:nth-child(10) .chart-design-wrapper .chart-design:nth-child(3)::after {
+                content: "";
+                width: 100%;
+                height: 32%;
+                bottom: -32%;
+                left: 2px;
+                border-right: 1px dashed #2aa859;
+                position: absolute;
+            }
+
+            tr:nth-child(10) .chart-design-wrapper .chart-design:nth-child(9)::after {
+                content: "";
+                width: 100%;
+                height: 32%;
+                bottom: -32%;
+                left: 2px;
+                border-right: 1px dashed #2aa859;
+                position: absolute;
+            }
+
+        }
+        .development-time-progress-item {
+            @include text($color-6, 500, 15);
+            padding: 6px 0;
+        }
+        .chart-design-wrapper {
+            display: flex;
+            .chart-design {
+                width: calc(92% / 8);
+                border-bottom: 1px solid #e3e3e3;
+                border-right: 1px solid #e3e3e3;
+                height: 106%;
+                position: relative;
+                &:first-child {
+                    width: 4%;
+                    border-right: 1px dashed #2aa859;
+                }
+                &:last-child {
+                    width: 4%;
+                    border-left: 1px dashed #2aa859;
+                }
+                &:nth-child(4) {
+                    border-left: 1px dashed #2aa859;
+                }
+                &::before {
+                    height: 4px;
+                    bottom: 0;
+                    z-index: 1;
+                }
+            }
+        }
+        .point-chart {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+            @include text($color-6, 400, 13);
+            .point-chart-info {
+                display: flex;
+                align-items: center;
+            }
+            .point-chart-wrapper:first-child .point-chart-info::before {
+                content: "";
+                display: inline-block;
+                width: 1rem;
+                height: 1rem;
+                background-color: $color-8;
+                border-radius: 100%;
+                margin-right: 6px;
+            }
+            .point-chart-wrapper:last-child .point-chart-info::after {
+                content: "";
+                display: inline-block;
+                width: 1rem;
+                height: 1rem;
+                background-color: $color-8;
+                border-radius: 100%;
+                margin-left: 6px;
+            }
+        }
+        .chart-text-bottom-alert {
+            @include text($color-10, 300, 13);
+            padding-top: 20px;
+        }
+    }
+    .slider-content-work {
+        .slider-work-title {
+            @include text($color-6, 500, 26);
+        }
+        .table-top-slider {
+            width: 100%;
+            background-color: $color-7;
+            margin-top: 40px;
+            .table-top-slider-content {
+                padding-left: 20px;
+                .table-top-slider-number {
+                    @include text($color-6, 500, 28);
+                }
+                .table-top-slider-text {
+                    @include text($color-6, 400, 14);
+                }
+            }
+        }
+        .table-bottom-slider {
+            width: 100%;
+            margin-top: 40px;
+            .table-bottom-wrapper-content {
+                box-shadow: 0px 0px 17px 0px rgba(0,0,1,0.05);
+                padding: 20px;
+                .table-bottom-title {
+                    @include text($color-12, 500, 30);
+                }
+                .table-bottom-sub_title {
+                    @include text($color-3, 400, 16);
+                    background-color: $color-8;
+                    padding: 4px 10px;
+                    text-transform: uppercase;
+                    width: fit-content;
+                }
+                .table-bottom-img-wrapper {
+                    margin-top: 24px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    .partners-site {
+        &>* {
+            margin: 20px auto;
+        }
+    }
+}

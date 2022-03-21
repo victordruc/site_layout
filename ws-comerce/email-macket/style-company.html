@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en" style="--font_family: 'Roboto', sans-serif; --font_family-1: 'Oswald', sans-serif; --color-1: #1a1b1e; --color-2: #0983b7; --color-3: #ffffff; --color-4: #078fc9; --color-5: #1a1a1a; --color-6: #2a2a2a; --color-7: #f7f7f7; --color-8: #0c9bd8; --color-9: #e7e7e7; --color-10: #eb0808; --color-11: #ebebeb; --color-12: #000000; --color-13: #2d2d2d; --color-14: #0f0f0f; --color-15: #585858; --color-16: #484848; --color-17: #282828; --color-18: #616161; --color-19: #e5e5e5; --color-20: #3f3f3f; --color-21: #1d1d1d; --color-22: #606060; --color-23: #191919; --color-24: #ededed; --color-25: #1a1a1a; --color-26: #b51313; --color-27: #111111; --color-28: #414141; --width-nav: 290px; --widthNav: 290px;">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <title>WS</title>
+<style>
+@media (min-width: 1780px) {
+  .container-xxxl {
+    max-width: 1720px;
+  }
+}
+@media (min-width: 1260px) {
+  .container-content {
+    max-width: 1200px !important;
+  }
+}
+@media (min-width: 1260px) {
+  .container-left {
+    max-width: calc(100% - var(--width-nav)) !important;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 58.33333333% !important;
+  }
+}
+@media (max-width: 1259px) {
+  .navbar-wrapper {
+    left: -290px;
+  }
+
+  .navbar-wrapper.opened {
+    width: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+
+  .navbar-wrapper .toggle-nav {
+    display: inline-block !important;
+  }
+}
+@media (max-width: 380px) {
+  .navbar-wrapper.opened .toggle-nav {
+    left: 236px;
+    border-radius: 0 6px 6px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .main-content .slider-content .slider-right {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    -webkit-box-pack: end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+    opacity: .5;
+    left: -12px;
+  }
+}
+@media (max-width: 500px) {
+  .remarketing-section .remarketing-type-example {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+  </head>
+  <body style="font-family: 'Roboto', sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box;">
+    <div class="navbar-wrapper" style="position: fixed; height: 100vh; z-index: 200; -webkit-transition: .6s; transition: .6s;">
+      <nav class="navigation-panel" style="width: 290px; padding: 40px 20px; background-color: #1a1b1e; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;">
+        <div class="navigation-panel-logo">
+          <a class="navigation-panel-logo-link" href="#" style="text-decoration: none; -webkit-transition: .2s; transition: .2s;">
+            <img src="/images/logo/logo.svg" alt="logo-ws">
+          </a>
+        </div>
+
+        <ul class="navigation-list" style="list-style: none; padding: 0; margin: 20px 0; margin-top: 60px; overflow-y: auto;">
+          <li class="navigation-item" style="padding: 4px 0; padding-right: 4px;">
+            <a class="navigation-link active" href="#" style="text-decoration: none; -webkit-transition: .2s; transition: .2s; font-size: 0.8125rem; text-transform: uppercase; opacity: .8; padding: 6px 0; color: #0983b7; font-weight: 300;">
+              Коммерческое предложение
+            </a>
+          </li>
+          <li class="navigation-item" style="padding: 4px 0; padding-right: 4px;">
+            <a class="navigation-link" href="#" style="text-decoration: none; -webkit-transition: .2s; transition: .2s; color: #ffffff; font-weight: 500; font-size: 0.8125rem; text-transform: uppercase; opacity: .8; padding: 6px 0;">
+              Предварительный анализ сайта
+            </a>
+          </li>
+          <li class="navigation-item" style="padding: 4px 0; padding-right: 4px;">
+            <a class="navigation-link" href="#" style="text-decoration: none; -webkit-transition: .2s; transition: .2s; color: #ffffff; font-weight: 500; font-size: 0.8125rem; text-transform: uppercase; opacity: .8; padding: 6px 0;"> Возможные условия работы </a>
+          </li>
+          <li class="navigation-item" style="padding: 4px 0; padding-right: 4px;">
+            <a class="navigation-link" href="#" style="text-decoration: none; -webkit-transition: .2s; transition: .2s; color: #ffffff; font-weight: 500; font-size: 0.8125rem; text-transform: uppercase; opacity: .8; padding: 6px 0;"> проектная команда </a>
+          </li>
+          <li class="navigation-item" style="padding: 4px 0; padding-right: 4px;">
+            <a class="navigation-link" href="#" style="text-decoration: none; -webkit-transition: .2s; transition: .2s; color: #ffffff; font-weight: 500; font-size: 0.8125rem; text-transform: uppercase; opacity: .8; padding: 6px 0;"> кейсы </a>
+          </li>
+          <li class="navigation-item" style="padding: 4px 0; padding-right: 4px;">
+            <a class="navigation-link" href="#" style="text-decoration: none; -webkit-transition: .2s; transition: .2s; color: #ffffff; font-weight: 500; font-size: 0.8125rem; text-transform: uppercase; opacity: .8; padding: 6px 0;"> отзывы клиентов </a>
+          </li>
+          <li class="navigation-item" style="padding: 4px 0; padding-right: 4px;">
+            <a class="navigation-link" href="#" style="text-decoration: none; -webkit-transition: .2s; transition: .2s; color: #ffffff; font-weight: 500; font-size: 0.8125rem; text-transform: uppercase; opacity: .8; padding: 6px 0;"> достижения </a>
+          </li>
+          <li class="navigation-item" style="padding: 4px 0; padding-right: 4px;">
+            <a class="navigation-link" href="#" style="text-decoration: none; -webkit-transition: .2s; transition: .2s; color: #ffffff; font-weight: 500; font-size: 0.8125rem; text-transform: uppercase; opacity: .8; padding: 6px 0;"> доп. услуги </a>
+          </li>
+        </ul>
+
+        <div class="navigation-manager" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: auto auto 0 0;">
+          <div class="navigation-manager-photo" style="width: 60px; height: 60px; border-radius: 100%; overflow: hidden; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto;">
+            <img src="/images/upload/manager.png" alt="manager-png" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+          </div>
+
+          <div class="navigation-manager-info" style="margin-left: 20px;">
+            <div class="manager-name" style="color: #ffffff; font-weight: 400; font-size: 0.875rem;">Игорь</div>
+            <div class="manager-phone">
+              <a href="tel:+37360106666" style="text-decoration: none; -webkit-transition: .2s; transition: .2s; color: #ffffff; font-weight: 300; font-size: 0.8125rem;">+(373) 60-10-6666</a>
+            </div>
+            <div class="manager-mail">
+              <a href="mailto:manager@webmaster.md" style="-webkit-transition: .2s; transition: .2s; color: #078fc9; font-weight: 300; font-size: 0.8125rem; text-decoration: underline;">manager@webmaster.md</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <button class="toggle-nav" style="border: none; -webkit-transition: .2s; transition: .2s; position: absolute; background-color: #1a1b1e; padding: 10px; left: 290px; top: 30px; border-radius: 0 6px 6px 0; display: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16" style="-webkit-transition: .2s; transition: .2s;">
+          <path fill="white" fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" style="-webkit-transition: .2s; transition: .2s;"/>
+        </svg>
+      </button>
+    </div>
+
+    <main class="container-left main-content packing-label-section style-company" style="width: 100%; margin-right: auto; margin-left: auto; position: relative; z-index: 1;">
+      <section class="internal-optimization" style="padding: 40px 0; overflow: auto;">
+        <table class="container-content" style="width: 100%; padding-right: var(--bs-gutter-x, 0.75rem); padding-left: var(--bs-gutter-x, 0.75rem); margin-right: auto; margin-left: auto; position: relative; z-index: 1; border-collapse: initial;" width="100%">
+          <tr class="row">
+            <td class="col-xl-4">
+              <div class="internal-optimization-info" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; height: 100%;">
+                <div class="number-optimization" style="background-color: #1a1b1e; padding: 4px 12px; color: #ffffff; font-weight: 400; font-size: 1rem; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content;">№ 125</div>
+                <div class="internal-optimization-text-type1" style="color: #1a1a1a; font-weight: 500; font-size: 1.125rem; margin-top: 10px;">
+                  Коммерческое предложение
+                </div>
+                <div class="internal-optimization-text-type2" style="color: #2a2a2a; font-weight: 500; font-size: 2.25rem; margin-top: 50px; line-height: 2.75rem;">
+                  Разработка брендинга для компании
+                </div>
+                <div class="internal-optimization-text-type2-primary" style="color: #078fc9; font-weight: 500; font-size: 2.25rem;">
+                  Business Logic
+                </div>
+                <div class="internal-optimization-bottom" style="margin: auto auto 0 0; padding-top: 20px;">
+                  <div class="internal-optimization-text-type3" style="color: #2a2a2a; font-weight: 500; font-size: 1.125rem;">
+                    Условия оплаты:
+                  </div>
+                  <div class="internal-type-price" style="color: #2a2a2a; font-weight: 400; font-size: 0.9375rem;">
+                    <span style="color: #2a2a2a; font-weight: 500; font-size: 1.1875rem; font-family: 'Oswald', sans-serif;">100 %</span> - после подписания договора
+                  </div>
+                  <div class="internal-optimization-text-type4" style="color: #2a2a2a; font-weight: 300; font-size: 1rem; font-style: italic; padding-bottom: 40px; margin-top: 30px;">
+                    Взависимости от выбранного пакета условия оплаты могут быть пересмотрены
+                  </div>
+
+                  <div class="internal-download-action" style="padding-bottom: 30px;">
+                    <a class="download-action-link" href="#" style="-webkit-transition: .2s; transition: .2s; color: #2a2a2a; font-weight: 500; font-size: 1.125rem; text-decoration: underline; -webkit-text-decoration-color: #0c9bd8; text-decoration-color: #0c9bd8; text-decoration-thickness: 4px; text-underline-position: under;">
+                      Скачать pdf таблицы
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="col-xl-8">
+              <div class="internal-optimization-card" style="-webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 1, 0.02); box-shadow: 0px 0px 32px 10px rgba(0, 0, 1, 0.02); padding: 20px; border-radius: 10px;">
+                <div class="internal-optimization-card-scroll" style="max-height: 616px; overflow-y: auto;">
+                  <div class="internal-optimization-card-body" style="overflow-x: auto;">
+                    <table class="table table-type-2" style="min-width: 560px; margin: 0;">
+                      <tbody style="border: none;">
+                        <tr>
+                          <td colspan="3" class="table-section-divider" style="color: #1a1a1a; font-weight: 500; font-size: 1.125rem; background-color: #f7f7f7; padding: 20px; padding-left: 20px; padding-right: 20px; border-right: none; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top; width: 64%;" width="64%" bgcolor="#f7f7f7" align="left" valign="top">
+                            <div class="table-section-divider-text">
+                              Разработка логотипа
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding: 6px 20px; padding-left: 20px; padding-right: 20px; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top; width: 64%;" width="64%" align="left" valign="top">
+                            <div class="section-tabel-text-bold" style="color: #000000; font-weight: 500; font-size: 0.9375rem;">
+                              Разработка 3 вариантов
+                            </div>
+                            <div class="section-tabel-text-small" style="color: #606060; font-weight: 300; font-size: 0.875rem;">
+                              с последующей доработкой выбранного варианта
+                            </div>
+                          </td>
+                          <td style="padding: 6px 20px; padding-left: 20px; padding-right: 20px; border-right: none; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top;" align="left" valign="top">
+                            <div class="style-company-text-small-info" style="color: #2a2a2a; font-weight: 300; font-size: 0.875rem;">
+                              Стоимость (euro):
+                            </div>
+                            <div class="section-tabel-price" style="color: #2a2a2a; font-weight: 500; font-size: 1.25rem;">
+                              180
+                              <span class="section-tabel-price-important" style="color: #eb0808;">*</span>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding: 6px 20px; padding-left: 20px; padding-right: 20px; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top; width: 64%;" width="64%" align="left" valign="top">
+                            <div class="style-company-text-small-important" style="color: #eb0808; font-weight: 300; font-size: 0.875rem;">
+                              В данную стоимость входит разработка 3х вариантов логотипа. 
+                              Каждый дополнительный вариант разработки логотипа оплачивается отдельно. Его стоимось составляет 50 euro.
+                            </div>
+                          </td>
+                          <td style="padding: 6px 20px; padding-left: 20px; padding-right: 20px; border-right: none; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top;" align="left" valign="top">
+                            <div class="style-company-text-small-info" style="color: #2a2a2a; font-weight: 300; font-size: 0.875rem;">
+                              Сроки (дни):
+                            </div>
+                            <div class="section-tabel-price" style="color: #2a2a2a; font-weight: 500; font-size: 1.25rem;">
+                              5-7
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td colspan="3" class="table-section-divider" style="color: #1a1a1a; font-weight: 500; font-size: 1.125rem; background-color: #f7f7f7; padding: 20px; padding-left: 20px; padding-right: 20px; border-right: none; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top; width: 64%;" width="64%" bgcolor="#f7f7f7" align="left" valign="top">
+                            <div class="table-section-divider-text">
+                              Фирменный стиль
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding: 6px 20px; padding-left: 20px; padding-right: 20px; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top; width: 64%;" width="64%" align="left" valign="top">
+                            <div class="section-tabel-text-bold" style="color: #000000; font-weight: 500; font-size: 0.9375rem;">
+                              Визитная карточка 
+                            </div>
+                            <div class="section-tabel-text-small" style="color: #606060; font-weight: 300; font-size: 0.875rem;">
+                              разработка 2х вариантов дизайна
+                            </div>
+                          </td>
+                          <td style="padding: 6px 20px; padding-left: 20px; padding-right: 20px; border-right: none; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top;" align="left" valign="top">
+                            <div class="style-company-text-small-info" style="color: #2a2a2a; font-weight: 300; font-size: 0.875rem;">
+                              Стоимость (euro):
+                            </div>
+                            <div class="section-tabel-price" style="color: #2a2a2a; font-weight: 500; font-size: 1.25rem;">
+                              180
+                              <span class="section-tabel-price-important" style="color: #eb0808;">*</span>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding: 6px 20px; padding-left: 20px; padding-right: 20px; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top; width: 64%;" width="64%" align="left" valign="top">
+                            <div class="section-tabel-text-bold" style="color: #000000; font-weight: 500; font-size: 0.9375rem;">
+                              Конверт
+                            </div>
+                            <div class="section-tabel-text-small" style="color: #606060; font-weight: 300; font-size: 0.875rem;">
+                              размер Е65
+                            </div>
+                          </td>
+                          <td style="padding: 6px 20px; padding-left: 20px; padding-right: 20px; border-right: none; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top;" align="left" valign="top">
+                            <div class="style-company-text-small-info" style="color: #2a2a2a; font-weight: 300; font-size: 0.875rem;">
+                              Сроки (дни):
+                            </div>
+                            <div class="section-tabel-price" style="color: #2a2a2a; font-weight: 500; font-size: 1.25rem;">
+                              5-7
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding: 6px 20px; padding-left: 20px; padding-right: 20px; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top; width: 64%;" width="64%" align="left" valign="top">
+                            <div class="section-tabel-text-bold" style="color: #000000; font-weight: 500; font-size: 0.9375rem;">
+                              Фирменный бланк
+                            </div>
+                          </td>
+                          <td style="padding: 6px 20px; padding-left: 20px; padding-right: 20px; border-right: none; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top;" align="left" valign="top">
+                            
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding: 6px 20px; padding-left: 20px; padding-right: 20px; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top; width: 64%;" width="64%" align="left" valign="top">
+                            <div class="section-tabel-text-bold" style="color: #000000; font-weight: 500; font-size: 0.9375rem;">
+                              Папка
+                            </div>
+                          </td>
+                          <td style="padding: 6px 20px; padding-left: 20px; padding-right: 20px; border-right: none; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top;" align="left" valign="top">
+                            
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding: 6px 20px; padding-left: 20px; padding-right: 20px; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top; width: 64%;" width="64%" align="left" valign="top">
+                            <div class="section-tabel-text-bold" style="color: #000000; font-weight: 500; font-size: 0.9375rem;">
+                              Пакет
+                            </div>
+                          </td>
+                          <td style="padding: 6px 20px; padding-left: 20px; padding-right: 20px; border-right: none; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top;" align="left" valign="top">
+                            
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td colspan="3" class="table-section-divider" style="color: #1a1a1a; font-weight: 500; font-size: 1.125rem; background-color: #f7f7f7; padding: 20px; padding-left: 20px; padding-right: 20px; border-right: none; border-bottom: none; border-left: 1px solid #f7f7f7; border: none; text-align: left; vertical-align: top; width: 64%;" width="64%" bgcolor="#f7f7f7" align="left" valign="top">
+                            <div class="table-section-divider-text">
+                              Руководство по использованию логотипа и фирменного стиля:
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="internal-optimization-card-footer">
+                  <div class="internal-optimization-footer-primary" style="display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; background-color: #0c9bd8; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 18px 0; color: #ffffff; font-weight: 500; font-size: 1.25rem;">
+                    <div class="internal-optimization-footer-text" style="padding: 2px 20px;">
+                      Итоговая стоимость:
+                    </div>
+                    <div class="internal-optimization-footer-text" style="padding: 2px 20px;">
+                      <span class="internal-optimization-footer-price" style="text-transform: uppercase; font-size: 1.5rem;">1 200 euro</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="packing-label-files" style="overflow: hidden; padding: 50px 0; background-color: #f7f7f7;">
+        <div class="container-content" style="width: 100%; padding-right: var(--bs-gutter-x, 0.75rem); padding-left: var(--bs-gutter-x, 0.75rem); margin-right: auto; margin-left: auto; position: relative; z-index: 1; border-collapse: initial;">
+          <h2 class="packing-label-files-title" style="color: #2a2a2a; font-weight: 500; font-size: 1.625rem; text-align: center; margin-bottom: 30px;">
+            Файлы, которые предоставляются клиенту
+          </h2>
+          <table style="width: 100%;">
+            <tr class="row gy-3">
+              <td class="col-md-6">
+                <div class="packing-label-files-content" style="display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0 -10px;">
+                  <div class="packing-label-files-img" style="padding: 0 10px;">
+                    <img src="/images/upload/img_files_1.png" alt="img_files" style="width: 64px; height: 64px;" width="64" height="64">
+                  </div>
+                  <div class="packing-label-files-text" style="padding: 0 10px;">
+                    <div class="packing-label-files-text-top" style="padding-bottom: 30px;">
+                      <div class="packing-label-files-bold" style="color: #2a2a2a; font-weight: 500; font-size: 1.125rem;">
+                        Векторные файлы
+                      </div>
+                      <div class="packing-label-files-small" style="color: #2a2a2a; font-weight: 400; font-size: 0.9375rem;">
+                        (cdr, ai, eps, pdf)
+                      </div>
+                    </div>
+                    <div class="packing-label-files-text-bottom">
+                      <div class="packing-label-files-small" style="color: #2a2a2a; font-weight: 400; font-size: 0.9375rem;">
+                        Данные файлы пигодны для разработки любых рекламных носителях, любых размеров. При любом масштабировании, качество изображения не меняется.
+                      </div>
+                      <div class="packing-label-files-small" style="color: #2a2a2a; font-weight: 400; font-size: 0.9375rem;">
+                        Эти форматы можно открыть только с помощью специальных программ, в которых возможно дальнейшее редактирвание исходных файлов.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="col-md-6">
+                <div class="packing-label-files-content" style="display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0 -10px;">
+                  <div class="packing-label-files-img" style="padding: 0 10px;">
+                    <img src="/images/upload/img_files_2.png" alt="img_files" style="width: 64px; height: 64px;" width="64" height="64">
+                  </div>
+                  <div class="packing-label-files-text" style="padding: 0 10px;">
+                    <div class="packing-label-files-text-top" style="padding-bottom: 30px;">
+                      <div class="packing-label-files-bold" style="color: #2a2a2a; font-weight: 500; font-size: 1.125rem;">
+                        Растровые файлы
+                      </div>
+                      <div class="packing-label-files-small" style="color: #2a2a2a; font-weight: 400; font-size: 0.9375rem;">
+                        (png, jpeg)
+                      </div>
+                    </div>
+                    <div class="packing-label-files-text-bottom">
+                      <div class="packing-label-files-small" style="color: #2a2a2a; font-weight: 400; font-size: 0.9375rem;">
+                        Форматы данных файлов можно вставлять в любые электронные документы, размещать на сайтах, в соц сетях и тд. Они не являются исходником. При масштабировании качество изображения ухудшается.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="slider-content slider-ex-work" style="overflow: hidden; padding: 50px 0; border-bottom: 1px solid #ebebeb;">
+        <div class="container-content" style="width: 100%; padding-right: var(--bs-gutter-x, 0.75rem); padding-left: var(--bs-gutter-x, 0.75rem); margin-right: auto; margin-left: auto; position: relative; z-index: 1; border-collapse: initial;">
+          <div class="slider-ex-work-title" style="color: #2a2a2a; font-weight: 500; font-size: 1.625rem; margin-bottom: 30px;">
+            Примеры выполненных работ
+          </div>
+          <div class="slider-wrapper" style="position: relative;">
+            <div class="slider-list" id="sliderExWork" style="margin: 0 -4px;">
+              <div class="slider-item">
+                <div class="slider-image-wrapper" style="padding: 0 4px;">
+                  <img src="/images/upload/img_ex4.png" alt="img_ex" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="slider-image-wrapper" style="padding: 0 4px;">
+                  <img src="/images/upload/img_ex5.png" alt="img_ex" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="slider-image-wrapper" style="padding: 0 4px;">
+                  <img src="/images/upload/img_ex6.png" alt="img_ex" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="slider-image-wrapper" style="padding: 0 4px;">
+                  <img src="/images/upload/img_ex4.png" alt="img_ex" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                </div>
+              </div>
+            </div>
+            <button class="btn-slider btn-slider-prev" style="border: none; background-color: transparent; -webkit-transition: .2s; transition: .2s; padding: 0; position: absolute; top: 0; bottom: 0; margin: auto; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; display: none; left: -80px;">
+              <img src="/images/icon/left_arrow.svg" alt="arrow-btn">
+            </button>
+            <button class="btn-slider btn-slider-next" style="border: none; background-color: transparent; -webkit-transition: .2s; transition: .2s; padding: 0; position: absolute; top: 0; bottom: 0; margin: auto; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; display: none; right: -80px;">
+              <img src="/images/icon/right_arrow.svg" alt="arrow-btn">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="slider-content" style="overflow: hidden; padding: 50px 0; border-bottom: 1px solid #ebebeb;">
+        <div class="container-content" style="width: 100%; padding-right: var(--bs-gutter-x, 0.75rem); padding-left: var(--bs-gutter-x, 0.75rem); margin-right: auto; margin-left: auto; position: relative; z-index: 1; border-collapse: initial;">
+          <div class="slider-wrapper" style="position: relative;">
+            <div class="slider-list" id="sliderList">
+              <table class="slider-item">
+                <tr class="row position-relative gy-4">
+                  <td class="col-xl-4">
+                    <div class="slider-left">
+                      <div class="slider-company" style="color: #2a2a2a; font-weight: 500; font-size: 1.0625rem;">
+                        Кейс по разработке фирменного стиля
+                      </div>
+                      <div class="slider-company-name" style="color: #2a2a2a; font-weight: 500; font-size: 2.5rem; margin-top: 4px; margin-bottom: 14px;">Promcapsula</div>
+                     
+                      <div class="slider-company-property" style="padding: 16px 0;">
+                        <div class="slider-company-property-name" style="color: rgba(87, 87, 87, 0.36); font-weight: 500; font-size: 0.9375rem; margin-bottom: 4px;">
+                          Тематика:
+                        </div>
+                        <div class="slider-company-property-description" style="color: #000000; font-weight: 400; font-size: 0.9375rem;">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                        </div>
+                      </div>
+
+                      <div class="slider-company-property" style="padding: 16px 0;">
+                        <div class="slider-company-property-name" style="color: rgba(87, 87, 87, 0.36); font-weight: 500; font-size: 0.9375rem; margin-bottom: 4px;">
+                          Цель:
+                        </div>
+                        <div class="slider-company-property-description" style="color: #000000; font-weight: 400; font-size: 0.9375rem;">
+                          отразить основные ценности команды, продемонстрировать высокую экспертность и создать целостную айдентику фирменного стиля понятную для клиента
+                        </div>
+                      </div>
+
+                      <div class="slider-company-property" style="padding: 16px 0;">
+                        <div class="slider-company-property-name" style="color: rgba(87, 87, 87, 0.36); font-weight: 500; font-size: 0.9375rem; margin-bottom: 4px;">
+                          Что сделано:
+                        </div>
+                        <div class="slider-company-property-description" style="color: #000000; font-weight: 400; font-size: 0.9375rem;">
+                          <ul class="style-company-slide-list" style="list-style: none; margin: 0; padding: 0;">
+                            <li class="style-company-slide-item" style="padding: 4px 0; position: relative; padding-left: 16px;">
+                              Логотип
+                            </li>
+                            <li class="style-company-slide-item" style="padding: 4px 0; position: relative; padding-left: 16px;">                         
+                              Фирменный стиль (подбор шрифтов, цветов, разработка фирменных элементов и паттернов, создание фирменной документации и сувенирной продукции)
+                            </li>
+                            <li class="style-company-slide-item" style="padding: 4px 0; position: relative; padding-left: 16px;">
+                              Брендбук из руководства фирменным стилем
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="slider-content-bottom">
+                        <table style="width: 100%">
+                          <tr class="row">
+                            <td class="col-12 link-slider-wrapper" style="padding-top: 30px;">
+                              <a class="link-slider" href="#" style="-webkit-transition: .2s; transition: .2s; color: #2a2a2a; font-weight: 500; font-size: 1.125rem; text-decoration: underline; -webkit-text-decoration-color: #0c9bd8; text-decoration-color: #0c9bd8; text-decoration-thickness: 4px; text-underline-position: under;">
+                                Смотреть кейс
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+
+                    </div>
+                  </td>
+                  <td class="col-xl-8">
+                    <div class="slider-right" style="height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: end;">
+                      <img src="/images/upload/prom-capsula-slide.png" alt="slider-img" style="max-width: 100%; max-height: 100%; -o-object-fit: cover; object-fit: cover;">
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="slider-item">
+                <tr class="row position-relative gy-4">
+                  <td class="col-xl-4">
+                    <div class="slider-left">
+                      <div class="slider-company" style="color: #2a2a2a; font-weight: 500; font-size: 1.0625rem;">
+                        Кейс по разработке фирменного стиля
+                      </div>
+                      <div class="slider-company-name" style="color: #2a2a2a; font-weight: 500; font-size: 2.5rem; margin-top: 4px; margin-bottom: 14px;">Promcapsula</div>
+                     
+                      <div class="slider-company-property" style="padding: 16px 0;">
+                        <div class="slider-company-property-name" style="color: rgba(87, 87, 87, 0.36); font-weight: 500; font-size: 0.9375rem; margin-bottom: 4px;">
+                          Тематика:
+                        </div>
+                        <div class="slider-company-property-description" style="color: #000000; font-weight: 400; font-size: 0.9375rem;">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                        </div>
+                      </div>
+
+                      <div class="slider-company-property" style="padding: 16px 0;">
+                        <div class="slider-company-property-name" style="color: rgba(87, 87, 87, 0.36); font-weight: 500; font-size: 0.9375rem; margin-bottom: 4px;">
+                          Цель:
+                        </div>
+                        <div class="slider-company-property-description" style="color: #000000; font-weight: 400; font-size: 0.9375rem;">
+                          отразить основные ценности команды, продемонстрировать высокую экспертность и создать целостную айдентику фирменного стиля понятную для клиента
+                        </div>
+                      </div>
+
+                      <div class="slider-company-property" style="padding: 16px 0;">
+                        <div class="slider-company-property-name" style="color: rgba(87, 87, 87, 0.36); font-weight: 500; font-size: 0.9375rem; margin-bottom: 4px;">
+                          Что сделано:
+                        </div>
+                        <div class="slider-company-property-description" style="color: #000000; font-weight: 400; font-size: 0.9375rem;">
+                          <ul class="style-company-slide-list" style="list-style: none; margin: 0; padding: 0;">
+                            <li class="style-company-slide-item" style="padding: 4px 0; position: relative; padding-left: 16px;">
+                              Логотип
+                            </li>
+                            <li class="style-company-slide-item" style="padding: 4px 0; position: relative; padding-left: 16px;">                         
+                              Фирменный стиль (подбор шрифтов, цветов, разработка фирменных элементов и паттернов, создание фирменной документации и сувенирной продукции)
+                            </li>
+                            <li class="style-company-slide-item" style="padding: 4px 0; position: relative; padding-left: 16px;">
+                              Брендбук из руководства фирменным стилем
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="slider-content-bottom">
+                        <table style="width: 100%">
+                          <tr class="row">
+                            <td class="col-12 link-slider-wrapper" style="padding-top: 30px;">
+                              <a class="link-slider" href="#" style="-webkit-transition: .2s; transition: .2s; color: #2a2a2a; font-weight: 500; font-size: 1.125rem; text-decoration: underline; -webkit-text-decoration-color: #0c9bd8; text-decoration-color: #0c9bd8; text-decoration-thickness: 4px; text-underline-position: under;">
+                                Смотреть кейс
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+
+                    </div>
+                  </td>
+                  <td class="col-xl-8">
+                    <div class="slider-right" style="height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: end;">
+                      <img src="/images/upload/prom-capsula-slide.png" alt="slider-img" style="max-width: 100%; max-height: 100%; -o-object-fit: cover; object-fit: cover;">
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <button class="btn-slider btn-slider-prev" style="border: none; background-color: transparent; -webkit-transition: .2s; transition: .2s; padding: 0; position: absolute; top: 0; bottom: 0; margin: auto; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; display: none; left: -80px;">
+              <img src="/images/icon/left_arrow.svg" alt="arrow-btn">
+            </button>
+            <button class="btn-slider btn-slider-next" style="border: none; background-color: transparent; -webkit-transition: .2s; transition: .2s; padding: 0; position: absolute; top: 0; bottom: 0; margin: auto; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; display: none; right: -80px;">
+              <img src="/images/icon/right_arrow.svg" alt="arrow-btn">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-team" style="overflow: hidden; padding: 50px 0;">
+        <div class="container-content" style="width: 100%; padding-right: var(--bs-gutter-x, 0.75rem); padding-left: var(--bs-gutter-x, 0.75rem); margin-right: auto; margin-left: auto; position: relative; z-index: 1; border-collapse: initial;">
+          <h2 class="project-team-title" style="color: #2a2a2a; font-weight: 500; font-size: 2.25rem; text-align: center; margin-bottom: 0;">Проектная команда</h2>
+          <div class="project-team-sub-title" style="color: #2a2a2a; font-weight: 500; font-size: 0.9375rem; text-align: center; margin-bottom: 40px;">
+            Над Вашим проектом будут работать
+          </div>
+
+          <table style="width: 100%">
+            <tr class="row gy-3">
+              <td class="col-lg-3 col-sm-6">
+                <div class="project-team-card">
+                  <div class="project-team-card-header" style="position: relative;">
+                    <img src="/images/upload/project_team_1.png" alt="project-team-img" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                    <a href="#" class="project-team-link" style="text-decoration: none; -webkit-transition: .2s; transition: .2s; position: absolute; right: 16px; bottom: 16px;">
+                      <img src="/images/icon/tik_tok.png" alt="project-action">
+                    </a>
+                  </div>
+                  <div class="project-team-card-body" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-top: 16px; gap: 10px;">
+                    <div class="project-team-card-avatar" style="width: 52px; height: 52px; border-radius: 100%; overflow: hidden;">
+                      <img src="/images/upload/manager.png" alt="project-card-avatar" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                    </div>
+                    <div class="project-team-card-detail">
+                      <div class="project-team-name" style="color: #0f0f0f; font-weight: 500; font-size: 1rem;">Игорь</div>
+                      <div class="project-team-position" style="color: #585858; font-weight: 300; font-size: 0.875rem;">Проджект менеджер</div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="col-lg-3 col-sm-6">
+                <div class="project-team-card">
+                  <div class="project-team-card-header" style="position: relative;">
+                    <img src="/images/upload/project_team_2.png" alt="project-team-img" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                    <a href="#" class="project-team-link" style="text-decoration: none; -webkit-transition: .2s; transition: .2s; position: absolute; right: 16px; bottom: 16px;">
+                      <img src="/images/icon/tik_tok.png" alt="project-action">
+                    </a>
+                  </div>
+                  <div class="project-team-card-body" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-top: 16px; gap: 10px;">
+                    <div class="project-team-card-avatar" style="width: 52px; height: 52px; border-radius: 100%; overflow: hidden;">
+                      <img src="/images/upload/manager.png" alt="project-card-avatar" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                    </div>
+                    <div class="project-team-card-detail">
+                      <div class="project-team-name" style="color: #0f0f0f; font-weight: 500; font-size: 1rem;">Марина</div>
+                      <div class="project-team-position" style="color: #585858; font-weight: 300; font-size: 0.875rem;">Шеф дизайнер</div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="col-lg-3 col-sm-6">
+                <div class="project-team-card">
+                  <div class="project-team-card-header" style="position: relative;">
+                    <img src="/images/upload/project_team_1.png" alt="project-team-img" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                    <a href="#" class="project-team-link" style="text-decoration: none; -webkit-transition: .2s; transition: .2s; position: absolute; right: 16px; bottom: 16px;">
+                      <img src="/images/icon/tik_tok.png" alt="project-action">
+                    </a>
+                  </div>
+                  <div class="project-team-card-body" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-top: 16px; gap: 10px;">
+                    <div class="project-team-card-avatar" style="width: 52px; height: 52px; border-radius: 100%; overflow: hidden;">
+                      <img src="/images/upload/manager.png" alt="project-card-avatar" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                    </div>
+                    <div class="project-team-card-detail">
+                      <div class="project-team-name" style="color: #0f0f0f; font-weight: 500; font-size: 1rem;">Михай</div>
+                      <div class="project-team-position" style="color: #585858; font-weight: 300; font-size: 0.875rem;">Корирайтер</div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="col-lg-3 col-sm-6">
+                <div class="project-team-card">
+                  <div class="project-team-card-header" style="position: relative;">
+                    <img src="/images/upload/project_team_3.png" alt="project-team-img" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                    <a href="#" class="project-team-link" style="text-decoration: none; -webkit-transition: .2s; transition: .2s; position: absolute; right: 16px; bottom: 16px;">
+                      <img src="/images/icon/tik_tok.png" alt="project-action">
+                    </a>
+                  </div>
+                  <div class="project-team-card-body" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-top: 16px; gap: 10px;">
+                    <div class="project-team-card-avatar" style="width: 52px; height: 52px; border-radius: 100%; overflow: hidden;">
+                      <img src="/images/upload/manager.png" alt="project-card-avatar" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                    </div>
+                    <div class="project-team-card-detail">
+                      <div class="project-team-name" style="color: #0f0f0f; font-weight: 500; font-size: 1rem;">Анна</div>
+                      <div class="project-team-position" style="color: #585858; font-weight: 300; font-size: 0.875rem;">SEO специалист</div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="section-trust" style="overflow: hidden; padding: 50px 0; background-color: #f7f7f7;">
+        <div class="container-content" style="width: 100%; padding-right: var(--bs-gutter-x, 0.75rem); padding-left: var(--bs-gutter-x, 0.75rem); margin-right: auto; margin-left: auto; position: relative; z-index: 1; border-collapse: initial;">
+          <div class="section-trust-header" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 0 -6px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: 30px;">
+            <div class="section-trust-header-title" style="padding: 6px; color: #2a2a2a; font-weight: 500; font-size: 1.625rem;">
+              Немного доверия из первых уст
+            </div>
+            <div class="section-trust-header-info" style="padding: 6px;">
+              <div class="section-trust-header-info-top" style="color: #484848; font-weight: 500; font-size: 0.9375rem;">
+                <span class="info-top-percentage" style="color: #2a2a2a; font-weight: 500; font-size: 2rem;"> 37% </span>
+                новых клиентов
+              </div>
+              <div class="section-trust-header-info-bottom" style="color: #ffffff; font-weight: 500; font-size: 0.8125rem; background-color: #0c9bd8; padding: 0 6px; text-align: center; text-transform: uppercase;">
+                Пришли по рекомендациям
+              </div>
+            </div>
+          </div>
+
+          <table style="width: 100%">
+            <tr class="row g-2">
+              <td class="col-md-4">
+                <div class="section-trust-card" style="padding: 14px; background-color: #ffffff;">
+                  <div class="trust-card-header">
+                    <img class="trust-card-play" src="/images/upload/video.png" alt="video" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                  </div>
+                  <div class="trust-card-body" style="margin: 24px 0 16px 0;">
+                    <div class="trust-name" style="color: #282828; font-weight: 400; font-size: 1.1875rem;">Галица Олег</div>
+                    <div class="trust-company" style="color: #616161; font-weight: 400; font-size: 0.9375rem;">Владелец mafia.md</div>
+                  </div>
+                  <div class="trust-card-footer">
+                    <p class="trust-text" style="color: #484848; font-weight: 300; font-size: 0.875rem;">
+                      “Нашему клубу уже 8 лет и я понимал, что необходимо
+                      оптимизировать наши сайты, ведь именно они должны
+                      приносить нам больше клиентов. Мой партнер по бизнесу
+                      порекомендовал мне обратиться к компании Studio Webmaster.
+                      Уже на первых этапах сотрудничества стало понятно, что
+                      это....
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td class="col-md-4">
+                <div class="section-trust-card" style="padding: 14px; background-color: #ffffff;">
+                  <div class="trust-card-header">
+                    <img class="trust-card-play" src="/images/upload/video.png" alt="video" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                  </div>
+                  <div class="trust-card-body" style="margin: 24px 0 16px 0;">
+                    <div class="trust-name" style="color: #282828; font-weight: 400; font-size: 1.1875rem;">Галица Олег</div>
+                    <div class="trust-company" style="color: #616161; font-weight: 400; font-size: 0.9375rem;">Владелец mafia.md</div>
+                  </div>
+                  <div class="trust-card-footer">
+                    <p class="trust-text" style="color: #484848; font-weight: 300; font-size: 0.875rem;">
+                      “Нашему клубу уже 8 лет и я понимал, что необходимо
+                      оптимизировать наши сайты, ведь именно они должны
+                      приносить нам больше клиентов. Мой партнер по бизнесу
+                      порекомендовал мне обратиться к компании Studio Webmaster.
+                      Уже на первых этапах сотрудничества стало понятно, что
+                      это....
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td class="col-md-4">
+                <div class="section-trust-card" style="padding: 14px; background-color: #ffffff;">
+                  <div class="trust-card-header">
+                    <img class="trust-card-play" src="/images/upload/video.png" alt="video" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                  </div>
+                  <div class="trust-card-body" style="margin: 24px 0 16px 0;">
+                    <div class="trust-name" style="color: #282828; font-weight: 400; font-size: 1.1875rem;">Галица Олег</div>
+                    <div class="trust-company" style="color: #616161; font-weight: 400; font-size: 0.9375rem;">Владелец mafia.md</div>
+                  </div>
+                  <div class="trust-card-footer">
+                    <p class="trust-text" style="color: #484848; font-weight: 300; font-size: 0.875rem;">
+                      “Нашему клубу уже 8 лет и я понимал, что необходимо
+                      оптимизировать наши сайты, ведь именно они должны
+                      приносить нам больше клиентов. Мой партнер по бизнесу
+                      порекомендовал мне обратиться к компании Studio Webmaster.
+                      Уже на первых этапах сотрудничества стало понятно, что
+                      это....
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="section-proud" style="overflow: hidden; padding: 50px 0;">
+        <div class="container-content" style="width: 100%; padding-right: var(--bs-gutter-x, 0.75rem); padding-left: var(--bs-gutter-x, 0.75rem); margin-right: auto; margin-left: auto; position: relative; z-index: 1; border-collapse: initial;">
+          <h2 class="section-proud-title" style="color: #2a2a2a; font-weight: 500; font-size: 1.625rem; margin-bottom: 30px;">Можем гордиться</h2>
+          <table style="width: 100%">
+            <tr class="row gy-3 gx-0">
+              <td class="col-lg-3 col-sm-6 d-flex flex-column">
+                <div class="section-proud-header" style="margin: 0 10px; padding: 10px; border: 1px solid #e5e5e5;">
+                  <img src="/images/upload/proud.png" alt="proud-img" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                </div>
+
+                <div class="section-proud-body" style="padding: 20px; border-right: 1px solid #e5e5e5; height: 100%;">
+                  <div class="section-proud-name" style="color: #2a2a2a; font-weight: 500; font-size: 0.9375rem;">
+                    NOTORIUM TRADEMARK AWARDS
+                  </div>
+                  <ul class="proud-list" style="list-style: none; margin: 0; padding: 20px 0;">
+                    <li class="proud-item" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; padding: 4px 0;">
+                      <div class="proud-year" style="color: #ffffff; font-weight: 300; font-size: 0.875rem; padding: 0 6px; background-color: #0c9bd8; margin-right: 10px;">2017</div>
+                      <div class="proud-type" style="color: #484848; font-weight: 300; font-size: 0.875rem;">Трофей Notorium</div>
+                    </li>
+                    <li class="proud-item" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; padding: 4px 0;">
+                      <div class="proud-year" style="color: #ffffff; font-weight: 300; font-size: 0.875rem; padding: 0 6px; background-color: #0c9bd8; margin-right: 10px;">2018</div>
+                      <div class="proud-type" style="color: #484848; font-weight: 300; font-size: 0.875rem;">Золотая медаль Notorium</div>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+              <td class="col-lg-3 col-sm-6 d-flex flex-column">
+                <div class="section-proud-header" style="margin: 0 10px; padding: 10px; border: 1px solid #e5e5e5;">
+                  <img src="/images/upload/proud.png" alt="proud-img" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                </div>
+
+                <div class="section-proud-body" style="padding: 20px; border-right: 1px solid #e5e5e5; height: 100%;">
+                  <div class="section-proud-name" style="color: #2a2a2a; font-weight: 500; font-size: 0.9375rem;">
+                    NOTORIUM TRADEMARK AWARDS
+                  </div>
+                  <ul class="proud-list" style="list-style: none; margin: 0; padding: 20px 0;">
+                    <li class="proud-item" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; padding: 4px 0;">
+                      <div class="proud-year" style="color: #ffffff; font-weight: 300; font-size: 0.875rem; padding: 0 6px; background-color: #0c9bd8; margin-right: 10px;">2019</div>
+                      <div class="proud-type" style="color: #484848; font-weight: 300; font-size: 0.875rem;">Номинация Фаворит Года</div>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+              <td class="col-lg-3 col-sm-6 d-flex flex-column">
+                <div class="section-proud-header" style="margin: 0 10px; padding: 10px; border: 1px solid #e5e5e5;">
+                  <img src="/images/upload/proud.png" alt="proud-img" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                </div>
+
+                <div class="section-proud-body" style="padding: 20px; border-right: 1px solid #e5e5e5; height: 100%;">
+                  <div class="section-proud-name" style="color: #2a2a2a; font-weight: 500; font-size: 0.9375rem;">ПРЕМИЯ КАЧЕСТВА</div>
+                  <ul class="proud-list" style="list-style: none; margin: 0; padding: 20px 0;">
+                    <li class="proud-item" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; padding: 4px 0;">
+                      <div class="proud-year" style="color: #ffffff; font-weight: 300; font-size: 0.875rem; padding: 0 6px; background-color: #0c9bd8; margin-right: 10px;">2016</div>
+                      <div class="proud-type" style="color: #484848; font-weight: 300; font-size: 0.875rem;">
+                        Лауреат конкурса "За достижения в области качества”
+                      </div>
+                    </li>
+                    <li class="proud-item" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; padding: 4px 0;">
+                      <div class="proud-year" style="color: #ffffff; font-weight: 300; font-size: 0.875rem; padding: 0 6px; background-color: #0c9bd8; margin-right: 10px;">2017</div>
+                      <div class="proud-type" style="color: #484848; font-weight: 300; font-size: 0.875rem;">
+                        Диплом конкурса "За достижения в области качества”
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+              <td class="col-lg-3 col-sm-6 d-flex flex-column">
+                <div class="section-proud-header" style="margin: 0 10px; padding: 10px; border: 1px solid #e5e5e5;">
+                  <img src="/images/upload/proud.png" alt="proud-img" style="width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;">
+                </div>
+
+                <div class="section-proud-body" style="padding: 20px; border-right: 1px solid #e5e5e5; height: 100%;">
+                  <div class="section-proud-name" style="color: #2a2a2a; font-weight: 500; font-size: 0.9375rem;">ТОРГОВАЯ МАРКА ГОДА</div>
+                  <ul class="proud-list" style="list-style: none; margin: 0; padding: 20px 0;">
+                    <li class="proud-item" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; padding: 4px 0;">
+                      <div class="proud-year" style="color: #ffffff; font-weight: 300; font-size: 0.875rem; padding: 0 6px; background-color: #0c9bd8; margin-right: 10px;">2016</div>
+                      <div class="proud-type" style="color: #484848; font-weight: 300; font-size: 0.875rem;">Золотая медаль</div>
+                    </li>
+                    <li class="proud-item" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; padding: 4px 0;">
+                      <div class="proud-year" style="color: #ffffff; font-weight: 300; font-size: 0.875rem; padding: 0 6px; background-color: #0c9bd8; margin-right: 10px;">2017</div>
+                      <div class="proud-type" style="color: #484848; font-weight: 300; font-size: 0.875rem;">Золотая медаль</div>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="section-services-freq" style="overflow: hidden; padding-bottom: 160px; padding: 50px 0; background-color: #f7f7f7;">
+        <div class="container-content" style="width: 100%; padding-right: var(--bs-gutter-x, 0.75rem); padding-left: var(--bs-gutter-x, 0.75rem); margin-right: auto; margin-left: auto; position: relative; z-index: 1; border-collapse: initial;">
+          <h2 class="section-services-title" style="color: #2a2a2a; font-weight: 500; font-size: 1.625rem; text-align: center; margin-bottom: 30px;">
+            С этой услугой часто заказывают:
+          </h2>
+        </div>
+        <table class="container-content" style="width: 100%; padding-right: var(--bs-gutter-x, 0.75rem); padding-left: var(--bs-gutter-x, 0.75rem); margin-right: auto; margin-left: auto; position: relative; z-index: 1; border-collapse: initial;" width="100%">
+          <tr class="row gy-3">
+            <td class="col-lg-3 col-sm-6">
+              <div class="services-freq-card" style="-webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 1, 0.18); box-shadow: 0px 0px 17px 0px rgba(0, 0, 1, 0.18); height: 100%;">
+                <div class="services-freq-price" style="padding: 20px 10px 14px 10px; color: #3f3f3f; font-weight: 500; font-size: 1.75rem; text-align: right;">
+                  от
+                  <span style="font-size: 2.25rem;"> 220 </span>
+                  €
+                </div>
+                <div class="services-freq-type" style="padding: 14px 10px; color: #3f3f3f; font-weight: 500; font-size: 0.875rem; text-align: center; text-transform: uppercase; background-color: #f7e1bf;">
+                  smm продвижение
+                </div>
+                <div class="services-freq-text-wrapper" style="padding: 20px 10px;">
+                  <p class="services-freq-text-small" style="color: #484848; font-weight: 300; font-size: 0.875rem;">
+                    Один из самых пощний маркетинг инструментов - smm
+                    продвижение.
+                  </p>
+                  <p class="services-freq-text-bold" style="color: #484848; font-weight: 400; font-size: 0.875rem; margin-bottom: 0;">
+                    Это продвижение в соц сетях, формирование аудиотории и
+                    повышение ее лояльности. С помощью таргетированной рекламы
+                    можно в разы увеличить рекламный охват за счет правильной
+                    настройки под конкретную аудиорию и конкретный подукт.
+                  </p>
+                </div>
+              </div>
+            </td>
+            <td class="col-lg-3 col-sm-6">
+              <div class="services-freq-card" style="-webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 1, 0.18); box-shadow: 0px 0px 17px 0px rgba(0, 0, 1, 0.18); height: 100%;">
+                <div class="services-freq-price" style="padding: 20px 10px 14px 10px; color: #3f3f3f; font-weight: 500; font-size: 1.75rem; text-align: right;">
+                  от
+                  <span style="font-size: 2.25rem;"> 220 </span>
+                  €
+                </div>
+                <div class="services-freq-type" style="padding: 14px 10px; color: #3f3f3f; font-weight: 500; font-size: 0.875rem; text-align: center; text-transform: uppercase; background-color: #a5d5cc;">
+                  контекстная реклама
+                </div>
+                <div class="services-freq-text-wrapper" style="padding: 20px 10px;">
+                  <p class="services-freq-text-small" style="color: #484848; font-weight: 300; font-size: 0.875rem;">
+                    Google adwords - Сервис гугл для котекстной рекламы по
+                    поисковым запросам пользователей.
+                  </p>
+                  <p class="services-freq-text-bold" style="color: #484848; font-weight: 400; font-size: 0.875rem; margin-bottom: 0;">
+                    Суть данного маркетинг - иструмента в том, что Ваше
+                    рекламное объявление показывается только заинтересованным
+                    пользователям, что существенно снижает затраты на рекламу.
+                  </p>
+                  <p class="services-freq-text-small" style="color: #484848; font-weight: 300; font-size: 0.875rem;">
+                    Вы платите только за ту рекламу, которая сработала.
+                  </p>
+                </div>
+              </div>
+            </td>
+            <td class="col-lg-3 col-sm-6">
+              <div class="services-freq-card" style="-webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 1, 0.18); box-shadow: 0px 0px 17px 0px rgba(0, 0, 1, 0.18); height: 100%;">
+                <div class="services-freq-price" style="padding: 20px 10px 14px 10px; color: #3f3f3f; font-weight: 500; font-size: 1.75rem; text-align: right;">
+                  от
+                  <span style="font-size: 2.25rem;"> 220 </span>
+                  €
+                </div>
+                <div class="services-freq-type" style="padding: 14px 10px; color: #3f3f3f; font-weight: 500; font-size: 0.875rem; text-align: center; text-transform: uppercase; background-color: #e2cfea;">
+                  email рассылка
+                </div>
+                <div class="services-freq-text-wrapper" style="padding: 20px 10px;">
+                  <p class="services-freq-text-small" style="color: #484848; font-weight: 300; font-size: 0.875rem;">
+                    Автоматизированная email - рассылка позволяет выстроить
+                    доверительные отношения с аудиторией, оперативно
+                    инфрмировать и новых товарах и акциях, дарить уникальные
+                    промокоды за лояльность и проводить опросы.
+                  </p>
+                  <p class="services-freq-text-bold" style="color: #484848; font-weight: 400; font-size: 0.875rem; margin-bottom: 0;">
+                    Позволяет получить за сравнительно небольшие вложения
+                    высокие продажи.
+                  </p>
+                </div>
+              </div>
+            </td>
+            <td class="col-lg-3 col-sm-6">
+              <div class="services-freq-card" style="-webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 1, 0.18); box-shadow: 0px 0px 17px 0px rgba(0, 0, 1, 0.18); height: 100%;">
+                <div class="services-freq-price" style="padding: 20px 10px 14px 10px; color: #3f3f3f; font-weight: 500; font-size: 1.75rem; text-align: right;">
+                  от
+                  <span style="font-size: 2.25rem;"> 220 </span>
+                  €
+                </div>
+                <div class="services-freq-type" style="padding: 14px 10px; color: #3f3f3f; font-weight: 500; font-size: 0.875rem; text-align: center; text-transform: uppercase; background-color: #ecb5af;">
+                  копирайтинг
+                </div>
+                <div class="services-freq-text-wrapper wrapper-copyright" style="padding: 20px 10px;">
+                  <p class="services-freq-text-bold" style="margin: 0; color: #484848; font-weight: 400; font-size: 0.875rem; margin-bottom: 0;">
+                    Все рекламные тексты написаные копирайтерами пишутся с
+                    учетом психологических триггеров покупателей
+                    <small class="text-samll" style="color: #484848; font-weight: 300; font-size: 0.875rem;"> и делятся на: </small>
+                  </p>
+                  <p class="services-freq-text-small" style="margin: 0; color: #484848; font-weight: 300; font-size: 0.875rem;">
+                    Копирайтинг — написание уникальных статей по указанной
+                    заказчиком теме (описание товара, информационные и продающие
+                    тексты).
+                  </p>
+                  <p class="services-freq-text-small" style="margin: 0; color: #484848; font-weight: 300; font-size: 0.875rem;">
+                    SEO-копирайтинг — создание статьи с вхождением ключевых
+                    слов.
+                  </p>
+                  <p class="services-freq-text-small" style="margin: 0; color: #484848; font-weight: 300; font-size: 0.875rem;">
+                    Рерайтинг — написание статьи на основе нескольких текстов.
+                  </p>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <footer class="footer-fixed container-left" style="width: 100%; margin-right: auto; margin-left: auto; z-index: 1; padding-top: 10px; padding-bottom: 10px; background-color: #0c9bd8; -webkit-box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.03); box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.03); position: fixed; bottom: 0; right: 0;">
+      <div class="container-content" style="width: 100%; padding-right: var(--bs-gutter-x, 0.75rem); padding-left: var(--bs-gutter-x, 0.75rem); margin-right: auto; margin-left: auto; position: relative; z-index: 1; border-collapse: initial;">
+        <div class="footer-title" style="color: #ffffff; font-weight: 400; font-size: 0.9375rem; text-align: center;">
+          При оформлении заказа в течение двух дней скидка 3 % в подарок
+        </div>
+        <div class="footer-time" style="color: #ffffff; font-weight: 400; font-size: 1.5rem; text-align: center;">
+          <span>4</span>
+          <span>:</span>
+          <span>8</span>
+          <span>:</span>
+          <span>38</span>
+          <span>:</span>
+          <span>26</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="/js/app.js"></script> -->
+
+    <script>
+      // Initialization slider ------------------------------------->
+      (function () {
+        $("#sliderList").slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          //   dots: true,
+          nextArrow: $("#sliderList~.btn-slider-next"),
+          prevArrow: $("#sliderList~.btn-slider-prev"),
+          responsive: [
+            {
+              breakpoint: 1660,
+              settings: {
+                arrows: false,
+              },
+            },
+          ],
+        });
+      })();
+
+      (function () {
+        $("#sliderExWork").slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          //   dots: true,
+          nextArrow: $("#sliderExWork~.btn-slider-next"),
+          prevArrow: $("#sliderExWork~.btn-slider-prev"),
+          responsive: [
+            {
+              breakpoint: 1660,
+              settings: {
+                arrows: false,
+              },
+            },
+            {
+              breakpoint: 700,
+              settings: {
+                slidesToShow: 2,
+                arrows: false,
+              },
+            },
+            {
+              breakpoint: 575,
+              settings: {
+                slidesToShow: 1,
+                arrows: false,
+              },
+            },
+          ],
+        });
+      })();
+      
+      (function () {
+        $("#sliderWork").slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          //   dots: true,
+          nextArrow: $("#sliderWork~.btn-slider-next"),
+          prevArrow: $("#sliderWork~.btn-slider-prev"),
+          responsive: [
+            {
+              breakpoint: 1660,
+              settings: {
+                arrows: false,
+              },
+            },
+          ],
+        });
+      })();
+      // Initialization slider -------------------------------------<
+      // Toggle Navigation Menu ------------------------------------>
+      (function () {
+        const btn = document.querySelector(".toggle-nav");
+        const navbar = document.querySelector(".navbar-wrapper");
+        const navigationPanel = document.querySelector(".navigation-panel");
+
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          navbar.classList.toggle("opened");
+        });
+
+        navigationPanel.addEventListener("click", (e) => e.stopPropagation());
+
+        document.body.addEventListener("click", () => {
+          navbar.classList.remove("opened");
+        });
+      })();
+      // Toggle Navigation Menu ------------------------------------<
+      // Chart Design ---------------------------------------------->
+      (function () {
+        const chartContainer = document.querySelectorAll(
+          ".chart-design-wrapper"
+        );
+        chartContainer.forEach((item) => {
+          item.innerHTML = ""
+          for (let i = 0; i < 10; i++) {
+            item.innerHTML += `<div class="chart-design"></div>`;
+          }
+        });
+      })();
+      // Chart Design ----------------------------------------------<
+    </script>
+  </body>
+</html>

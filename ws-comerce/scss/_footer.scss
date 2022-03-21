@@ -1,0 +1,17 @@
+.footer-fixed {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $color-8;
+    box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.03);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    .footer-title {
+        @include text($color-3, 400, 15);
+        text-align: center;
+    }
+    .footer-time {
+        @include text($color-3, 400, 24);
+        text-align: center;
+    }
+}

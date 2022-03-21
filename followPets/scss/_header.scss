@@ -1,0 +1,126 @@
+.header-main {
+    background-image: url(../images/bg/bg_1.png);
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 2;
+    &::after {
+        content: "";
+        background-image: url(../images/bg/bg-paw-1.png);
+        display: block;
+        width: 232px;
+        height: 330px;
+        background-size: contain;
+        position: absolute;
+        bottom: -196px;
+        right: 0;
+        background-position: right;
+    }
+    .navbar {
+        z-index: 2;
+        .navbar-toggler {
+            border-color: $color-3;
+            &:focus {
+                box-shadow: 0 0 0 0.25rem $color-3;
+            }
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    @include text($color-1, 400, 17);
+                    &.active {
+                        color: $color-3;
+                        &::before {
+                            content: "";
+                            background-image: url(../images/icon/paw-navbar.svg);
+                            display: inline-block;
+                            width: 12.88px;
+                            height: 13.44px;
+                            margin-right: 16px;
+                        }
+                    }
+                    &:hover {
+                        color: $color-3;
+                    }
+                }
+            }
+        }
+        .navbar-action {
+            display: flex;
+            justify-content: center;
+            .select-lang {
+                background-color: transparent;
+                border: none;
+                .current {
+                    @include text($color-4, 300, 20);
+                }
+                &::after {
+                    border-color: $color-4;
+                }
+                .list {
+                    background-color: #fbfff4;
+                }
+            }
+        }
+    }
+
+    .header-content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        .header-content-text {
+            .header-content-logo {
+                img {
+                    max-width: 100%;
+                }
+            }
+            .header-content-text-bold-top {
+                @include text($color-1, 600, 21);
+                padding: 18px 0;
+            }
+            .header-content-text-small {
+                @include text($color-1, 300, 18);
+                padding-bottom: 50px
+            }
+            .header-content-text-bold-bottom {
+                @include text($color-1, 600, 20);
+                padding-bottom: 58px
+            }
+            .header-content-action {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+        .header-content-img {
+            position: relative;
+            .header-content-img-wrapper:first-child {
+                width: 70%;
+                img {
+                    width: 100%;
+                }
+            }
+            .header-content-img-wrapper:last-child {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+                width: 60%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header-main {
+        .navbar {
+            .navbar-brand {
+                width: 74%;
+                img {
+                    width: 220px;
+                }
+            }
+        }
+    }
+}

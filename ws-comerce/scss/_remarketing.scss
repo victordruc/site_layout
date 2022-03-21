@@ -1,0 +1,214 @@
+.remarketing-section {
+  .internal-optimization {
+    .internal-optimization-bottom {
+      .internal-optimization-text-type3 {
+        font-size: remTransform(18) !important;
+      }
+      .internal-type-price {
+        @include text($color-6, 400, 15);
+        span {
+          @include text($color-6, 500, 19);
+          font-family: $font_family-1;
+        }
+      }
+      .internal-optimization-text-type4 {
+        font-size: remTransform(13) !important;
+      }
+     
+    }
+    .internal-optimization-card {
+      .internal-optimization-card-header {
+        table {
+          td {
+            text-align: left !important;
+          }
+        }
+        .remarketing-header-title {
+          @include text($color-5, 500, 18);
+        }
+        .remarketing-header-percent {
+          @include text($color-6, 400, 36);
+          font-family: $font_family-1;
+        }
+        .remarketing-comparation-wrapper {
+          padding-bottom: 16px;
+          .remarketing-comparation-link {
+            @include text($color-4, 300, 14);
+            text-decoration: underline;
+            text-underline-position: under;
+            &:hover {
+              text-decoration: none;
+              color: $color-6;
+            }
+          }
+        }
+        .remarketing-list-type {
+          .remarketing-item-type {
+            @include text($color-21, 400, 14);
+            position: relative;
+            padding-left: 10px;
+            &:before {
+              content: "-";
+              position: absolute;
+              left: 0;
+            }
+          }
+        }
+      }
+      .internal-optimization-card-body {
+        table {
+          border-bottom: 1px solid $color-7;
+          min-width: fit-content;
+          &:last-child {
+            border-bottom: none;
+          }
+          td {
+            text-align: left !important;
+            border: none !important;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+          tr {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+          }
+        }
+        .remarketing-text-bold1 {
+          @include text($color-12, 500, 16);
+        }
+        .remarketing-text-bold2-price {
+          @include text($color-6, 500, 24);
+          .remarketing-text-bold2-price-comment {
+            font-size: remTransform(14);
+          }
+          .remarketing-text-work {
+            font-size: remTransform(15);
+          }
+        }
+        .remarketing-text-small {
+          @include text($color-22, 300, 14);
+        }
+      }
+    }
+  }
+
+  .remarketing-type {
+    padding: 50px 0;
+    background-color: $color-7;
+    .remarketing-type-top-text {
+      @include text($color-23, 400, 15);
+      border-bottom: 1px solid #dddddd;
+      padding-bottom: 40px;
+      margin-bottom: 50px;
+    }
+    .remarketing-type-title {
+      @include text($color-6, 500, 20);
+      margin-bottom: 28px;
+    }
+    .remarketing-type-bold1 {
+      @include text($color-12, 400, 15);
+    }
+    .remarketing-type-for {
+      padding: 20px 0;
+      .remarketing-type-bold2 {
+        @include text($color-23, 500, 15);
+      }
+      .remarketing-type-small {
+        @include text($color-23, 300, 15);
+      }
+    }
+    .remarketing-type-example {
+      display: flex;
+      margin: 0 -12px;
+      & > * {
+        padding: 12px;
+      }
+      .remarketing-type-example-img {
+        flex: 0 0 auto;
+        .remarketing-type-example-img-wrapper {
+          border: 1px solid $color-24;
+          max-width: 246px;
+          margin: auto;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .remarketing-type-example-text {
+        display: flex;
+        align-items: center;
+        .remarketing-type-example-text-norm {
+          @include text($color-25, 500, 15);
+          span {
+            color: $color-26;
+          }
+        }
+        .remarketing-type-example-text-danger {
+          @include text($color-26, 500, 15);
+        }
+      }
+    }
+  }
+
+  .slider-content {
+    .slider-item-top-text {
+      @include text($color-6, 500, 17);
+    }
+    .slider-item-title {
+      @include text($color-6, 500, 40);
+      line-height: remTransform(42);
+    }
+    .slider-subject {
+      padding-top: 50px;
+      .slider-subject-title {
+        @include text(rgba(87, 87, 87, 0.36), 500, 15);
+      }
+      .slider-subject-text {
+        @include text($color-12, 400, 15);
+      }
+    }
+    .slider-content {
+      border-bottom: none;
+      .slider-content-wrapper {
+        box-shadow: 0px 0px 32px 4px rgba(0, 0, 1, 0.04);
+        padding: 18px;
+        .slider-img-wrapper {
+          height: 100%;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+          }
+        }
+        .table-remarketing-bottom {
+          background-color: $color-7;
+          td {
+            .slider-text-bottom-wrapper {
+              
+              padding: 10px;
+              .slider-text-bottom-number {
+                @include text($color-27, 300, 48);
+                font-family: $font_family-1;
+              }
+              .slider-text-bottom {
+                @include text($color-27, 400, 15);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .remarketing-section {
+    .remarketing-type-example {
+      flex-direction: column;
+    }
+  }
+}

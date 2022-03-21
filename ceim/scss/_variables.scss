@@ -1,0 +1,41 @@
+:root {
+  --font_family: 'Raleway', sans-serif;
+  --font_family-second1: 'Oswald', sans-serif;
+  --font_family-second2: 'Jost', sans-serif;
+  --font_family-second3: 'Montserrat', sans-serif;
+  --color-text: #343434;
+  --color-1: #3AB795;
+  --color-2: #FFFFFF;
+  --color-3: #5A5F59;
+  --color-4: #C4C4C4;
+  --color-5: #ECECEC;
+  --color-6: #000000;
+  --color-7: #AFAFAF;
+  --color-8: #000034;
+  --color-9: #848484;
+  --color-10: #828A81;
+  --color-11: #D7D7D7;
+  --color-12: #A5A5A5;
+
+  --bg-linear: linear-gradient(297.95deg, rgba(232, 232, 232, 0.4) -1.79%, rgba(245, 245, 245, 0.4) 83.69%);
+}
+
+$font_family: var(--font_family);
+$font_family-second1: var(--font_family-second1);
+$font_family-second2: var(--font_family-second2);
+$font_family-second3: var(--font_family-second3);
+$color-text: var(--color-text);
+$color-1: var(--color-1);
+$color-2: var(--color-2);
+$color-3: var(--color-3);
+$color-4: var(--color-4);
+$color-5: var(--color-5);
+$color-6: var(--color-6);
+$color-7: var(--color-7);
+$color-8: var(--color-8);
+$color-9: var(--color-9);
+$color-10: var(--color-10);
+$color-11: var(--color-11);
+$color-12: var(--color-12);
+
+$bg-linear: var(--bg-linear);

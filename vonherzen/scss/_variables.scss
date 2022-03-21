@@ -1,0 +1,35 @@
+:root {
+  --font_family: 'Roboto', sans-serif;
+  --font_family-1: "Jost", sans-serif;
+  --font_family-2: "Montserrat", sans-serif;
+
+  --color-1: #EC1C24;
+  --color-2: #FFFFFF;
+  --color-3: #4A4A4A;
+  --color-4: #EEEEEE;
+  --color-5: #FAFAFA;
+  --color-6: #C4C4C4;
+  --color-7: #000000;
+  --color-8: #2A2A2A;
+  --color-9: #727272;
+  --color-10: #E5E5E5;
+
+  --height-input: 64px;
+}
+
+$font_family: var(--font_family);
+$font_family-1: var(--font_family-1);
+$font_family-2: var(--font_family-2);
+
+$color-1: var(--color-1);
+$color-2: var(--color-2);
+$color-3: var(--color-3);
+$color-4: var(--color-4);
+$color-5: var(--color-5);
+$color-6: var(--color-6);
+$color-7: var(--color-7);
+$color-8: var(--color-8);
+$color-9: var(--color-9);
+$color-10: var(--color-10);
+
+$height-input: var(--height-input);

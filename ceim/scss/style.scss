@@ -1,0 +1,29 @@
+@import "_variables.scss";
+@import "_functions-mixin.scss";
+@import "_asset.scss";
+@import "_header.scss";
+@import "_home.scss";
+@import "_main-alter.scss";
+@import "_footer.scss";
+
+body {
+    font-family: $font_family;
+    box-sizing: border-box;
+    color: $color-text;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit !important;
+    text-decoration: none;
+}
+
+button, path, rect, input, a, circle {
+    transition: .2s;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

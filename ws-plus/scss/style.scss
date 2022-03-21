@@ -1,0 +1,33 @@
+@import "_variables.scss";
+@import "_functions-mixin.scss";
+@import "_asset.scss";
+@import "_header.scss";
+@import "_main.scss";
+@import "_footer.scss";
+
+@import "../lib/nice-select/scss/nice-select.scss";
+
+body {
+    font-family: $font_family;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button, path, rect, input, a, svg {
+    transition: .2s;
+}

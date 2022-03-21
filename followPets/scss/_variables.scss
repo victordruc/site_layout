@@ -1,0 +1,22 @@
+:root {
+  --font_family: 'Nunito', sans-serif;
+  --font_family-2: 'Amatic SC', cursive;
+  --font_family-3: 'Montserrat', sans-serif;
+  --color-1: #000000;
+  --color-2: #FFFFFF;
+  --color-3: #32A071;
+  --color-4: #2DA771;
+  --color-5: #F8F8F8;
+  --color-6: #ABABAB;
+}
+
+$font_family: var(--font_family);
+$font_family-2: var(--font_family-2);
+$font_family-3: var(--font_family-3);
+
+$color-1: var(--color-1);
+$color-2: var(--color-2);
+$color-3: var(--color-3);
+$color-4: var(--color-4);
+$color-5: var(--color-5);
+$color-6: var(--color-6);

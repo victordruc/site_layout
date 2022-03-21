@@ -1,0 +1,121 @@
+.navbar-wrapper {
+    position: fixed;
+    height: 100vh;
+    z-index: 200;
+    transition: .6s;
+    .navigation-panel {
+        width: $width-nav;
+        padding: 40px 20px;
+        background-color: $color-1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .navigation-list {
+            margin: 20px 0;
+            margin-top: 60px;
+            overflow-y: auto;
+            .navigation-item {
+                padding: 4px 0;
+                padding-right: 4px;
+                .navigation-link {
+                    @include text($color-3, 500, 13);
+                    text-transform: uppercase;
+                    opacity: .8;
+                    padding: 6px 0;
+                    &.active {
+                        color: $color-2;
+                        font-weight: 300;
+                    }
+                    &:hover {
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+        .navigation-manager {
+            display: flex;
+            align-items: center;
+            margin: auto auto 0 0;
+            .navigation-manager-photo {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                overflow: hidden;
+                flex: 0 0 auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .navigation-manager-info {
+                margin-left: 20px;
+                .manager-name {
+                    @include text($color-3, 400, 14);
+                }
+                .manager-phone {
+                    a {
+                        @include text($color-3, 300, 13);
+                        &:hover {
+                            opacity: .5;
+                        }
+                    }
+                }
+                .manager-mail {
+                    a {
+                        @include text($color-4, 300, 13);
+                        text-decoration: underline;
+                        &:hover {
+                            opacity: .5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .toggle-nav {
+        position: absolute;
+        background-color: $color-1;
+        padding: 10px;
+        left: $width-nav;
+        top: 30px;
+        border-radius: 0 6px 6px 0;
+        display: none;
+        &:hover path {
+            fill: $color-8;
+        }
+    }
+
+    &.opened {
+        left: 0;
+        .toggle-nav {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+@media (max-width: 1259px) {
+    .navbar-wrapper {
+        left: -$widthNav;
+        &.opened {
+            width: 100%;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.12);
+        }
+        .toggle-nav {
+            display: inline-block !important;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .navbar-wrapper.opened {
+        .toggle-nav {
+            left: 236px;
+            border-radius: 0 6px 6px 0;
+        }
+    }
+}

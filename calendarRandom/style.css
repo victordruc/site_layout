@@ -1,0 +1,88 @@
+.calendar-random {
+    background: linear-gradient(142.42deg, rgba(254, 248, 255, 0.56) 1.79%, rgba(254, 248, 255, 0.4) 100.42%);
+    box-shadow: inset -11.7292px -11.7292px 26px rgba(40, 91, 102, 0.08), inset 11.7292px 11.7292px 26px #FFFFFF;
+    backdrop-filter: blur(83px);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.calendar-random .random-week {
+    display: flex;
+    border-bottom: 1px solid #FFF;
+}
+
+.calendar-random .random-week:last-child {
+    border-bottom: none;
+}
+
+.calendar-random .random-week .random-day {
+    width: 94px;
+    height: 100px;
+    padding: 20px 16px;
+    box-sizing: border-box;
+    border-right: 1px solid #FFF;
+    color: #4A5660;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+}
+
+.calendar-random .random-week .random-day:last-child {
+    border-right: none;
+}
+
+.calendar-random .random-week .random-day .random-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FF530D;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-random .random-week .random-day .random-wrapper .random-wrapper-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar-random .random-week .random-day .random-wrapper .random-wrapper-text {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.calendar-wrapper {
+    padding: 100px;
+    position: relative;
+    width: fit-content;
+}
+
+.calendar-wrapper .calendar-img1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.calendar-wrapper .calendar-img2 {
+    position: absolute;
+    left: -60px;
+    bottom: 0;
+}
+
+.calendar-wrapper .calendar-img3 {
+    position: absolute;
+    bottom: 94px;
+    right: -22px;
+}
+
+.calendar-resize-spy {
+    width: 100%;
+    overflow: hidden;
+}
