@@ -655,3 +655,11 @@
     }
   }
 }
+
+.main-title {
+  @include text($color-3, 700, 25);
+}
+
+.main-text {
+  @include text($color-3, 300, 15);
+}

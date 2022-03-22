@@ -466,6 +466,107 @@
             }
         }
     }
+    .section-doctors-detail-text {
+        .link-action {
+            @include text($color-1, 400, 14);
+            padding: 12px 32px;
+            border: 1px solid $color-1;
+            border-radius: 36px;
+            display: inline-block;
+            &:hover {
+                color: $color-2;
+                background-color: $color-1;
+            }
+            &:active {
+                color: $color-1;
+                background-color: $color-2;
+            }
+        }
+    }
+    .section-doctors-detail-table {
+        background-color: $color-5;
+        .section-doctors-content-wrapper {
+            padding: 30px 20px;
+            .table-container-wrapper {
+                overflow-x: auto;
+                border-radius: 6px;
+            }
+            .table-container {
+                background-color: $color-2;
+                min-width: 650px;
+                .table-header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 20px 32px;
+                    border-bottom: 2px solid $color-5;
+                    .table-header-action {
+                        @include text($color-3, 500, 16);
+                    }
+                    .table-header-action-info {
+                        @include text($color-1, 400, 13);
+                        display: flex;
+                        .action-info-alert {
+                            width: 18px;
+                            height: 18px;
+                            border: 1px solid $color-1;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 100%;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .table {
+                    margin: 0;
+                    text-align: center;
+                    &>:not(caption)>*>* {
+                        padding: 1rem;
+                    }
+                    thead {
+                        .t-head {
+                            color: $color-3;
+                            &.t-head-active {
+                                color: $color-1;
+                            }
+                            .t-head-primary {
+                                @include text(inherit, 500, 14);
+                            }
+                            .t-head-secodary {
+                                @include text(inherit, 300, 14);
+                            }
+                        }
+                    }
+                    tbody {
+                        border-top: 4px solid $color-5;
+                        .table-data {
+                            border: none;
+                            border-right: 2px solid $color-5;
+                            &:last-child {
+                                border-right:none;
+                            }
+                            &.data-important {
+                                color: $color-9;
+                            }
+                            @include text($color-6, 500, 14);
+                        }
+                    }
+                }
+                .table-footer {
+                    text-align: center;
+                    border-top: 2px solid $color-5;
+                    padding: 16px 20px;
+                    .table-footer-action {
+                        @include text($color-1, 400, 14);
+                        &:hover {
+                            color: $color-3;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1199px) {
