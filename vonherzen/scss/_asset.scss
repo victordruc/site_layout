@@ -663,3 +663,10 @@
 .main-text {
   @include text($color-3, 300, 15);
 }
+
+.action-change {
+  @include text($color-1, 400, 14);
+  &:hover {
+    color: $color-3;
+  }
+}

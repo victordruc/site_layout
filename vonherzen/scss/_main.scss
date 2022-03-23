@@ -1,4 +1,7 @@
 .home-main {
+    &.doctors-detail-main {
+        padding-bottom: 100px;
+    }
     .section-search {
         padding: 16px 0;
         .search-wrapper {
@@ -564,6 +567,157 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    .section-doctors-list-comments {
+        background-color: $color-5;
+        margin-top: -1rem;
+        padding: 30px 20px;
+        .section-doctors-list-comments-wrapper {
+            background-color: $color-2;
+            border-radius: 6px;
+            .comments-wrapper-header {
+                border-bottom: 2px solid $color-5;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 18px 32px;
+                .comment-header-left {
+                    @include text($color-3, 500, 16);
+                }
+                .comment-header-right {
+                    .comment-important {
+                        @include text($color-3, 500, 14);
+                    }
+                    .comment-ratings {
+                        @include text($color-3, 300, 14);
+                    }
+                    .comment-star {
+                        @include text($color-3, 500, 20);
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .comments-wrapper-body {
+                padding: 18px 0;
+                .comments-list {
+                    padding: 6px 32px;
+                    border-bottom: 2px solid $color-5;
+                    .img-wrapper {
+                        width: 100%;
+                        border-radius: 100%;
+                        max-width: 320px;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .comments-list-header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        margin-bottom: 16px;
+                        .commnet-list-header-left {
+                            .commnet-name {
+                                @include text($color-3, 500, 16);
+                            }
+                            .commnet-date {
+                                @include text($color-3, 300, 14);
+                            }
+                        }
+                        .commnet-list-header-right {
+                            @include text($color-3, 500, 18);
+                        }
+                    }
+                }
+            }
+            .comments-wrapper-footer {
+                padding: 18px 32px;
+                text-align: center;
+                padding-top: 0;
+            }
+        }
+    }
+    .section-doctors-list-history {
+        background-color: $color-5;
+        margin-top: -1rem;
+        padding: 30px 20px;
+        .section-doctors-history-content {
+            background-color: $color-2;
+            border-radius: 6px;
+            .section-doctors-history-header {
+                padding: 18px 32px;
+                border-bottom: 2px solid $color-5;
+                .history-header-nav {
+                    @include text($color-3, 500, 14);
+                    margin-right: 16px;
+                    &.history-active {
+                        color: $color-1;
+                    }
+                }
+            }
+            .section-doctors-history-body {
+                padding: 18px 32px;
+                .section-doctors-history-body-item {
+                    @include text($color-3, 300, 15);
+                    padding-bottom: 12px;
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+            .section-doctors-history-footer {
+                padding: 18px 32px;
+                border-top: 2px solid $color-5;
+                text-align: center;
+            }
+        }
+    }
+    .section-doctors-detail-news {
+        background-color: $color-5;
+        margin-top: -1rem;
+        padding: 30px 20px;
+        .doctors-detail-news-content {
+            background-color: $color-2;
+            border-radius: 6px;
+            .news-content-list {
+                .news-content-item {
+                    padding: 18px 32px;
+                    border-bottom: 2px solid $color-5;
+                    .news-content-item-top {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        .content-item-top-type {
+                            @include text($color-2, 600, 12);
+                            text-transform: uppercase;
+                            padding: 4px 12px;
+                            margin-right: 10px;
+                            background-color: $color-1;
+                            border-radius: 4px;
+                        }
+                        .content-item-top-date {
+                            @include text($color-3, 300, 14);
+                        }
+                    }
+                    .news-content-item-name {
+                        @include text($color-3, 700, 18);
+                        margin: 12px 0;
+                    }
+                    .main-text {
+                        margin: 0;
+                    }
+                }
+            }
+            .news-content-footer {
+                padding: 18px 32px;
+                text-align: center;
             }
         }
     }

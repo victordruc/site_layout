@@ -1009,6 +1009,16 @@
   font-size: 0.9375rem;
 }
 
+.action-change {
+  color: var(--color-1);
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.action-change:hover {
+  color: var(--color-3);
+}
+
 .header-main .navbar-content-search {
   position: absolute;
   width: 100%;
@@ -1562,6 +1572,10 @@
   .header-main .header-hero {
     display: none;
   }
+}
+
+.home-main.doctors-detail-main {
+  padding-bottom: 100px;
 }
 
 .home-main .section-search {
@@ -2414,6 +2428,231 @@
 
 .home-main .section-doctors-detail-table .section-doctors-content-wrapper .table-container .table-footer .table-footer-action:hover {
   color: var(--color-3);
+}
+
+.home-main .section-doctors-list-comments {
+  background-color: var(--color-5);
+  margin-top: -1rem;
+  padding: 30px 20px;
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper {
+  background-color: var(--color-2);
+  border-radius: 6px;
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper .comments-wrapper-header {
+  border-bottom: 2px solid var(--color-5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 18px 32px;
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper .comments-wrapper-header .comment-header-left {
+  color: var(--color-3);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper .comments-wrapper-header .comment-header-right .comment-important {
+  color: var(--color-3);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper .comments-wrapper-header .comment-header-right .comment-ratings {
+  color: var(--color-3);
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper .comments-wrapper-header .comment-header-right .comment-star {
+  color: var(--color-3);
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-left: 10px;
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper .comments-wrapper-body {
+  padding: 18px 0;
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper .comments-wrapper-body .comments-list {
+  padding: 6px 32px;
+  border-bottom: 2px solid var(--color-5);
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper .comments-wrapper-body .comments-list .img-wrapper {
+  width: 100%;
+  border-radius: 100%;
+  max-width: 320px;
+  overflow: hidden;
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper .comments-wrapper-body .comments-list .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper .comments-wrapper-body .comments-list .comments-list-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper .comments-wrapper-body .comments-list .comments-list-header .commnet-list-header-left .commnet-name {
+  color: var(--color-3);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper .comments-wrapper-body .comments-list .comments-list-header .commnet-list-header-left .commnet-date {
+  color: var(--color-3);
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper .comments-wrapper-body .comments-list .comments-list-header .commnet-list-header-right {
+  color: var(--color-3);
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper .comments-wrapper-footer {
+  padding: 18px 32px;
+  text-align: center;
+  padding-top: 0;
+}
+
+.home-main .section-doctors-list-history {
+  background-color: var(--color-5);
+  margin-top: -1rem;
+  padding: 30px 20px;
+}
+
+.home-main .section-doctors-list-history .section-doctors-history-content {
+  background-color: var(--color-2);
+  border-radius: 6px;
+}
+
+.home-main .section-doctors-list-history .section-doctors-history-content .section-doctors-history-header {
+  padding: 18px 32px;
+  border-bottom: 2px solid var(--color-5);
+}
+
+.home-main .section-doctors-list-history .section-doctors-history-content .section-doctors-history-header .history-header-nav {
+  color: var(--color-3);
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-right: 16px;
+}
+
+.home-main .section-doctors-list-history .section-doctors-history-content .section-doctors-history-header .history-header-nav.history-active {
+  color: var(--color-1);
+}
+
+.home-main .section-doctors-list-history .section-doctors-history-content .section-doctors-history-body {
+  padding: 18px 32px;
+}
+
+.home-main .section-doctors-list-history .section-doctors-history-content .section-doctors-history-body .section-doctors-history-body-item {
+  color: var(--color-3);
+  font-weight: 300;
+  font-size: 0.9375rem;
+  padding-bottom: 12px;
+}
+
+.home-main .section-doctors-list-history .section-doctors-history-content .section-doctors-history-body .section-doctors-history-body-item:last-child {
+  padding-bottom: 0;
+}
+
+.home-main .section-doctors-list-history .section-doctors-history-content .section-doctors-history-footer {
+  padding: 18px 32px;
+  border-top: 2px solid var(--color-5);
+  text-align: center;
+}
+
+.home-main .section-doctors-detail-news {
+  background-color: var(--color-5);
+  margin-top: -1rem;
+  padding: 30px 20px;
+}
+
+.home-main .section-doctors-detail-news .doctors-detail-news-content {
+  background-color: var(--color-2);
+  border-radius: 6px;
+}
+
+.home-main .section-doctors-detail-news .doctors-detail-news-content .news-content-list .news-content-item {
+  padding: 18px 32px;
+  border-bottom: 2px solid var(--color-5);
+}
+
+.home-main .section-doctors-detail-news .doctors-detail-news-content .news-content-list .news-content-item .news-content-item-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.home-main .section-doctors-detail-news .doctors-detail-news-content .news-content-list .news-content-item .news-content-item-top .content-item-top-type {
+  color: var(--color-2);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  margin-right: 10px;
+  background-color: var(--color-1);
+  border-radius: 4px;
+}
+
+.home-main .section-doctors-detail-news .doctors-detail-news-content .news-content-list .news-content-item .news-content-item-top .content-item-top-date {
+  color: var(--color-3);
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.home-main .section-doctors-detail-news .doctors-detail-news-content .news-content-list .news-content-item .news-content-item-name {
+  color: var(--color-3);
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 12px 0;
+}
+
+.home-main .section-doctors-detail-news .doctors-detail-news-content .news-content-list .news-content-item .main-text {
+  margin: 0;
+}
+
+.home-main .section-doctors-detail-news .doctors-detail-news-content .news-content-footer {
+  padding: 18px 32px;
+  text-align: center;
 }
 
 @media (max-width: 1199px) {
