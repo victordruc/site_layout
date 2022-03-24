@@ -3372,6 +3372,246 @@
   color: var(--color-3);
 }
 
+.registration-main .section-list-patient .section-list-patient-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.registration-main .section-list-patient .section-list-patient-header .list-patient-header-left .list-patient-header-top {
+  color: var(--color-9);
+  font-weight: 400;
+  font-size: 1.0625rem;
+}
+
+.registration-main .section-list-patient .section-list-patient-header .list-patient-header-left .list-patient-header-top span {
+  color: var(--color-1);
+}
+
+.registration-main .section-list-patient .section-list-patient-header .list-patient-header-left .list-patient-header-bottom {
+  color: var(--color-9);
+  font-weight: 500;
+  font-size: 1.0625rem;
+}
+
+.registration-main .section-list-patient .section-list-patient-header .list-patient-header-right .btn-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration-main .section-list-patient .section-list-patient-header .list-patient-header-right .btn-type span {
+  margin-left: 10px;
+}
+
+.registration-main .section-list-patient .section-list-patient-header .list-patient-header-right .btn-type:hover path, .registration-main .section-list-patient .section-list-patient-header .list-patient-header-right .btn-type:hover rect {
+  fill: var(--color-1);
+}
+
+.registration-main .section-list-patient .section-list-patient-header .list-patient-header-right .btn-type:active path, .registration-main .section-list-patient .section-list-patient-header .list-patient-header-right .btn-type.nice-select.open path, .registration-main .section-list-patient .section-list-patient-header .list-patient-header-right .btn-type:active rect, .registration-main .section-list-patient .section-list-patient-header .list-patient-header-right .btn-type.nice-select.open rect {
+  fill: var(--color-2);
+}
+
+.registration-main .section-list-patient .section-list-patient-content {
+  background: var(--color-5);
+  border-radius: 6px;
+  padding: 50px;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item {
+  background: var(--color-2);
+  padding: 26px 0;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item::before {
+  content: "";
+  border: 4px solid transparent;
+  border-left-color: var(--color-1);
+  height: calc(100% - 26px * 2);
+  position: absolute;
+  top: 26px;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item:last-child {
+  margin-bottom: 0;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-img {
+  width: 84px;
+  height: 84px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-4);
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-top .patient-item-info-top-left .patient-name {
+  color: var(--color-3);
+  font-weight: 500;
+  font-size: 1.0625rem;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-top .patient-item-info-top-left .patient-date {
+  color: var(--color-3);
+  font-weight: 300;
+  font-size: 1.0625rem;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-top .patient-item-info-top-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-top .patient-item-info-top-right > * {
+  padding: 12px 24px;
+  border-radius: 6px;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-top .patient-item-info-top-right > *:hover {
+  opacity: .6;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-top .patient-item-info-top-right > *:active, .registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-top .patient-item-info-top-right > *.nice-select.open {
+  opacity: 1;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-top .patient-item-info-top-right .patient-start {
+  border: 1px solid var(--color-4);
+  background-color: var(--color-4);
+  color: var(--color-2);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-top .patient-item-info-top-right .patient-start.patient-start-active {
+  background-color: var(--color-1);
+  border: 1px solid var(--color-1);
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-top .patient-item-info-top-right .patient-advisory {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid var(--color-3);
+  color: var(--color-3);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-top .patient-item-info-top-right .patient-advisory span {
+  margin-left: 10px;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-top .patient-item-info-top-right .patient-messages {
+  border: 1px solid var(--color-3);
+  padding: 12px 20px;
+  margin-right: 20px;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-bottom .patient-item-info-fw {
+  color: var(--color-9);
+  font-weight: 400;
+  font-size: 0.9375rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-bottom .patient-item-info-fw span {
+  margin-left: 4px;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-bottom .patient-item-info-fw:hover {
+  opacity: .6;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-bottom .patient-item-info-delete {
+  color: var(--color-6);
+  font-weight: 400;
+  font-size: 0.875rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-bottom .patient-item-info-delete span {
+  margin-left: 4px;
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-bottom .patient-item-info-delete:hover {
+  color: var(--color-1);
+}
+
+.registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-bottom .patient-item-info-delete:hover svg > * {
+  stroke: var(--color-1);
+}
+
 @media (max-width: 1199px) {
   .registration-main .section-registration-menu-wrapper {
     position: absolute;
