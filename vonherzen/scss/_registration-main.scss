@@ -507,6 +507,76 @@
             }
         }
     }
+    .section-cabinet-calendar {
+        .cabinet-calendar-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            .calendar-header-title {
+                @include text($color-3, 800, 26);
+                margin: 0;
+            }
+        }
+        .calendar-wrapper {
+            background-color: $color-5;
+            padding: 20px 0 100px 0;
+            .calenader-wrapper-table {
+                overflow-x: auto;
+                .table-wrapper {
+                    border: 1px solid $color-4;
+                    border-radius: 6px;
+                    overflow: hidden;
+                    min-width: 1300px;
+                    .table {
+                        margin: 0;
+                        background-color: $color-2;
+                    }  
+                    &:first-child {
+                        margin-bottom: 10px;
+                        th {
+                            border-bottom: 1px solid $color-4;
+                            padding: 24px 40px;
+                        }
+                        .control-calendar-day {
+                            @include text($color-3, 600, 19);
+                        }
+                        .control-calendar-data {
+                            text-align: right;
+                            @include text($color-1, 400, 16);
+                        }
+                        .row-day {
+                            text-align: center;
+                            @include text($color-3, 500, 14);
+                        }
+                    }
+                    &:last-child {
+                        td {
+                            border: 1px solid $color-4;
+                            padding: 14px 20px;
+                            height: 180px;
+                        }
+                        .calendar-date {
+                            text-align: right;
+                            @include text($color-6, 500, 13);
+                        }
+                        .caledar-notification {
+                            .notification {
+                                .notification-hours {
+                                    @include text($color-6, 500, 15);
+                                }
+                                .notification-title {
+                                    @include text($color-3, 400, 14);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(max-width: 1199px) {

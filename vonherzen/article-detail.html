@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@400;600&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Vonherzen</title>
+  </head>
+  <body>
+
+    <header class="header-main">
+
+      <nav class="navbar-top">
+        <div class="navbar-content-search" id="searchInput">
+          <div class="container-content">
+            <input class="search-navbar-input" type="search" placeholder="search...">
+          </div>
+        </div>
+        <div class="container-content justify-content-between d-flex align-items-center">
+          <div class="navbar-top-title">
+            Online-konsultation eines likar 
+          </div>
+          <div class="navbar-top-action">
+            <div class="search-navbar">
+              <button class="search-navbar-btn">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.8196 19.7887L14.7342 13.7033C15.9982 12.2999 16.775 10.4496 16.775 8.41664C16.775 4.05145 13.2236 0.5 8.85833 0.5C4.4931 0.5 0.94165 4.05145 0.94165 8.41668C0.94165 12.7819 4.4931 16.3334 8.85833 16.3334C10.8913 16.3334 12.7416 15.5565 14.145 14.2925L20.2304 20.3779C20.3118 20.4593 20.4184 20.5 20.525 20.5C20.6316 20.5 20.7382 20.4593 20.8196 20.3779C20.9824 20.2152 20.9824 19.9515 20.8196 19.7887ZM8.85833 15.5C4.9529 15.5 1.77501 12.3225 1.77501 8.41668C1.77501 4.51086 4.9529 1.33332 8.85833 1.33332C12.7638 1.33332 15.9417 4.51082 15.9417 8.41668C15.9417 12.3225 12.7638 15.5 8.85833 15.5Z" fill="white"/>
+                </svg>
+              </button>
+            </div>
+            <select>
+              <option value="Deutsch">Deutsch</option>
+              <option value="English">English</option>
+            </select>
+            <ul class="navbar-top-social">
+              <li class="navbar-top-social-item">
+                <a class="navbar-top-social-link" href="#">
+                  <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.7465 4.0076V3.62778C14.3211 3.2115 14.831 2.71578 15.2601 2.15613C14.723 2.39354 14.137 2.53592 13.5512 2.63086C14.137 2.25108 14.6254 1.72884 14.8695 1.01679C14.2773 1.35145 13.6345 1.59181 12.9652 1.72884C12.4281 1.15917 11.6469 0.826904 10.768 0.826904C9.1078 0.826904 7.74058 2.10862 7.74058 3.72277C7.74058 3.92557 7.77621 4.09374 7.81708 4.28652C7.82404 4.31933 7.83116 4.35286 7.83827 4.38739C5.34799 4.24492 3.10192 3.10558 1.63711 1.39656C1.38306 1.83018 1.24842 2.32093 1.24648 2.82075C1.24648 3.81768 1.78358 4.71965 2.56478 5.19438C2.08216 5.1926 1.60922 5.06123 1.19761 4.8146V4.86211C1.19991 5.52878 1.44036 6.17368 1.8773 6.68517C2.31423 7.19667 2.92019 7.54257 3.59025 7.66299C3.33332 7.71794 3.07178 7.74973 2.80899 7.75793C2.6124 7.76575 2.41559 7.7498 2.22303 7.71046C2.42464 8.28971 2.80575 8.79305 3.31333 9.15042C3.82096 9.50778 4.42974 9.7014 5.05506 9.70431C3.98642 10.4965 2.68471 10.9294 1.34413 10.9386C1.09897 10.9464 0.853658 10.9305 0.611694 10.8911C1.99022 11.7275 3.57963 12.1713 5.20158 12.1729C10.7191 12.1729 13.7465 7.80541 13.7465 4.0076Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="navbar-top-social-item">
+                <a class="navbar-top-social-link" href="#">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9085 11.8492V3.15065C14.9085 1.63785 13.639 0.408691 12.0765 0.408691H3.09211C1.5296 0.408691 0.260071 1.63784 0.260071 3.15065V11.8492C0.260071 13.362 1.5296 14.5912 3.09211 14.5912H12.0765C13.639 14.5912 14.9085 13.362 14.9085 11.8492ZM11.5882 7.4999C11.5882 9.62729 9.78159 11.3765 7.58435 11.3765C5.38705 11.3765 3.58043 9.62729 3.58043 7.4999C3.57849 6.9973 3.67807 6.49927 3.87336 6.03441H1.67611V11.8492C1.67836 12.2147 1.82876 12.5643 2.09427 12.8213C2.35978 13.0784 2.71864 13.2218 3.09211 13.2201H12.0765C12.4499 13.2218 12.8089 13.0784 13.0743 12.8213C13.3398 12.5643 13.4902 12.2147 13.4925 11.8492V6.03441H11.2952C11.4905 6.49927 11.5901 6.99729 11.5882 7.4999ZM7.58435 10.0055C9.00039 10.0055 10.1722 8.8709 10.1722 7.49991C10.1722 6.93262 9.97693 6.45987 9.6839 6.03442C9.19563 5.41982 8.46325 4.99432 7.58435 4.99432C6.7054 4.99432 5.97302 5.4198 5.48475 6.03442C5.19176 6.45987 4.99647 6.9799 4.99647 7.49991C4.99647 8.8709 6.1683 10.0055 7.58435 10.0055ZM13.2484 2.06331V4.47432H10.7582V2.06331H13.2484Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="navbar-top-social-item">
+                <a class="navbar-top-social-link" href="#">
+                  <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.30311 7.49992H7.50041L7.74452 4.66344H5.40076V3.52886C5.40076 2.96157 5.79139 2.867 6.03555 2.867H7.69565V0.408691H5.44953C2.95935 0.408691 2.37338 2.20514 2.37338 3.38703V4.66344H0.908569V7.49992H2.37338V14.5912H5.30311V7.49992Z" fill="white"/>
+                  </svg>  
+                </a>
+              </li>
+              <li class="navbar-top-social-item">
+                <a class="navbar-top-social-link" href="#">
+                  <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2465 8.47837C15.3388 7.67779 15.3877 6.87299 15.393 6.06735L15.393 4.93273C15.3855 4.12716 15.3366 3.32247 15.2465 2.5217C15.2465 2.5217 15.1 1.4817 14.6606 1.05621C14.4748 0.858136 14.2482 0.70093 13.9956 0.594988C13.7431 0.489045 13.4705 0.436783 13.1958 0.441659C11.1449 0.299806 8.06878 0.299805 8.06878 0.299805C8.06878 0.299805 4.99259 0.299806 2.94181 0.441659C2.90293 0.447933 2.85798 0.453375 2.80806 0.459423C2.482 0.498917 1.94276 0.564239 1.47699 1.05621C1.03749 1.4817 0.890972 2.5217 0.890972 2.5217C0.798666 3.32228 0.749792 4.12709 0.744507 4.93273V6.06735C0.75199 6.87292 0.800864 7.67761 0.890972 8.47837C0.890972 8.47837 1.03749 9.51843 1.47699 9.94387C1.94407 10.4372 2.55877 10.5015 2.93589 10.541C2.99246 10.5469 3.04369 10.5523 3.08827 10.5584C4.26015 10.653 8.06873 10.7003 8.06873 10.7003C8.06873 10.7003 11.1449 10.7003 13.1958 10.5584C13.2346 10.5521 13.2796 10.5467 13.3295 10.5407C13.6555 10.5012 14.1948 10.4358 14.6606 9.94387C15.1 9.51843 15.2465 8.47837 15.2465 8.47837ZM6.5551 7.43828L10.5101 5.3582L6.5551 3.27817V7.43828Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="navbar-top-social-item">
+                <a class="navbar-top-social-link" href="#">
+                  <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6879 11.966L14.9978 0.990314C15.005 0.920095 14.9948 0.849215 14.9681 0.783673C14.9413 0.718132 14.8989 0.65986 14.8443 0.613802C14.7566 0.527583 14.6395 0.476027 14.5153 0.468994C14.4568 0.468983 9.86152 2.1583 0.729264 5.53693C0.505092 5.6238 0.393005 5.78308 0.393005 6.01476C0.422257 6.23678 0.539209 6.38158 0.743864 6.44914L4.0771 7.47723L5.42208 11.4882C5.50983 11.7198 5.68523 11.8356 5.94834 11.8356C6.07529 11.8315 6.19574 11.7797 6.2846 11.6909L8.17049 9.9388L11.5768 12.3859C11.6923 12.4785 11.8368 12.5296 11.9861 12.5307C12.3662 12.5307 12.6002 12.3425 12.6879 11.966ZM12.1908 2.56857C12.1616 2.56857 9.725 4.09862 4.88111 7.1587L5.90449 10.489L6.12374 8.37496C10.2952 4.64883 12.3833 2.77371 12.3882 2.74958C12.392 2.73292 12.3944 2.71597 12.3954 2.69891C12.3954 2.61201 12.3273 2.56856 12.1908 2.56857Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-xl py-3">
+        <div class="container-content justify-content-between">
+          <a href="/" class="navbar-brand p-0">
+            <img src="/images/logo/Vonherzen.png" alt="Vonherzen-img" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="#EC1C24"
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+
+          <div class="collapse navbar-collapse flex-grow-0" id="navbar">
+            <div class="search-navbar">
+              <button class="search-navbar-btn">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.8196 19.7887L14.7342 13.7033C15.9982 12.2999 16.775 10.4496 16.775 8.41664C16.775 4.05145 13.2236 0.5 8.85833 0.5C4.4931 0.5 0.94165 4.05145 0.94165 8.41668C0.94165 12.7819 4.4931 16.3334 8.85833 16.3334C10.8913 16.3334 12.7416 15.5565 14.145 14.2925L20.2304 20.3779C20.3118 20.4593 20.4184 20.5 20.525 20.5C20.6316 20.5 20.7382 20.4593 20.8196 20.3779C20.9824 20.2152 20.9824 19.9515 20.8196 19.7887ZM8.85833 15.5C4.9529 15.5 1.77501 12.3225 1.77501 8.41668C1.77501 4.51086 4.9529 1.33332 8.85833 1.33332C12.7638 1.33332 15.9417 4.51082 15.9417 8.41668C15.9417 12.3225 12.7638 15.5 8.85833 15.5Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Ärzte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Über uns</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Artikel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kontakt</a>
+              </li>
+              <li class="nav-item nav-item-action">
+                <button class="btn-type btn-type-1">Login</button>
+              </li>
+              <li class="nav-item nav-item-action">
+                <button class="btn-type btn-type-2">Registrieren</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     
+    </header>
+
+    <div class="container-content">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="#">
+            <img src="/images/icon/home-link.svg" alt="">
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="#">
+            Ärzte
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="#">
+            Detail Artze
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <main class="home-main article-detail">
+      <section class="section-article-detail-header">
+        <div class="container-content">
+          <h2 class="article-detail-title">
+            Wie gehe ich mit Avitaminose um?
+          </h2>
+          <div class="article-doctors">
+            <div class="img-wrapper">
+              <img src="/images/upload/doctors.png" alt="user-img">
+            </div>
+            <div class="article-doctors-text">
+              <div class="article-autor">
+                Autor:
+              </div>
+              <div class="article-autor-name">
+                <span>Dr. Melanie Röder-Opitz,</span>
+                Kosmetikerin, Neurologe, Chirurgin
+              </div>
+            </div>
+          </div>
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <div class="article-primary-img">
+                <img src="/images/upload/image-article.png" alt="article-img">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="article-content">
+                <div class="primary-text title-article">
+                  Was ist Avitaminose?
+                </div>
+                <p class="secondary-text text-article">
+                  Avitaminose ist ein Mangel an einem Vitamin oder einer Gruppe von Vitaminen im menschlichen Körper, der am häufigsten im Frühjahr und Winter auftritt. Unser Körper ist ein komplexes, sich selbst regulierendes System. Erhält der Körper mit der Nahrung nicht mehr genügend Vitamine und Nährstoffe, geht er in den Sparmodus und gewöhnt sich allmählich an diesen Zustand. Wenn die Vitaminversorgung nicht rechtzeitig wiederhergestellt wird, entwickelt sich Beriberi, was zu einer geschwächten Immunität, allgemeiner Erschöpfung, häufigen Erkältungen, Stimmungsschwankungen und anderen unangenehmen Zuständen führt, die jeweils Anlass zur Sorge geben. Was zu tun ist, wenn Sie Beriberi haben, erzählen wir weiter. 
+                </p>
+                <div class="primary-text title-article">
+                  Avitaminose im Winter 
+                </div>
+                <p class="secondary-text text-article">
+                  Im Sommer „baden“ wir in Vitaminen, indem wir frisches Obst, Gemüse, Kräuter und andere Produkte essen. Im Winter sind wir gezwungen, in Bezug auf den Vitaminverbrauch auf einen Sparmodus umzuschalten. Aber können wir unseren Körper im Winter mit den notwendigen Elementen versorgen, um Beriberi zu vermeiden? 
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="secondary-text text-article">
+            In der kalten Jahreszeit verbindet viele Menschen die gleichen Probleme - verschwommenes Sehen, Apathie, Müdigkeit, trockene Haut, brüchige Nägel, Reizbarkeit. Nicht jeder verbindet diese Symptome miteinander, obwohl sie alle Winterberiberi charakterisieren - einen Mangel an Vitaminen im Körper.
+          </p>
+          <p class="secondary-text text-article">
+            Es scheint, dass es nicht schwierig ist, einen normalen Vitaminspiegel aufrechtzuerhalten. Beispielsweise beträgt der Tagesbedarf an Vitamin B1 nur anderthalb Gramm, dafür muss man aber einen ganzen Laib Schwarzbrot essen. Hier stellt sich die Frage nach der Gewinnung von Vitaminen aus einer Vielzahl von Produkten.
+          </p>
+          <p class="secondary-text text-article">
+            Welche Vitamine fehlen im Winter? Die häufigsten Vitaminmängel sind:
+          </p>
+          <ul class="list-article-firts">
+            <li class="secondary-text">
+              Avitaminose von Vitamin A oder Retinol;
+            </li>
+            <li class="secondary-text">
+              Avitaminose von Vitamin A oder Retinol;
+            </li>
+            <li class="secondary-text">
+              Avitaminose von Vitamin A oder Retinol;
+            </li>
+            <li class="secondary-text">
+              Avitaminose von Vitamin A oder Retinol;
+            </li>
+          </ul>
+          <p class="secondary-text text-article">
+            Es scheint, dass es nicht schwierig ist, einen normalen Vitaminspiegel aufrechtzuerhalten. Beispielsweise beträgt der Tagesbedarf an Vitamin B1 nur anderthalb Gramm, dafür muss man aber einen ganzen Laib Schwarzbrot essen. Hier stellt sich die Frage nach der Gewinnung von Vitaminen aus einer Vielzahl von Produkten.
+          </p>
+          <p class="secondary-text text-article">
+            Welche Vitamine fehlen im Winter? Die häufigsten Vitaminmängel sind:
+          </p>
+        </div>
+      </section>
+      <section class="section-article-card">
+        <div class="container-content">
+          <div class="card-doctors-item">
+            <div class="row">
+              <div class="col-xl-7">
+                <div class="card-doctors-item-left">
+                  <div class="card-doctors-item-left-top">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card-doctors-item-img">
+                          <img src="images/upload/doctors.png" alt="img-doctor">
+                        </div>
+                      </div>
+                      <div class="col-md-8 gy-4 px-md-2 px-4">
+                        <div class="row gy-3 mx-0">
+                          <div class="col-sm-8">
+                            <div class="card-doctors-name">
+                              <span>Melanie Röder-Opitz</span>
+                              <img src="/images/upload/flag-eng.png" alt="flag-img">
+                              <img src="/images/icon/ok-icon.svg" alt="icon-img">
+                            </div>
+                            <div class="card-doctors-description">
+                              Neurologe, Kosmetikerin, Chirurgin
+                            </div>
+                            <div class="card-doctors-description">
+                              Arzt der höchsten Kategorie
+                            </div>
+                            <div class="card-doctors-description">
+                              Kandidat der medizinischen Wissenschaften
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card-doctors-information-top">
+                              <div class="card-doctors-information-top-left">
+                                <div class="card-doctors-information-star">
+                                  <img src="./images/icon/star.svg" alt="star-img">
+                                  <span>5.0</span>
+                                </div>
+                                <div class="card-doctors-information-rating">
+                                  128 ratings
+                                </div>
+                              </div>
+                              <div class="card-doctors-information-top-right">
+                                <div class="card-doctors-information-prices">
+                                  12 $
+                                </div>
+                                <div class="card-doctors-information-prices-text">
+                                  prices
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="card-doctors-information-list">
+                              <span class="card-doctors-information-list-item">
+                                <span>512</span> Patienten
+                              </span>
+                              <span class="card-doctors-information-list-item">
+                                <span>21 Jahre</span> Erfahrung
+                              </span>
+                              <span class="card-doctors-information-list-item">
+                                <span>12</span> Bewertungen
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <p class="card-doctors-text">
+                              Der Arzt befasst sich mit der Diagnose, Vorbeugung und Behandlung von Erkrankungen der inneren Organe bei Kindern von der Geburt bis zum 18. Lebensjahr. Tipps zu Impfungen und richtiger Ernährung ...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-doctors-item-left-bottom">
+                    <div class="card-doctors-item-left-bottom-name">
+                      Dr. Home (Doctor Home), Gesundheitszentrum
+                    </div>
+                    <div class="card-doctors-item-left-bottom-candidat">
+                      <img src="images/icon/map.svg" alt="map-img">
+                      <span>Kandidat der medizinischen Wissenschaften</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5">
+                <div class="card-doctors-pre-registration">
+                  <div class="card-doctors-pre-registration-title">
+                    Voranmeldung
+                  </div>
+                  <div class="card-doctors-pre-registration-text">
+                    <div class="pre-registration-icon">
+                      <span>
+                        <img src="/images/icon/alert.svg" alt="alert-img">
+                      </span>
+                    </div>
+                    <div class="pre-registration-text">
+                      CET - Die Diagrammzeit wird als mitteleuropäisch angenommen
+                      Wählen Sie Ihre gewünschte Zeit und warten Sie auf die Bestätigung
+                    </div>
+                  </div>
+                  <div class="card-doctors-pre-registration-date">
+                    <button class="btn-control-date control-left">
+                      <svg width="5" height="7" viewBox="0 0 5 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.855278 3.61231L4.89844 6.85327L4.89844 0.371346L0.855278 3.61231Z" fill="#EC1C24"></path>
+                      </svg>                            
+                    </button>
+                    <div class="pre-registration-date-wrapper">
+                      <div class="pre-registration-date pre-registration-date-active">
+                        <div class="pre-registration-date-header">
+                          Heute
+                        </div>
+                        <div class="pre-registration-date-body">
+                          2. Mär
+                        </div>
+                      </div>
+                      <div class="pre-registration-date">
+                        <div class="pre-registration-date-header">
+                          Dienstag
+                        </div>
+                        <div class="pre-registration-date-body">
+                          3. Mär
+                        </div>
+                      </div>
+                      <div class="pre-registration-date">
+                        <div class="pre-registration-date-header">
+                          Mittwoch
+                        </div>
+                        <div class="pre-registration-date-body">
+                          4. Mär
+                        </div>
+                      </div>
+                      <div class="pre-registration-date">
+                        <div class="pre-registration-date-header">
+                          Donnerstag
+                        </div>
+                        <div class="pre-registration-date-body">
+                          5. Mär
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn-control-date control-right">
+                      <svg width="5" height="7" viewBox="0 0 5 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.43476 3.61231L0.391602 6.85327L0.391601 0.371346L4.43476 3.61231Z" fill="#EC1C24"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-doctors-pre-registration-hours">
+                    <div class="row g-2 align-items-center">
+                      <div class="col-xl-2 col-sm-3 col-6">
+                        <div class="pre-registration-hours-content">
+                          11:30
+                        </div>
+                      </div>
+                      <div class="col-xl-2 col-sm-3 col-6">
+                        <div class="pre-registration-hours-content">
+                          11:30
+                        </div>
+                      </div>
+                      <div class="col-xl-2 col-sm-3 col-6">
+                        <div class="pre-registration-hours-content">
+                          11:30
+                        </div>
+                      </div>
+                      <div class="col-xl-2 col-sm-3 col-6">
+                        <div class="pre-registration-hours-content">
+                          11:30
+                        </div>
+                      </div>
+                      <div class="col-xl-2 col-sm-3 col-6">
+                        <div class="pre-registration-hours-content">
+                          11:30
+                        </div>
+                      </div>
+                      <div class="col-xl-2 col-sm-3 col-6">
+                        <div class="pre-registration-hours-content">
+                          11:30
+                        </div>
+                      </div>
+                      <div class="col-xl-2 col-sm-3 col-6">
+                        <div class="pre-registration-hours-content">
+                          11:30
+                        </div>
+                      </div>
+                      <div class="col-xl-2 col-sm-3 col-6">
+                        <div class="pre-registration-hours-content">
+                          11:30
+                        </div>
+                      </div>
+                      <div class="col-xl-2 col-sm-3 col-6">
+                        <div class="pre-registration-hours-content">
+                          11:30
+                        </div>
+                      </div>
+                      <div class="col-xl-2 col-sm-3 col-6">
+                        <div class="pre-registration-hours-content">
+                          11:30
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-sm-6">
+                        <div class="pre-registration-hours-go">
+                          <button class="pre-registration-hours-btn-go">
+                            <span>Ganze Grafik</span>
+                            <img src="/images/icon/arrow-small-btn.svg" alt="arrow-img">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-doctors-pre-registration-action-btn">
+                    <div class="pre-registration-action-left">
+                      <a class="pre-registration-action-link" href="#">Detail</a>
+                    </div>
+                    <div class="pre-registration-action-right">
+                      <button class="btn-message">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.15137 11.6406C1.15137 6.05888 5.69413 1.51611 11.2758 1.51611C16.8575 1.51611 21.4003 6.05888 21.4003 11.6406C21.4003 17.2223 16.8575 21.765 11.2758 21.765H1.15137V11.6406Z" fill="#4A4A4A" stroke="#4A4A4A" stroke-width="1.5"></path>
+                          <circle cx="7.4082" cy="11.5" r="1.5" fill="white"></circle>
+                          <circle cx="11.4082" cy="11.5" r="1.5" fill="white"></circle>
+                          <circle cx="15.4082" cy="11.5" r="1.5" fill="white"></circle>
+                        </svg>
+                      </button>
+                      <button class="btn-type-2">
+                        Eintragung
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-article-comments">
+        <div class="container-content">
+          <h2 class="article-comments-title">
+            Kommentare zum Artikel
+          </h2>
+          <div class="article-comments-wrapper">
+            <ul class="article-comments-list">
+              <li class="article-comments-item">
+                <div class="img-wrapper">
+                  <img src="/images/upload/user-articles.png" alt="user-img">
+                </div>
+                <div class="article-comments">
+                  <div class="article-comments-date">
+                    <span class="comments-name">Melanie Röder-Opitz,</span>
+                    <span class="comments-date">Mo, 13. Dezember 2021</span>
+                  </div>
+                  <p class="article-comments-text">
+                    Hallo! Mein Name ist Asiyat, heute war ich beim Empfang von Madina Mubarakovna. Ich habe nie an Allergien gelitten, aber dann bin ich wie eine Tomate aufgewacht. Ich habe einfach dummerweise gegoogelt, und eine Liste von Ärzten kam heraus. Aus irgendeinem Grund fiel die Wahl auf Madina Mubarakovna. Ich habe mich gleich morgens um 9.30 Uhr angemeldet und bin zu ihr gerannt und weißt du, ich bereue es überhaupt nicht. Was für eine nette Person, freundlich und geduldig. Ich kam ganz irritiert, weil ich vor Juckreiz die ganze Nacht nicht geschlafen habe und morgens wie eine Tomate aufgestanden bin. Ansatz ist korrekt, kompetent zu Patienten! Was nicht weniger wichtig ist !!!! Sie verordnete eine Behandlung, und ich begann sofort loszulassen. Juckreiz geht weg Gott sei Dank. Danke, dass Sie nicht enttäuscht haben, dass Sie menschlich sind. Für Ihr Wissen (!) Möge Allah Ihnen gute Gesundheit geben, viele gute Nachrichten in Ihrem Zuhause.
+                  </p>
+                </div>
+              </li>
+              <li class="article-comments-item">
+                <div class="img-wrapper">
+                  <img src="/images/upload/user-articles.png" alt="user-img">
+                </div>
+                <div class="article-comments">
+                  <div class="article-comments-date">
+                    <span class="comments-name">Melanie Röder-Opitz,</span>
+                    <span class="comments-date">Mo, 13. Dezember 2021</span>
+                  </div>
+                  <p class="article-comments-text">
+                    Hallo! Mein Name ist Asiyat, heute war ich beim Empfang von Madina Mubarakovna. Ich habe nie an Allergien gelitten, aber dann bin ich wie eine Tomate aufgewacht.                  </p>
+                </div>
+              </li>
+              <li class="article-comments-item">
+                <div class="img-wrapper">
+                  <img src="/images/upload/user-articles.png" alt="user-img">
+                </div>
+                <div class="article-comments">
+                  <div class="article-comments-date">
+                    <span class="comments-name">Melanie Röder-Opitz,</span>
+                    <span class="comments-date">Mo, 13. Dezember 2021</span>
+                  </div>
+                  <p class="article-comments-text">
+                    Hallo! Mein Name ist Asiyat, heute war ich beim Empfang von Madina Mubarakovna. Ich habe nie an Allergien gelitten, aber dann bin ich wie eine Tomate aufgewacht.                   </p>
+                </div>
+              </li>
+              <li class="article-comments-item">
+                <div class="img-wrapper">
+                  <img src="/images/upload/user-articles.png" alt="user-img">
+                </div>
+                <div class="article-comments">
+                  <div class="article-comments-date">
+                    <span class="comments-name">Melanie Röder-Opitz,</span>
+                    <span class="comments-date">Mo, 13. Dezember 2021</span>
+                  </div>
+                  <p class="article-comments-text">
+                    Hallo! Mein Name ist Asiyat, heute war ich beim Empfang von Madina Mubarakovna. Ich habe nie an Allergien gelitten, aber dann bin ich wie eine Tomate aufgewacht.                   </p>
+                </div>
+              </li>
+            </ul>
+            <div class="article-comments-action">
+              <button class="btn-type-2">
+                Hinterlasse einen Kommentar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-main">
+      <div class="footer-main-top">
+        <div class="container-content">
+          <div class="footer-top-wrapper">
+            <a href="/" class="footer-brand">
+              <img src="images/logo/Vonherzen.png" alt="Vonherzen-img">
+            </a>
+            <nav class="footer-navigation">
+              <ul class="footer-list-nav">
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="#">
+                    Ärzte
+                  </a>
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="#">
+                    Über uns
+                  </a>
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="#">
+                    Articole
+                  </a>
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="#">
+                    Kontakt
+                  </a>
+                </li>
+              </ul>
+              <a class="footer-mail-to" href="mailto:vonherzen@gmail.md">vonherzen@gmail.md</a>
+              <ul class="footer-list-social">
+                <li class="footer-item-social">
+                  <a class="footer-link-social" href="#">
+                    <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.7465 4.0076V3.62778C14.3211 3.2115 14.831 2.71578 15.2601 2.15613C14.723 2.39354 14.137 2.53592 13.5512 2.63086C14.137 2.25108 14.6254 1.72884 14.8695 1.01679C14.2773 1.35145 13.6345 1.59181 12.9652 1.72884C12.4281 1.15917 11.6469 0.826904 10.768 0.826904C9.1078 0.826904 7.74058 2.10862 7.74058 3.72277C7.74058 3.92557 7.77621 4.09374 7.81708 4.28652C7.82404 4.31933 7.83116 4.35286 7.83827 4.38739C5.34799 4.24492 3.10192 3.10558 1.63711 1.39656C1.38306 1.83018 1.24842 2.32093 1.24648 2.82075C1.24648 3.81768 1.78358 4.71965 2.56478 5.19438C2.08216 5.1926 1.60922 5.06123 1.19761 4.8146V4.86211C1.19991 5.52878 1.44036 6.17368 1.8773 6.68517C2.31423 7.19667 2.92019 7.54257 3.59025 7.66299C3.33332 7.71794 3.07178 7.74973 2.80899 7.75793C2.6124 7.76575 2.41559 7.7498 2.22303 7.71046C2.42464 8.28971 2.80575 8.79305 3.31333 9.15042C3.82096 9.50778 4.42974 9.7014 5.05506 9.70431C3.98642 10.4965 2.68471 10.9294 1.34413 10.9386C1.09897 10.9464 0.853658 10.9305 0.611694 10.8911C1.99022 11.7275 3.57963 12.1713 5.20158 12.1729C10.7191 12.1729 13.7465 7.80541 13.7465 4.0076Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-item-social">
+                  <a class="footer-link-social" href="#">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9085 11.8492V3.15065C14.9085 1.63785 13.639 0.408691 12.0765 0.408691H3.09211C1.5296 0.408691 0.260071 1.63784 0.260071 3.15065V11.8492C0.260071 13.362 1.5296 14.5912 3.09211 14.5912H12.0765C13.639 14.5912 14.9085 13.362 14.9085 11.8492ZM11.5882 7.4999C11.5882 9.62729 9.78159 11.3765 7.58435 11.3765C5.38705 11.3765 3.58043 9.62729 3.58043 7.4999C3.57849 6.9973 3.67807 6.49927 3.87336 6.03441H1.67611V11.8492C1.67836 12.2147 1.82876 12.5643 2.09427 12.8213C2.35978 13.0784 2.71864 13.2218 3.09211 13.2201H12.0765C12.4499 13.2218 12.8089 13.0784 13.0743 12.8213C13.3398 12.5643 13.4902 12.2147 13.4925 11.8492V6.03441H11.2952C11.4905 6.49927 11.5901 6.99729 11.5882 7.4999ZM7.58435 10.0055C9.00039 10.0055 10.1722 8.8709 10.1722 7.49991C10.1722 6.93262 9.97693 6.45987 9.6839 6.03442C9.19563 5.41982 8.46325 4.99432 7.58435 4.99432C6.7054 4.99432 5.97302 5.4198 5.48475 6.03442C5.19176 6.45987 4.99647 6.9799 4.99647 7.49991C4.99647 8.8709 6.1683 10.0055 7.58435 10.0055ZM13.2484 2.06331V4.47432H10.7582V2.06331H13.2484Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-item-social">
+                  <a class="footer-link-social" href="#">
+                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.30311 7.49992H7.50041L7.74452 4.66344H5.40076V3.52886C5.40076 2.96157 5.79139 2.867 6.03555 2.867H7.69565V0.408691H5.44953C2.95935 0.408691 2.37338 2.20514 2.37338 3.38703V4.66344H0.908569V7.49992H2.37338V14.5912H5.30311V7.49992Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-item-social">
+                  <a class="footer-link-social" href="#">
+                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2465 8.47837C15.3388 7.67779 15.3877 6.87299 15.393 6.06735L15.393 4.93273C15.3855 4.12716 15.3366 3.32247 15.2465 2.5217C15.2465 2.5217 15.1 1.4817 14.6606 1.05621C14.4748 0.858136 14.2482 0.70093 13.9956 0.594988C13.7431 0.489045 13.4705 0.436783 13.1958 0.441659C11.1449 0.299806 8.06878 0.299805 8.06878 0.299805C8.06878 0.299805 4.99259 0.299806 2.94181 0.441659C2.90293 0.447933 2.85798 0.453375 2.80806 0.459423C2.482 0.498917 1.94276 0.564239 1.47699 1.05621C1.03749 1.4817 0.890972 2.5217 0.890972 2.5217C0.798666 3.32228 0.749792 4.12709 0.744507 4.93273V6.06735C0.75199 6.87292 0.800864 7.67761 0.890972 8.47837C0.890972 8.47837 1.03749 9.51843 1.47699 9.94387C1.94407 10.4372 2.55877 10.5015 2.93589 10.541C2.99246 10.5469 3.04369 10.5523 3.08827 10.5584C4.26015 10.653 8.06873 10.7003 8.06873 10.7003C8.06873 10.7003 11.1449 10.7003 13.1958 10.5584C13.2346 10.5521 13.2796 10.5467 13.3295 10.5407C13.6555 10.5012 14.1948 10.4358 14.6606 9.94387C15.1 9.51843 15.2465 8.47837 15.2465 8.47837ZM6.5551 7.43828L10.5101 5.3582L6.5551 3.27817V7.43828Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-item-social">
+                  <a class="footer-link-social" href="#">
+                    <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6879 11.966L14.9978 0.990314C15.005 0.920095 14.9948 0.849215 14.9681 0.783673C14.9413 0.718132 14.8989 0.65986 14.8443 0.613802C14.7566 0.527583 14.6395 0.476027 14.5153 0.468994C14.4568 0.468983 9.86152 2.1583 0.729264 5.53693C0.505092 5.6238 0.393005 5.78308 0.393005 6.01476C0.422257 6.23678 0.539209 6.38158 0.743864 6.44914L4.0771 7.47723L5.42208 11.4882C5.50983 11.7198 5.68523 11.8356 5.94834 11.8356C6.07529 11.8315 6.19574 11.7797 6.2846 11.6909L8.17049 9.9388L11.5768 12.3859C11.6923 12.4785 11.8368 12.5296 11.9861 12.5307C12.3662 12.5307 12.6002 12.3425 12.6879 11.966ZM12.1908 2.56857C12.1616 2.56857 9.725 4.09862 4.88111 7.1587L5.90449 10.489L6.12374 8.37496C10.2952 4.64883 12.3833 2.77371 12.3882 2.74958C12.392 2.73292 12.3944 2.71597 12.3954 2.69891C12.3954 2.61201 12.3273 2.56856 12.1908 2.56857Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main-bottom">
+        <div class="container-content">
+          <div class="footer-copyright">
+            <div class="footer-copyright-content">
+              <div class="footer-copyright-content-top">
+                develop by
+              </div>
+              <div class="footer-copyright-content-bottom">
+                <span class="footer-copyright-date">
+                  © Studio WebMaster, 2021
+                </span>
+                <a href="#" class="footer-copyright-link">
+                  <img src="images/logo/WebMasterStudio.png" alt="WebMasterStudio-img">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/lib/nice-select/jquery.js"></script> 
+    <script src="/lib/nice-select/jquery.nice-select.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/js/selectStyle.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

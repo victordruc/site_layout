@@ -11,7 +11,7 @@
   --color-7: #000000;
   --color-8: #2A2A2A;
   --color-9: #727272;
-  --color-10: #E5E5E5;
+  --color-10: #AFAFAF;
   --height-input: 64px;
 }
 
@@ -1017,6 +1017,136 @@
 
 .action-change:hover {
   color: var(--color-3);
+}
+
+.modal .modal-calendar-controll .modal-controll-text {
+  color: var(--color-10);
+  font-weight: 400;
+  font-size: 0.9375rem;
+}
+
+.modal .modal-calendar-controll .modal-controll-text span {
+  color: var(--color-3);
+  font-weight: 400;
+  font-size: 1.1875rem;
+}
+
+.modal .modal-body {
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.modal .modal-body .modal-calendar-list {
+  background-color: var(--color-5);
+  padding: 10px 0 10px 20px;
+}
+
+.modal .modal-body .modal-calendar-list .modal-calendar-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.modal .modal-body .modal-calendar-list .modal-calendar-item .modal-calendar-hours {
+  color: var(--color-3);
+  font-weight: 800;
+  font-size: 1.1875rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.modal .modal-body .modal-calendar-list .modal-calendar-item .modal-calendar-name {
+  color: var(--color-3);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.modal .modal-body .modal-calendar-list .modal-calendar-item.item-inactive .modal-calendar-hours {
+  color: var(--color-6);
+}
+
+.modal .modal-body .modal-calendar-list .modal-calendar-item.item-inactive .modal-calendar-name {
+  color: var(--color-6);
+}
+
+.modal .modal-body .modal-calendar-list .modal-calendar-item.item-active {
+  background-color: var(--color-2);
+  border-radius: 12px 0 0 12px;
+}
+
+.modal .modal-body .modal-calendar-list .modal-calendar-item.item-active .modal-calendar-hours {
+  color: var(--color-2);
+  background-color: var(--color-1);
+}
+
+.modal .modal-body .modal-calendar-list .modal-calendar-item.item-active .modal-calendar-name {
+  color: var(--color-1);
+  font-weight: 500;
+}
+
+.modal .modal-body .modal-body-content {
+  padding: 30px 0;
+}
+
+.modal .modal-body .modal-body-content .image-modal {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.modal .modal-body .modal-body-content .image-modal img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modal .modal-body .modal-body-content .modal-list-contact .modal-item-contact {
+  padding-bottom: 12px;
+}
+
+.modal .modal-body .modal-body-content .modal-list-contact .modal-item-contact .text-secondary {
+  color: var(--color-3) !important;
+  font-weight: 300 !important;
+  font-size: 0.875rem !important;
+}
+
+.modal .modal-body .modal-body-content .modal-list-contact .modal-item-contact .text-primary {
+  color: var(--color-3) !important;
+  font-weight: 500 !important;
+  font-size: 1.0625rem !important;
+}
+
+.modal .modal-body .modal-body-content .modal-list-contact .modal-item-contact:last-child {
+  padding-bottom: 0;
+}
+
+.modal .modal-body .modal-body-content .btn-type-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.modal .modal-body .modal-body-content .link-action {
+  color: var(--color-9);
+  font-weight: 400;
+  font-size: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 16px;
+  margin-top: 16px;
 }
 
 .header-main .navbar-content-search {
@@ -2655,6 +2785,175 @@
   text-align: center;
 }
 
+.home-main.article-detail .primary-text {
+  color: var(--color-3);
+  font-weight: 700;
+  font-size: 1.1875rem;
+}
+
+.home-main.article-detail .secondary-text {
+  color: var(--color-3);
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.home-main.article-detail .title-article {
+  margin-bottom: 12px;
+}
+
+.home-main.article-detail .text-article {
+  margin-bottom: 42px;
+}
+
+.home-main.article-detail .list-article-firts {
+  margin-bottom: 20px;
+  list-style: initial;
+  padding-left: 2rem;
+}
+
+.home-main.article-detail .section-article-detail-header .article-detail-title {
+  color: var(--color-3);
+  font-weight: 800;
+  font-size: 1.625rem;
+}
+
+.home-main.article-detail .section-article-detail-header .article-doctors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 36px;
+  margin-bottom: 60px;
+}
+
+.home-main.article-detail .section-article-detail-header .article-doctors .img-wrapper {
+  width: 58px;
+  height: 58px;
+  border-radius: 100%;
+  overflow: hidden;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.home-main.article-detail .section-article-detail-header .article-doctors .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home-main.article-detail .section-article-detail-header .article-doctors .article-doctors-text .article-autor {
+  color: var(--color-1);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.home-main.article-detail .section-article-detail-header .article-doctors .article-doctors-text .article-autor-name {
+  color: var(--color-6);
+  font-weight: 500;
+  font-size: 1.0625rem;
+}
+
+.home-main.article-detail .section-article-detail-header .article-doctors .article-doctors-text .article-autor-name span {
+  color: var(--color-3);
+}
+
+.home-main.article-detail .section-article-detail-header .article-primary-img {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.home-main.article-detail .section-article-detail-header .article-primary-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home-main.article-detail .section-article-card {
+  border-top: 1px solid var(--color-4);
+  padding: 38px 0 90px 0;
+}
+
+.home-main.article-detail .section-article-comments {
+  background-color: var(--color-5);
+  padding: 60px 0;
+}
+
+.home-main.article-detail .section-article-comments .article-comments-title {
+  color: var(--color-3);
+  font-weight: 800;
+  font-size: 1.625rem;
+  margin-bottom: 36px;
+}
+
+.home-main.article-detail .section-article-comments .article-comments-wrapper {
+  background-color: var(--color-2);
+  border-radius: 6px;
+}
+
+.home-main.article-detail .section-article-comments .article-comments-wrapper .article-comments-item {
+  padding: 36px;
+  border-bottom: 1px solid var(--color-4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 34px;
+}
+
+.home-main.article-detail .section-article-comments .article-comments-wrapper .article-comments-item:last-child {
+  border-bottom: none;
+}
+
+.home-main.article-detail .section-article-comments .article-comments-wrapper .article-comments-item .img-wrapper {
+  width: 74px;
+  height: 74px;
+  border-radius: 100%;
+  overflow: hidden;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.home-main.article-detail .section-article-comments .article-comments-wrapper .article-comments-item .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home-main.article-detail .section-article-comments .article-comments-wrapper .article-comments-item .article-comments .article-comments-date {
+  margin-bottom: 20px;
+}
+
+.home-main.article-detail .section-article-comments .article-comments-wrapper .article-comments-item .article-comments .article-comments-date .comments-name {
+  color: var(--color-3);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-right: 12px;
+}
+
+.home-main.article-detail .section-article-comments .article-comments-wrapper .article-comments-item .article-comments .article-comments-date .comments-date {
+  color: var(--color-3);
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.home-main.article-detail .section-article-comments .article-comments-wrapper .article-comments-item .article-comments .article-comments-text {
+  color: var(--color-3);
+  font-weight: 300;
+  font-size: 0.9375rem;
+}
+
+.home-main.article-detail .section-article-comments .article-comments-wrapper .article-comments-action {
+  padding: 36px;
+  padding-top: 0;
+  text-align: center;
+}
+
 @media (max-width: 1199px) {
   .home-main .section-search .section-search-sort {
     -webkit-box-orient: vertical;
@@ -2688,6 +2987,15 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .home-main.article-detail .article-comments-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home-main.article-detail .article-comments-item .img-wrapper {
+    margin: auto;
   }
 }
 
@@ -3610,6 +3918,104 @@
 
 .registration-main .section-list-patient .section-list-patient-content .list-patient-item .patient-item-info .patient-item-info-bottom .patient-item-info-delete:hover svg > * {
   stroke: var(--color-1);
+}
+
+.registration-main .section-cabinet-calendar .cabinet-calendar-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.registration-main .section-cabinet-calendar .cabinet-calendar-header .calendar-header-title {
+  color: var(--color-3);
+  font-weight: 800;
+  font-size: 1.625rem;
+  margin: 0;
+}
+
+.registration-main .section-cabinet-calendar .calendar-wrapper {
+  background-color: var(--color-5);
+  padding: 20px 0 100px 0;
+}
+
+.registration-main .section-cabinet-calendar .calendar-wrapper .calenader-wrapper-table {
+  overflow-x: auto;
+}
+
+.registration-main .section-cabinet-calendar .calendar-wrapper .calenader-wrapper-table .table-wrapper {
+  border: 1px solid var(--color-4);
+  border-radius: 6px;
+  overflow: hidden;
+  min-width: 1300px;
+}
+
+.registration-main .section-cabinet-calendar .calendar-wrapper .calenader-wrapper-table .table-wrapper .table {
+  margin: 0;
+  background-color: var(--color-2);
+}
+
+.registration-main .section-cabinet-calendar .calendar-wrapper .calenader-wrapper-table .table-wrapper:first-child {
+  margin-bottom: 10px;
+}
+
+.registration-main .section-cabinet-calendar .calendar-wrapper .calenader-wrapper-table .table-wrapper:first-child th {
+  border-bottom: 1px solid var(--color-4);
+  padding: 24px 40px;
+}
+
+.registration-main .section-cabinet-calendar .calendar-wrapper .calenader-wrapper-table .table-wrapper:first-child .control-calendar-day {
+  color: var(--color-3);
+  font-weight: 600;
+  font-size: 1.1875rem;
+}
+
+.registration-main .section-cabinet-calendar .calendar-wrapper .calenader-wrapper-table .table-wrapper:first-child .control-calendar-data {
+  text-align: right;
+  color: var(--color-1);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.registration-main .section-cabinet-calendar .calendar-wrapper .calenader-wrapper-table .table-wrapper:first-child .row-day {
+  text-align: center;
+  color: var(--color-3);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.registration-main .section-cabinet-calendar .calendar-wrapper .calenader-wrapper-table .table-wrapper:last-child td {
+  border: 1px solid var(--color-4);
+  padding: 14px 20px;
+  height: 180px;
+}
+
+.registration-main .section-cabinet-calendar .calendar-wrapper .calenader-wrapper-table .table-wrapper:last-child .calendar-date {
+  text-align: right;
+  color: var(--color-6);
+  font-weight: 500;
+  font-size: 0.8125rem;
+}
+
+.registration-main .section-cabinet-calendar .calendar-wrapper .calenader-wrapper-table .table-wrapper:last-child .caledar-notification .notification .notification-hours {
+  color: var(--color-6);
+  font-weight: 500;
+  font-size: 0.9375rem;
+}
+
+.registration-main .section-cabinet-calendar .calendar-wrapper .calenader-wrapper-table .table-wrapper:last-child .caledar-notification .notification .notification-title {
+  color: var(--color-3);
+  font-weight: 400;
+  font-size: 0.875rem;
 }
 
 @media (max-width: 1199px) {

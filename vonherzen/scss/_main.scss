@@ -721,6 +721,125 @@
             }
         }
     }
+    &.article-detail {
+        .primary-text {
+            @include text($color-3, 700, 19);
+        }
+        .secondary-text {
+            @include text($color-3, 200, 16);
+        }
+        .title-article {
+            margin-bottom: 12px;
+        }
+        .text-article {
+            margin-bottom: 42px;
+        }
+        .list-article-firts {
+            margin-bottom: 20px;
+            list-style: initial;
+            padding-left: 2rem;
+        }
+        .section-article-detail-header {
+            .article-detail-title {
+                @include text($color-3, 800, 26);
+            }
+            .article-doctors {
+                display: flex;
+                align-items: center;
+                gap: 36px;
+                margin-bottom: 60px;
+                .img-wrapper {
+                    width: 58px;
+                    height: 58px;
+                    border-radius: 100%;
+                    overflow: hidden;
+                    flex: 0 0 auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .article-doctors-text {
+                    .article-autor {
+                        @include text($color-1, 300, 16);
+                    }
+                    .article-autor-name {
+                        @include text($color-6, 500, 17);
+                        span {
+                            color: $color-3;
+                        }
+                    }
+                }
+            }
+            .article-primary-img {
+                border-radius: 6px;
+                overflow: hidden;
+                 img {
+                     width: 100%;
+                     height: 100%;
+                     object-fit: cover;
+                 }
+            }
+        }
+        .section-article-card {
+            border-top: 1px solid $color-4;
+            padding: 38px 0 90px 0;
+        }
+        .section-article-comments {
+            background-color: $color-5;
+            padding: 60px 0;
+            .article-comments-title {
+                @include text($color-3, 800, 26);
+                margin-bottom: 36px;
+            }
+            .article-comments-wrapper {
+                background-color: $color-2;
+                border-radius: 6px;
+                .article-comments-item {
+                    padding: 36px;
+                    border-bottom: 1px solid $color-4;
+                    display: flex;
+                    gap: 34px;
+                    &:last-child {
+                        border-bottom: none; 
+                    }
+                    .img-wrapper {
+                        width: 74px;
+                        height: 74px;
+                        border-radius: 100%;
+                        overflow: hidden;
+                        flex: 0 0 auto;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .article-comments {
+                        .article-comments-date {
+                            margin-bottom: 20px;
+                            .comments-name {
+                                @include text($color-3, 500, 16);
+                                margin-right: 12px;
+                            }
+                            .comments-date {
+                                @include text($color-3, 300, 14);
+                            }
+                        }
+                        .article-comments-text {
+                            @include text($color-3, 300, 15);
+                        }
+                    }
+                }
+                .article-comments-action {
+                    padding: 36px;
+                    padding-top: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1199px) {
@@ -753,6 +872,14 @@
         .section-doctors-detail-top {
             .doctors-detail-top-content {
                 flex-direction: column;
+            }
+        }
+        &.article-detail {
+            .article-comments-item {
+                flex-direction: column;
+                .img-wrapper {
+                    margin: auto;
+                }
             }
         }
     }
