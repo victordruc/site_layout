@@ -546,6 +546,9 @@
                         .control-calendar-data {
                             text-align: right;
                             @include text($color-1, 400, 16);
+                            .control-calendar-date {
+                                padding: 0 60px;
+                            }
                         }
                         .row-day {
                             text-align: center;

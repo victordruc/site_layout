@@ -648,6 +648,10 @@
   font-size: 0.875rem;
 }
 
+.card-doctors-item .card-doctors-item-left .card-doctors-item-left-top .card-doctors-information-top .card-doctors-information-top-right {
+  text-align: right;
+}
+
 .card-doctors-item .card-doctors-item-left .card-doctors-item-left-top .card-doctors-information-top .card-doctors-information-top-right .card-doctors-information-prices {
   color: var(--color-1);
   font-weight: 700;
@@ -1147,6 +1151,11 @@
           align-items: baseline;
   gap: 16px;
   margin-top: 16px;
+}
+
+.padding-profile {
+  padding: 16px 74px;
+  font-weight: 500;
 }
 
 .header-main .navbar-content-search {
@@ -2435,6 +2444,67 @@
   background-color: var(--color-5);
 }
 
+.home-main .section-doctors-detail-table .section-doctors-detail-table-navigation {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--color-4);
+}
+
+.home-main .section-doctors-detail-table .section-doctors-detail-table-navigation .navigation-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--color-2);
+  padding: 0 70px;
+  overflow-x: auto;
+}
+
+.home-main .section-doctors-detail-table .section-doctors-detail-table-navigation .navigation-wrapper .navigation-wrapper-item {
+  padding: 8px 20px;
+}
+
+.home-main .section-doctors-detail-table .section-doctors-detail-table-navigation .navigation-wrapper .navigation-wrapper-item.active {
+  background-color: var(--color-5);
+  position: relative;
+}
+
+.home-main .section-doctors-detail-table .section-doctors-detail-table-navigation .navigation-wrapper .navigation-wrapper-item.active .navigation-wrapper-item-link {
+  color: var(--color-1);
+  font-weight: 500;
+  font-size: 1rem;
+  border-bottom-color: var(--color-1);
+}
+
+.home-main .section-doctors-detail-table .section-doctors-detail-table-navigation .navigation-wrapper .navigation-wrapper-item.active::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 30px;
+  top: 0;
+  background-color: var(--color-2);
+  border-radius: 16px;
+  right: -22px;
+}
+
+.home-main .section-doctors-detail-table .section-doctors-detail-table-navigation .navigation-wrapper .navigation-wrapper-item.active::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 30px;
+  top: 0;
+  background-color: var(--color-2);
+  border-radius: 16px;
+  left: -22px;
+}
+
+.home-main .section-doctors-detail-table .section-doctors-detail-table-navigation .navigation-wrapper .navigation-wrapper-item .navigation-wrapper-item-link {
+  color: var(--color-3);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 6px;
+  display: inline-block;
+  border: 3px solid transparent;
+}
+
 .home-main .section-doctors-detail-table .section-doctors-content-wrapper {
   padding: 30px 20px;
 }
@@ -2564,6 +2634,7 @@
   background-color: var(--color-5);
   margin-top: -1rem;
   padding: 30px 20px;
+  border-top: 1px solid var(--color-4);
 }
 
 .home-main .section-doctors-list-comments .section-doctors-list-comments-wrapper {
@@ -2678,6 +2749,7 @@
   background-color: var(--color-5);
   margin-top: -1rem;
   padding: 30px 20px;
+  border-top: 1px solid var(--color-4);
 }
 
 .home-main .section-doctors-list-history .section-doctors-history-content {
@@ -2687,6 +2759,7 @@
 
 .home-main .section-doctors-list-history .section-doctors-history-content .section-doctors-history-header {
   padding: 18px 32px;
+  padding-bottom: 0;
   border-bottom: 2px solid var(--color-5);
 }
 
@@ -2695,10 +2768,24 @@
   font-weight: 500;
   font-size: 0.875rem;
   margin-right: 16px;
+  padding-bottom: 18px;
+  display: inline-block;
 }
 
 .home-main .section-doctors-list-history .section-doctors-history-content .section-doctors-history-header .history-header-nav.history-active {
   color: var(--color-1);
+  position: relative;
+}
+
+.home-main .section-doctors-list-history .section-doctors-history-content .section-doctors-history-header .history-header-nav.history-active::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-1);
+  height: 2px;
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  left: 0;
+  bottom: -2px;
 }
 
 .home-main .section-doctors-list-history .section-doctors-history-content .section-doctors-history-body {
@@ -2726,6 +2813,7 @@
   background-color: var(--color-5);
   margin-top: -1rem;
   padding: 30px 20px;
+  border-top: 1px solid var(--color-4);
 }
 
 .home-main .section-doctors-detail-news .doctors-detail-news-content {
@@ -2937,6 +3025,7 @@
 }
 
 .home-main.article-detail .section-article-comments .article-comments-wrapper .article-comments-item .article-comments .article-comments-date .comments-date {
+  white-space: nowrap;
   color: var(--color-3);
   font-weight: 300;
   font-size: 0.875rem;
@@ -3984,6 +4073,10 @@
   color: var(--color-1);
   font-weight: 400;
   font-size: 1rem;
+}
+
+.registration-main .section-cabinet-calendar .calendar-wrapper .calenader-wrapper-table .table-wrapper:first-child .control-calendar-data .control-calendar-date {
+  padding: 0 60px;
 }
 
 .registration-main .section-cabinet-calendar .calendar-wrapper .calenader-wrapper-table .table-wrapper:first-child .row-day {

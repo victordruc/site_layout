@@ -488,6 +488,53 @@
     }
     .section-doctors-detail-table {
         background-color: $color-5;
+        .section-doctors-detail-table-navigation {
+            padding: 22px 0;
+            border-bottom: 1px solid $color-4;
+            .navigation-wrapper {
+                display: flex;
+                background-color: $color-2;
+                padding: 0 70px;
+                overflow-x: auto;
+                .navigation-wrapper-item {
+                    padding: 8px 20px;
+                    &.active {
+                        background-color: $color-5;
+                        position: relative;
+                        .navigation-wrapper-item-link {
+                            @include text($color-1, 500, 16);
+                            border-bottom-color: $color-1;
+                        }
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            height: 100%;
+                            width: 30px;
+                            top: 0;
+                            background-color: $color-2;
+                            border-radius: 16px;
+                            right: -22px;
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            height: 100%;
+                            width: 30px;
+                            top: 0;
+                            background-color: $color-2;
+                            border-radius: 16px;
+                            left: -22px;
+                        }
+                    }
+                    .navigation-wrapper-item-link {
+                        @include text($color-3, 500, 16);
+                        padding: 6px;
+                        display: inline-block;
+                        border: 3px solid transparent;
+                    }
+                }
+            }
+        }
         .section-doctors-content-wrapper {
             padding: 30px 20px;
             .table-container-wrapper {
@@ -574,6 +621,7 @@
         background-color: $color-5;
         margin-top: -1rem;
         padding: 30px 20px;
+        border-top: 1px solid $color-4;
         .section-doctors-list-comments-wrapper {
             background-color: $color-2;
             border-radius: 6px;
@@ -647,17 +695,32 @@
         background-color: $color-5;
         margin-top: -1rem;
         padding: 30px 20px;
+        border-top: 1px solid $color-4;
         .section-doctors-history-content {
             background-color: $color-2;
             border-radius: 6px;
             .section-doctors-history-header {
                 padding: 18px 32px;
+                padding-bottom: 0;
                 border-bottom: 2px solid $color-5;
                 .history-header-nav {
                     @include text($color-3, 500, 14);
                     margin-right: 16px;
+                    padding-bottom: 18px;
+                    display: inline-block;
                     &.history-active {
                         color: $color-1;
+                        position: relative;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            background-color: $color-1;
+                            height: 2px;
+                            width: 100%;
+                            border-radius: 4px 4px 0 0;
+                            left: 0;
+                            bottom: -2px;
+                        }
                     }
                 }
             }
@@ -682,6 +745,7 @@
         background-color: $color-5;
         margin-top: -1rem;
         padding: 30px 20px;
+        border-top: 1px solid $color-4;
         .doctors-detail-news-content {
             background-color: $color-2;
             border-radius: 6px;
@@ -824,6 +888,7 @@
                                 margin-right: 12px;
                             }
                             .comments-date {
+                                white-space: nowrap;
                                 @include text($color-3, 300, 14);
                             }
                         }

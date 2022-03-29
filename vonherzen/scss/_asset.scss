@@ -397,7 +397,7 @@
           }
         }
         .card-doctors-information-top-right {
-
+          text-align: right;
           .card-doctors-information-prices {
             @include text($color-1, 700, 26);
             line-height: remTransform(30);
@@ -760,4 +760,9 @@
       }
     }
   }
+}
+
+.padding-profile {
+  padding: 16px 74px;
+  font-weight: 500;
 }
