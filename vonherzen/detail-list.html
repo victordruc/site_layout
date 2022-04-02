@@ -90,27 +90,35 @@
             <img src="/images/logo/Vonherzen.png" alt="Vonherzen-img" />
           </a>
 
-          <button
-            class="navbar-toggler"
+          <div class="navbar-toggler-container">
+            <div class="d-xl-none d-block">
+              <div class="nav-user-mob">
+                <button class="search-navbar-btn">
+                  <img src="images/icon/search-nav.svg" alt="search-icon">
+                </button>
+                <button class="user-btn">
+                  <img src="images/icon/user-empty.svg" alt="user-img">
+                </button>
+              </div>
+              <div class="lang-setup-mob d-none">
+                <select class="select-mob-lang">
+                  <option value="De" selected>Deutsch</option>
+                  <option value="Ru">Русский</option>
+                  <option value="En">English</option>
+                </select>
+              </div>
+            </div>
+            <button
+            class="navbar-toggler collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbar"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="currentColor"
-              class="bi bi-list"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill="#EC1C24"
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
-          </button>
+            <span class="burger-menu">
+              <span></span>
+            </span>
+            </button>
+          </div>
 
           <div class="collapse navbar-collapse flex-grow-0" id="navbar">
             <div class="search-navbar">
@@ -120,7 +128,22 @@
                 </svg>
               </button>
             </div>
+            <div class="d-xl-none d-block">
+              <div class="container-search">
+              <div class="wrapper-input-search">
+                <input class="search-input" type="search" placeholder="Geben Sie des Arztes ein...">
+                <span class="search-icon">
+                  <img src="images/icon/search-input.svg" alt="image-search">
+                </span>
+              </div>
+               </div>
+            </div>
             <ul class="navbar-nav align-items-center">
+              <li class="nav-item nav-item-mobile d-xl-none d-inline">
+                <a href="#" class="nav-link">
+                  Login / Registrieren
+                </a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#">Ärzte</a>
               </li>
@@ -160,6 +183,61 @@
                 </div>
               </li>
             </ul>
+            <div class="d-xl-none d-block">
+              <ul class="lang-nav-mobile">
+                <li class="lang-nav-mobile-item">
+                  <a class="nav-link-mob active" href="">Deutsch</a>
+                </li>
+                <li class="lang-nav-mobile-item">
+                  <a class="nav-link-mob" href="#">Русский</a>
+                </li>
+                <li class="lang-nav-mobile-item">
+                  <a class="nav-link-mob" href="#">English</a>
+                </li>
+                <li class="lang-nav-mobile-item">
+                  <a class="nav-link-mob" href="#">Русский</a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-xl-none d-block">
+              <ul class="social-nav-mobile">
+                <li class="social-nav-mobile-item">
+                  <a class="nav-link-mob" href="">
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.4742 4.41793V3.91579C18.2339 3.36545 18.908 2.71008 19.4753 1.9702C18.7652 2.28406 17.9905 2.47229 17.216 2.59781C17.9905 2.09572 18.6361 1.4053 18.9589 0.46393C18.176 0.906371 17.3262 1.22413 16.4413 1.40529C15.7313 0.65216 14.6984 0.212891 13.5365 0.212891C11.3417 0.212891 9.53412 1.90739 9.53412 4.04137C9.53412 4.30948 9.58123 4.53181 9.63526 4.78667C9.64446 4.83005 9.65387 4.87437 9.66328 4.92003C6.371 4.73168 3.40158 3.22541 1.46503 0.96601C1.12916 1.53927 0.951158 2.18806 0.948598 2.84885C0.948598 4.16684 1.65866 5.3593 2.69145 5.98691C2.0534 5.98455 1.42815 5.81088 0.883984 5.48482V5.54763C0.887028 6.429 1.20491 7.28159 1.78256 7.95782C2.36022 8.63404 3.16132 9.09133 4.04717 9.25054C3.7075 9.32319 3.36174 9.36521 3.01431 9.37606C2.7544 9.38639 2.49422 9.36531 2.23964 9.3133C2.50619 10.0791 3.01002 10.7445 3.68107 11.217C4.35219 11.6894 5.15703 11.9454 5.98373 11.9493C4.57093 12.9965 2.85001 13.5689 1.07769 13.5811C0.753579 13.5914 0.429263 13.5704 0.109375 13.5183C1.93185 14.624 4.03313 15.2108 6.17743 15.2129C13.4719 15.2129 17.4742 9.43882 17.4742 4.41793Z" fill="#4A4A4A"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-nav-mobile-item">
+                  <a class="nav-link-mob" href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6961 15.8247V4.1714C19.6961 2.14473 17.9953 0.498047 15.902 0.498047H3.86581C1.77254 0.498047 0.0717773 2.14472 0.0717773 4.1714V15.8247C0.0717773 17.8514 1.77254 19.498 3.86581 19.498H15.902C17.9953 19.498 19.6961 17.8514 19.6961 15.8247ZM15.2479 9.99802C15.2479 12.848 12.8276 15.1914 9.88399 15.1914C6.9403 15.1914 4.52001 12.848 4.52001 9.99802C4.51741 9.32469 4.65082 8.65749 4.91244 8.03473H1.96883V15.8247C1.97184 16.3143 2.17332 16.7827 2.52902 17.1271C2.88472 17.4714 3.36548 17.6636 3.86581 17.6613H15.902C16.4023 17.6636 16.8832 17.4714 17.2388 17.1271C17.5945 16.7827 17.796 16.3143 17.799 15.8247V8.03473H14.8554C15.117 8.65748 15.2504 9.32468 15.2479 9.99802ZM9.88399 13.3547C11.781 13.3547 13.3508 11.8347 13.3508 9.99804C13.3508 9.23804 13.0893 8.6047 12.6967 8.03474C12.0426 7.21136 11.0614 6.64133 9.88399 6.64133C8.70647 6.64133 7.72531 7.21135 7.07118 8.03474C6.67868 8.6047 6.41706 9.30138 6.41706 9.99804C6.41706 11.8347 7.98694 13.3547 9.88399 13.3547ZM17.472 2.71471V5.9447H14.1359V2.71471H17.472Z" fill="#4A4A4A"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-nav-mobile-item">
+                  <a class="nav-link-mob" href="#">
+                    <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.92196 9.99804H8.86564L9.19267 6.19806H6.05277V4.67808C6.05277 3.91809 6.57609 3.7914 6.90319 3.7914H9.1272V0.498047H6.11811C2.78206 0.498047 1.99705 2.90471 1.99705 4.48808V6.19806H0.034668V9.99804H1.99705V19.498H5.92196V9.99804Z" fill="#4A4A4A"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-nav-mobile-item">
+                  <a class="nav-link-mob" href="#">
+                    <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5016 11.794C20.6257 10.7164 20.6916 9.63303 20.6986 8.54856L20.6987 7.02126C20.6886 5.93689 20.6229 4.8537 20.5016 3.77579C20.5016 3.77579 20.3043 2.37586 19.7129 1.8031C19.4627 1.53648 19.1577 1.32486 18.8177 1.18226C18.4778 1.03965 18.1108 0.969297 17.741 0.975861C14.9804 0.784914 10.8396 0.784912 10.8396 0.784912C10.8396 0.784912 6.69878 0.784914 3.93824 0.975861C3.8859 0.984307 3.8254 0.991633 3.7582 0.999773C3.3193 1.05294 2.59343 1.14086 1.96646 1.8031C1.37485 2.37586 1.17763 3.77579 1.17763 3.77579C1.05337 4.85345 0.987583 5.93679 0.980469 7.02126V8.54856C0.990541 9.63293 1.05633 10.7161 1.17763 11.794C1.17763 11.794 1.37485 13.194 1.96646 13.7667C2.59519 14.4308 3.42263 14.5174 3.93028 14.5705C4.00642 14.5785 4.07538 14.5857 4.13539 14.594C5.71286 14.7213 10.8396 14.7849 10.8396 14.7849C10.8396 14.7849 14.9803 14.7849 17.741 14.594C17.7934 14.5855 17.8539 14.5782 17.9211 14.57C18.3599 14.5169 19.0858 14.4289 19.7128 13.7667C20.3043 13.194 20.5016 11.794 20.5016 11.794ZM8.80206 10.394L14.1259 7.59398L8.80206 4.79407V10.394Z" fill="#4A4A4A"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-nav-mobile-item">
+                  <a class="nav-link-mob" href="#">
+                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7219 16.0312L19.786 1.47181C19.7956 1.37866 19.7821 1.28464 19.7466 1.1977C19.7112 1.11076 19.6549 1.03346 19.5824 0.972362C19.4661 0.857993 19.3107 0.789603 19.1461 0.780273C19.0685 0.780258 12.9727 3.02115 0.858649 7.50295C0.561281 7.61819 0.412598 7.82947 0.412598 8.13679C0.4514 8.43131 0.606539 8.62339 0.878015 8.71301L5.29959 10.0768L7.08372 15.3973C7.20013 15.7046 7.43281 15.8583 7.78182 15.8583C7.95021 15.8528 8.11 15.784 8.22787 15.6662L10.7295 13.3421L15.248 16.5882C15.4013 16.711 15.5929 16.7788 15.791 16.7803C16.2952 16.7803 16.6055 16.5306 16.7219 16.0312ZM16.0625 3.56539C16.0238 3.56539 12.7916 5.59501 6.36613 9.65425L7.72365 14.072L8.01449 11.2676C13.5479 6.32488 16.3179 3.8375 16.3243 3.8055C16.3295 3.7834 16.3327 3.76091 16.334 3.73828C16.334 3.62301 16.2435 3.56538 16.0625 3.56539Z" fill="#4A4A4A"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>

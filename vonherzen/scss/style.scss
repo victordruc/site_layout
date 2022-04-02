@@ -40,3 +40,9 @@ ul {
 button, path, rect, input, a, circle {
     transition: .2s;
 }
+
+@media (max-width: 575px) {
+    html {
+        font-size: 10px;
+    }
+}

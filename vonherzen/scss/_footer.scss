@@ -14,7 +14,7 @@
                 .footer-list-nav {
                     display: flex;
                     align-items: center;
-                    gap: 20px;
+                    gap: 14px;
                     .footer-list-item {
                         .footer-list-link {
                             padding: 6px;
@@ -74,20 +74,14 @@
     }
 }
 
-@media (max-width: 1199px) {
-    .footer-main {
-        .footer-top-wrapper {
-            flex-direction: column;
-        }
-    }
-}
-
 @media (max-width: 991px) {
     .footer-main {
         .footer-top-wrapper {
+            align-items: flex-start !important;
             .footer-navigation {
                 flex-direction: column;
                 gap: 16px !important;
+                align-items: end !important;
             }
         }
     }
@@ -96,16 +90,15 @@
 @media (max-width: 575px) {
     .footer-main {
         .footer-top-wrapper {
+            .footer-brand {
+                img {
+                    width: 76px;
+                }
+            }
             .footer-navigation {
                .footer-list-nav {
-                   flex-direction: column;
-                   gap: 14px !important;
+                   gap: 6px !important;
                }
-            }
-        }
-        .footer-main-bottom {
-            .footer-copyright-content {
-                margin: auto !important;
             }
         }
     }
